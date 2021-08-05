@@ -76,7 +76,7 @@
 .main_kv_banner .bx-pager{bottom:6px;}
 
 /*20210804팝업숨김_추가*/
-.pop_layer_main{display: none !important;} 
+.pop_layer_main{display: none !important;display:none;} 
 
 @media only screen and (max-width:1440px){
 .imgmap_web_img{    height: 89vh;}
