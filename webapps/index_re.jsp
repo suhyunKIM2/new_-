@@ -65,19 +65,6 @@
 .main_menu_slider ul li .main_menu_wrap span{position:relative;left:auto;bottom:auto;}
 .main_menu_slider ul li .main_menu_wrap p{margin-bottom:20px;}
 .main_menu_slider ul li .main_menu_wrap div{margin-left:15px;}
-.ef2_2 {
-    position: absolute;
-    left: 75%;
-    top: 180px;
-    z-index: 50;
-    transform: rotate3d(1, 1, 1, 17deg);
-    -webkit-transform: rotate3d(1, 1, 1, 17deg);-moz-transform: rotate3d(1, 1, 1, 17deg);-ms-transform: rotate3d(1, 1, 1, 17deg);-o-transform: rotate3d(1, 1, 1, 17deg);
-}
-.main_kv_banner .bx-pager{bottom:6px;}
-
-/*20210804팝업숨김_추가*/
-.pop_layer_main{display: none !important;} 
-
 @media only screen and (max-width:1440px){
 .imgmap_web_img{    height: 89vh;}
 }
@@ -86,14 +73,6 @@
     padding-top: 20px;
     width: 400px;
 }
-.ef2_2 {
-    left: 50%;
-    top: 112px;
-    transform: rotate3d(1, 1, 1, 17deg) translateX(-50%);
-    -webkit-transform: rotate3d(1, 1, 1, 17deg) translateX(-50%);
-    -moz-transform: rotate3d(1, 1, 1, 17deg) translateX(-50%);
-    -ms-transform: rotate3d(1, 1, 1, 17deg) translateX(-50%);
-    -o-transform: rotate3d(1, 1, 1, 17deg) translateX(-50%);
 }
 @media only screen and (max-width:1024px){
 .ch_re_mobile{display:block;    width: 90%;
@@ -122,9 +101,6 @@
 .main_menu_slider ul li .main_menu_wrap div {
     width:94%;
     padding-left: 38%;
-}
-.main_kv_banner .bx-pager {
-    bottom: 0;
 }
 }
 @media only screen and (max-height:640px){
@@ -243,30 +219,18 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 <div id="skipNavi"><a href="#contents">본문 바로가기</a> <a href="#gnb">주메뉴 바로가기</a> <a href="#footer">사이트정보 바로가기</a> </div>
 	
 	<!-- 인트로 팝업 -->
-    <div id="intro_banner" style="background:#a52c1f;">
-		<p class="pc_banner">
-			<a href="javascript:void(0)" class="top_banner_close" title="탑배너 닫기" style="background:none;color:#eaeaea;font-size:29px;top:17%;">X</a>
-			<a href="http://www.goobne.co.kr/customer/cscenter_notice_view.jsp?dt=54028&page=1&sSel=title&sText="><img src="resources/images/main/2020_paysgoobne_PC_3.jpg"  alt="모바일디지털상품권출시 "/></a>
-		</p>
-		<p class="mobile_banner">
-			<a href="javascript:void(0)" class="top_banner_close" title="탑배너 닫기"  style="background:none;color:#eaeaea;font-size:29px;top:17%;">X</a>
-			<a href="http://www.goobne.co.kr/customer/cscenter_notice_view.jsp?dt=54028&page=1&sSel=title&sText="><img src="resources/images/main/2020_paysgoobne_M_3.jpg"  alt="모바일디지털상품권출시 "/></a>
-		</p>
-	</div> 
-   <!-- 
     <div id="intro_banner" style="background:#080a17;">
 		<p class="pc_banner">
 			<a href="javascript:void(0)" class="top_banner_close" title="탑배너 닫기" style="background:none;color:#b9b9b9;font-size:29px;top:17%;">X</a>
-			<a href="/brand/about.jsp"><img src="resources/images/main/2020_first_class_PC_3.jpg"  alt="올해브랜드대상 "/></a>
+			<a href="javascript:loginnet('');"><img src="resources/images/main/2020_first_class_PC_3.jpg"  alt="올해브랜드대상 "/></a>
 		</p>
 		<p class="mobile_banner">
 			<a href="javascript:void(0)" class="top_banner_close" title="탑배너 닫기"  style="background:none;color:#b9b9b9;font-size:29px;top:17%;">X</a>
-			<a href="/brand/about.jsp"><img src="resources/images/main/2020_first_class_M.jpg"  alt="올해브랜드대상 "/></a>
+			<a href="javascript:loginnet('');"><img src="resources/images/main/2020_first_class_M.jpg"  alt="올해브랜드대상 "/></a>
 		</p>
 	</div> 
-    
 	
-
+<!--
 	 <div id="intro_banner" style="background:#fff1ef;">
 		<p class="pc_banner">
 			<a href="javascript:void(0)" class="top_banner_close" title="탑배너 닫기"></a>
@@ -293,17 +257,17 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 			<!-- contents -->
 			<section id="contents">
 			
-				<!-- 210209 메인팝업  -->
-               
-				<section class="pop_layer_main layer1">
-					<a href="menu/new.jsp">
-						<img src="resources/images/main/210602_eggminitart_popup_PC.jpg" class="web_img" alt="이벤트 페이지 바로가기" /> 
-					</a>
-				    <a href="menu/new.jsp"> 
-						<img src="resources/images/main/210602_eggminitart_popup_M.jpg" class="mobile_img" alt="이벤트 페이지 바로가기" /> 
-					</a> 
-				    <div class="btn_wrap btn_blk"> 
-						<a href="javascript:void(0);" id="todayPopChk">오늘 하루 보지 않기</a>
+				<!-- 20204 메인팝업  --> 
+				
+				<section class="pop_layer_main layer1 ">
+						<a href="/menu/new.jsp">
+						<img src="resources/images/main/img_pop_201109_1.jpg" class="web_img" alt="굽네슈림프시카고딥디쉬피" />
+						</a>
+                        <a href="/menu/new.jsp">
+						<img src="resources/images/main/img_pop_201109_M_1.jpg" class="mobile_img" alt="굽네슈림프시카고딥디쉬피" />
+						</a>
+                    <div class="btn_wrap btn_blk">
+						<a href="javascript:void(0);" id="todayPopChk">오늘하루 보지 않기</a>
 						<a href="javascript:void(0)" class="main_pop_close" title="닫기">닫기</a>
 					</div>    
                         
@@ -322,26 +286,22 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 -->
 				</section> 
 				
-	
-
-<!--
+				<!--
 				<section class="pop_layer_main layer2">
 					
-						<a href="/event/event_view.jsp?dt=54905&page=1&">
-						<img src="resources/images/main/img_pop2_210120.jpg" class="web_img" alt="굽네x머지플러" />
+						<a href="/menu/new.jsp">
+						<img src="resources/images/main/img_pop_200417.jpg" class="web_img" alt="굽네바게트볼 갈릭크림" />
 						</a>
-						<a href="/event/event_view.jsp?dt=54905&page=1&">
-						<img src="resources/images/main/img_pop2_210120_M.jpg" class="mobile_img" alt="굽네x머지플러" />
+						<a href="menu/new.jsp">
+						<img src="resources/images/main/img_pop_200417_M.jpg" class="mobile_img" alt="굽네바게트볼 갈릭크림" />
 						</a>
 
 					<div class="btn_wrap btn_blk">
-						<a href="javascript:void(0);" id="todayPopChk2" style="background:#9a9a9a;">오늘하루 보지 않기</a>
-						<a href="javascript:void(0)" class="main_pop_close2" title="닫기" style="background:#9a9a9a;">닫기</a>
+						<a href="javascript:void(0);" id="todayPopChk2">오늘하루 보지 않기</a>
+						<a href="javascript:void(0)" class="main_pop_close2" title="닫기">닫기</a>
 					</div>
 				</section>
-
-
-		
+				-->
 				
 				<!-- // 191127 메인팝업 -->
 				
@@ -349,59 +309,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 				<!-- main KV slider -->
 				<div class="main_kv_banner">
 					<ul>
-                        <li style="background:#000 no-repeat center top;">
-							<div class="main_movie_slide main_movie_slide_01">
-                                <iframe src="https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM" allow="autoplay; encrypted-media" title="굽네 갈릭마왕 '맛법의 시작' 편" class="iframe_01"></iframe>
-<!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
-								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
-								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
-							</div>					
-						</li>
-                        
-						<li style="background:#000 no-repeat center top;">
-							<div class="main_movie_slide main_movie_slide_02">
-                                <iframe src="https://www.youtube.com/embed/x_TuR9I0Ums?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=x_TuR9I0Ums" allow="autoplay; encrypted-media" title="굽네 갈릭마왕 '맛법의 시작' 편" class="iframe_02"></iframe>
-<!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
-								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
-								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
-							</div>					
-						</li>
-                        <li style="background:#fbfbf1 url('resources/images/main/img_main_hero_bg_2.jpg')no-repeat center top;">
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx" target="_blank">
-								<img src="resources/images/main/img_main_hero_2.jpg" class="w_img" alt="굽네 양념반반 히어로"/>
-								<img src="resources/images/main/img_main_hero_m_2.jpg" class="m_img" alt="굽네 양념반반 히어로"/>
-							</a>							
-						</li>
-						<li style="background:url('/resources/images/main/main_pepperoni_PC_full.jpg')no-repeat center top rgb(240 130 0);">
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx" target="_blank">
-								<img src="resources/images/main/main_pepperoni_PC_part.jpg" class="w_img" alt="굽네 페퍼로니 찹찹 피자"/>
-								<img src="resources/images/main/main_pepperoni_M.jpg" class="m_img" alt="굽네 페퍼로니 찹찹 피자"/>
-							</a>							
-						</li>
-						<li style="background:url('/resources/images/main/210602_eggminitart_rolling_PC_full_2.jpg')no-repeat center top rgb(57 112 165);">
-							<a href="menu/new.jsp" target="_blank">
-								<img src="resources/images/main/210602_eggminitart_rolling_PC_part.jpg" class="w_img" alt="굽네 에그미니 타르트"/>
-								<img src="resources/images/main/210602_eggminitart_rolling_m.jpg" class="m_img" alt="굽네 에그미니 타르크"/>
-							</a>							
-						</li>
-                        <li style="background:url('resources/images/main/img_main_bageteubol_bg_1_02.jpg')no-repeat center top rgb(250 250 250);">
-							<div style="position: relative; width: 1200px; margin: 0 auto;">
-							<dl class="ef1_2"><img src="resources/images/main/baget_txt_ef.gif" class="w_img" alt="굽네 바게트볼 갈릭크림"/></dl>
-							</div>
-							<div style="position: relative; width: 1200px; margin: 0 auto;">
-							<dl class="ef2_2"><img src="resources/images/main/baget_txt_ef2.gif" class="w_img" alt="굽네 바게트볼 갈릭크림"/></dl>
-							</div>
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx">
-								<img src="resources/images/main/img_main_bageteubol210310_03.jpg" class="w_img" alt="굽네 바게트볼 갈릭크림"/>
-								<img src="resources/images/main/img_main_bageteubol_M_210310_1.gif" class="m_img" alt="굽네 바게트볼 갈릭크림"/>		
-							</a>
-						</li>
-                        <li style="background: url('resources/images/main/bg_img_main_kv_210413.jpg')no-repeat center top rgb(251 238 222);">
-							<a href="http://www.goobnemall.com/" target="_blank" title="새창열림">
-								<img src="resources/images/main/img_main_kv_210413.jpg" class="w_img" alt="굽네치킨의 기술로 만든 맛있는 닭가슴살"/>
-								<img src="resources/images/main/m_img_main_kv_210413.jpg" class="m_img" alt="굽네치킨의 기술로 만든 맛있는 닭가슴살"/>
-							</a>
-						</li>
+                        <li style="background:#761819 url('resources/images/main/img_main_shrimp_cicago_pizza_2.jpg')no-repeat center top;">
 <!--
 							<div style="position: relative; width: 1200px; margin: 0 auto;">
 							<dl class="ef1"><img src="resources/images/main/cicago_txt_ef.gif" class="w_img" alt="굽네 시카고 피자"/></dl>
@@ -413,15 +321,32 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 							<dl class="ef3"><img src="resources/images/main/cicago_txt_ef3.gif" class="w_img" alt="굽네 시카고 피자"/></dl>
 							</div>
 -->
-						<!-- 210805 굽네 슈림프 시카고 딥디쉬 피자 내림
-						<li style="background:#761819 url('resources/images/main/img_main_shrimp_cicago_pizza_2_1.jpg')no-repeat center top;    background-size: auto 102%;">
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx">
-								<img src="resources/images/main/img_main_shrimp_cicago_pizza_3_1.jpg" class="w_img w_img_main" alt="굽네 슈림프 시카고 딥디쉬 피자" width="100%"/>
+							<a href="/menu/new.jsp">
+								<img src="resources/images/main/img_main_shrimp_cicago_pizza_3.jpg" class="w_img w_img_main" alt="굽네 슈림프 시카고 딥디쉬 피자" width="100%"/>
 								<img src="resources/images/main/img_main_shrimp_cicago_pizza_M_1.jpg" class="m_img" alt="굽네 슈림프 시카고 딥디 피자" width="100%"/>		
 							</a>
-						</li> -->
-						<!-- 210805 굽네 시카고 피자 내림 <!--191129 굽네시카고피자 메인배너
-						<li style="background:url('resources/images/main/img_main_cicago_pizza_bg.jpg')no-repeat center top rgb(18 19 14);">
+						</li>
+						<li style="background:#000 no-repeat center top;">
+							
+							<div class="main_movie_slide">
+								<!-- 메인 영상을 바꾸려면 하단의 movieURL 변수에 URL을 수정 
+								<iframe src="https://www.youtube.com/embed/UHU3WGFd_hE?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=0&amp;showinfo=0&amp;controls=1" title="굽네 차은우, 박보영 TV CF" ></iframe>-->
+								
+								<!-- 시카고 피자  
+								<iframe src="https://www.youtube.com/embed/oTO1u0spVb8?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=oTO1u0spVb8&amp;showinfo=0&amp;controls=1" allow="autoplay; encrypted-media" title="굽네피자 유연석 TV CF" ></iframe>-->
+								<!-- 20110214 -->
+<!--                             <iframe src="https://www.youtube.com/embed/IdXt1yU5WeU?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=oTO1u0spVb8&amp;showinfo=0&amp;controls=1" allow="autoplay; encrypted-media" title="성훈표 굽네 고추바사삭" ></iframe>                            -->
+                            <iframe src="https://www.youtube.com/embed/SsB77ASoj8Y?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=SsB77ASoj8Y&amp;showinfo=0&amp;controls=1" allow="autoplay; encrypted-media" title="성훈표 굽네 고추바사삭" ></iframe>                           
+<!-- 								<iframe src="https://www.youtube.com/embed/SsB77ASoj8Y?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;showinfo=0&amp;controls=1" allow="autoplay; encrypted-media" title="성훈표 굽네 고추바사삭 윙" ></iframe> -->
+								
+								<!--iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값 -->
+								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
+								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
+							</div>
+					
+						</li>
+						<!--191129 굽네시카고피자 메인배너-->
+						<li style="background:#d5d5d5 url('resources/images/main/img_main_cicago_pizza_bg.jpg')no-repeat center top;">
 							<div style="position: relative; width: 1200px; margin: 0 auto;">
 							<dl class="ef1"><img src="resources/images/main/cicago_txt_ef.gif" class="w_img" alt="굽네 시카고 피자"/></dl>
 							</div>
@@ -431,27 +356,12 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 							<div style="position: relative; width: 1200px; margin: 0 auto;">
 							<dl class="ef3"><img src="resources/images/main/cicago_txt_ef3.gif" class="w_img" alt="굽네 시카고 피자"/></dl>
 							</div>
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx">
+							<a href="/menu/new.jsp">
 								<img src="resources/images/main/img_main_cicago_pizza0129.jpg" class="w_img" alt="굽네 시카고 피자"/>
 								<img src="resources/images/main/img_main_cicago_pizza0203_M.gif" class="m_img" alt="굽네 시카고 피자"/>		
 							</a>
 						</li><!--191129 굽네시카고피자 메인배너 끝-->
-						<!--210805 굽네 갈릭마왕 메인배너	내림
-						<li style="background:url('/resources/images/main/210414_garlic-devil_PC_full_2.jpg')no-repeat center top rgb(37 26 32);">
-							<a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">
-								<img src="resources/images/main/210414_garlic-devil_PC_part_2.jpg" class="w_img" alt="굽네 갈릭마왕"/>
-								<img src="resources/images/main/210414_garlic-devil_MO.jpg" class="m_img" alt="굽네 갈릭마왕"/>
-							</a>							
-						</li> -->
-						<!-- 210805 굽네 볼케이노 메인배너 내림
-	                    <li style="background-color:#000">
-							<a href="http://order.goobne.co.kr:8081/login/login.aspx" target="_blank">
-								<img src="resources/images/main/img_main_vc.jpg" class="w_img" alt="굽네 볼케이노"/>
-								<img src="resources/images/main/img_main_vc_M.jpg" class="m_img" alt="굽네 볼케이노"/>
-							</a>							
-						</li> -->
 						<!--200417 굽네 바게트볼 갈릭크림 메인배너-->
-<!--
 						<li style="background:#f8f8f8 url('resources/images/main/img_main_bageteubol_bg.jpg')no-repeat center top;">
 							<div style="position: relative; width: 1200px; margin: 0 auto;">
 							<dl class="ef1_2"><img src="resources/images/main/baget_txt_ef.gif" class="w_img" alt="굽네 바게트볼 갈릭크림"/></dl>
@@ -463,9 +373,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 								<img src="resources/images/main/img_main_bageteubol200420.jpg" class="w_img" alt="굽네 바게트볼 갈릭크림"/>
 								<img src="resources/images/main/img_main_bageteubol_M.gif" class="m_img" alt="굽네 바게트볼 갈릭크림"/>		
 							</a>
-						</li>
--->
-                        <!--190705 마볼치킨 메인배너 끝-->
+						</li><!--190705 마볼치킨 메인배너 끝-->
 						<!--190501 굽네피자 메인배너-->
 						<!--
 						<li style="background:#d5d5d5 url('resources/images/main/img_main_pizza_bg.jpg')no-repeat center top;">
@@ -476,23 +384,31 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 						</li>-->
 						<!--190501 굽네피자 메인배너 끝-->	
 						<!--190801~0831 갈비천왕소스 메인배너 끝-->
-
-<!--
+						<li style="background-color:#000">
+							<a href="http://order.goobne.co.kr:8081/login/login.aspx" target="_blank">
+								<img src="resources/images/main/img_main_vc.jpg" class="w_img" alt="굽네 볼케이노"/>
+								<img src="resources/images/main/img_main_vc_M.jpg" class="m_img" alt="굽네 볼케이노"/>
+							</a>							
+						</li>		
+						<li style="background-color:#ece5dd">
+							<a href="http://www.goobnemall.com/" target="_blank" title="새창열림">
+								<img src="resources/images/main/img_main_kv_20170831_1.png" class="w_img" alt="굽네치킨의 기술로 만든 맛있는 닭가슴살"/>
+								<img src="resources/images/main/m_img_main_kv_20170831_1.jpg" class="m_img" alt="굽네치킨의 기술로 만든 맛있는 닭가슴살"/>
+							</a>
+						</li>
 						<li style="background:#fff url('resources/images/main/img_main_chibob_bg.jpg')no-repeat center top;">
- 							<a href="http://www.goobnemall.com/view/category/4NAHGTSM08RVI4XA" target="_blank"> 
-							<a href="https://www.goobnemall.com/view/category/757NFS1KRDNFZ7R3" target="_blank">
+							<a href="http://www.goobnemall.com/view/category/4NAHGTSM08RVI4XA" target="_blank">
 								<img src="resources/images/main/img_main_chibob.jpg" class="w_img" alt="굽네 갈비천왕 치밥"/>
 								<img src="resources/images/main/img_main_chibob_M.jpg" class="m_img" alt="굽네 갈비천왕 치밥"/>
 							</a>							
 						</li>
--->
 						
 					</ul>
 					<div id="quick" class="quick_new">
 				  		<ol>
 					  		<li class="goobne_mall">
-					  			<a href="https://www.goobnemall.com/view/event/SY4OAKORJOCNXMSE/read?evnt_id=IUC48RW8Y&evntType=CMT&evntSt=20&brdId=B9QZ5RNSF&pageNum=1" target="goobnemall">
-					  				<img src="resources/images/main/bn_main_gnmall_1.jpg" alt="굽네몰 첫구매 100원, 볼케이노 소스" width="150" height="150"/>
+					  			<a href="http://www.goobnemall.com/view/event/X4N7DFJQ6MH0DVV4/read?evnt_id=SZ1XHK58I&evntType=CMT&evntSt=20&brdId=I93CH23GL&pageNum=1" target="goobnemall">
+					  				<img src="resources/images/main/bn_main_gnmall.jpg" alt="굽네몰 첫구매 100원, 볼케이노 소스" width="150" height="150"/>
 					  			</a>
 								<a href="http://www.dhuman.co.kr/rest/pindex" target="dhumanmall">
 					  				<img src="resources/images/main/bn_main_dhuman.jpg" alt="맛있는 자연 영양식 듀먼" width="150" height="150"/>
@@ -583,15 +499,10 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 <!-- 										<span> 될놈될.avi 정신 못 차리게 맛있는 굽네 갈비천왕 땡기지 않냐굽? 댓글 남겨주면 ...<span class="blind">#굽네치킨 #굽네갈비천왕 #될놈될 #이벤트</span></span> -->
 <!-- 										<em>2018-03-07</em> -->
 <!-- 									</p>		 -->
-									<a href="https://www.facebook.com/goobne/photos/5723034864404870" target="_blank"></a>
+									<a href="https://www.facebook.com/goobne/posts/3473916352650077?__xts__[0]=68.ARB4JL6S0CmXnlia81Fmkb78q9-4HERLkrAlbq6DnvfB01dZEhIuGHmGENloB-KaFqOK2HlmlJXTWAmtCTTdlanXN8VhR3xdpcZz6aRMGNBS2yPD4VZivvzKnU30apHLOGEKA8oiEBTEZQsbzK3L4SertFvnMJL2u-YP1BxF8xUget2TSBzHZoiBLc_wBjhTodYi3hL_207ArdUnfKV10IvIdaVw2ZFCZXIdVsItxVqEnqCE7ojw0mi0XobB10d41Jgq-vg_M4ynk2NrPelR39pn8cEFP-ftXdcv9vRiv3ePf__IvxNMj2T-cSsjamoaq7oywuB3Duhuhb5xAerOmv6saw&__tn__=-R" target="_blank"></a>
 									<p>
-										<span style="white-space: pre-line;font-size: 13px;">치킨 피자 중에 고민하는거? 멈춰!✋
-                                        8천원 할인 받고
-                                        굽네에서 둘다 먹자<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tab/1/16/1f355.png" style="border: 0px;"><img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tad/1/16/1f357.png" style="border: 0px;">
-@너랑나_둘이서_거뜬하잖아?
-* 일부 가맹점은 행사 제외
-될 수 있습니다!<span class="blind">#굽네치킨 #굽네피자 #초복 #7월할인</span></span>
-										<em>2021-07-08</em>
+										<span>한번만 먹은 사람은 절대 없는 굽네 꿀조합 (*~▽~) 같이 즐기면 더 맛있는 조합!굽네 메이트를 태그해보라굽 😋 5명 추첨, 고추바사삭 윙 쏜다!...(~6/26일 발표)<span class="blind">#굽네치킨 #굽네꿀조합 #고추바사삭 #시카고피자 #바게트볼</span></span>
+										<em>2020-07-07</em>
 									</p>		
 								</div>
 							</li>
@@ -609,12 +520,9 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 							<li class="content_news">
 								<div>
 									<h5>굽네소식</h5>					
-									<a href="https://baeminkr.onelink.me/XgL8/1a9b704f" target="_blank"></a>
+									<a href="/customer/cscenter_notice.jsp" ></a>
 									<ul>
-										<li style="overflow: visible;display: block;white-space: pre-line;font-size: 13px;">중복 맞이 배민에서 치킨+바게트볼 구매시 3천원 할인?!
-                                        7/17~21 기간 한정!
-                                        (일부 매장 행사 제외)
-                                        2021-07-08</li>
+										<li style="overflow: visible;display: block;">굽네 홈페이지 카드결제 기능 추가<br/>(BC탑포인트 청구할인 가능)<br/>2020-06-30</li>
 									</ul>
 									<i>바로가기</i>					
 								</div>
@@ -645,7 +553,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 								<div>
 									<!--<iframe src="https://www.youtube.com/embed/xJc_lzRbIqs?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=0&loop=1&amp;showinfo=0&amp;controls=1" width="100%" height="100%" ></iframe> -->
 									<!--<iframe src="https://www.youtube.com/embed/IgdUv2IN1rM?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=0&loop=1&amp;showinfo=0&amp;controls=1" width="100%" height="100%" ></iframe> -->
-									<iframe src="https://www.youtube.com/embed/Bbej8U1gYpQ?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=0&loop=1&amp;showinfo=0&amp;controls=1" width="100%" height="100%" ></iframe>
+									<iframe src="https://www.youtube.com/embed/X-hXaUHGS4I?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=0&loop=1&amp;showinfo=0&amp;controls=1" width="100%" height="100%" ></iframe>
 								</div>
 							</li>
 						</ul>
@@ -725,18 +633,31 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 		});
 
 	});
-	//쿠키 셋팅
-	function setCookie (name,value,expiredays){
-	  var exdate = new Date();
-	  exdate.setDate(exdate.getDate()+expiredays);
-	  
-	  var cookie = null;
-	  cookie = document.cookie;
-	  cookie = name+"="+escape(value)+ "; path=/" + ((expiredays==null)?"":";expires="+exdate.toGMTString());
-	  //cookie.Path = "/";
-      
-	  document.cookie = cookie;
-	}
+	//24시간 쿠키 셋팅
+//	function setCookie (name,value,expiredays){
+//	  var exdate = new Date();
+//	  exdate.setDate(exdate.getDate()+expiredays);
+//	  
+//	  var cookie = null;
+//	  cookie = document.cookie;
+//	  cookie = name+"="+escape(value)+ "; path=/" + ((expiredays==null)?"":";expires="+exdate.toGMTString());
+//	  //cookie.Path = "/";
+//      
+//	  document.cookie = cookie;
+//	}
+
+//201110 00:00기준 쿠키 셋팅
+function setCookie( name, value, expiredays ) {   
+    var exdate = new Date();   
+    exdate = new Date(parseInt(exdate.getTime() / 86400000) * 86400000 + 54000000);  
+    if ( exdate > new Date() )  
+    {  
+    expiredays = expiredays - 1;  
+    }  
+    exdate.setDate( exdate.getDate() + expiredays );   
+     document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + exdate.toGMTString() + ";"   
+  }  
+
 	
 	function mainTopBanner(){
 		$('.top_banner_close').click(function(){
@@ -755,8 +676,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 		var $main_kv_banner = $('.main_kv_banner');
 		var $main_kv_banner_img = $('.main_kv_banner ul li img');
 		var $main_menu_slider_btn = $('.main_menu_slider ul li a');
-		var $main_movie_01 = $('.main_movie_slide .iframe_01');
-        var $main_movie_02 = $('.main_movie_slide .iframe_02');
+		var $main_movie = $('.main_movie_slide iframe');
 		
 		
 		//메인 키비주얼 배너
@@ -770,12 +690,10 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 		//var movieURL = 'https://www.youtube.com/embed/oTO1u0spVb8?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=oTO1u0spVb8&amp;showinfo=0&amp;controls=1';
 		//성훈표 고추바사삭
 		//var movieURL = 'https://www.youtube.com/embed/IdXt1yU5WeU?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=IdXt1yU5WeU&amp;showinfo=0&amp;controls=1';
- 		//var movieURL = 'https://www.youtube.com/embed/SsB77ASoj8Y?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=SsB77ASoj8Y&amp;showinfo=0&amp;controls=1';
-		//var movieURL = 'https://www.youtube.com/embed/Cx5-FJIwfds?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=0&loop=1&amp;showinfo=0&amp;controls=1';
+		var movieURL = 'https://www.youtube.com/embed/SsB77ASoj8Y?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;playlist=SsB77ASoj8Y&amp;showinfo=0&amp;controls=1';
 		
-        var movieURL_01 = 'https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM';
-        var movieURL_02 = 'https://www.youtube.com/embed/x_TuR9I0Ums?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=x_TuR9I0Ums';
-		
+		//성훈표 고추바사삭 윙
+		//var movieURL = 'https://www.youtube.com/embed/SsB77ASoj8Y?rel=0&amp;wmode=opaque&amp;autohide=1&amp;autoplay=1&loop=1&amp;showinfo=0&amp;controls=1';
 		
 		$('.main_kv_banner ul').bxSlider({
 			auto:true,
@@ -789,18 +707,12 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 			nextText:'다음',
 			mode : 'fade',
 			onSlideNext:function (currentSlide, totalSlides, currentSlideHtmlObject) {
-				$main_movie_01.attr('src','');
-                $main_movie_02.attr('src','');
+				$main_movie.attr('src','');
 				$('.main_kv_banner ul>li').removeClass('active');
-				console.log(currentSlideHtmlObject);
+				//console.log(currentSlideHtmlObject);
 				$('.main_kv_banner ul>li').eq(currentSlideHtmlObject).addClass('active');
-				if($('.main_movie_slide_01').parent('li').hasClass('active')){
-					$main_movie_01.attr('src',movieURL_01);
-                    
-				}
-                if($('.main_movie_slide_02').parent('li').hasClass('active')){
-					$main_movie_02.attr('src',movieURL_02);
-                    
+				if($('.main_movie_slide').parent('li').hasClass('active')){
+					$main_movie.attr('src',movieURL);
 				}
 				if($('.bg_wht').hasClass('active')){
 					$main_kv_banner.addClass('gray_arr');
@@ -812,13 +724,8 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 				$main_movie.attr('src','');
 				$('.main_kv_banner ul>li').removeClass('active');
 				$('.main_kv_banner ul>li').eq(currentSlideHtmlObject).addClass('active');
-				if($('.main_movie_slide_01').parent('li').hasClass('active')){
-					$main_movie_01.attr('src',movieURL_01);
-                    
-				}
-                if($('.main_movie_slide_02').parent('li').hasClass('active')){
-					$main_movie_02.attr('src',movieURL_02);
-                    
+				if($('.main_movie_slide').parent('li').hasClass('active')){
+					$main_movie.attr('src',movieURL);
 				}
 				if($('.bg_wht').hasClass('active')){
 					$main_kv_banner.addClass('gray_arr');
@@ -828,8 +735,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 			},
 			onSliderLoad: function(){ 
 				 $('.main_kv_banner ul>li').eq(0).addClass('active')
-				 $main_movie_01.attr('src',movieURL_01);
-                 $main_movie_02.attr('src',movieURL_02);
+				 $main_movie.attr('src',movieURL);
 				 $main_kv_banner.removeClass('gray_arr');
 			},
 			
