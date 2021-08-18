@@ -351,7 +351,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 					<ul>
                         <li style="background:#000 no-repeat center top;">
 							<div class="main_movie_slide main_movie_slide_01">
-                                <iframe src="https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM" allow="autoplay; encrypted-media" title="굽네 갈릭마왕 '맛법의 시작' 편" class="iframe_01"></iframe>
+                                <iframe src="https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM" allow="autoplay; encrypted-media" title="고바삭 1초 치킨" class="iframe_01"></iframe>
 <!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
 								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
 								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
