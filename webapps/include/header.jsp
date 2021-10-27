@@ -134,7 +134,9 @@ function userlogout() {
 	var RSAModulus = "<%=RSAModulus%>";
 	var RSAExponent = "<%=RSAExponent%>";
 </script>
-
+<style>
+#header.sticky #gnb ul>li a {padding: 0 10px 1.2285em;}
+</style>
 <form id="encModeForm" hidden="true">
 </form>
 
