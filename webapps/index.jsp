@@ -75,8 +75,12 @@
 }
 .main_kv_banner .bx-pager{bottom:6px;}
 
-/*20210804팝업숨김_추가*/
-.pop_layer_main{display: none !important;} 
+/*20210804팝업숨김_추가
+.pop_layer_main{display: none !important;}*/
+/*210818 SNS 세로 사이즈*/
+.main_under_contents .content_sns div {height: 370px !important;}	
+/*210818 굽네소식 세로 사이즈*/
+.main_under_contents .content_news div, .main_under_contents .content_seminar div{min-height:370px !important;}
 
 @media only screen and (max-width:1440px){
 .imgmap_web_img{    height: 89vh;}
@@ -296,11 +300,11 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 				<!-- 210209 메인팝업  -->
                
 				<section class="pop_layer_main layer1">
-					<a href="menu/new.jsp">
-						<img src="resources/images/main/210602_eggminitart_popup_PC.jpg" class="web_img" alt="이벤트 페이지 바로가기" /> 
+					<a href="/menu/new_s_w_f.jsp">
+						<img src="resources/images/main/swf20211028_PC.png" class="web_img" alt="이벤트 페이지 바로가기" /> 
 					</a>
-				    <a href="menu/new.jsp"> 
-						<img src="resources/images/main/210602_eggminitart_popup_M.jpg" class="mobile_img" alt="이벤트 페이지 바로가기" /> 
+				    <a href="/menu/new_s_w_f.jsp"> 
+						<img src="resources/images/main/swf20211028_M.png" class="mobile_img" alt="이벤트 페이지 바로가기" /> 
 					</a> 
 				    <div class="btn_wrap btn_blk"> 
 						<a href="javascript:void(0);" id="todayPopChk">오늘 하루 보지 않기</a>
@@ -583,15 +587,14 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 <!-- 										<span> 될놈될.avi 정신 못 차리게 맛있는 굽네 갈비천왕 땡기지 않냐굽? 댓글 남겨주면 ...<span class="blind">#굽네치킨 #굽네갈비천왕 #될놈될 #이벤트</span></span> -->
 <!-- 										<em>2018-03-07</em> -->
 <!-- 									</p>		 -->
-									<a href="https://www.facebook.com/goobne/photos/5723034864404870" target="_blank"></a>
+									<a href="http://bit.ly/3zrPJ5L" target="_blank"></a>
 									<p>
-										<span style="white-space: pre-line;font-size: 13px;">치킨 피자 중에 고민하는거? 멈춰!✋
-                                        8천원 할인 받고
-                                        굽네에서 둘다 먹자<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tab/1/16/1f355.png" style="border: 0px;"><img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/images/emoji.php/v9/tad/1/16/1f357.png" style="border: 0px;">
-@너랑나_둘이서_거뜬하잖아?
-* 일부 가맹점은 행사 제외
-될 수 있습니다!<span class="blind">#굽네치킨 #굽네피자 #초복 #7월할인</span></span>
-										<em>2021-07-08</em>
+										<span style="white-space: pre-line;font-size: 13px;">이 시국 여행간 썰 푼다.ssul<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_airplane.png" style="border: 0px;">
+										사실은 굽네 여행 이었음…또르륵 ಥ_ಥ
+										@굽네행_천국열차_탈_굽치니_괌
+										#굽네치킨 #굽네 #고추바사삭
+										굽네치킨 고추바사삭 주문<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_arrow.png" style="border: 0px;">bit.ly/3zrPJ5L</span>
+										<em>2021-08-18</em>
 									</p>		
 								</div>
 							</li>
@@ -609,12 +612,19 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 							<li class="content_news">
 								<div>
 									<h5>굽네소식</h5>					
-									<a href="https://baeminkr.onelink.me/XgL8/1a9b704f" target="_blank"></a>
+									<a href="http://bit.ly/3zrPJ5L" target="_blank"></a>
 									<ul>
-										<li style="overflow: visible;display: block;white-space: pre-line;font-size: 13px;">중복 맞이 배민에서 치킨+바게트볼 구매시 3천원 할인?!
-                                        7/17~21 기간 한정!
-                                        (일부 매장 행사 제외)
-                                        2021-07-08</li>
+										<li style="overflow: visible;display: block;white-space: pre-line;font-size: 13px;"> 굽네 1초마다 1마리가 팔리는 치킨<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_chicken.png" style="border: 0px;">
+										매일매일 먹고싶은 치킨은?!!<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_yummyface.png" style="border: 0px;">
+										빈칸의 정답을 댓글로 남겨주면
+										10명 추첨, 1초치킨 쏜다!
+										<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_onepinger.png" style="border: 0px;">
+										(~8/19일 발표)
+										#굽네치킨 #굽네피자
+										#1초치킨 #고추바사삭
+										굽네치킨 고추바사삭
+										주문<img height="13" width="13" alt="��" referrerpolicy="origin-when-cross-origin" src="resources/images/main/210818_emoji/210818_emoji_arrow.png" style="border: 0px;">bit.ly/3zrPJ5L
+										</li>
 									</ul>
 									<i>바로가기</i>					
 								</div>
