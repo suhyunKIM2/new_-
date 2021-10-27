@@ -358,8 +358,9 @@ function userlogout() {
     		<li>
     			<p>메뉴소개</p>
     			<ul>
+					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
 					<li><a href="/menu/new_c_p_d.jsp">치피디</a></li>
-					<li><a href="/menu/new.jsp">신메뉴</a></li>
+					<!-- <li><a href="/menu/new.jsp">신메뉴</a></li> 211026 주석처리-->
 <!-- 					<li><a href="/menu/menu_list.jsp">메뉴보기</a></li> -->
 					<li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
 					<li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>

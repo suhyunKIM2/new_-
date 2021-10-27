@@ -70,9 +70,10 @@
     width: 68.5%;
     transform: translate(-50%, 0px);
     border-radius: 16%;}
-
+.mobile_a{display: none;}
 	@media all and (max-width:500px) {
-		
+	.mobile_a{display: block;}
+    .pc_a{display: none;}
 	}
 </style>
 </head>
@@ -112,7 +113,8 @@
                     </div>
                     <img src="/resources/images/contents/menu/swf/img_03_2.png">
                     <div class="btn_box_01">
-                        <a href="https://www.facebook.com/goobne/photos/a.396876457020764/6278153538892997/" target="_blank"><img src="/resources/images/contents/menu/swf/img_04.png"></a>
+                        <a href="https://www.facebook.com/goobne/photos/a.396876457020764/6278153538892997/" target="_blank" class="pc_a"><img src="/resources/images/contents/menu/swf/img_04.png"></a>
+                        <a href="https://m.facebook.com/goobne/photos/a.396876457020764/6278153538892997/" target="_blank" class="mobile_a"><img src="/resources/images/contents/menu/swf/img_04.png"></a>
                     </div>
                     <img src="/resources/images/contents/menu/swf/img_05.png">
                     <div class="btn_box_02">
