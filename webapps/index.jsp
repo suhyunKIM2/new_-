@@ -353,6 +353,14 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 				<!-- main KV slider -->
 				<div class="main_kv_banner">
 					<ul>
+						<li style="background:#000 no-repeat center top;">
+							<div class="main_movie_slide main_movie_slide_03">
+                                <iframe src="https://www.youtube.com/embed/noa3tux1dzQ?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=noa3tux1dzQ" allow="autoplay; encrypted-media" title="굽네피자X아이키" class="iframe_03"></iframe>
+<!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
+								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
+								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
+							</div>					
+						</li>
                         <li style="background:#000 no-repeat center top;">
 							<div class="main_movie_slide main_movie_slide_01">
                                 <iframe src="https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM" allow="autoplay; encrypted-media" title="고바삭 1초 치킨" class="iframe_01"></iframe>
@@ -360,16 +368,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
 								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
 							</div>					
-						</li>
-                        
-						<li style="background:#000 no-repeat center top;">
-							<div class="main_movie_slide main_movie_slide_02">
-                                <iframe src="https://www.youtube.com/embed/x_TuR9I0Ums?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=x_TuR9I0Ums" allow="autoplay; encrypted-media" title="굽네 갈릭마왕 '맛법의 시작' 편" class="iframe_02"></iframe>
-<!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
-								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
-								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
-							</div>					
-						</li>
+						</li>                        
                         <li style="background:#fbfbf1 url('resources/images/main/img_main_hero_bg_2.jpg')no-repeat center top;">
 							<a href="http://order.goobne.co.kr:8081/login/login.aspx" target="_blank">
 								<img src="resources/images/main/img_main_hero_2.jpg" class="w_img" alt="굽네 양념반반 히어로"/>
@@ -406,6 +405,15 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 								<img src="resources/images/main/m_img_main_kv_210413.jpg" class="m_img" alt="굽네치킨의 기술로 만든 맛있는 닭가슴살"/>
 							</a>
 						</li>
+							<!--- 211029 유튜브 굽네 갈릭마왕 내림
+							<li style="background:#000 no-repeat center top;">
+							<div class="main_movie_slide main_movie_slide_02">
+                                <iframe src="https://www.youtube.com/embed/x_TuR9I0Ums?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=x_TuR9I0Ums" allow="autoplay; encrypted-media" title="굽네 갈릭마왕 '맛법의 시작' 편" class="iframe_02"></iframe>
+<!-- 								iframe ..... allow="autoplay; encrypted-media" 크롬 자동재생을 위한 속성값  -->
+<!---								<img src="resources/images/main/img_main_kv_movie.gif" class="w_img" alt=""/>
+								<img src="resources/images/main/m_img_main_movie.gif" class="m_img" alt=""/>							
+							</div>					
+						</li> --->
 <!--
 							<div style="position: relative; width: 1200px; margin: 0 auto;">
 							<dl class="ef1"><img src="resources/images/main/cicago_txt_ef.gif" class="w_img" alt="굽네 시카고 피자"/></dl>
@@ -785,6 +793,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 		
         var movieURL_01 = 'https://www.youtube.com/embed/C4j05la6lsM?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=C4j05la6lsM';
         var movieURL_02 = 'https://www.youtube.com/embed/x_TuR9I0Ums?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=x_TuR9I0Ums';
+		var movieURL_03 = 'https://www.youtube.com/embed/noa3tux1dzQ?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=noa3tux1dzQ';
 		
 		
 		$('.main_kv_banner ul').bxSlider({
