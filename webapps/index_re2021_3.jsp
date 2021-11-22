@@ -116,7 +116,7 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
     padding: 9px 15px;
 }
 .navbar-default{background-color:transparent;}
-.footer_bg{position:absolute;bottom:-43px; top:auto;width:100%;height:88px;background:url(/2021renew_img/footer_snow_3.svg)-50px;background-size: 107%;z-index: 2;}
+.footer_bg{position:absolute;bottom:-43px; top:auto;width:100%;height:88px;background:url(/2021renew_img/footer_snow_3.svg)-50px;background-size:1984px 88px;z-index: 2;}
 .bg_sub{    background: #ebf8ff;
     height: 40px;
     top: auto;
