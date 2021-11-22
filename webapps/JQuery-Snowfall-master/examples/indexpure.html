@@ -1,0 +1,26 @@
+
+
+<div class="darkBg"  id="body_div" style="height:100vh;width:100%;margin:auto;opacity: 0.7;">
+ 
+    <div id="collect" class="collectonme">
+        <p>Collect on meeeeee!!!</p>
+    </div>
+    <script src='/JQuery-Snowfall-master/dist/snowfall.min.js'></script>
+    <script type='text/javascript'>     
+        var collectOnMe = document.querySelectorAll('.collectonme')
+        
+        for(var i = 0; i < collectOnMe.length; i++){
+            collectOnMe[i].style.display = "none";
+        }
+        
+        //default options
+        snowFall.snow(document.getElementById("body_div"));
+
+        var testContainer = document.querySelector('.collectonme'),
+            testContainerIsSnowing = true;
+
+        snowFall.snow(testContainer);
+
+       
+         </script>
+    </div>

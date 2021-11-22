@@ -195,7 +195,7 @@ function userlogout() {
 <!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
 <!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
 <!-- 					<li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
-					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">메뉴얼</a></li>
+					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
 					<li><a href="/family/suggest_list.jsp">건의사항</a></li>
 					<li><a href="/family/notice_list.jsp">공지사항</a></li>
 					<li><a href="/family/discussion_list.jsp">토론방</a></li>
@@ -230,7 +230,7 @@ function userlogout() {
 				<li><a href="/menu/new_s_w_f.jsp">메뉴소개</a>
 					<ul>
                         <li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
-						<li><a href="/menu/new_c_p_d.jsp">치피디</a></li>
+						<li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
 						<!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
 						<li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
 						<li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
@@ -361,7 +361,7 @@ function userlogout() {
     			<p>메뉴소개</p>
     			<ul>
 					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
-					<li><a href="/menu/new_c_p_d.jsp">치피디</a></li>
+					<li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
 					<!-- <li><a href="/menu/new.jsp">신메뉴</a></li> 211026 주석처리-->
 <!-- 					<li><a href="/menu/menu_list.jsp">메뉴보기</a></li> -->
 					<li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
@@ -388,7 +388,7 @@ function userlogout() {
 <!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
 <!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
 					<!-- <li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
-					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">메뉴얼</a></li>
+					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
 					<li><a href="/family/suggest_list.jsp">건의사항</a></li>
 					<li><a href="/family/notice_list.jsp">공지사항</a></li>
 					<li><a href="/family/discussion_list.jsp">토론방</a></li>

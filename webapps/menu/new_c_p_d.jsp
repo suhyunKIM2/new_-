@@ -73,18 +73,18 @@
 	<!-- container -->
 	<div id="container" >
 		<section id="contents" >
-			<h2 class="cont_tit t_center">치피디</h2>
+			<h2 class="cont_tit t_center">치PD</h2>
 
 			<div class="wrap_standard new_menu_wrap">
 				<!--- S: 본문내용--->
 				<div class="bg_color">
-					<img src="/resources/images/contents/menu/cpd/211018/img_01.jpg">
-					<img src="/resources/images/contents/menu/cpd/211014/img_02.jpg">
+					<img src="/resources/images/contents/menu/cpd/211105/img_01.jpg">
+					<!--- 211102 10월 프로모션 종료 <img src="/resources/images/contents/menu/cpd/211014/img_02.jpg">
 					<div class="img_size">
 						<img src="/resources/images/contents/menu/cpd/211014/img_03_4.jpg">
 						<a href="http://kko.to/TdMHeRZfH"><img src="/resources/images/contents/menu/cpd/211014/img_03_2.jpg" style="margin-top: 15%;"></a>
-					</div>
-				</div>                
+					</div> --->
+				</div>
                 <!--- E: 본문내용--->
 			</div>
 
