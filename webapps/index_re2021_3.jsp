@@ -116,14 +116,7 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
     padding: 9px 15px;
 }
 .navbar-default{background-color:transparent;}
-.footer_bg{position:absolute;bottom:-43px; top:auto;width:100%;height:88px;background:url(/2021renew_img/footer_snow_3.svg)-50px;background-size:1984px 88px;z-index: 2;}
-.bg_sub{    background: #ebf8ff;
-    height: 40px;
-    top: auto;
-    bottom: -20px;
-    position: absolute;
-    z-index: 1;
-    width: 100%;}
+
 	</style>
    
 </head>
@@ -169,7 +162,7 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
  <div id="main" class="scroll-container">
 		<section class="section1">
           <!---S: 눈효과---->
-          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure.html" flush="true"/>
+          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_star.html" flush="true"/>
           <!---E: 눈효과---->
           <div class="footer_bg"></div>
           <div class="bg_sub"></div>
