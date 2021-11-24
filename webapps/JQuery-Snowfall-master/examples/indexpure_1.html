@@ -1,0 +1,35 @@
+<style>
+.footer_bg{position:absolute;bottom:-43px; top:auto;width:100%;height:88px;background:url(/2021renew_img/footer_snow_3.svg)-50px;background-size:1984px 88px;z-index: 2;}
+.bg_sub{    background: #ebf8ff;
+    height: 40px;
+    top: auto;
+    bottom: -20px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;}
+</style>
+
+<div class="darkBg"  id="body_div" style="height:100vh;width:100%;margin:auto;opacity: 0.7;">
+ 
+    <div id="collect" class="collectonme">
+        <p>Collect on meeeeee!!!</p>
+    </div>
+    <script src='/JQuery-Snowfall-master/dist/snowfall.min_1.js'></script>
+    <script type='text/javascript'>     
+        var collectOnMe = document.querySelectorAll('.collectonme')
+        
+        for(var i = 0; i < collectOnMe.length; i++){
+            collectOnMe[i].style.display = "none";
+        }
+        
+        //default options
+        snowFall.snow(document.getElementById("body_div"));
+
+        var testContainer = document.querySelector('.collectonme'),
+            testContainerIsSnowing = true;
+
+        snowFall.snow(testContainer);
+
+       
+         </script>
+    </div>

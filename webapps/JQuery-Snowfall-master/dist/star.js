@@ -1,14 +1,26 @@
-﻿// JavaScript Document
-/* script.js */
+﻿/* script.js */
+ 
+if(document.currentScript === undefined){
+  // IE 에서만 돌아갈 내용
+
+ var sf = new Snowflakes({
+          color: "#ffffff",
+          count: 75,
+          minOpacity: 0.2,
+          maxOpacity: 0.6
+        });
+  
+} else {
+  // IE 가 아닐 때 돌아갈 내용
 
 /*
 전체 불빛(작은 불빛 + 큰 불빛) 갯수를 count 변수에 담음
 큰 불빛 갯수를 blurCount 변수에 담음
 html에서 stage class 선택해서 stage 변수에 담음
 */
-const count     = 100;  
-const blurCount = 50;
-const stage = document.querySelector(".stage");
+var count     = 350;  
+var blurCount = 150;
+var stage = document.querySelector(".stage");
 
 /*
 - for문(반복문)으로 count 숫자보다 작을 시 makeLight() 함수 실행
@@ -17,7 +29,7 @@ const stage = document.querySelector(".stage");
   함수를 파라미터로 전달하여 한번 실행 후 종료
 */
 for (let i = 0; i < count; i++) {
-  setTimeout(() => {
+  setTimeout(function(){
     makeLight(i);
   }, 10 * i);
 }
@@ -29,15 +41,16 @@ for (let i = 0; i < count; i++) {
   makeLight() 함수가 한번 실행되고
   setInterval로 주어진 시간(초)동안 반복해서 실행
 */
-const timer = setInterval(() => {
+
+var timer = setInterval(function(){
   for (let i = 0; i < count; i++) {
-    setTimeout(() => {
+    setTimeout(function(){
       /*
       makeLight() 함수를 setinterval로 반복 실행 시
       실행과 동시에 생성한 span tag를 함수가 종료될때 html에서 삭제해줘야
       span tag가 반복적으로 계속 무한으로 생성되지 않음
       */
-      const removespan = document.querySelector("span");
+      var removespan = document.querySelector("span");
       removespan.parentNode.removeChild(removespan);
       // 삭제와 동시에 함수가 실행되면서 html에 span tag 생성됨
       makeLight(i);
@@ -48,7 +61,7 @@ const timer = setInterval(() => {
      for문에 setTimeout이 종료될때쯤 timer변수 지연시간이 끝나서 불빛이 나타나고
      종료되면 span tag를 삭제하고 다시 생성하면서 무한 반복됨
   */
-}, 3000);
+}, 5000);
 
 
 // makeLlight() 함수로 큰 별, 작은 별 만들기
@@ -83,7 +96,7 @@ function makeLight(i) {
   // [3] 애니메이션 효과를 적용할 타임라인 생성
   let tl = gsap.timeline({
     paused: true,          // 자기 자신을 가리킴
-    onComplate: () => {    // onComplate 함수를 하나 만들어서
+    onComplate: function(){   // onComplate 함수를 하나 만들어서
                            // 익명함수로 식별자를 값으로 전달
       span.remove();       // span tag 삭제
       makeLight(i);        // makeLight() 함수 실행
@@ -102,7 +115,7 @@ function makeLight(i) {
     */
     tl.to(span, {
       opacity: gsap.utils.random(0.1, 0),
-      duration: .5
+      duration: .8
     })
     /*
     [4-2] 불빛 움직임
@@ -126,8 +139,8 @@ function makeLight(i) {
     */
     tl.to(span, {
       opacity: 0,
-      duration: .5
-    }, ">-0.5")
+      duration: .1
+    }, ">-0.8")
                   
     // [4-4] 불빛 애니메이션 실행
     tl.play();
@@ -165,9 +178,10 @@ function makeLight(i) {
     */
     tl.to(span, {
       opacity:  .3,
-      duration: .3
+      duration: .1
     }, ">-0.3")
     // [4-8] 불빛 애니메이션 실행
     tl.play();
   }
+}
 }

@@ -42,7 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Full page scroll</title>
+	<title>굽네치킨</title>
 	<link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
@@ -61,7 +61,6 @@
     <link rel="stylesheet" href="/scrollreveal/css/markdown-highligth.css">
 
     <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 	.section1 {
@@ -118,47 +117,11 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
 .navbar-default{background-color:transparent;}
 
 	</style>
-   
+  <jsp:include page="/include/header_doc.jsp" flush="false"/>  
 </head>
 <body id="page-top" class="index darkBg">
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top"><img src="2021renew_img/logo_2.svg" style="height:45px;"></a>
-            </div>
+    <jsp:include page="/include/header_2021_re.jsp" flush="false"/>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#winners">온라인주문</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#intro">메뉴소개</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#using">매장찾기</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#source">이벤트</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
  <div id="main" class="scroll-container">
 		<section class="section1">
           <!---S: 눈효과---->

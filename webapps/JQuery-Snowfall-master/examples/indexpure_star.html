@@ -1,10 +1,32 @@
 <!-- index.html -->
-
+<style>
+.container_star,.snowflakes{top:-100px;transform: translateY(0);}
+.snowflake__inner:before{background-image: none !important;width: 1px; height: 1px;
+      /* 작은 불빛 컬러를 3단계로 주광색, 주백색, 전구색 으로 적용해서
+         불빛이 자연스럽게 빛나도록 쉐도우 적용 */
+      box-shadow:0px 0px 0px 3px #fff, 0px 0px 0px 3px #ffeee4, 0px 0px 12px 4px #ffff8a;
+      /* 불빛은 기본 사각형으로 생겨서 radius로 원형을 만들어줌 */
+      border-radius: 50%;
+      /* 작은 불빛 블러
+      filter: blur(1px); */
+      /* 큰 불빛 컬러
+        (작은 불빛은 그라디언트 쉐도우가 불빛의 width와 height의
+         크기보다 크기 때문에 백그라운드 컬러가 안보임)*/
+      background-color: rgb(255, 255, 255);}
+</style>
 <!-- [1] 스타일시트 연결 -->
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/star.scss">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/star.css">
+<!-- <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
+<script>
 
-<!-- [2] 인덱스 타이틀 작성 -->
-<title>Glow light</title>
+    var sf = new Snowflakes({
+          color: "#ffffff",
+          count: 75,
+          minOpacity: 0.2,
+          maxOpacity: 0.6
+        });
+</script>-->
+
 
 <!-- [3] 바디에 그림그릴 div 만들어놓고 간단한 문구도 추가 -->
 
@@ -13,6 +35,17 @@
     <p>Happy Christmas!</p>
     <p>행복한 연말 보내세요!</p>
   </div>-->
+  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    var snowflakes = new Snowflakes({
+            color: '#fff', // Default: "#5ECDEF"
+            container: document.querySelector('.container_star'), // Default: document.body
+            color: "#ffffff",
+          count: 50,
+          minOpacity: 0.1,
+          maxOpacity: 1
+        });
+</script>
   <!-- [3-1] stage 클래스 밑에 span 태그를 생성해서 불빛을 만들 예정 -->
   <div class="stage" id="stage1">
   </div>
@@ -23,4 +56,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
 <!-- [5] 애니메이션을 만들 스크립트도 추가 -->
-<script src="/JQuery-Snowfall-master/dist/star.js" type="text/javascript"></script>
+<!--<script src="/JQuery-Snowfall-master/dist/star.js" type="text/javascript"></script>-->
