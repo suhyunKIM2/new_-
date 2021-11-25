@@ -151,7 +151,8 @@ $(document).ready(function(){
 .ham_div_contents{position:fixed;right:0;top:0;width:30%;height:100vh;background:#fff;}
 </style>
 <link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_menu.css">
-
+<script src="../JQuery-Snowfall-master/dist/ham_motion.js"></script>
+<link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_style.css">
 
 <form id="encModeForm" hidden="true">
 </form>
@@ -188,18 +189,33 @@ $(document).ready(function(){
                     <li><a href=""><img src="2021renew_img/login.svg" style="height:18px;"></a></li>
                     
                     <li>
-                        <div class="hamburger" id="hamburger-11">
+                       <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
                         </div>
+
                     </li>
                 </ul>
-                <div class="ham_div_mask"></div>
+                <!--<div class="ham_div_mask"></div>
                     <div class="ham_div_contents">
                         djdjdj
-                    </div>    
+                    </div>    -->
                 
+                <div class="menu_bg"></div>
+                <div class="sidebar_menu">
+                     <div class="hamburger close_btn" id="hamburger-9">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                     <ul class="menu_wrap">
+                          <li><a href="#">메뉴01</a></li>
+                          <li><a href="#">메뉴02</a></li>
+                          <li><a href="#">메뉴03</a></li>
+                          <li><a href="#">메뉴04</a></li>
+                     </ul>
+                </div>
             </div>
         </div>
         
