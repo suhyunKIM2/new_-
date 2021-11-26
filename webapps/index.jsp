@@ -20,7 +20,8 @@
     top:0;min-height:700px;}
 .text_box_cpd_div img{    width: 50%;   margin-top: 18%;max-width: 358px;}
 .cpd_btn{width:86%;    margin:8% auto;}
-.cpd_btn li{width:49%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0;cursor: pointer;box-shadow:2px 2px 4px #4e3502;font-family:TmoneyRoundWindRegular;font-size:20px;}
+ /*.cpd_btn li{width:49%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0;cursor: pointer;box-shadow:2px 2px 4px #4e3502;font-family:TmoneyRoundWindRegular;font-size:20px;} */ 
+.cpd_btn li{width:49%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0; font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502; font-size:22px; margin-top:10px; letter-spacing:-1px; }
 .cpd_btn li:nth-child(1){background:#058442;color:#fff;}
 .cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
 .text_info{width:86%; font-size:20px;font-family:TmoneyRoundWindRegular;font-weight: 600;    margin: 7% auto;}

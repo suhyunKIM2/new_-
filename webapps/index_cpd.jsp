@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
 <style>
 * {padding:0;margin:0;list-style: none;text-decoration: none;}
 @font-face {
@@ -10,53 +11,132 @@
     font-weight: normal;
     font-style: normal;
 }
-.cpd_re{width:100%;height:100vh;position:relative;background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);/*background:#ebebed;*/    overflow: auto;}
-.cpd_re_web{background:url(http://www.goobne.co.kr/T_cpd_img/img_03_1.png) no-repeat right;position: absolute;left:50%;top:50%;transform: translate(-50%, -50%);width:80%;height:100vh;background-size:auto 100%;}
-.text_box_cpd_div img.logo{height:30px;display:block;margin-bottom:7%;margin-top:2%;margin-left: 3%;}
-.text_box_cpd{height:calc(100vh - 20%);width:40%;margin:20px;}
-.text_box_cpd_div{height:94vh;width:45%;text-align: center;background: #fcb832;    position: fixed;    z-index: 9;border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    top: 3%;}
-.text_box_cpd_div img{    width: 50%;   margin-top: 10%;}
+.section1 {
+		 background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);
+        position:relative;    background-size: 100% 100%;
+        
+
+	}
+body { background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);}   
+.contents_body_list li{display:inline-block;width:49%;vertical-align: text-top;text-align: right;}    
+.contents_body_list li.li_position{position: relative;height:100vh;}
+.contents_body_list li.bg_01{background:#fcb832;height:100vh;border-bottom-right-radius: 50%;border-top-right-radius: 50%;}
+.contents_body_list li .logo{height:30px;padding:10px;}
+.contents_body_list li .contents_ul_01 li{display:block;    text-align: left;}
+.contents_body_list li .contents_ul_01 li .contents_div_01{position:absolute;top:50%;transform: translateY(-50%);margin-top:-10px;width: 44%;padding: 0 5%;}
+.contents_body_list li .contents_ul_01 li .contents_div_01 .contents_ul_02 li img{height:165px;margin-bottom: 4%;}
+.contents_body_list li .contents_ul_02 li{text-align: center;width: 100%;}
+.text_info{width:86%; font-size:20px;font-family:TmoneyRoundWindRegular;font-weight: 600;  }
 .cpd_btn{width:86%;    margin:8% auto;}
-.cpd_btn li{width:49%; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0;font-weight: 600;cursor: pointer;}
+.contents_body_list li .contents_ul_02 li .cpd_btn li{width:46%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0; font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502; font-size:22px; margin-top:10px; letter-spacing:-1px; }
 .cpd_btn li:nth-child(1){background:#058442;color:#fff;}
 .cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
-.text_info{width:86%; font-size:20px;font-family:TmoneyRoundWindRegular;font-weight: 600;    margin: 7% auto;}
-.mobile_btn_box{width:100%; }
-.mobile_btn_box ul{margin:0;padding:5% 0;width: 100%;text-align: center;}
-.cpd_re_mobile{display:none;position: absolute;left:50%;top:2%;transform: translate(-50%, 0);width: 97%;text-align: center;}
-.cpd_re_mobile .mobile_img_01{height:26px;float:left;}
-.cpd_re_mobile .mobile_img_02{height:auto;width: 24%;float:right;}
-.cpd_re_mobile .mobile_img_03{width:100%;}
-@media only screen and (max-width:1369px){
-.cpd_re_web{width: 100%;max-width: 100%;background-size: auto 100%;}
-/*.cpd_re{background:#ededed;}*/
-}
+.img_position{height:100%;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+.mobile {display: none;}
+.mobile .mobile_top{width:100%;position:absolute;top:0;}
+.mobile .mobile_top ul li{width:46%;padding:2%;}
+.mobile .mobile_top ul li img{height:50px;}
+.mobile .mobile_top ul li:nth-child(1) img{height:35px;}
+.mobile .mobile_top ul li:nth-child(1){float:left;}
+.mobile .mobile_top ul li:nth-child(2){float:right;text-align: right;}
+.mobile .mobile_bottom{width:100%;position:absolute;bottom:20px;height:50px;line-height: 50px;}
+.mobile .mobile_bottom .cpd_btn{margin:0 auto;}
+.mobile .mobile_bottom .cpd_btn li{border-radius: 20px;font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502;letter-spacing:-1px; }
+.mobile .mobile_bottom .cpd_btn li:nth-child(1){background:#058442;color:#fff;}
+.mobile .mobile_bottom .cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
+.mobile .mobile_bottom ul li{width:46%;padding:1%;display: inline-block;text-align: center;}
+
 @media only screen and (max-width:1300px){
-.text_info{text-align:left;}
-.text_box_cpd_div img.name_svg{width:67%;}
+.contents_body_list li .contents_ul_01 li .contents_div_01{padding:0;}
+.contents_body_list li .contents_ul_02 li .cpd_btn li{font-size:18px;}
+.text_info{font-size:17px;}
+.contents_body_list li .contents_ul_01 li .contents_div_01 .contents_ul_02 li img{height:130px;}
+.img_position{height:auto;width:100%;}
 }
-@media only screen and (max-width:1034px){
-.cpd_btn{width:88%;}
-.text_info{font-size:15px;}
-.text_box_cpd_div img.logo{height:30px;}
-.text_box_cpd_div{margin:0;}
-.text_box_cpd_div img{    width: 80%;}
-.cpd_re_mobile{display:block;}
-.cpd_re_web,.text_box_cpd_div{display:none;}
-.cpd_btn li{width:47%;}
+@media only screen and (max-width:853px){
+.contents_body_list li.bg_01{display:none;}
+.mobile {display: block;}
+.contents_body_list li.li_position{width:100%;}
+.img_position{height:calc(100vh - 140px);width:auto;right:auto;left:50%;top:50%;transform: translate(-50%,-50%);position:fixed;}
+}
+@media only screen and (max-width:500px){
+.img_position{width:100%;height:auto;}
+.mobile .mobile_bottom .cpd_btn{width:97%;}
+}
+@media only screen and (max-width:320px){
+.mobile .mobile_bottom ul li{width:45%;}
+}
+</style>
+<script>
+function lnk(){
+	var link = 'https://www.goobne.co.kr/index_1.jsp';
+//    window.location.href = link;        
+ //   window.location.replace(link);     
+    window.open(link);  
+}
+function lnk1(){
+    var link = 'https://order.goobne.co.kr:8481/login/login.aspx';
+ //   window.location.href = link;        
+ //   window.location.replace(link);     
+    window.open(link);  
 }
 
-</style>
-<div class="cpd_re">
+	
+</script>
+
+
+<body id="page-top" class="index darkBg">
+
+ <div id="main" class="scroll-container">
+		<section class="section1">
+             <ul class="contents_body_list">
+                 <li class="bg_01">
+                     <ul class="contents_ul_01">
+                         <li><img src="http://www.goobne.co.kr/T_cpd_img/logo.svg" class="logo"></li>
+                         <li>
+                             <div class="contents_div_01">
+                                 <ul class="contents_ul_02">
+                                     <li><img src="http://www.goobne.co.kr/T_cpd_img/img_01.svg" class="name_svg"></li>
+                                     <li class="text_info">굽네 T-Day 할인받기는 온라인 주문하기로 이용해주세요!</li>
+                                     <li>
+                                         <ul class="cpd_btn">
+                                            <li onClick="javascript:lnk1();">온라인 주문하기</li>
+                                            <li onClick="javascript:lnk();">굽네홈페이지</li>
+                                        </ul>
+                                    </li>
+                                 </ul>
+                             </div>
+                         </li>
+                     </ul>
+                 </li>
+                 <li class="li_position"><img src="http://www.goobne.co.kr/T_cpd_img/img_03_1.png" class="img_position"></li>
+             </ul>
+             <div class="mobile">
+                 <div class="mobile_top">
+                     <ul>
+                         <li><img src="http://www.goobne.co.kr/T_cpd_img/logo.svg" class="logo"></li>
+                         <li><img src="http://www.goobne.co.kr/T_cpd_img/img_01.svg" class="name_svg"></li>
+                     </ul>
+                 </div>
+                 <div class="mobile_bottom">
+                     <ul class="cpd_btn">
+                        <li onClick="javascript:lnk1();">온라인 주문하기</li>
+                        <li onClick="javascript:lnk();">굽네홈페이지</li>
+                    </ul>
+                 </div>
+             </div>
+		</section>
+	</div>
+	
+</body>
+<!--<div class="cpd_re">
     <div class="text_box_cpd_div">
                 <img src="http://www.goobne.co.kr/T_cpd_img/logo.svg" class="logo">
                 <img src="http://www.goobne.co.kr/T_cpd_img/img_01.svg" class="name_svg">
                 <div class="text_info">굽네 T-Day 할인받기는 온라인 주문하기로 이용해주세요!</div>
                 <ul class="cpd_btn">
-                    <li onClick="">온라인 주문하기</li>
-                    <li onClick="location.href='http://www.goobne.co.kr/'">굽네홈페이지</li>
+                    <li onClick="javascript:lnk1();">온라인 주문하기</li>
+                    <li onClick="javascript:lnk();">굽네홈페이지</li>
                 </ul>
             </div>
     <div class="cpd_re_web">
@@ -69,9 +149,18 @@
         <img src="http://www.goobne.co.kr/T_cpd_img/img_03_1.png" class="mobile_img_03">
         <div class="mobile_btn_box">
            <ul class="cpd_btn">
-                    <li onClick="">온라인 주문하기</li>
-                    <li onClick="location.href='http://www.goobne.co.kr/'">굽네홈페이지</li>
+                    <li onClick="javascript:lnk1();">온라인 주문하기</li>
+                    <li onClick="javascript:lnk();">굽네홈페이지</li>
                 </ul> 
         </div>
     </div>
-</div>
+</div>-->
+<script src="/onepage_fullscreen/full-page-scroll.js"></script>
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: false,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
