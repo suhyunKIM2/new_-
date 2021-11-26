@@ -31,7 +31,7 @@ body { background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);}
 .contents_body_list li .contents_ul_02 li .cpd_btn li{width:46%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0; font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502; font-size:22px; margin-top:10px; letter-spacing:-1px; }
 .cpd_btn li:nth-child(1){background:#058442;color:#fff;}
 .cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
-.img_position{height:100%;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+.img_position{height:100%;position: absolute;right: 8%;top: 50%;transform: translateY(-50%);}
 .mobile {display: none;}
 .mobile .mobile_top{width:100%;position:absolute;top:0;}
 .mobile .mobile_top ul li{width:46%;padding:2%;}
