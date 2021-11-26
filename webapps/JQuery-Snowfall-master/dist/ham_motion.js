@@ -21,4 +21,19 @@ $(document).ready(function(){
                     });  */
     });
 
-});
+/*아코디언메뉴*/
+
+$(".menu_wrap li p").hide();
+
+  // $("ul > li:first-child a").next().show();
+  $(".menu_wrap li a").click(function(){
+    $(this).next().slideToggle(300);
+    // $(this).next().slideDown(300);
+    $(".menu_wrap li a").not(this).next().slideUp(300);
+    $(".menu_wrap li a").not(this).children('#hamburger-90').removeClass('is-active');
+    return false;
+  });
+  $(".menu_wrap li a").eq(0).trigger("click");
+ });
+
+

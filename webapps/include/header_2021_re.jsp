@@ -149,6 +149,17 @@ $(document).ready(function(){
 .ham_ul li{display: inline-block;vertical-align: middle;}
 .ham_div_mask{position:fixed;right:0;top:0;width:100%;height:100vh;background:rgba(0,0,0,0.7);}
 .ham_div_contents{position:fixed;right:0;top:0;width:30%;height:100vh;background:#fff;}
+.hamburger_top_bar{width:100%;padding:10px 0;background:#ca291a;height:50px;line-height: 50px;}
+.navbar-nav_user_log{float:left;margin-left:15px;height:50px;line-height: 50px;}
+.Notice_div_ham{clear:both;height:30%;background:url(/2021renew_img/ham_icon_01.svg)no-repeat -25px top,url(/2021renew_img/ham_icon_02.svg)no-repeat 103% 92%;background-size:25% auto,15% auto;line-height: normal;position:relative;border-bottom: 1px solid #eee;}
+.Notice_div_ham_ul{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;}
+.Notice_div_ham_ul li:nth-child(1){margin-bottom:2%;}
+.Notice_div_ham_ul li:nth-child(3){width:42%;text-align: center;margin:3% auto;padding:1% 0;border:1px solid #000;border-radius:20px;}
+
+/*아코디언메뉴*/
+.menu_wrap li p{font-weight:500;font-size: 15px;}
+.menu_wrap li a .hamburger{background:#eee;width:40px;height:40px;border-radius: 50%;}
+.menu_wrap li a .hamburger .line{margin:0;    background-color: #000;}
 </style>
 <link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_menu.css">
 <script src="../JQuery-Snowfall-master/dist/ham_motion.js"></script>
@@ -162,6 +173,7 @@ $(document).ready(function(){
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
+            
             <div class="navbar-header page-scroll">
                <a class="navbar-brand" href="#page-top"><img src="2021renew_img/logo_2.svg" style="height:45px;"></a>
             </div>
@@ -204,16 +216,64 @@ $(document).ready(function(){
                 
                 <div class="menu_bg"></div>
                 <div class="sidebar_menu">
-                     <div class="hamburger close_btn" id="hamburger-9">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                    <div class="navbar-nav_user_log">
+                        <a href=""><img src="2021renew_img/login.svg" style="height:25px;"></a>
+                    </div>
+                    <div class="hamburger_top_bar">
+                         <div class="hamburger close_btn" id="hamburger-9">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="Notice_div_ham">
+                        <ul class="Notice_div_ham_ul">
+                            <li><img src="2021renew_img/logo_red.svg" style="height:35px;"></li>
+                            <li>주문전화 1899-9494</li>
+                            <li><a href=""><img src="2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
+                        </ul>
                     </div>
                      <ul class="menu_wrap">
-                          <li><a href="#">메뉴01</a></li>
-                          <li><a href="#">메뉴02</a></li>
-                          <li><a href="#">메뉴03</a></li>
-                          <li><a href="#">메뉴04</a></li>
+                          <li>
+                              <a href="#">
+                                 <span> 메뉴01</span>
+                                 <div class="hamburger is-active" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <p><a href="">메뉴리스트</a></p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                 <span> 메뉴01</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <p><a href="">메뉴리스트</a></p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                 <span> 메뉴01</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <p><a href="">메뉴리스트</a></p>
+                          </li>
+                          <li>
+                              <a href="#">
+                                 <span> 메뉴01</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <p><a href="">메뉴리스트</a></p>
+                          </li>
                      </ul>
                 </div>
             </div>

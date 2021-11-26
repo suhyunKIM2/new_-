@@ -64,7 +64,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 	.section1 {
-		background-color: #b53c26;
+		background-color: #ca291a;
         position:relative;
 	}
 
