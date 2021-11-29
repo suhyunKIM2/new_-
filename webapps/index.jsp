@@ -97,7 +97,7 @@ function lnk1(){
                              <div class="contents_div_01">
                                  <ul class="contents_ul_02">
                                      <li><img src="http://www.goobne.co.kr/T_cpd_img/img_01.svg" class="name_svg"></li>
-                                     <li class="text_info">굽네 T-Day 할인받기는 온라인 주문하기로 이용해주세요!</li>
+                                     <li class="text_info" style="display:none;">굽네 T-Day 할인받기는 온라인 주문하기로 이용해주세요!</li>
                                      <li>
                                          <ul class="cpd_btn">
                                             <li onClick="javascript:lnk1();">온라인 주문하기</li>
