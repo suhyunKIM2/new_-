@@ -29,8 +29,8 @@ body { background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);}
 .text_info{width:86%; font-size:20px;font-family:TmoneyRoundWindRegular;font-weight: 600;  }
 .cpd_btn{width:86%;    margin:8% auto;}
 .contents_body_list li .contents_ul_02 li .cpd_btn li{width:46%;max-width: 297px; display: inline-block;text-align: center;border-radius: 20px;padding:20px 0; font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502; font-size:22px; margin-top:10px; letter-spacing:-1px; }
-.cpd_btn li:nth-child(1){background:#058442;color:#fff;}
-.cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
+.cpd_btn li:nth-child(2){background:#058442;color:#fff;}
+.cpd_btn li:nth-child(1){background:#da1b22;color:#fff;}
 .img_position{height:100%;position: absolute;right: 8%;top: 50%;transform: translateY(-50%);}
 .mobile {display: none;}
 .mobile .mobile_top{width:100%;position:absolute;top:0;}
@@ -42,8 +42,8 @@ body { background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);}
 .mobile .mobile_bottom{width:100%;position:absolute;bottom:20px;height:50px;line-height: 50px;}
 .mobile .mobile_bottom .cpd_btn{margin:0 auto;}
 .mobile .mobile_bottom .cpd_btn li{border-radius: 20px;font-weight:600; cursor: pointer;box-shadow:2px 2px 4px #4e3502; border:2px solid #4e3502;letter-spacing:-1px; }
-.mobile .mobile_bottom .cpd_btn li:nth-child(1){background:#058442;color:#fff;}
-.mobile .mobile_bottom .cpd_btn li:nth-child(2){background:#da1b22;color:#fff;}
+.mobile .mobile_bottom .cpd_btn li:nth-child(2){background:#058442;color:#fff;}
+.mobile .mobile_bottom .cpd_btn li:nth-child(1){background:#da1b22;color:#fff;}
 .mobile .mobile_bottom ul li{width:46%;padding:1%;display: inline-block;text-align: center;}
 
 @media only screen and (max-width:1300px){
@@ -100,8 +100,8 @@ function lnk1(){
                                      <li class="text_info" style="display:none;">굽네 T-Day 할인받기는 온라인 주문하기로 이용해주세요!</li>
                                      <li>
                                          <ul class="cpd_btn">
+                                            <li onClick="javascript:lnk();">굽네 홈페이지</li>
                                             <li onClick="javascript:lnk1();">온라인 주문하기</li>
-                                            <li onClick="javascript:lnk();">굽네홈페이지</li>
                                         </ul>
                                     </li>
                                  </ul>
@@ -120,8 +120,8 @@ function lnk1(){
                  </div>
                  <div class="mobile_bottom">
                      <ul class="cpd_btn">
+                         <li onClick="javascript:lnk();">굽네 홈페이지</li>
                         <li onClick="javascript:lnk1();">온라인 주문하기</li>
-                        <li onClick="javascript:lnk();">굽네홈페이지</li>
                     </ul>
                  </div>
              </div>
