@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<meta name="naver-site-verification" content="0929bebe183f961be860bccacc4d5c1c048ec5e8"/>
+<!-- <meta http-equiv="cache-control" content="no-cache" /> -->
+<!-- <meta name="naver-site-verification" content="0929bebe183f961be860bccacc4d5c1c048ec5e8"/> -->
 
 <!-- 네이버 봇 정보 -->
-<meta name="description" content="오븐구이 전문 치킨&피자 프랜차이즈, 굽네 갈비천왕, 굽네 볼케이노, 그릴드비프 갈비천왕 피자 등 메뉴소개, 창업정보, 온라인주문" />
+<meta name="description" content="오븐 요리 마스터 '굽네' 공식 홈페이지 - 치킨, 피자, 디저트 등 제품 소개, 매장 및 온라인 주문 안내" />
 <link href="https://www.goobne.co.kr/" rel="canonical" />
 <meta property="og:url" content="https://www.goobne.co.kr/" />
 <meta property="og:site_name" content="굽네치킨" />
 <meta property="og:title" content="굽네치킨" />
-<meta property="og:description" content="오븐구이 전문 치킨&피자 프랜차이즈, 굽네 갈비천왕, 굽네 볼케이노, 그릴드비프 갈비천왕 피자 등 메뉴소개, 창업정보, 온라인주문" />
+<meta property="og:description" content="오븐 요리 마스터 '굽네' 공식 홈페이지 - 치킨, 피자, 디저트 등 제품 소개, 매장 및 온라인 주문 안내" />
 <meta property="og:type"  content="website" />
 <!-- <meta property="og:image"  content="http://" /> -->
 <!-- <meta property="og:image:width"  content="200" /> -->

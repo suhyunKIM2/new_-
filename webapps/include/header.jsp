@@ -143,7 +143,7 @@ function userlogout() {
 <header id="header">
 	<div class="header_top">
 		<p class="header_call">주문전화<strong>1661-9494</strong></p>
-        <h1 class="logo"><a href="/" >Goobne</a></h1>
+        <h1 class="logo"><a href="/index_1.jsp" >Goobne</a></h1>
 		<!-- 로그인 전 -->
 	<% if (UserIdx.equals("")) { %>
 		<div class="gnb_member">

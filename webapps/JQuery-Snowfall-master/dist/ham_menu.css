@@ -411,8 +411,8 @@
 	-o-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 }
-#hamburger-90 .line{width:15px;background-color: #363636;position:absolute;top:19px;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);left: 8px;}
-#hamburger-90 .line:nth-child(2){-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);right:8px;left:auto;}
+#hamburger-90 .line{width:10px;background-color: #363636;position:absolute;top:13px;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);left: 7px;}
+#hamburger-90 .line:nth-child(2){-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);right:7px;left:auto;}
 #hamburger-90.is-active {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -427,8 +427,8 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border: 5px solid transparent;
 	top: calc(50% - 20px);
 	left: calc(50% - 20px);
@@ -443,7 +443,7 @@
 }
 
 #hamburger-90.is-active .line {
-	width: 18px;
+	width: 10px;
     background-color: #fff;
 }
 
@@ -457,7 +457,7 @@
 	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
     transform: rotate(135deg);
-    left: 11px;
+    left: 10px;
 }
 
 /* TEN */

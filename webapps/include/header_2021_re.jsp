@@ -137,10 +137,13 @@ function userlogout() {
 <script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
 <script>
 $(document).ready(function(){
-  $(".hamburger").click(function(){
-    $(this).toggleClass("is-active");
+  $(".menu_wrap li a").click(function(){
+  $('.menu_wrap li a #hamburger-90').toggleClass("is-active");
   });
+$(".menu_wrap li a").eq(0).trigger("click");
 });
+
+
 </script>
 <style>
 #header.sticky #gnb ul>li a {padding: 0 10px 1.2285em;}
@@ -151,15 +154,38 @@ $(document).ready(function(){
 .ham_div_contents{position:fixed;right:0;top:0;width:30%;height:100vh;background:#fff;}
 .hamburger_top_bar{width:100%;padding:10px 0;background:#ca291a;height:50px;line-height: 50px;}
 .navbar-nav_user_log{float:left;margin-left:15px;height:50px;line-height: 50px;}
-.Notice_div_ham{clear:both;height:30%;background:url(/2021renew_img/ham_icon_01.svg)no-repeat -25px top,url(/2021renew_img/ham_icon_02.svg)no-repeat 103% 92%;background-size:25% auto,15% auto;line-height: normal;position:relative;border-bottom: 1px solid #eee;}
+.Notice_div_ham{clear:both;height:20%;background:url(/2021renew_img/ham_icon_01.svg)no-repeat -25px top,url(/2021renew_img/ham_icon_02.svg)no-repeat 103% 92%;background-size:25% auto,15% auto;line-height: normal;position:relative;border-bottom: 1px solid #eee;}
 .Notice_div_ham_ul{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;}
 .Notice_div_ham_ul li:nth-child(1){margin-bottom:2%;}
 .Notice_div_ham_ul li:nth-child(3){width:42%;text-align: center;margin:3% auto;padding:1% 0;border:1px solid #000;border-radius:20px;}
+.Notice_div_ham_ul li:nth-child(3):hover{background:#ca291a;}
+.Notice_div_ham_ul li:nth-child(3):hover a{color:#fff;text-decoration: none;}
 
 /*아코디언메뉴*/
-.menu_wrap li p{font-weight:500;font-size: 15px;}
-.menu_wrap li a .hamburger{background:#eee;width:40px;height:40px;border-radius: 50%;}
+.menu_wrap {padding:0;}
+.menu_wrap li .list_hidden{font-weight:500;font-size: 15px;clear:both;background: #f3f3f3;height: auto;overflow:hidden;}
+.menu_wrap li a{width:100%;border-bottom:1px solid #eee;padding: 0 4%;}
+.menu_wrap li a .hamburger{background:#eee;width:30px;height:30px;border-radius: 50%;}
 .menu_wrap li a .hamburger .line{margin:0;    background-color: #000;}
+.menu_wrap li{text-align: left;clear:both;}
+.menu_wrap li a, .menu_wrap li a span{float:left;}
+#hamburger-90{float:right;margin-top: 12px;}
+.ham_ul_list{width:100%;padding:0 4%;}
+.ham_ul_list li a{padding:0;border-bottom:0.1px dotted #bfbfbf;padding: 3%;line-height: normal;font-size:13px !important;    position: relative;}
+.ham_ul_list li a:hover{color:#ca291a !important;}
+.ham_ul_list li a:after{content:'>';position:absolute;right:3%;-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;}
+.ham_ul_list li:last-child a{border-bottom:0;}
+.ham_footer{    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: normal;
+    background: #eee;
+    color: #727272;
+    font-size: 10px;
+    padding: 2% 0;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#aacc03;}    
 </style>
 <link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_menu.css">
 <script src="../JQuery-Snowfall-master/dist/ham_motion.js"></script>
@@ -236,45 +262,174 @@ $(document).ready(function(){
                      <ul class="menu_wrap">
                           <li>
                               <a href="#">
-                                 <span> 메뉴01</span>
+                                 <span> 브랜드소개</span>
                                  <div class="hamburger is-active" id="hamburger-90">
                                     <span class="line"></span>
                                     <span class="line"></span>
                                 </div>
                               </a>
-                              <p><a href="">메뉴리스트</a></p>
+                            <div class="list_hidden">
+                                <ul class="ham_ul_list">
+            <!-- 						<li><a href="/brand/ceo.jsp">회장 인사말</a></li> -->
+                                    <li><a href="/brand/brandstory.jsp">브랜드스토리</a></li>
+                                    <li><a href="/brand/about.jsp">연혁 &amp; 수상</a></li>
+                                    <li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
+                                    <li><a href="/brand/map.jsp">오시는길</a></li>
+                                    <li><a href="/brand/phil.jsp">경영 철학</a></li>
+                                    <li><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
+                                </ul>
+                            </div>
                           </li>
                           <li>
                               <a href="#">
-                                 <span> 메뉴01</span>
+                                 <span> 메뉴소개</span>
                                  <div class="hamburger" id="hamburger-90">
                                     <span class="line"></span>
                                     <span class="line"></span>
                                 </div>
                               </a>
-                              <p><a href="">메뉴리스트</a></p>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+            <!-- 					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
+                                    <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
+                                    <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
+                                    <li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
+                                    <li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
+                                    <li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
+                                    <!-- <li><a href="">세트메뉴</a></li>
+                                    <li><a href="">사이드메뉴</a></li> -->
+                                    <li><a href="/menu/recipe_list.jsp">레시피소개</a></li>
+            <!-- 						<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
+                                </ul>
+                            </div>
                           </li>
                           <li>
                               <a href="#">
-                                 <span> 메뉴01</span>
+                                 <span> 매장찾기</span>
                                  <div class="hamburger" id="hamburger-90">
                                     <span class="line"></span>
                                     <span class="line"></span>
                                 </div>
                               </a>
-                              <p><a href="">메뉴리스트</a></p>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                    <li><a href="/store/search_newstore.jsp">월별 신규매장</a></li>
+                                    <li><a href="/store/search_store.jsp">국내매장</a></li>
+                                    <li><a href="/global.jsp">해외매장/Global</a></li>
+                                </ul>
+                            </div>
                           </li>
                           <li>
                               <a href="#">
-                                 <span> 메뉴01</span>
+                                 <span> 창업정보</span>
                                  <div class="hamburger" id="hamburger-90">
                                     <span class="line"></span>
                                     <span class="line"></span>
                                 </div>
                               </a>
-                              <p><a href="">메뉴리스트</a></p>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                    <li><a href="/franchise/franchise.jsp">창업정보</a></li>
+                                    <li><a href="/franchise/franchise_qna.jsp">창업 FAQ</a></li>
+                                    <li><a href="/franchise/franchise_seminar.jsp">창업 전화상담</a></li>
+                                    <li><a href="/franchise/franchise_consulting.jsp">온라인 창업상담</a></li>
+                                    <li><a href="/franchise/franchise_cost.jsp">창업비용</a></li>
+                                </ul>
+                            </div>
                           </li>
+                          <li>
+                              <a href="#">
+                                 <span> 홍보센터</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                    <li><a href="/advertise/press_list.jsp">언론보도</a></li>
+                                    <li><a href="/advertise/social.jsp">굽네 소셜미디어</a></li>
+                                    <li><a href="/advertise/media.jsp">굽네TVCF소개</a></li>
+            <!-- 						<li><a href="/advertise/schedule_list.jsp">TVCF광고일정</a></li> -->
+                                    <li><a href="/advertise/contribution_list.jsp">3生 캠페인 소개</a></li>
+                                    <li><a href="/advertise/goobcar_list.jsp">굽카 히스토리</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li>
+                              <a href="#">
+                                 <span> 이벤트</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                    <li><a href="/event/event_list.jsp">진행중인 이벤트</a></li>
+                                <% //if ("".equals(UserIdx)) { %>
+                                    <!-- <li><a href="/member/login.jsp">굽카후기 이벤트</a></li> -->
+                                <% //} else { %>
+                                    <li><a href="/event/goobcarepil_list.jsp">굽카후기 이벤트</a></li>
+                                <% //} %>
+                                    <li><a href="/event/win_list.jsp">당첨자 발표</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <% if ("".equals(UserIdx)) { %>
+                          <li>
+                              <a href="#">
+                                 <span> 고객지원센터</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                <% if ("".equals(UserIdx)) { %>	
+                                    <li><a href="/member/login.jsp">고객의 소리</a></li>
+                                    <li><a href="/member/login.jsp">고객공모전</a></li>
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>
+                                    <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
+                                 <% } else { %>
+                                    <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
+                                    <li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
+                                    <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
+                                <% } %>
+                                </ul>
+                            </div>
+                          </li>
+                        <% } else { %>
+                            <li>
+                              <a href="#">
+                                 <span> 고객지원센터</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                <% if ("".equals(UserIdx)) { %>	
+                                    <li><a href="/customer/cscenter_regi.jsp">고객지원센터</a></li>
+                                    <li><a href="/member/login.jsp">고객의 소리</a></li>
+                                    <li><a href="/member/login.jsp">고객공모전</a></li>
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>
+                                    <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
+                            <% } else { %>
+                                    <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
+                                    <li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
+                                    <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
+                            <% } %>
+                                </ul>
+                            </div>
+                          </li>
+                        <% } %>  
                      </ul>
+                     <div class="ham_footer">COPYRIGHT. 2009-2016 GOOBNE.CO.ALL RIGHT RESERVED</div>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ $(document).ready(function(){
         $('.menu_bg').show(); 
         $('.sidebar_menu').show().animate({
             right:0
-        },500); 
+        },300); 
     });
     $('.close_btn').on('click', function(){
         $('.close_btn').removeClass('is-active');
@@ -15,7 +15,7 @@ $(document).ready(function(){
         $('.menu_bg').hide(); 
         $('.sidebar_menu').animate({
             right: '-' + 50 + '%'
-            },500); 
+            },300); 
                    /* },function(){
                         $('.sidebar_menu').hide();          
                     });  */
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 /*아코디언메뉴*/
 
-$(".menu_wrap li p").hide();
+$(".menu_wrap li .list_hidden").hide();
 
   // $("ul > li:first-child a").next().show();
   $(".menu_wrap li a").click(function(){
@@ -34,6 +34,10 @@ $(".menu_wrap li p").hide();
     return false;
   });
   $(".menu_wrap li a").eq(0).trigger("click");
+  
+
+
  });
+ 
 
 
