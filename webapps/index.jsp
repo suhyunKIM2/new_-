@@ -1,8 +1,30 @@
-﻿<title>굽네치킨</title>
+﻿<head>
+<title>굽네치킨</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- 네이버 봇 정보 -->
+<meta name="description" content="오븐 요리 마스터 '굽네' 공식 홈페이지 - 치킨, 피자, 디저트 등 제품 소개, 매장 및 온라인 주문 안내" />
+<link href="https://www.goobne.co.kr/" rel="canonical" />
+<meta property="og:url" content="https://www.goobne.co.kr/" />
+<meta property="og:site_name" content="굽네치킨" />
+<meta property="og:title" content="굽네치킨" />
+<meta property="og:description" content="오븐 요리 마스터 '굽네' 공식 홈페이지 - 치킨, 피자, 디저트 등 제품 소개, 매장 및 온라인 주문 안내" />
+<meta property="og:type"  content="website" />
 <link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "name": "굽네치킨",
+ "url": "https://www.goobne.co.kr",
+ "sameAs": [
+   "https://www.instagram.com/goobne___official/?utm_medium=copy_link",
+   "https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg",
+   "https://www.facebook.com/goobne"
+ ]
+}
+</script>
+<!-- 네이버 봇 정보 -->
 <style>
 * {padding:0;margin:0;list-style: none;text-decoration: none;}
 @font-face {
@@ -67,6 +89,7 @@ body { background:url(http://www.goobne.co.kr/T_cpd_img/bg_1.png);}
 .mobile .mobile_bottom ul li{width:45%;}
 }
 </style>
+</head>
 <script>
 function lnk(){
 	var link = 'https://www.goobne.co.kr/index_1.jsp';

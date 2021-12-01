@@ -42,7 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>굽네치킨  birthday  BIRTHDAY</title>
+	<title>굽네치킨</title>
 	<link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
@@ -65,76 +65,136 @@
     <link href='/JQuery-Snowfall-master/dist/slick.css' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     
-	<style type="text/css">
-	.section1 {
-		background-color: #ca291a;
-        position:relative;
-	}
-
-	.section2 {
-		background-color: #98C19F; 
-	}
-
-	.section3 {
-		background-color:  #A199E2;
-	}
-
-	.section4 {
-		background-color:  #CC938E;
-	}
-
-	.section5 {
-		background-color:  #D2C598;
-	}
-    
-    section .slider_body {
-		text-align: center;
-		position: relative;
-		top: 50%;  
-		transform: translateY(-50%);
-        z-index: 9;
-	}
-    section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);    width: 52%;z-index: 9;}
-    .slick-slide img{margin:auto;}
-    .list_slider p{font-family:'TmoneyRoundWindExtraBold';color:#fff;letter-spacing:-4px;font-size:6em;text-align: center;}
-   /*section div {
-		text-align: center;
-		position: relative;
-		top: 50%;  
-		transform: translateY(-50%);
-	}*/
-
-	span {
-		font-size: 4em;
-		font-style: normal;
-		color: #fff;
-	}
-
-    @font-face {
-    font-family: 'TmoneyRoundWindRegular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+<style type="text/css">
+@font-face {
+font-family: 'TmoneyRoundWindRegular';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 @font-face {
-    font-family: 'TmoneyRoundWindExtraBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'TmoneyRoundWindExtraBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
-body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:TmoneyRoundWindRegular,Helvetica,Arial,sans-serif;}
+body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:'TmoneyRoundWindRegular',Helvetica,Arial,sans-serif;}
+a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !important;color:#000;}
+.section1 {
+    background-color: #ca291a;
+    position:relative;
+}
+
+.section2 {
+    background-color: #98C19F; 
+}
+
+.section3 {
+    background-color:  #A199E2;
+}
+
+.section4 {
+    background-color:  #CC938E;
+}
+
+.section5 {
+    background-color:  #D2C598;
+}
+
+section .slider_body {
+    text-align: center;
+    position: relative;
+    top: 50%;  
+    transform: translateY(-50%);
+    z-index: 9;
+}
+section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index: 9;width:100%;padding-bottom: 129px;}
+.slick-slide img{margin:auto; width:auto;max-height:450px;}
+.list_slider .title{font-family:'TmoneyRoundWindExtraBold';color:#fff;letter-spacing:-4px;font-size:6em;text-align: center;}
+.list_slider .subtitle{font-family:'Noto Sans KR';color:#fff;letter-spacing:-1px;font-size:1.8em;text-align: center;}
+.section1:before{opacity: 0;}
+.section1.bg{background:#ca291a;opacity: 1; transition: 0.5s all;}
+.section1.bg1{background:#ca291a;opacity: 1;transition: 0.5s all;}
+.section1.bg2{background:#eb7c09; opacity: 1;transition: 0.5s all;}
+
 .navbar-fixed-top{padding:0;}
 .navbar-brand {
-    padding: 9px 15px;
+padding: 9px 15px;
 }
 .navbar-default{background-color:transparent;}
 .footer_ai{position:absolute;bottom:0;width:100%;}
 .footer_ai_ul{position: relative;width:100%;height:166px;}
-.footer_ai_ul li{position:absolute;bottom:7px;;width:17%;z-index: 8;}
+.footer_ai_ul li{position:absolute;bottom:7px;;width:17%;z-index: 8;min-width: 300px;}
 .footer_ai_ul li:nth-child(1){left:0;}
 .footer_ai_ul li:nth-child(2){right:-17px;}
 .footer_ai_ul li:nth-child(3){right:auto;;left:0;width:100%;bottom:0;z-index: 3;}
-	</style>
+
+.single-item .slick-arrow{position:absolute;bottom:-100px;left: 50%;transform: translateX(-50%);color:#000;font-size: 3em;    cursor: pointer;}
+.single-item .slick-prev{margin-left:-25px;}
+.single-item .slick-next{margin-left:25px;}
+.pagingInfo{position:absolute;bottom:44px;left: 50%;transform: translateX(-50%);color:#000;font-size: 1em;}
+.slider_div .slick-dots{text-align:center;padding-left:0;background: rgba(0,0,0,0.5);padding:0.1% 2%;border-radius: 20px;margin:auto;position:fixed;left:50%;transform: translateX(-50%);bottom: 75px;}
+.slider_div .slick-dots li {display:inline-block;    vertical-align: middle;    margin: 0 3px;line-height: 26px;height:26px;}
+.slider_div .slick-dots li a{font-size:1.5em;    text-decoration: none;    color: #fff;    line-height: 23px;    cursor: pointer;}
+.slider_div .slick-dots li.slick-active a{font-size:3em;    line-height:16px;}
+.slider_div .slick-dots li a:hover{border-bottom:0; }
+.dots{z-index: 9;}
+
+
+.footer_nav_arrow{position:absolute;bottom:30px;left:50%;transform: translateX(-50%);z-index: 9;}
+.arrow-container {
+position: relative;
+padding-top: 60px;
+color: #020202;
+font-family: 'TmoneyRoundWindRegular';
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-animation: sdb 2s infinite;
+animation: sdb 2s infinite;
+}
+
+.arrow-container .arrow {
+position: absolute;
+top: 0;
+left: 50%;
+width: 24px;
+height: 24px;
+margin-left: -12px;
+border-left: 1px solid #000;
+border-bottom: 1px solid #000;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-animation: sdb 2s infinite;
+animation: sdb 2s infinite;
+box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+0% {
+-webkit-transform: rotate(-45deg) translate(0, 0);
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+opacity: 0;
+}
+}
+@keyframes sdb {
+0% {
+transform: rotate(-45deg) translate(0, 0);
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+transform: rotate(-45deg) translate(-20px, 20px);
+opacity: 0;
+}
+}
+</style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
 </head>
@@ -151,9 +211,24 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
           <div class="bg_sub"></div>
           <div class="slider_div">
             <div class="slider single-item">
-              <div class="list_slider"><p>치PD 세트</p><img src="2021renew_img/mainbanner/cpd_img_1.png" ></div>
-              <div class="list_slider"><img src="https://order.goobne.co.kr:8481//Upload/menu//굽네오리지널치킨_L_01.png" ></div>
+                  <div class="list_slider">
+                      <p class="title">치PD 세트</p>
+                      <img src="2021renew_img/mainbanner/cpd_img_1.png" >
+                      <p class="subtitle">치킨, 피자, 디저트를 한번에 굽네에서 즐기자!</p>
+                  </div>
+                  <div class="list_slider">
+                      <p class="title">치PD 세트</p>
+                      <img src="https://order.goobne.co.kr:8481//Upload/menu//굽네오리지널치킨_L_01.png" >
+                      <p class="subtitle">치킨, 피자, 디저트를 한번에 굽네에서 즐기자!</p>
+                 </div>
+             </div>
+             <span class="pagingInfo"></span>
             </div>
+            <div class="footer_nav_arrow">
+                <a href="#1" class="arrow-container">
+                    <div class="arrow"></div> 
+                    Scroll
+                </a>
             </div>
           <div class="footer_ai">
               <ul class="footer_ai_ul">
@@ -195,13 +270,38 @@ body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:Tmo
 	</script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
     <script>
+    var $status = $('.pagingInfo');
+    var $slickElement = $('.single-item');
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
     $('.single-item').slick({
       autoplay:false,
       autoplaySpeed:5000,	
       /*fade:true,*/
       cssEase:"ease",
       easing:"ease",
+      centerMode: true,
+      dots: true,
+      nextArrow: '<small class="slick-next">&rsaquo;</small>',
+      prevArrow: '<small class="slick-prev">&lsaquo;</small>',
+      customPaging : function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      // return '<a>'+(i+1)+'</a>';
+      return '<a>&bull;</a>';
+    },
     });
+    
+    var $bg = $('.section1');
+    var $slickElement = $('.single-item');
+    $(".single-item").on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+        $bg.attr('class','section1').toggleClass('bg' + i);
+});
+    
+
     </script>
     <script src="/scrollreveal/js/jquery-1.10.2.js"></script>
     <script src="/scrollreveal/js/bootstrap.min.js"></script>
