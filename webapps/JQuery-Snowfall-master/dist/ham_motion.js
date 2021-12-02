@@ -14,7 +14,7 @@ $(document).ready(function(){
         $('#hamburger-11').removeClass('is-active');
         $('.menu_bg').hide(); 
         $('.sidebar_menu').animate({
-            right: '-' + 50 + '%'
+            right: '-' + 100 + '%'
             },300); 
                    /* },function(){
                         $('.sidebar_menu').hide();          
@@ -26,11 +26,11 @@ $(document).ready(function(){
 $(".menu_wrap li .list_hidden").hide();
 
   // $("ul > li:first-child a").next().show();
-  $(".menu_wrap li a").click(function(){
+  $(".menu_wrap li a.ham_list_a").click(function(){
     $(this).next().slideToggle(300);
     // $(this).next().slideDown(300);
-    $(".menu_wrap li a").not(this).next().slideUp(300);
-    $(".menu_wrap li a").not(this).children('#hamburger-90').removeClass('is-active');
+    $(".menu_wrap li a.ham_list_a").not(this).next().slideUp(300);
+    $(".menu_wrap li a.ham_list_a").not(this).children('#hamburger-90').removeClass('is-active');
     return false;
   });
   $(".menu_wrap li a").eq(0).trigger("click");

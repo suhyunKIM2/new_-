@@ -3,7 +3,7 @@
 <title>굽네치킨</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
 <!-- <meta http-equiv="cache-control" content="no-cache" /> -->
 <!-- <meta name="naver-site-verification" content="0929bebe183f961be860bccacc4d5c1c048ec5e8"/> -->
 
@@ -24,8 +24,18 @@
 <link rel="shortcut icon" href="/resources/images/favicon.ico" type="image/x-icon"/>
 <link rel="icon" href="/resources/images/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="/resources/images/favicon.png" />
-
-
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "name": "굽네치킨",
+ "url": "https://www.goobne.co.kr",
+ "sameAs": [
+   "https://www.facebook.com/myfacebook",
+   "https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg",
+   "https://www.facebook.com/goobne"
+ ]
+}
+</script>
 
 <!-- style -->
 <link rel="stylesheet" href="/resources/css/common.css" media="all" />
