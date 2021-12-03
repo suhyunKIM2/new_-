@@ -36,7 +36,7 @@
 %>
 
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -64,8 +64,10 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='/JQuery-Snowfall-master/dist/slick.css' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    
+
 <style type="text/css">
+body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; } /*특정 부분 스크롤바 없애기*/ .box{ -ms-overflow-style: none; } .box::-webkit-scrollbar{ display:none; }
+
 @font-face {
 font-family: 'TmoneyRoundWindRegular';
 src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
@@ -100,7 +102,7 @@ a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !importa
 .section5 {
     background-color:  #D2C598;
 }
-
+section{width:100%;position:relative;overflow-x: hidden;}
 section .slider_body {
     text-align: center;
     position: relative;
@@ -112,10 +114,11 @@ section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%
 .slick-slide img{margin:auto; width:auto;max-height:450px;}
 .list_slider .title{font-family:'TmoneyRoundWindExtraBold';color:#fff;letter-spacing:-4px;font-size:6em;text-align: center;}
 .list_slider .subtitle{font-family:'Noto Sans KR';color:#fff;letter-spacing:-1px;font-size:1.8em;text-align: center;}
-.section1:before{opacity: 0;}
-.section1.bg{background:#ca291a;opacity: 1; transition: 0.5s all;}
-.section1.bg1{background:#ca291a;opacity: 1;transition: 0.5s all;}
-.section1.bg2{background:#eb7c09; opacity: 1;transition: 0.5s all;}
+.section1{background:#98C19F;}
+.section1:before{opacity: 1;}
+.section1.bg{background:#ca291a;opacity: 1; transition: 0.4s all;}
+.section1.bg1{background:#ca291a;opacity: 1;transition: 0.4s all;}
+.section1.bg2{background:#eb7c09; opacity: 1;transition: 0.4s all;}
 
 .navbar-fixed-top{padding:0;}
 .navbar-brand {
@@ -128,6 +131,7 @@ padding: 9px 15px;
 .footer_ai_ul li:nth-child(1){left:0;}
 .footer_ai_ul li:nth-child(2){right:-17px;}
 .footer_ai_ul li:nth-child(3){right:auto;;left:0;width:100%;bottom:-3px;z-index: 3;transform: rotate(0.2deg);}
+.footer_ai_ul li:nth-child(4){background:#ca291a;width:100%;height:64px;bottom:-65px;}
 
 .single-item .slick-arrow{position:absolute;bottom:-100px;left: 50%;transform: translateX(-50%);color:#000;font-size: 3em;    cursor: pointer;}
 .single-item .slick-prev{margin-left:-25px;}
@@ -168,6 +172,8 @@ transform: rotate(-45deg);
 animation: sdb 2s infinite;
 box-sizing: border-box;
 }
+/*.no-js { visibility: hidden;opacity: 0;} 
+.visible{visibility: visible;opacity: 1;}*/
 @-webkit-keyframes sdb {
 0% {
 -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -194,15 +200,19 @@ transform: rotate(-45deg) translate(-20px, 20px);
 opacity: 0;
 }
 }
+
+@media (max-width: 767px){
+section {padding:0;}
+}
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
 </head>
-<body id="page-top" class="index darkBg">
+<body id="page-top" class="index">
     <jsp:include page="/include/header_2021_re.jsp" flush="false"/>
 
  <div id="main" class="scroll-container">
-		<section class="section1">
+		<section class="section1 bg">
             
           <!---S: 눈효과---->
           <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_star.html" flush="true"/>
@@ -235,6 +245,7 @@ opacity: 0;
                   <li><img src="2021renew_img/left_ai.svg" ></li>
                   <li><img src="2021renew_img/right_ai_1.svg" ></li>
                   <li><img src="2021renew_img/bottom_ai.svg" ></li>
+                  <li class="mobile"></li>
               </ul>
           </div>
 		</section>
@@ -262,18 +273,81 @@ opacity: 0;
 		</section>
 	</div>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
-	<script type="text/javascript">
-		new fullScroll({
+    <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
+    <script>
+ $( document ).ready( function() {
+     var filter = "win16|win32|win64|mac|macintel"; 
+     if ( navigator.platform ) { 
+     if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { 
+     //mobile 
+     $.fn.fullpage.destroy('all');
+     
+     } else { 
+     //pc 
+     } }
+
+ 
+ $(window).resize(function() { 
+	 	//if($(window).width() >767) { 
+			
+			 if ($(window).width() <=540) {
+					 self.name = 'reload';
+					 self.location.reload(true);
+				 }
+				 else self.name = ''; 
+		//	} 
+			
+	     });
+         
+    if ($(window).width() < 540) {
+        
+            $.fn.fullpage.destroy('all');
+        }
+        else {
+            new fullScroll({
+            displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease',
+            scrollOverflow: true,
+            });
+        }
+         
+        
+    });
+    
+    
+    /*if ($(window).width() < 768) {
+            $.fn.fullpage.destroy('all');
+        }
+        else {
+            new fullScroll({
+            scrollBar: true,
+            scrollOverflow: true,
+            responsiveWidth: 768,
+            });
+        }*/
+    
+		/*new fullScroll({
 			displayDots: true,
 			dotsPosition: 'left',
 			animateTime: 0.7,
-			animateFunction: 'ease'
+			animateFunction: 'ease',
+            scrollOverflow: true
             
+		});*/
+        /*$( document ).ready( function() { 
+        new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease',
+            scrollOverflow: true,
 		});
-       
-	</script>
-    <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-    <script>
+        });*/
+    
+    
+    
     var $status = $('.pagingInfo');
     var $slickElement = $('.single-item');
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -282,8 +356,9 @@ opacity: 0;
         $status.text(i + '/' + slick.slideCount);
     });
     $('.single-item').slick({
+      swipe : true,
       autoplay:false,
-      autoplaySpeed:5000,	
+      autoplaySpeed:500,	
       /*fade:true,*/
       cssEase:"ease",
       easing:"ease",
@@ -308,6 +383,17 @@ opacity: 0;
     
 
     </script>
+
+    
+<!--    <script>
+
+$(function(){
+
+$('.no-js').addClass('visible');
+
+});
+
+</script>-->
     <script src="/scrollreveal/js/jquery-1.10.2.js"></script>
     <script src="/scrollreveal/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
