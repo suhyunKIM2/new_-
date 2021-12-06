@@ -274,9 +274,11 @@ section {padding:0;}
 			</div>
 		</section>
 	</div>
+    
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
     <script>
+
 
  $( document ).ready( function() {
      var filter = "win16|win32|win64|mac|macintel"; 
@@ -335,11 +337,29 @@ section {padding:0;}
             scrollOverflow: true,
             });
         }
-         
-        
+     
+     
+
     });
-    
-    
+
+$(".scroll-container").on('mousewheel',function(e){ 
+              var wheel = e.originalEvent.wheelDelta; 
+
+
+              if(wheel<0){ 
+                //스크롤 올릴때 
+                
+                $(".navbar-fixed-top").css("background","#000");
+           
+                   
+            
+              } else{ 
+                //스크롤  내릴때 
+                $(".navbar-fixed-top").css("background","");
+                  } 
+         
+            });
+
     /*if ($(window).width() < 768) {
             $.fn.fullpage.destroy('all');
         }
