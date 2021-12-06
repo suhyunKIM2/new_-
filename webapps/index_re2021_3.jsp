@@ -89,7 +89,7 @@ a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !importa
 }
 
 .section2 {
-    background-color: #98C19F; 
+    background-color: #f5f2e3; 
 }
 
 .section3 {
@@ -113,7 +113,7 @@ section .slider_body {
     z-index: 9;
 }
 section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index: 9;width:100%;padding-bottom: 129px;}
-.slick-slide img{margin:auto; width:auto;max-height:450px;}
+.slick-slide img{margin:auto; width:auto;max-height:450px;    image-rendering: pixelated;}
 .list_slider .title{font-family:'TmoneyRoundWindExtraBold';color:#fff;letter-spacing:-4px;font-size:6em;text-align: center;}
 .list_slider .subtitle{font-family:'Noto Sans KR';color:#fff;letter-spacing:-1px;font-size:1.8em;text-align: center;}
 .section1{background:#98C19F;}

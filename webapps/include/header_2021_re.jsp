@@ -287,6 +287,7 @@ body{overflow-y: auto;}
 #hamburger-9:before{    top: calc(50% - 17px);left: calc(50% - 17px);width:35px;height:35px;}
 .scroll-container{scroll-behavior:smooth;overflow-y: scroll;}
 .scroll-container section{height:calc(100% - 64px);}
+section .slider_div{margin-top:4%;}
 }
 @media only screen and  (max-width:500px) {
 .nav>li{margin:1.2px 1%;}
