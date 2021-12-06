@@ -150,6 +150,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
 <script src="../JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_style.css">
 <style>
+
 body ul, body ol{padding:0;margin:0;}
 #header.sticky #gnb ul>li a {padding: 0 10px 1.2285em;}
 .nav>li{display: inline-block;float:none;}
@@ -166,7 +167,6 @@ body ul, body ol{padding:0;margin:0;}
 .Notice_div_ham_ul li:nth-child(3){width:42%;text-align: center;margin:3% auto;padding:1% 0;border:1px solid #000;border-radius:20px;}
 .Notice_div_ham_ul li:nth-child(3):hover{background:#ca291a;}
 .Notice_div_ham_ul li:nth-child(3):hover a{color:#fff;text-decoration: none;}
-
 
 /*아코디언메뉴*/
 .menu_wrap {padding:0;overflow: auto;height: calc(100vh - 277px);}
@@ -202,10 +202,8 @@ body ul, body ol{padding:0;margin:0;}
 .span_class{margin:0 5px;color:#161616;vertical-align: middle;}    
 .mobile,.mobile_icon{display:none !important;}
 .PCmobile_icon{height:35px;margin:-10px 5px 0 0;}
-@media only screen and (orientation : landscape){
-.scroll-container section{min-height: 550px; }
-body{overflow-y: auto;}
-}
+
+
 @media all and (max-height:820px){
 .slick-slide img{max-height: 340px;}
 .list_slider .title{font-size:4em;}
@@ -221,9 +219,12 @@ body{overflow-y: auto;}
 .list_slider .subtitle {
     font-size: 15px !important;
 }
+.scroll-container section{min-height: 550px; }
+body{overflow-y: auto;}
 }
 @media only screen and  (max-width: 799px) {
-.scroll-container .section1{height:calc(100% - 64px);}
+
+.scroll-container .section1{height:calc(100% - 64px);overflow-y: hidden;}
 .mobile{display:inline-block!important;}
 .mobile_icon,.PCmobile_icon{display:block !important;    margin: 5px auto 0 ;height: 28px;}
 .navbar-nav>li>a{padding:0;}
@@ -264,9 +265,10 @@ body{overflow-y: auto;}
 }
 }
 @media only screen and  (max-width:540px) {
+
 #page-top{overflow-x:hidden;touch-action:pan-y;overflow-y:auto;}
 .sidebar_menu {
-    width: 90%;
+    width: 90%;overflow: hidden; height: 100%;
 }
 .Notice_div_ham{height:150px;}
 .menu_wrap{    height: calc(100% - 229px);}
@@ -284,6 +286,7 @@ body{overflow-y: auto;}
 #hamburger-9.is-active:before{    border: 3px solid #fff;}
 #hamburger-9:before{    top: calc(50% - 17px);left: calc(50% - 17px);width:35px;height:35px;}
 .scroll-container{scroll-behavior:smooth;overflow-y: scroll;}
+.scroll-container section{height:calc(100% - 64px);}
 }
 @media only screen and  (max-width:500px) {
 .nav>li{margin:1.2px 1%;}
