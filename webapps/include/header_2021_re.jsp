@@ -197,14 +197,33 @@ body ul, body ol{padding:0;margin:0;}
 .menu_wrap li a span.list_name{padding:10px 0;}
 .navbar-nav_user_log a{display:inline-block;}
 .join_a{color:#fff;font-size: 1.2em;
-    vertical-align: middle;
     font-family: 'TmoneyRoundWindRegular';
     font-weight: 500;}
 .span_class{margin:0 5px;color:#161616;vertical-align: middle;}    
 .mobile,.mobile_icon{display:none !important;}
 .PCmobile_icon{height:35px;margin:-10px 5px 0 0;}
-
+@media only screen and (orientation : landscape){
+.scroll-container section{min-height: 550px; }
+body{overflow-y: auto;}
+}
+@media all and (max-height:820px){
+.slick-slide img{max-height: 340px;}
+.list_slider .title{font-size:4em;}
+.list_slider .subtitle{font-size:1.5em;}
+}
+@media all and (max-height:700px){
+.slick-slide img {
+    max-height: 225px !important;
+}
+.list_slider .title {
+    font-size: 3em !important;
+}
+.list_slider .subtitle {
+    font-size: 15px !important;
+}
+}
 @media only screen and  (max-width: 799px) {
+.scroll-container .section1{height:calc(100% - 64px);}
 .mobile{display:inline-block!important;}
 .mobile_icon,.PCmobile_icon{display:block !important;    margin: 5px auto 0 ;height: 28px;}
 .navbar-nav>li>a{padding:0;}
@@ -221,18 +240,22 @@ body ul, body ol{padding:0;margin:0;}
 .list_slider .subtitle{font-size:1.3em;}
 .list_slider .title{font-size:5em;}
 .container>.navbar-header{margin:0;}
-.container{padding:0 1%;}
+.container{padding:0 3%;}
 .navbar-brand{padding-left:0;}
 .sidebar_menu{width:70%;}
 .navbar-default .navbar-nav>li>a{color:#000;}
 .nav>li{background:#fff;border-radius: 50%;margin:1.2px 2%;text-align: center;    width:65px;    height: calc(100% - 4%);}
-.footer_ai{bottom:64px;}
-.footer_nav_arrow{bottom:90px;}
+}
+@media (min-width: 768px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
 }
 @media only screen and  (max-width: 640px) {
 .footer_ai_ul li{min-width:40%;}
 .list_slider .subtitle{font-size:1em;}
-.list_slider .title{font-size:4em;}
+.list_slider .title{font-size:4em; }
+
 .navbar-default .navbar-brand img{height:35px !important;}
 .navbar-default .navbar-nav>li>a{font-size:11px;}
 .mobile_icon, .PCmobile_icon{ margin:10px auto 0;}
@@ -242,10 +265,70 @@ body ul, body ol{padding:0;margin:0;}
 }
 @media only screen and  (max-width:540px) {
 #page-top{overflow-x:hidden;touch-action:pan-y;overflow-y:auto;}
+.sidebar_menu {
+    width: 90%;
+}
+.Notice_div_ham{height:150px;}
+.menu_wrap{    height: calc(100% - 229px);}
+.navbar-nav_user_log svg{height:20px !important;margin-top: -4px;}
+.join_a{font-size:0.9em;}
+.Notice_div_ham_ul li:nth-child(1) img{height:25px !important;}
+.Notice_div_ham_ul li:nth-child(3){font-size:13px;    padding-bottom: 12px;}
+.Notice_div_ham_ul li:nth-child(3) img{ height:25px !important;   vertical-align: bottom;margin-right:5px;}
+.ham_ul_list li a{font-size:12px !important;}
+.menu_wrap li a span.list_name{font-size:13px;}
+#hamburger-90{width:25px;height:25px;}
+#hamburger-90 .line:nth-child(2){right:5px;}
+#hamburger-90 .line{left:5px;}
+#hamburger-90.is-active .line:nth-child(1){top:11px;left:8px;}
+#hamburger-9.is-active:before{    border: 3px solid #fff;}
+#hamburger-9:before{    top: calc(50% - 17px);left: calc(50% - 17px);width:35px;height:35px;}
+.scroll-container{scroll-behavior:smooth;overflow-y: scroll;}
 }
 @media only screen and  (max-width:500px) {
 .nav>li{margin:1.2px 1%;}
 
+}
+@media only screen and  (max-width:400px) {
+.nav>li{width:17%;}
+section .slider_div{padding-bottom:68px;}
+.single-item .slick-arrow{bottom:-38px;}
+}
+@media only screen and  (max-width:374px) {
+.nav>li{width:16%;margin:4.9px 1%;    height: calc(100% - 14%);}
+.mobile_icon, .PCmobile_icon{height:18px;}
+.list_slider .title {
+    font-size: 3em;
+    letter-spacing: -2px;
+}
+.list_slider .subtitle {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.slick-slide img {
+    max-height: 150px;
+}
+}
+@media only screen and  (max-width:359px) {
+.sidebar_menu {
+    width: 95%;
+}
+.list_slider .subtitle {
+    font-size: 11px;
+}
+.list_slider .title {
+    font-size: 2.5em;
+}
+.slick-slide img {
+    max-height: 140px;
+}
+.nav>li {
+    width: 17%;
+    margin: 4.9px 0.5%;}
+.menu_wrap {
+    height: calc(100% - 238px);
+}    
+    
 }
 </style>
 <form id="encModeForm" hidden="true">

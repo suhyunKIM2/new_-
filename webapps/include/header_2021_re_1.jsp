@@ -231,7 +231,7 @@ body ul, body ol{padding:0;margin:0;}
 .sidebar_menu{width:70%;}
 .navbar-default .navbar-nav>li>a{color:#000;}
 .nav>li{background:#fff;border-radius: 50%;margin:1.2px 2%;text-align: center;    width:65px;    height: calc(100% - 4%);}
-.footer_ai{bottom:64px;}
+.footer_ai{bottom:0;}
 .footer_nav_arrow{bottom:90px;}
 }
 @media only screen and  (max-width: 640px) {
