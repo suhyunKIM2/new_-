@@ -13,7 +13,7 @@
 		 * @type {Object}
 		 */
 		var main = document.getElementById('main');
-		
+        
 		/**
 		 * Sections div
 		 * @type {Array}
@@ -77,7 +77,8 @@
 		this.ul.classList.add('dots');
 		this.ul.classList.add(this.defaults.dotsPosition == 'right' ? 'dots-right' : 'dots-left');
 		var _self = this;
-		var sections = this.defaults.sections;		
+		var sections = this.defaults.sections;	
+        
 
 		for (var i = 0; i < sections.length; i++) {
 			var li = document.createElement('li');
@@ -141,10 +142,10 @@
 		this.mouseWheelAndKey = function (event) {
 			if (event.deltaY > 0 || event.keyCode == 40) {	
 				_self.defaults.currentPosition ++;
-				_self.changeCurrentPosition(_self.defaults.currentPosition);				
+				_self.changeCurrentPosition(_self.defaults.currentPosition);
 			} else if (event.deltaY < 0 || event.keyCode == 38) {
 				_self.defaults.currentPosition --;
-				_self.changeCurrentPosition(_self.defaults.currentPosition);	
+				_self.changeCurrentPosition(_self.defaults.currentPosition);
 			}
 			_self.removeEvents();
 		};
@@ -204,6 +205,7 @@
 			var animateTime = this.defaults.animateTime;
 			var animateFunction = this.defaults.animateFunction;
 			var position = this.defaults.currentPosition * 100;
+            
 
 			this.defaults.container.style.webkitTransform = 'translateY(-' + position + '%)';
 			this.defaults.container.style.mozTransform = 'translateY(-' + position + '%)';
@@ -216,8 +218,9 @@
 
 			for (var i = 0; i < this.ul.childNodes.length; i++) {
 					this.ul.childNodes[i].firstChild.classList.remove('active');
+                    
 					if (i == this.defaults.currentPosition) {
-					this.ul.childNodes[i].firstChild.classList.add('active');		
+					this.ul.childNodes[i].firstChild.classList.add('active');
 				}
 			}
 		};

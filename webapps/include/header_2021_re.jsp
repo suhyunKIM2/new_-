@@ -168,6 +168,7 @@ body ul, body ol{padding:0;margin:0;}
 .Notice_div_ham_ul li:nth-child(3):hover{background:#ca291a;}
 .Notice_div_ham_ul li:nth-child(3):hover a{color:#fff;text-decoration: none;}
 
+
 /*아코디언메뉴*/
 .menu_wrap {padding:0;overflow: auto;height: calc(100vh - 277px);}
 .menu_wrap li .list_hidden{font-weight:500;font-size: 15px;clear:both;background: #f3f3f3;height: auto;overflow:hidden;}
@@ -222,8 +223,9 @@ body ul, body ol{padding:0;margin:0;}
 .scroll-container section{min-height: 550px; }
 body{overflow-y: auto;}
 }
-@media only screen and  (max-width: 799px) {
 
+@media only screen and  (max-width: 799px) {
+#page-top{overflow:auto;}
 .scroll-container .section1{height:calc(100% - 64px);overflow-y: hidden;}
 .mobile{display:inline-block!important;}
 .mobile_icon,.PCmobile_icon{display:block !important;    margin: 5px auto 0 ;height: 28px;}
@@ -237,7 +239,7 @@ body{overflow-y: auto;}
 .scroll-container .section1{height: calc(100vh - 64px);} */
 .footer_ai_ul li{min-width: 250px;}
 .footer_ai_ul li:nth-child(3){width:300%;}
-.slick-slide img{max-height:330px;}
+.slick-slide img,.player_div{max-height:330px;}
 .list_slider .subtitle{font-size:1.3em;}
 .list_slider .title{font-size:5em;}
 .container>.navbar-header{margin:0;}
@@ -260,7 +262,7 @@ body{overflow-y: auto;}
 .navbar-default .navbar-brand img{height:35px !important;}
 .navbar-default .navbar-nav>li>a{font-size:11px;}
 .mobile_icon, .PCmobile_icon{ margin:10px auto 0;}
-.slick-slide img {
+.slick-slide img,.player_div {
     max-height: 205px;
 }
 }
@@ -296,34 +298,38 @@ section .slider_div{margin-top:4%;}
 @media only screen and  (max-width:400px) {
 .nav>li{width:17%;}
 section .slider_div{padding-bottom:68px;}
-.single-item .slick-arrow{bottom:-38px;}
+.single-item .slick-arrow{bottom:-95px;}
+.slick-dots{bottom:30px;}
+.pagingInfo{bottom:-12px;}
+.list_slider .title{font-family:'TmoneyRoundWindRegular';font-weight: 600; }
 }
 @media only screen and  (max-width:374px) {
 .nav>li{width:16%;margin:4.9px 1%;    height: calc(100% - 14%);}
 .mobile_icon, .PCmobile_icon{height:18px;}
 .list_slider .title {
-    font-size: 3em;
+    font-size: 3em !important;
     letter-spacing: -2px;
 }
 .list_slider .subtitle {
-    font-size: 12px;
+    font-size: 12px !important;
     letter-spacing: 0;
 }
 .slick-slide img {
     max-height: 150px;
 }
+
 }
 @media only screen and  (max-width:359px) {
 .sidebar_menu {
     width: 95%;
 }
 .list_slider .subtitle {
-    font-size: 11px;
+    font-size: 11px !important;
 }
 .list_slider .title {
-    font-size: 2.5em;
+    font-size: 2.5em !important;
 }
-.slick-slide img {
+.slick-slide img,.player_div {
     max-height: 140px;
 }
 .nav>li {
@@ -339,7 +345,7 @@ section .slider_div{padding-bottom:68px;}
 </form>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="scroll_nav">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             
