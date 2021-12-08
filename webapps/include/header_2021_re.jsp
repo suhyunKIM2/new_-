@@ -238,7 +238,6 @@ body{overflow-y: auto;}
 /*.scroll-container section{height: calc(100vh - 0);} 
 .scroll-container .section1{height: calc(100vh - 64px);} */
 .footer_ai_ul li{min-width: 250px;}
-.footer_ai_ul li:nth-child(3){width:300%;}
 .slick-slide img,.player_div{max-height:330px;}
 .list_slider .subtitle{font-size:1.3em;}
 .list_slider .title{font-size:5em;}
@@ -248,6 +247,11 @@ body{overflow-y: auto;}
 .sidebar_menu{width:70%;}
 .navbar-default .navbar-nav>li>a{color:#000;}
 .nav>li{background:#fff;border-radius: 50%;margin:1.2px 2%;text-align: center;    width:65px;    height: calc(100% - 4%);}
+.navbar{min-height:45px;}
+.navbar-brand{padding:0;height:auto;line-height: normal;}
+.navbar-right{height:auto;line-height: normal;margin-top: 5px;}
+.navbar-brand img{height:37px !important;width:123px !important;}
+.navbar-header{padding-top:3px;}
 }
 @media (min-width: 768px){
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -259,7 +263,7 @@ body{overflow-y: auto;}
 .list_slider .subtitle{font-size:1em;}
 .list_slider .title{font-size:4em; }
 
-.navbar-default .navbar-brand img{height:35px !important;}
+.navbar-default .navbar-brand img{height:35px !important;width:116px !important;}
 .navbar-default .navbar-nav>li>a{font-size:11px;}
 .mobile_icon, .PCmobile_icon{ margin:10px auto 0;}
 .slick-slide img,.player_div {
@@ -274,7 +278,7 @@ body{overflow-y: auto;}
 }
 .Notice_div_ham{height:150px;}
 .menu_wrap{    height: calc(100% - 229px);}
-.navbar-nav_user_log svg{height:20px !important;margin-top: -4px;}
+.navbar-nav_user_log svg{height:20px !important;width:58px !important;}
 .join_a{font-size:0.9em;}
 .Notice_div_ham_ul li:nth-child(1) img{height:25px !important;}
 .Notice_div_ham_ul li:nth-child(3){font-size:13px;    padding-bottom: 12px;}
@@ -350,7 +354,7 @@ section .slider_div{padding-bottom:68px;}
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <div class="navbar-header page-scroll">
-               <a class="navbar-brand" href="#page-top"><img src="2021renew_img/logo_2.svg" style="height:45px;"></a>
+               <a class="navbar-brand" href="#page-top"><img src="2021renew_img/logo_2.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li>
@@ -377,7 +381,7 @@ section .slider_div{padding-bottom:68px;}
                 <ul class="ham_ul">
                     <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
-                    <li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="2021renew_img/login.svg" style="height:18px;"></a></li>
+                    <li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="2021renew_img/login.svg" style="width:52px;height:18px;"></a></li>
                     <li>
                        <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
@@ -417,9 +421,9 @@ section .slider_div{padding-bottom:68px;}
                     <div class="navbar-nav_user_log">
                         <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
-                        <a href="<%=Const.GnOrder %>/login/join1.aspx" target="<%=target%>" class="join_a">JOIN</a> <span class="span_class">|</span>
+                        <a href="<%=Const.GnOrder %>/login/join1.aspx" target="<%=target%>" class="join_a" style="vertical-align: middle;">JOIN</a> <span class="span_class">|</span>
                         <a href="https://www.goobne.co.kr/member/login.jsp"><!--<img src="2021renew_img/login.svg" style="height:25px;">-->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.33 27.03" style="height:25px;vertical-align: middle;"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-width:0.3px;}.navbar-nav_user_log a:hover .cls-1{fill:#000;stroke:#000;stroke-width:0.3px;}</style></defs><g id="01" data-name="01"><g id="02" data-name="02"><polygon class="cls-1" points="63.6 18.86 62.69 17.95 67.12 13.52 62.69 9.08 63.6 8.17 68.94 13.52 63.6 18.86"/><rect class="cls-1" x="51.3" y="12.87" width="16.73" height="1.29"/><path class="cls-1" d="M64.81,27a13.54,13.54,0,0,1-13-10L53,16.73a12.23,12.23,0,1,0,0-6.43L51.77,10A13.52,13.52,0,1,1,64.81,27Z"/><path class="cls-1" d="M0,7.36H1.6V20.14H7.84V21.5H0Z"/><path class="cls-1" d="M7.53,14.37c0-4.5,2.47-7.26,6-7.26s6,2.76,6,7.26-2.47,7.38-6,7.38S7.53,18.89,7.53,14.37Zm10.31,0c0-3.61-1.72-5.85-4.34-5.85s-4.33,2.24-4.33,5.85,1.72,6,4.33,6S17.84,18,17.84,14.37Z"/><path class="cls-1" d="M20.31,14.43c0-4.54,2.68-7.32,6.41-7.32a5.46,5.46,0,0,1,4,1.72l-.89,1a4,4,0,0,0-3.11-1.35c-2.93,0-4.81,2.24-4.81,5.87s1.74,5.95,4.81,5.95a4,4,0,0,0,2.68-.89V15.59H26.37V14.26h4.56v5.86a5.94,5.94,0,0,1-4.32,1.63C22.9,21.75,20.31,19,20.31,14.43Z"/><path class="cls-1" d="M32.9,7.36h1.6V21.5H32.9Z"/><path class="cls-1" d="M37,7.36h1.64L44,16.51l1.53,2.9h.09c-.09-1.41-.21-2.95-.21-4.4V7.36h1.53V21.5H45.26L40,12.34,38.4,9.45h-.1c.08,1.41.2,2.84.2,4.3V21.5H37Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.33 27.03" style="height:25px;width:73px;margin-top:-1px;vertical-align: middle;"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-width:0.3px;}.navbar-nav_user_log a:hover .cls-1{fill:#000;stroke:#000;stroke-width:0.3px;}</style></defs><g id="01" data-name="01"><g id="02" data-name="02"><polygon class="cls-1" points="63.6 18.86 62.69 17.95 67.12 13.52 62.69 9.08 63.6 8.17 68.94 13.52 63.6 18.86"/><rect class="cls-1" x="51.3" y="12.87" width="16.73" height="1.29"/><path class="cls-1" d="M64.81,27a13.54,13.54,0,0,1-13-10L53,16.73a12.23,12.23,0,1,0,0-6.43L51.77,10A13.52,13.52,0,1,1,64.81,27Z"/><path class="cls-1" d="M0,7.36H1.6V20.14H7.84V21.5H0Z"/><path class="cls-1" d="M7.53,14.37c0-4.5,2.47-7.26,6-7.26s6,2.76,6,7.26-2.47,7.38-6,7.38S7.53,18.89,7.53,14.37Zm10.31,0c0-3.61-1.72-5.85-4.34-5.85s-4.33,2.24-4.33,5.85,1.72,6,4.33,6S17.84,18,17.84,14.37Z"/><path class="cls-1" d="M20.31,14.43c0-4.54,2.68-7.32,6.41-7.32a5.46,5.46,0,0,1,4,1.72l-.89,1a4,4,0,0,0-3.11-1.35c-2.93,0-4.81,2.24-4.81,5.87s1.74,5.95,4.81,5.95a4,4,0,0,0,2.68-.89V15.59H26.37V14.26h4.56v5.86a5.94,5.94,0,0,1-4.32,1.63C22.9,21.75,20.31,19,20.31,14.43Z"/><path class="cls-1" d="M32.9,7.36h1.6V21.5H32.9Z"/><path class="cls-1" d="M37,7.36h1.64L44,16.51l1.53,2.9h.09c-.09-1.41-.21-2.95-.21-4.4V7.36h1.53V21.5H45.26L40,12.34,38.4,9.45h-.1c.08,1.41.2,2.84.2,4.3V21.5H37Z"/></g></g></svg>
                         </a>  
                         
                     <% } else { %>
