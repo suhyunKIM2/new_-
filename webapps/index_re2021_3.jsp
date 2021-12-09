@@ -89,20 +89,16 @@ a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !importa
     position:relative;
     padding:0;
 }
-
 .section2 {
     background-color: #f5f2e3; 
 }
-
 .section3 {
     background-color:  #fffdf9;
     padding:120px 0 8px;
 }
-
 .section4 {
     background-color:  #CC938E;
 }
-
 .section5 {
     background-color:  #D2C598;
 }
@@ -115,10 +111,8 @@ section .slider_body {
     transform: translateY(-50%);
     z-index: 9;
 }
-
-section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index: 9;width:100%;padding-bottom: 129px;margin-top: -7%;max-height: 764px;}
-
-.section1 .slider_div{margin-top:0;}
+section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index: 9;width:100%;padding-bottom: 129px;margin-top: 1%;max-height: 764px;}
+/*.section1 .slider_div{margin-top:60px;}*/
 .section3 .footer{position:absolute;bottom:0;left:50%;transform: translateX(-50%);width:100%;}
 .section3 .footer p{font-size:12px;}
 .section3 .footer #footer{padding:0;border-top:0;margin: 0;}
@@ -131,7 +125,6 @@ section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%
 .section1.bg1{background:#ca291a;opacity: 1;transition: 0.4s all;}
 .section1.bg2{background:#eb7c09; opacity: 1;transition: 0.4s all;}
 .section1.bg3{background:#ffce76; opacity: 1;transition: 0.4s all;}
-
 .navbar-fixed-top{padding:0;}
 .navbar-brand {
 padding: 9px 15px;
@@ -145,40 +138,34 @@ padding: 9px 15px;
 .footer_ai_ul li:nth-child(2){right:-17px;}
 .footer_ai_ul li:nth-child(3){right:auto;;left:0;width:101%;bottom:-4px;z-index: 3;transform: rotate(0.2deg);}
 .footer_ai_ul li:nth-child(3) img{width:100%;height:28px;}
-
 .slick-arrow{position:absolute;bottom:-100px;left: 50%;transform: translateX(-50%);color:#000;font-size: 3em;    cursor: pointer;}
 .slick-prev{margin-left:-25px;}
 .slick-next{margin-left:25px;}
 .pagingInfo{position:absolute;bottom:44px;left: 50%;transform: translateX(-50%);color:#000;font-size: 1em;}
-.pagingInfo02,.pagingInfo02_1{position:absolute;bottom:-77px;left: 50%;transform: translateX(-50%);color:#000;font-size: 1em;}
+.pagingInfo02,.pagingInfo02_1{position:absolute;bottom:-85px;left: 50%;transform: translateX(-50%);color:#000;font-size: 1em;}
 .slick-dots{text-align:center;padding-left:0;background: rgba(0,0,0,0.5);padding:0.1% 2%;border-radius: 20px;margin:auto;position:absolute;left:50%;transform: translateX(-50%);bottom:-43px;}
 .slick-dots li {display:inline-block;    vertical-align: middle;    margin: 0 3px;line-height: 26px;height:26px;}
 .slick-dots li a{font-size:1.5em;    text-decoration: none;    color: #fff;    line-height: 23px;    cursor: pointer;}
 .slick-dots li.slick-active a{font-size:3em;    line-height:16px;}
 .slick-dots li a:hover{border-bottom:0; }
 .dots{z-index: 9;}
-.single-item02 .slick-arrow{bottom:-91px;}
+.single-item02 .slick-arrow{bottom:-100px;}
 .slider_div .slider {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease;
     -webkit-transition: opacity 0.4s ease;
 }
-
-
 .slider_div .slick-initialized {
     visibility: visible;
     opacity: 1;    
 }
-
-
 .footer_nav_arrow{position:absolute;bottom:30px;left:50%;transform: translateX(-50%);z-index: 9;}
 .arrow-container {
 position: relative;
 padding-top: 60px;
 color: #020202;
 font-family: 'TmoneyRoundWindRegular';
-
 }
 .arrow-container span{
 -webkit-animation: sdb2 2s infinite;
@@ -200,6 +187,45 @@ box-sizing: border-box;
 }
 /*.no-js { visibility: hidden;opacity: 0;} 
 .visible{visibility: visible;opacity: 1;}*/
+.section2 .footer_nav_arrow{bottom:10px;}
+.top_footer_list{position:absolute;height:calc(100% - 117px);width:100%;}
+.top_footer_list li.top_footer_list_li,.top_footer_list li.top_footer_list_li_slick{text-align:left;position: relative;float:left;height:389px;}
+.top_footer_list li.top_footer_list_li span{display:block;letter-spacing: -1px;}
+.top_footer_list li.top_footer_list_li span.sub_font{font-size:16px;margin:5px 0 0;}
+.top_footer_list li.top_footer_list_li span.call_num{font-size:24px;font-weight: 600;}
+.top_footer_list li.top_footer_list_li .footer_list_img{position:absolute;bottom:10px;right:10px;}
+.top_footer_list li.top_footer_list_li:nth-child(1),.top_footer_list li.top_footer_list_li:nth-child(3){width:35%;background:#ffe9ba;padding:4% 2.5%;}
+.top_footer_list li.top_footer_list_li:nth-child(4){padding:2% 2.5%;}
+.top_footer_list li.top_footer_list_li:nth-child(4) h4{color:#000;float:left;}
+.top_footer_list li.top_footer_list_li:nth-child(4),.top_footer_list li.top_footer_list_li_slick{width:65%;background:#fff;overflow: hidden;}
+.top_footer_list li.top_footer_list_li:nth-child(3),.top_footer_list li.top_footer_list_li:nth-child(4){height:200px;}
+.top_footer_list li.top_footer_list_li:nth-child(1) span,.top_footer_list li:nth-child(1) h4{color:#502b0d;}
+.top_footer_list li.top_footer_list_li:nth-child(3){background:#efd8cd;}
+.top_footer_list li.top_footer_list_li:nth-child(4){background:#fffbf3;}
+.top_footer_list li.top_footer_list_li a.footer_list_link_a{color:#f9fd9d;background:#d52626;font-family: 'TmoneyRoundWindRegular';letter-spacing: -1px;    padding: 2px 30px;position:absolute;    bottom: 15%;}
+.slick-slide .list_slider_ul_sns img{max-height:100%;position:absolute;left:0;top:0;object-fit: cover;height:100%;    width: 100%; }
+.list_slider_ul_sns li{float:left;width:50%;min-height:390px;position:relative;}
+.section3 .slider_div{position:absolute;top:0;left:0;transform: translate(0%,0%);padding-bottom:0;margin-top:0;height: 100%;}
+.section3 .slider_div .slick-dots{bottom:15px;}
+.top_sns{padding:5px 10px;height:auto;overflow:hidden;border-bottom:1px solid #eee;}
+.top_sns a{color:#000;}
+.top_sns img{position:relative !important;    display: inline-block;}
+.top_sns .top_sns_left{float:left;}
+.top_sns .top_sns_left img{width:35px;height:35px;margin-right:5px;}
+.top_sns .top_sns_right{float:right;}
+.top_sns .top_sns_right img{margin-top:5px;width:25px;height:25px;}
+.container_sns{padding:5px 20px;font-size:12px;position:absolute;top:46px;width:100%;height: calc(100% - 115px);left:0;border-bottom:1px solid #eee;}
+.bottom_sns{position:absolute;bottom:0;left:0;width:100%;height:70px;    padding: 5px 10px;}
+.QBdPU.rrUvL{width:auto;display: inline-block;}
+.sns_date{font-size:11px;float:right;color:#999;}
+.bottom_right{width:55%;float:right;color:#502b23;}
+.bottom_right a.footer_list_link_a{right:20px;}
+.top_footer_list li.top_footer_list_li .bottom_right span.sub_font{font-size:11px;color:#a48272;letter-spacing: 0;margin-top:0;}
+.youtube_list{margin:2% auto;clear:both;}
+.youtube_list li{display:inline-block;width:30%;height:100px;border-radius: 20px;    line-height: 100px;text-align: center;margin: 0 1%;cursor: pointer;}
+.youtube_div{height:auto;overflow: hidden;padding-top:2%;}
+.top_footer_list li.top_footer_list_li .youtube_div span.go_link{float:right;}
+
 @-webkit-keyframes sdb {
 0% {
 -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -225,7 +251,6 @@ transform: rotate(-45deg) translate(-20px, 20px);
 opacity: 0;
 }
 }
-
 @-webkit-keyframes sdb2 {
 0% {
 -webkit-transform: rotate(0deg) translate(0, 0);
@@ -245,7 +270,6 @@ transform: rotate(0deg) translate(0, 0);
 opacity: 0;
 }
 50% {
-
 opacity: 1;
 transform: rotate(0deg);
 }
@@ -254,7 +278,6 @@ transform: rotate(0deg) translate(0, 0);
 opacity: 0;
 }
 }
-
 @media (max-width: 767px){
 section {padding:0;}
 }
@@ -274,7 +297,6 @@ section {padding:0;}
 .list_img img.d_img{width: 70%;}
 .dots li a:before,.dots li a.active:before{background: rgba(0,0,0,1);}
 .pagingInfo02_1{display:none;}
-
 @media only screen and  (max-width: 1300px) {
 .list_section_02 ul li:nth-child(1){font-size:18px;}
 .list_section_02 ul li:nth-child(2){font-size:15px;}
@@ -285,7 +307,6 @@ section {padding:0;}
 .pagingInfo02{display:none;}
 .pagingInfo02_1{display:block;}
 .container_width{width:100%;}
-
 .single-item02 .slick-slide .list_slider{    width: 80% !important;opacity: 0.5;    transform: scale(0.8);    background: #fff;
     padding: 30px 10px 60px;
     border-radius: 20px;}
@@ -302,7 +323,7 @@ section {padding:0;}
 .single-item02 .slick-dots {
     bottom: -44px;
 }
-.pagingInfo02, .pagingInfo02_1{bottom:-77px}
+.pagingInfo02, .pagingInfo02_1{bottom:82px}
 .single-item02 .slick-arrow {
     bottom: -90px;
 }
@@ -311,7 +332,6 @@ section {padding:0;}
 .list_section_02 ul li:nth-child(1){font-size:15px;}
 .list_section_02 ul li:nth-child(2){font-size:13px;}
 .title_h2{font-size:2em;}
-.pagingInfo02, .pagingInfo02_1{bottom:-74px;}
 .single-item02 .slick-dots{bottom:-40px;}
 .single-item02 .slick-arrow{bottom:-89px;}
 .list_section_02 ul li:nth-child(3) a{font-size:1em;}
@@ -326,6 +346,100 @@ section .slider_body{margin-top:-4%;}
 .list_img{height:150px;}
 .title_h2{font-size:1.5em;}
 }
+
+
+@media only screen and (max-width: 1500px){
+.container_width{width:90%;}
+}
+@media only screen and (max-width: 1250px){
+.section3 .container{max-width:100%;width:90%;padding:0;}
+
+}
+ @media only screen and (max-width: 1024px){
+ .section3 .container{width:100%;}
+ .section3 .footer{bottom:60px;}
+ .section3{padding:100px 0 8px;}
+ .top_footer_list li.top_footer_list_li:nth-child(1), .top_footer_list li.top_footer_list_li:nth-child(3){width:28%;}
+ .top_footer_list li.top_footer_list_li:nth-child(4), .top_footer_list li.top_footer_list_li_slick{width:72%;}
+ .top_footer_list li.top_footer_list_li_slick,.top_footer_list li.top_footer_list_li:nth-child(1), .top_footer_list li.top_footer_list_li:nth-child(2),.list_slider_ul_sns li{height:320px;min-height: 320px;}
+ .top_footer_list li.top_footer_list_li:nth-child(3), .top_footer_list li.top_footer_list_li:nth-child(4){height:220px;}
+ .top_footer_list li.top_footer_list_li a.footer_list_link_a{position:relative;bottom:0;left:0;}
+ .top_footer_list li.top_footer_list_li:nth-child(3) img{    width: 90px !important;height: 90px !important;position: absolute;top: 10px;left: 10px;}
+ .bottom_right{    float: none;width: auto;position: absolute;right: 10px;bottom: 20px;}
+ .youtube_list{position:absolute;bottom:30px;    width: 96%;}
+ .container_width{width:100%;}
+ }
+ @media only screen and (max-width: 700px){
+ .top_footer_list li.top_footer_list_li,.top_footer_list li.top_footer_list_li_slick{width:100% !important;}
+ .top_footer_list li.top_footer_list_li_slick, .top_footer_list li.top_footer_list_li:nth-child(1), .top_footer_list li.top_footer_list_li:nth-child(3), .list_slider_ul_sns li {
+height: 150px;
+min-height: 150px;
+}
+.top_footer_list li.top_footer_list_li_slick,  .top_footer_list li.top_footer_list_li:nth-child(2), .list_slider_ul_sns li{ height: 400px;
+min-height: 400px;
+}
+.section3{height:auto !important;overflow:hidden;padding-bottom:100px;}
+.section3 .slider_body{height:100%;top:0;transform: translateY(0);}
+.top_footer_list{    position: relative;
+height: auto;
+overflow: hidden;
+padding-top: 150px;}
+.section3 .footer{position:relative;bottom:0;}
+.top_footer_list li.top_footer_list_li:nth-child(1), .top_footer_list li.top_footer_list_li:nth-child(3){width:50% !important;position:absolute;top:0;}
+.top_footer_list li.top_footer_list_li:nth-child(1){left:0;}
+.top_footer_list li.top_footer_list_li:nth-child(3){right:0;}
+.bottom_right{right:auto;left:20px;}
+.top_footer_list li.top_footer_list_li:nth-child(3) img {width: 100px !important;height: 100px !important;top: auto;left: auto;bottom: 10px;right: 10px;}
+ }
+@media only screen and (max-width: 640px){
+section h4{font-size:15px;}  
+.top_footer_list li.top_footer_list_li span.sub_font{font-size:13px;}
+.top_footer_list li.top_footer_list_li span.call_num{font-size:18px;}
+.top_footer_list li.top_footer_list_li_slick, .top_footer_list li.top_footer_list_li:nth-child(2),.list_slider_ul_sns li {
+height: 350px;
+min-height: 350px;
+}
+.top_footer_list li.top_footer_list_li:nth-child(3) img,.top_footer_list li.top_footer_list_li:nth-child(1) img{width: 80px !important;height: 80px !important;}
+.list_slider_ul_sns{position:relative;height:450px;}
+.top_footer_list li.top_footer_list_li_slick, .top_footer_list li.top_footer_list_li:nth-child(2),.list_slider_ul_sns li {
+height: 450px;
+min-height: 450px;
+}
+.list_slider_ul_sns li:nth-child(1){    width: 100%;
+background: #000;
+height: 300px;
+min-height: 300px;}
+.list_slider_ul_sns li:nth-child(1) img{position: relative;max-height: 100% !important;
+object-fit: contain;} 
+.list_slider_ul_sns li:nth-child(2){    position: absolute;
+height: 50px;
+min-height: 156px;
+background: #fff;
+bottom: 0;
+width: 100%;}    
+} 
+@media only screen and (max-width: 499px){
+.section3 .title_h2{font-size:1.7em !important;}
+.bottom_right {
+    right: auto;
+    left: 4%;
+    top: 10%;
+}
+.top_footer_list li.top_footer_list_li:nth-child(3) img, .top_footer_list li.top_footer_list_li:nth-child(1) img {
+    width: 45px !important;
+    height: 45px !important;
+    bottom: 3px;
+    right: 0;
+}
+.top_footer_list li.top_footer_list_li a.footer_list_link_a{font-size:12px;}
+}
+@media only screen and (max-width: 374px){
+.top_footer_list li.top_footer_list_li span.sub_font{font-size:11px;}
+}
+@media only screen and (max-width: 360px){
+.section3 .title_h2 {
+    font-size: 1.5em !important;}
+}
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
@@ -335,17 +449,11 @@ section .slider_body{margin-top:-4%;}
 
  <div id="main" class="scroll-container">
 		<section class="section1 bg">
-            
-          <!---S: 눈효과---->
-          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_star.html" flush="true"/>
-          <!---E: 눈효과---->
-          <div class="footer_bg"></div>
-          <div class="bg_sub"></div>
           <div class="slider_div">
             <div class="slider single-item">
                   <div class="list_slider">
                       <p class="title">굽네 불금치킨</p>
-                      <img src="2021renew_img/mainbanner/bg_chicken.png" >
+                      <img src="2021renew_img/mainbanner/bg_chicken_1.png" >
                       <p class="subtitle">황금빛으로 불타는 맵달 장인 굽네의 새로운 무기!</p>
                   </div>
                   <div class="list_slider">
@@ -357,15 +465,21 @@ section .slider_body{margin-top:-4%;}
                      <!--<div class="player_div">
                       <iframe class="yt-player" src="2021renew_img/mainbanner/cpd.mp4" ></iframe>
                       </div>-->
-                      <div class='container' style="margin-top: 4%;opacity: 0;">
-                      <video width="100%" height="auto" autoplay loop muted controls>
+                      <div class='container container_video' style="margin-top: 4%;">
+                      <video  id="vid" width="100%" height="auto" autoplay loop muted controls>
                         <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
              </div>
              <span class="pagingInfo"></span>
-            </div>
+            </div>  
+          <!---S: 눈효과---->
+          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_star.html" flush="true"/>
+          <!---E: 눈효과---->
+          <div class="footer_bg"></div>
+          <div class="bg_sub"></div>
+          
             <div class="footer_nav_arrow">
                 <a href="#01" class="arrow-container">
                     <div class="arrow"></div> 
@@ -394,7 +508,7 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>굽네 불금치킨</li>
                               <li>굽네 불금치킨</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -404,7 +518,7 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>굽네 시카고 딥디쉬 피자</li>
                               <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                       </div>
@@ -414,7 +528,7 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>굽네 에그미니타르트</li>
                               <li>굽네 에그미니타르트</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -425,7 +539,7 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>굽네 고추바사삭</li>
                               <li>굽네 고추바사삭</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -435,7 +549,7 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>굽네 슈림프 시카고 딥디쉬 피자</li>
                               <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
@@ -445,51 +559,28 @@ section .slider_body{margin-top:-4%;}
                           <ul>
                               <li>바게트볼 갈릭크림</li>
                               <li>바게트볼 갈릭크림</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="" class="order_btn">주문하기</a></li>
+                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
+                 
              </div>
               <span class="pagingInfo02"></span>
               <span class="pagingInfo02_1"></span>
              </div>
             </div>
+            
+            <div class="footer_nav_arrow">
+                <a href="#02" class="arrow-container">
+                    <div class="arrow"></div> 
+                    <span>Scroll</span>
+                </a>
+            </div>
 		</section>
-        <style>
-            .top_footer_list{position:absolute;height:calc(100% - 117px);width:100%;}
-            .top_footer_list li.top_footer_list_li,.top_footer_list li.top_footer_list_li_slick{text-align:left;position: relative;float:left;height:389px;}
-            .top_footer_list li.top_footer_list_li span{display:block;letter-spacing: -1px;}
-            .top_footer_list li.top_footer_list_li span.sub_font{font-size:16px;margin:5px 0 0;}
-            .top_footer_list li.top_footer_list_li span.call_num{font-size:24px;font-weight: 600;}
-            .top_footer_list li.top_footer_list_li .footer_list_img{position:absolute;bottom:10px;right:10px;}
-            .top_footer_list li.top_footer_list_li:nth-child(1),.top_footer_list li.top_footer_list_li:nth-child(3){width:35%;background:#ffe9ba;padding:4% 2.5%;}
-            .top_footer_list li.top_footer_list_li:nth-child(4),.top_footer_list li.top_footer_list_li_slick{width:65%;background:#fff;overflow: hidden;}
-            .top_footer_list li.top_footer_list_li:nth-child(3),.top_footer_list li.top_footer_list_li:nth-child(4){height:200px;}
-            .top_footer_list li.top_footer_list_li:nth-child(1) span,.top_footer_list li:nth-child(1) h4{color:#502b0d;}
-            .top_footer_list li.top_footer_list_li:nth-child(3){background:#efd8cd;}
-            .top_footer_list li.top_footer_list_li:nth-child(4){background:#fffbf3;}
-            .top_footer_list li.top_footer_list_li a.footer_list_link_a{color:#f9fd9d;background:#d52626;font-family: 'TmoneyRoundWindRegular';letter-spacing: -1px;    padding: 2px 30px;position:absolute;    bottom: 15%;}
-            .slick-slide .list_slider_ul_sns img{max-height:100%;position:absolute;left:0;top:0;object-fit: cover;height:100%;    width: 100%; }
-            .list_slider_ul_sns li{float:left;width:50%;min-height:390px;position:relative;}
-            .section3 .slider_div{position:absolute;top:0;left:0;transform: translate(0%,0%);padding-bottom:0;margin-top:0;height: 100%;}
-            .section3 .slider_div .slick-dots{bottom:15px;}
-            .top_sns{padding:5px 10px;height:auto;overflow:hidden;border-bottom:1px solid #eee;}
-            .top_sns a{color:#000;}
-            .top_sns img{position:relative !important;    display: inline-block;}
-            .top_sns .top_sns_left{float:left;}
-            .top_sns .top_sns_left img{width:35px;height:35px;margin-right:5px;}
-            .top_sns .top_sns_right{float:right;}
-            .top_sns .top_sns_right img{margin-top:5px;width:25px;height:25px;}
-            .container_sns{padding:5px 20px;font-size:12px;position:absolute;top:46px;width:100%;height: calc(100% - 115px);left:0;border-bottom:1px solid #eee;}
-            .bottom_sns{position:absolute;bottom:0;left:0;width:100%;height:70px;    padding: 5px 10px;}
-            .QBdPU.rrUvL{width:auto;display: inline-block;}
-            .sns_date{font-size:11px;float:right;color:#999;}
-            .bottom_right{width:65%;float:right;}
-            .bottom_right a.footer_list_link_a{right:20px;}
-        </style>
+       
 		<section class="section3">
 			<div class="slider_body" style="height:100%;">
-                <h2 class="title_h2" style="color:#7b736b;font-size: 2em;"><img src="/2021renew_img/icon_02.svg" style="height:30px;width:30px;"> 더 알고 싶은 굽네</h2>
+                <h2 class="title_h2" style="color:#3a3a3a;font-size: 2em;"><img src="/2021renew_img/icon_02.svg" style="height:30px;width:30px;    vertical-align: text-bottom;"> 더 알고 싶은 굽네</h2>
                 <div class="container" style="height:calc(100% - 60px);">
                     <ul class="top_footer_list">
                         <li class="top_footer_list_li">
@@ -536,12 +627,22 @@ section .slider_body{margin-top:-4%;}
                             <img src="/2021renew_img/icon_04.svg" style="height:100px;width:100px;">
                             <div class="bottom_right">
                                 <h4>고객센터</h4>
-                                <span class="sub_font">AM 12:00 ~ PM 11:00</span>
                                 <span class="call_num">1661-9458</span>
+                                <span class="sub_font">AM 12:00 ~ PM 11:00</span>
                                     <a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>
                             </div>
                         </li>
-                        <li class="top_footer_list_li">dd</li>
+                        <li class="top_footer_list_li">
+                            <div class="youtube_div">
+                            <h4><img src="/2021renew_img/youtube.png" style="width:30px;margin-right:5px;">굽네 TV </h4>
+                            <span class="go_link"><a href="https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg" target="_blank">바로가기 ></a></span>
+                            </div>
+                            <ul class="youtube_list">
+                                <li style="background:url('/2021renew_img/youtube/youimg01.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=l1ohWUHTI9c')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg02.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=C4j05la6lsM')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg03.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Iwm0NTxcdg0')"><img src="/2021renew_img/youtube.png"></li>
+                            </ul>
+                        </li>
                     </ul>
                   
                 
@@ -608,7 +709,20 @@ section .slider_body{margin-top:-4%;}
 			
 	     });
          
-    if ($(window).width() < 800) {
+    if ($(window).width() < 1025) {
+            $('.section1').attr('id','link_01');
+            $('.section2').attr('id','link_02');
+            $('.section3').attr('id','link_03');
+            $('.section4').attr('id','link_04');
+            $('.section5').attr('id','link_05');
+            $('.section1 .arrow-container').attr('href','#link_02');
+            $('.section2 .arrow-container').attr('href','#link_03');
+            $('.section3 .arrow-container').attr('href','#link_04');
+            $('.section4 .arrow-container').attr('href','#link_05');
+            $('.section5 .arrow-container').attr('href','#link_01');
+            $.fn.fullpage.destroy('all');
+            
+        }if ($(window).height() < 821) {
             $('.section1').attr('id','link_01');
             $('.section2').attr('id','link_02');
             $('.section3').attr('id','link_03');
@@ -632,6 +746,8 @@ section .slider_body{margin-top:-4%;}
             
             });
         }
+        
+        
      
      
 
@@ -678,6 +794,8 @@ section .slider_body{margin-top:-4%;}
         var i = (currentSlide ? currentSlide : 0) + 1;
         $status.text(i + '/' + slick.slideCount);
     });
+
+    
     $('.single-item').slick({
       swipe : true,
       autoplay:false,
@@ -688,6 +806,8 @@ section .slider_body{margin-top:-4%;}
       centerMode: true,
       centerPadding: '0',
       dots: true,
+      //autoplay : true,			// 자동 스크롤 사용 여부
+      //autoplaySpeed : 3000,
       nextArrow: '<small class="slick-next">&rsaquo;</small>',
       prevArrow: '<small class="slick-prev">&lsaquo;</small>',
       customPaging : function(slider, i) {
@@ -696,6 +816,8 @@ section .slider_body{margin-top:-4%;}
       return '<a>&bull;</a>';
     },
     });
+    
+   
     
     var $bg = $('.section1');
     var $slickElement = $('.single-item');
@@ -725,6 +847,8 @@ section .slider_body{margin-top:-4%;}
       slidesToShow: 3,
       slidesToScroll: 3,
       dots: true,
+      autoplay : true,			// 자동 스크롤 사용 여부
+      autoplaySpeed : 3000,
 
           nextArrow: '<small class="slick-next">&rsaquo;</small>',
           prevArrow: '<small class="slick-prev">&lsaquo;</small>',
@@ -744,8 +868,9 @@ section .slider_body{margin-top:-4%;}
             centerMode:true,
             centerPadding:'20vw',
             cssEase: 'linear',
-            speed: 100,
+            speed: 200,
             useTransform: true,
+            
           }
         },
         ]
@@ -766,6 +891,8 @@ section .slider_body{margin-top:-4%;}
       centerPadding: '0',
       dots: true,
       arrows:false,
+      autoplay : true,			// 자동 스크롤 사용 여부
+      autoplaySpeed : 3000,
       customPaging : function(slider, i) {
       var thumb = $(slider.$slides[i]).data();
       // return '<a>'+(i+1)+'</a>';
