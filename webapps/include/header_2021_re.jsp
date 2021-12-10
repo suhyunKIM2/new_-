@@ -603,8 +603,8 @@ body ul, body ol{padding:0;margin:0;overscroll-behavior: contain;}
 .list_slider .subtitle{font-size:1.5em;}
 #page-top{overflow:auto;}
 
-.section3,.scroll-container section{height:auto !important;overflow:auto;padding-bottom:100px;}
-.scroll-container section{padding-bottom:0;}
+.section3,.scroll-container section{height:auto !important;/*overflow:auto;*/padding-bottom:100px;}
+.scroll-container section{padding-bottom:0;position:relative;}
 section .slider_body{height:100%;top:70px;transform: translateY(0);}
 section .slider_div{margin-top: 8%;}
 .top_footer_list{    position: relative;
@@ -648,7 +648,10 @@ section .slider_div {
 }
 .scroll-container section{min-height: 550px; }
 .single-item02 .slick-slide img{width:250px !important;} 
-
+.scroll-container section {
+    min-height: 550px;
+    padding: 100px 0;
+}
 }
 @media only screen and  (max-width: 1024px) {
 #page-top{overflow:auto;}
@@ -705,6 +708,11 @@ section .slider_body{height:100%;top:70px;transform: translateY(0);}
 @media (min-width: 768px){
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: 0;
+}
+}
+@media only screen and  (max-width: 512px) {
+.pagingInfo02, .pagingInfo02_1 {
+    bottom: -75px;
 }
 }
 @media only screen and  (max-width: 640px) {
