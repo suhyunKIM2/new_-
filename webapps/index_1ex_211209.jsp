@@ -364,9 +364,9 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *신버전 언�
 				<!-- main KV slider -->
 				<div class="main_kv_banner">
 					<ul>
-						<!--- 211210 오픈예정--->
+						<!--- 211210 오픈--->
                         <li style="background:#521707 url('resources/images/main/211209_rolling_bgchicken_PC.jpg')no-repeat center top;">
-							<a href="https://www.instagram.com/p/CXR54i2ocdb/" target="_blank">
+							<a href="#" target="_blank">
 								<img src="resources/images/main/211209_rolling_bgchicken_PC_part.jpg" class="w_img" alt="굽네 불금치킨 티저"/>
 								<img src="resources/images/main/211209_rolling_bgchicken_MO.jpg" class="m_img" alt="굽네 불금치킨 티저"/>
 							</a>							
