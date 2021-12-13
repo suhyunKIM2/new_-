@@ -226,7 +226,7 @@ height: -webkit-fill-available;
                                           </li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/goobne__official/" target="_blank">
+                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
                                                       <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
@@ -279,7 +279,7 @@ height: -webkit-fill-available;
                                           <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/goobne__official/" target="_blank">
+                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
                                                       <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
