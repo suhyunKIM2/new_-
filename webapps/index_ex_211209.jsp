@@ -41,14 +41,14 @@
 .section1 .container .content {position: absolute;right: 10%;bottom: -5%;width: auto;height: 95%;text-align: center;vertical-align: middle;}
 .section1 .container .content .title {height: 75%;margin-bottom: 7%;}
 .section1 .container .content .btn img {width: 25%;}
-.section1 .container .content .btn a.btn_02 {margin: 0 4%;}
+.section1 .container .content .btn a:nth-child(2) {margin: 0 4%;}
 		
 body { background:url(http://www.goobne.co.kr/resources/images/main/211209_micro_bg/bg_2.jpg);}
 
 @media only screen and (max-width:1485px){
 .section1 .container .model {left: 10%;bottom: 0;}
 .section1 .container .content {right: 3%;}
-.section1 .container .content .btn a.btn_02 {margin: 0 2%;}
+.section1 .container .content .btn a:nth-child(2) {margin: 0 2%;}
 }
 @media only screen and (max-width:1024px){
 .section1 {background:url(http://www.goobne.co.kr/resources/images/main/211209_micro_bg/bg_MO.jpg);background-size: cover;background-position: bottom;}
@@ -58,7 +58,7 @@ body { background:url(http://www.goobne.co.kr/resources/images/main/211209_micro
 .section1 .mobile .title_m {position: absolute;width: auto;height: 37%;top:7%;left: 50%;transform: translateX(-50%);}
 .section1 .mobile .btn_m {float: left;position:absolute;left: 15%;bottom: 5%;}
 .section1 .mobile .btn_m img {width: 27%;}
-.section1 .mobile .btn_m a.btn_02 {margin: 0 2%;}
+.section1 .mobile .btn_m a:nth-child(2) {margin: 0 2%;}
 .section1 .mobile .model_m {float: left;position: absolute;left: 50%;bottom: 0;transform: translateX(-50%);width: auto;height: 55%;}
 }	
 @media only screen and (max-width:740px){
@@ -68,7 +68,7 @@ body { background:url(http://www.goobne.co.kr/resources/images/main/211209_micro
 .section1 .logo img {height: 25px;padding: 13px;}
 .section1 .mobile .btn_m {float: left;width:100%;left: 54%;transform: translateX(-50%);bottom: 5%;}
 .section1 .mobile .btn_m img {width: 30%;}
-.section1 .mobile .btn_m a.btn_02 {margin: 0 1px;}
+.section1 .mobile .btn_m a:nth-child(2) {margin: 0 1px;}
 }
 @media only screen and (max-width:320px){
 .section1 .logo img {height: 18px;padding: 11px;}
@@ -88,17 +88,12 @@ function lnk1(){
  //   window.location.replace(link);     
     window.open(link);  
 }
-
-$(".btn a").click(function(e) {
-   e.stopPropagation();
-});
-
+	
 </script>
 
 <body id="page-top" class="index darkBg">
 	 <div id="main" class="scroll-container">
-         <a href="https://www.goobne.co.kr/index_1.jsp">
-		<section class="section1" id="section1" style="cursor: pointer;">
+		<section class="section1" style="cursor: pointer;" onclick="location.href='https://www.goobne.co.kr/index_1.jsp';">
 			<div class="logo">
 				<img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/BI.png">
 			</div>
@@ -108,7 +103,7 @@ $(".btn a").click(function(e) {
 					<img class="title" src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/title_2.png">
 					<div class="btn">
 						<a href="https://www.goobne.co.kr/index_1.jsp" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_1.png"></a>
-						<a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank" class="btn_02"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_2.png"></a>
+						<a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_2.png"></a>
 						<a href="https://www.instagram.com/goobne___official/" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_3.png"></a>
 					</div>
 				</div>
@@ -118,12 +113,11 @@ $(".btn a").click(function(e) {
 				<img class="model_m" src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/model.png">
 				<div class="btn_m">
 					<a href="https://www.goobne.co.kr/index_1.jsp" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_1.png"></a>
-					<a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank" class="btn_02"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_2.png"></a>
+					<a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_2.png"></a>
 					<a href="https://www.instagram.com/goobne___official/" target="_blank"><img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/btn_3.png"></a>
 				</div>
 			</div>
 		</section>
-        </a>
 	</div>
 			<!---
 			<div class="mobile">

@@ -206,7 +206,7 @@ height: -webkit-fill-available;
 		<section class="section3">
 			<div class="slider_body" style="height:100%;">
                 <h2 class="title_h2" style="color:#3a3a3a;font-size: 2em;"><img src="/2021renew_img/icon_02.svg" style="height:30px;width:30px;    vertical-align: text-bottom;"> 더 알고 싶은 굽네</h2>
-                <div class="container" style="height:calc(100% - 60px);">
+                <div class="container" style="height:calc(100% - 45px);">
                     <ul class="top_footer_list">
                         <li class="top_footer_list_li">
                             <h4>창업문의</h4>
@@ -220,30 +220,96 @@ height: -webkit-fill-available;
                               <div class="slider single-item03">
                                   <div class="list_slider">
                                       <ul class="list_slider_ul_sns">
-                                          <li><img src="/2021renew_img/footer_list_img/sns_img_01.png"></li>
+                                          <li>
+                                              <img src="/2021renew_img/footer_list_img/sns_img01.jpg" class="pc_sns">
+                                              <img src="/2021renew_img/footer_list_img/sns_img01_m.jpg" class="mobile_sns">
+                                          </li>
                                           <li>
                                               <div class="top_sns">
                                                   <a href="https://www.instagram.com/goobne__official/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05.svg">goobne</span>
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
                                               <div class="container_sns">
-                                                 이벤트 설명글 공간
+                                                 [구울레옹 전투 준비 태세 Ep.1]
+⠀
+                                                    하나, 둘, 하나, 둘 ...
+                                                    ⠀
+                                                    한참을 양 손에 닭다리를 하나씩 들고 체력 단련을 하다,
+                                                    문득 지나간 날들이 떠올랐다.
+                                                    ⠀
+                                                    나 구울레옹이 승리를 거머쥐었던 여러 날들.
+                                                    항상 뜨겁게 살고, 싸워왔던 여러 날들
+                                                    ⠀
+                                                    굽민들은 나를 향해 여러 칭송을 보냈고,
+                                                    나는 이에 보답해야한다.
+                                                    그 보답 역시 전투로!
+                                                    ⠀
+                                                    12월 15일,튀길레옹과의 전투!
+                                                    나는 우리 굽민들을 위해 또 한번의 승리 할 것이다!
+                                                    ⠀
+                                                    기다려라 튀길레옹!
+                                                    나의 병사들과 기름 튀기는 너의 영토를
+                                                    확실하게 구워주지.
+                                                    ⠀
+                                                    곧 다가올 전투를 위하여
+                                                    나는 오늘도 체력 단련과 보충을 위해
+                                                    구운치킨을 저녁으로.. 음, 뭐 먹지..
+                                                    ⠀
+                                                    다음화에 계속 ...
+                                                    ⠀
+                                                    #굽네_새모델_맞추면_고추바사삭
+                                                    #구울레옹_1편_감상댓글_남겨도_고추바사삭
+                                                    #따우스레스자우르스_크리스마스_케이크는_덤
                                               </div>
                                               <div class="bottom_sns">
                                                   <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
                                                 <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
                                                 <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
                                                 <div class="sns_date">
-                                                    2021년 12월 15일
+                                                    2021년 12월 10일
                                                 </div>
                                               </div>
                                           </li>
                                       </ul>
                                    </div>
                                   <div class="list_slider">
-                                      2번째 슬라이드 
+                                      <ul class="list_slider_ul_sns">
+                                          <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
+                                          <li>
+                                              <div class="top_sns">
+                                                  <a href="https://www.instagram.com/goobne__official/" target="_blank">
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
+                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
+                                                  </a>
+                                              </div>
+                                              <div class="container_sns">
+                                                 THE 굽스터, 오픈 하자마자
+                                                    100만 팔로워를 달성했다고? 😙
+                                                    ⠀
+                                                    우리 굽스터들의
+                                                    핫하고 힙한 소식만 전하는 GOOBNEWS
+                                                    ⠀
+                                                    다음 소식 기대되는 사람 냅다 손들어 🙋
+                                                    혹시, 에디터G에게 더 핫한 소식 전해준다면
+                                                    기프티콘이 있을지도..?
+                                                    ⠀
+                                                    #100만_팔로워_가보자고
+                                                    #굽스터_평생_함께해
+                                                    #솔로부대_기죽지마라
+                                                    #깜짝_놀랄_소식은_뭘까?
+                                              </div>
+                                              <div class="bottom_sns">
+                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
+                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
+                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
+                                                <div class="sns_date">
+                                                    2021년 12월 10일
+                                                </div>
+                                              </div>
+                                          </li>
+                                      </ul>
                                   </div>
                               </div>
                             </div>
