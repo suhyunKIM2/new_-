@@ -146,30 +146,205 @@ $(".menu_wrap li a").eq(0).trigger("click");
 
 </script>
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_menu.css">
+<script src="../JQuery-Snowfall-master/dist/ham_motion.js"></script>
+<link rel="stylesheet" href="../JQuery-Snowfall-master/dist/ham_style.css">
+<style>
+
+body ul, body ol{padding:0;margin:0;}
+#header.sticky #gnb ul>li a {padding: 0 10px 1.2285em;}
+.nav>li{display: inline-block;float:none;}
+.navbar-nav{float:none !important;position: absolute;left: 50%;transform: translateX(-50%);}
+.navbar-right{height:55px;line-height:55px;width:auto;float:right;}
+.ham_ul li{display: inline-block;vertical-align: middle;}
+.ham_div_mask{position:fixed;right:0;top:0;width:100%;height:100vh;background:rgba(0,0,0,0.7);}
+.ham_div_contents{position:fixed;right:0;top:0;width:30%;height:100vh;background:#fff;}
+.hamburger_top_bar{width:100%;padding:10px 0;background:#ca291a;height:50px;line-height: 50px;}
+.navbar-nav_user_log{float:left;margin-left:15px;height:50px;line-height: 50px;}
+.Notice_div_ham{clear:both;height:195px;background:url(/2021renew_img/ham_icon_01.svg)no-repeat -25px top,url(/2021renew_img/ham_icon_02.svg)no-repeat 103% 92%;background-size:25% auto,15% auto;line-height: normal;position:relative;border-bottom: 1px solid #eee;}
+.Notice_div_ham_ul{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;}
+.Notice_div_ham_ul li:nth-child(1){margin-bottom:2%;}
+.Notice_div_ham_ul li:nth-child(3){width:42%;text-align: center;margin:3% auto;padding:1% 0;border:1px solid #000;border-radius:20px;}
+.Notice_div_ham_ul li:nth-child(3):hover{background:#ca291a;}
+.Notice_div_ham_ul li:nth-child(3):hover a{color:#fff;text-decoration: none;}
+
+
+/*아코디언메뉴*/
+.menu_wrap {padding:0;overflow: auto;height: calc(100vh - 277px);}
+.menu_wrap li .list_hidden{font-weight:500;font-size: 15px;clear:both;background: #f3f3f3;height: auto;overflow:hidden;}
+.menu_wrap li a{width:100%;border-bottom:1px solid #eee;    padding: 1.5% 4%;}
+.menu_wrap li a .hamburger{background:#eee;width:30px;height:30px;border-radius: 50%;}
+.menu_wrap li a .hamburger .line{margin:0;    background-color: #000;}
+.menu_wrap li{text-align: left;clear:both;}
+.menu_wrap li a, .menu_wrap li a span{float:left;}
+#hamburger-90{float:right;margin-top: 5px;}
+.ham_ul_list{width:100%;padding:0 4%;}
+.ham_ul_list li a{padding:0;border-bottom:0.1px dotted #bfbfbf;padding: 3%;line-height: normal;font-size:13px !important;    position: relative;}
+.ham_ul_list li a:hover{color:#ca291a !important;}
+.ham_ul_list li a:after{content:'>';position:absolute;right:3%;-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;}
+.ham_ul_list li:last-child a{border-bottom:0;}
+.ham_footer{    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: normal;
+    background: #eee;
+    color: #727272;
+    font-size: 10px;
+    padding: 2% 0;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#aacc03;}    
+.navbar-header{width:100%;}
+.menu_wrap li a span.list_name{padding:10px 0;}
+.navbar-nav_user_log a{display:inline-block;}
+.join_a{color:#fff;font-size: 1.2em;
+    font-family: 'TmoneyRoundWindRegular';
+    font-weight: 500;}
+.span_class{margin:0 5px;color:#161616;vertical-align: middle;}    
+.mobile,.mobile_icon{display:none !important;}
+.PCmobile_icon{height:35px;margin:-10px 5px 0 0;}
+
+
+@media all and (max-height:820px){
+.slick-slide img{max-height: 340px;}
+.list_slider .title{font-size:4em;}
+.list_slider .subtitle{font-size:1.5em;}
+}
+@media all and (max-height:700px){
+.slick-slide img {
+    max-height: 225px !important;
+}
+.list_slider .title {
+    font-size: 3em !important;
+}
+.list_slider .subtitle {
+    font-size: 15px !important;
+}
+.scroll-container section{min-height: 550px; }
+body{overflow-y: auto;}
+}
+
+@media only screen and  (max-width: 799px) {
+#page-top{overflow:auto;}
+.scroll-container .section1{height:calc(100% - 64px);overflow-y: hidden;}
+.mobile{display:inline-block!important;}
+.mobile_icon,.PCmobile_icon{display:block !important;    margin: 5px auto 0 ;height: 28px;}
+.navbar-nav>li>a{padding:0;}
+.span_mobile{display:none;}
+.navbar-nav{width:100%;position: fixed;
+    bottom: 0;
+    background: #eee;margin:0;height: 64px;
+    line-height: 64px;}
+/*.scroll-container section{height: calc(100vh - 0);} 
+.scroll-container .section1{height: calc(100vh - 64px);} */
+.footer_ai_ul li{min-width: 250px;}
+.slick-slide img,.player_div{max-height:330px;}
+.list_slider .subtitle{font-size:1.3em;}
+.list_slider .title{font-size:5em;}
+.container>.navbar-header{margin:0;}
+.container{padding:0 3%;}
+.navbar-brand{padding-left:0;}
+.sidebar_menu{width:70%;}
+.navbar-default .navbar-nav>li>a{color:#000;}
+.nav>li{background:#fff;border-radius: 50%;margin:1.2px 2%;text-align: center;    width:65px;    height: calc(100% - 4%);}
+.navbar{min-height:45px;}
+.navbar-brand{padding:0;height:auto;line-height: normal;}
+.navbar-right{height:auto;line-height: normal;margin-top: 5px;}
+.navbar-brand img{height:37px !important;width:123px !important;}
+.navbar-header{padding-top:3px;}
+}
+@media (min-width: 768px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
+}
+@media only screen and  (max-width: 640px) {
+.footer_ai_ul li{min-width:40%;}
+.list_slider .subtitle{font-size:1em;}
+.list_slider .title{font-size:4em; }
+
+.navbar-default .navbar-brand img{height:35px !important;width:116px !important;}
+.navbar-default .navbar-nav>li>a{font-size:11px;}
+.mobile_icon, .PCmobile_icon{ margin:10px auto 0;}
+.slick-slide img,.player_div {
+    max-height: 205px;
+}
+}
+@media only screen and  (max-width:540px) {
+
+#page-top{overflow-x:hidden;touch-action:pan-y;overflow-y:auto;}
+.sidebar_menu {
+    width: 90%;overflow: hidden; height: 100%;
+}
+.Notice_div_ham{height:150px;}
+.menu_wrap{    height: calc(100% - 229px);}
+.navbar-nav_user_log svg{height:20px !important;width:58px !important;}
+.join_a{font-size:0.9em;}
+.Notice_div_ham_ul li:nth-child(1) img{height:25px !important;}
+.Notice_div_ham_ul li:nth-child(3){font-size:13px;    padding-bottom: 12px;}
+.Notice_div_ham_ul li:nth-child(3) img{ height:25px !important;   vertical-align: bottom;margin-right:5px;}
+.ham_ul_list li a{font-size:12px !important;}
+.menu_wrap li a span.list_name{font-size:13px;}
+#hamburger-90{width:25px;height:25px;}
+#hamburger-90 .line:nth-child(2){right:5px;}
+#hamburger-90 .line{left:5px;}
+#hamburger-90.is-active .line:nth-child(1){top:11px;left:8px;}
+#hamburger-9.is-active:before{    border: 3px solid #fff;}
+#hamburger-9:before{    top: calc(50% - 17px);left: calc(50% - 17px);width:35px;height:35px;}
+.scroll-container{scroll-behavior:smooth;overflow-y: scroll;}
+.scroll-container section{height:calc(100% - 64px);}
+section .slider_div{margin-top:4%;}
+}
+@media only screen and  (max-width:500px) {
+.nav>li{margin:1.2px 1%;}
+
+}
+@media only screen and  (max-width:400px) {
+.nav>li{width:17%;}
+section .slider_div{padding-bottom:68px;}
+.single-item .slick-arrow{bottom:-95px;}
+.slick-dots{bottom:30px;}
+.pagingInfo{bottom:-12px;}
+.list_slider .title{font-family:'TmoneyRoundWindRegular';font-weight: 600; }
+}
+@media only screen and  (max-width:374px) {
+.nav>li{width:16%;margin:4.9px 1%;    height: calc(100% - 14%);}
+.mobile_icon, .PCmobile_icon{height:18px;}
+.list_slider .title {
+    font-size: 3em !important;
+    letter-spacing: -2px;
+}
+.list_slider .subtitle {
+    font-size: 12px !important;
+    letter-spacing: 0;
+}
+.slick-slide img {
+    max-height: 150px;
+}
+
+}
+@media only screen and  (max-width:359px) {
+.sidebar_menu {
+    width: 95%;
+}
+.list_slider .subtitle {
+    font-size: 11px !important;
+}
+.list_slider .title {
+    font-size: 2.5em !important;
+}
+.slick-slide img,.player_div {
+    max-height: 140px;
+}
+.nav>li {
+    width: 17%;
+    margin: 4.9px 0.5%;}
+.menu_wrap {
+    height: calc(100% - 238px);
+}    
     
-    <!-- Bootstrap Core CSS -->
-    <link href="/scrollreveal/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/scrollreveal/css/freelancer.css" rel="stylesheet" type="text/css">
-
-    <!-- Animate CSS library -->
-    <link href="/scrollreveal/css/anicollection.css" rel="stylesheet" type="text/css">
-
-
-    <!-- Custom -->
-    <link href="/scrollreveal/css/custom.css" rel="stylesheet" type="text/css">
-
-    <!-- Syntax Highlight -->
-    <link rel="stylesheet" href="/scrollreveal/css/markdown-highligth.css">
-
-
-
-<!-- Syntax Highlight -->
-<link rel="stylesheet" href="/scrollreveal/css/markdown-highligth.css">
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu.css">
-<script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common.css">
+}
+</style>
 <form id="encModeForm" hidden="true">
 </form>
 
@@ -179,23 +354,23 @@ $(".menu_wrap li a").eq(0).trigger("click");
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <div class="navbar-header page-scroll">
-               <a class="navbar-brand" href="#page-top"><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
+               <a class="navbar-brand" href="#page-top"><img src="2021renew_img/logo_2.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li>
-                        <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
+                        <a href=""><img src="2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li>
-                        <a href="/menu/new_s_w_f_sub_re2021.jsp"><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                        <a href=""><img src="2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
                     </li>
                     <li>
-                        <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
+                        <a href=""><img src="2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
                     </li>
                     <li >
-                        <a href="/event/event_list.jsp"><img src="/2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
+                        <a href=""><img src="2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
                     </li>
                     <li class="mobile">
-                        <a href="javascript:loginnet('/member/info_change.aspx');"><img src="/2021renew_img/footer_nav_icon_04.svg"  class="mobile_icon">MY</a>
+                        <a href=""><img src="2021renew_img/footer_nav_icon_04.svg"  class="mobile_icon">MY</a>
                     </li>
                 </ul>
               
@@ -206,7 +381,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                 <ul class="ham_ul">
                     <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
-                    <li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="/2021renew_img/login.svg" style="width:52px;height:18px;"></a></li>
+                    <li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="2021renew_img/login.svg" style="width:52px;height:18px;"></a></li>
                     <li>
                        <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
@@ -217,7 +392,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                     </li>
                     <% } else { %>
                     <!--  로그인 후 -->
-                    <li><a href="javascript:userlogout();"><img src="/2021renew_img/logout.svg" style="height:18px;"></a></li>
+                    <li><a href="javascript:userlogout();"><img src="2021renew_img/logout.svg" style="height:18px;"></a></li>
                     <li>
                        <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
@@ -267,9 +442,9 @@ $(".menu_wrap li a").eq(0).trigger("click");
                     
                     <div class="Notice_div_ham">
                         <ul class="Notice_div_ham_ul">
-                            <li><img src="/2021renew_img/logo_red.svg" style="height:35px;"></li>
+                            <li><img src="2021renew_img/logo_red.svg" style="height:35px;"></li>
                             <li>주문전화 1899-9494</li>
-                            <li><a href=""><img src="/2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
+                            <li><a href=""><img src="2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
                         </ul>
                     </div>
                     
@@ -361,7 +536,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-                 					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
+            <!-- 					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
                                     <li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
