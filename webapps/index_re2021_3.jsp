@@ -49,6 +49,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='/JQuery-Snowfall-master/dist/slick.css' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
 <script>
  $( document ).ready( function() {
 $('.no-js').addClass('visible');
@@ -64,22 +65,70 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
 }
-
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
+  <jsp:include page="/include/header_2021_re.jsp" flush="false"/>
+  
+<style>
+/*background 메인롤링배너*/
+.section1.bg,.section1.bg1{background:url(/2021renew_img/mainbanner/main_banner_bg_01.png) no-repeat;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
+.slick-slide img.slider_img_background{max-height: 100%;width:70%;max-width: 1200px;}
+.slick-slide img.slider_img_background_mobile{display:none;    max-height: 100% !important;}
+@media only screen(max-width:1024px) and (max-height:812px){
+.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;float: left;}
+.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 545px !important;}
+.section1.bg1,.section1.bg{background-position-y: 67% !important;}
+}
+@media only screen and (max-height:600px){
+.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;float: left;}
+.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 545px !important;}
+.section1.bg1,.section1.bg{background-position-y: 67% !important;}
+}
+@media only screen and (max-height:512px){
+.slick-slide img.slider_img_background_mobile_text {width: 24% !important;float: none;}
+.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 463px !important;}
+.section1.bg1,.section1.bg{background-position-y: 67% !important;}
+}
+
+
+
+@media only screen and (max-width:1024px){
+.section1.bg,.section1.bg1{background:url(/2021renew_img/mainbanner/m_main_banner_bg_01.png) no-repeat bottom;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
+.slick-slide img.slider_img_background_pc{display:none;}
+.slick-slide img.slider_img_background_mobile{display:block;}
+.slick-slide img.slider_img_background_mobile_text{max-width: 350px;}
+.slick-slide img.slider_img_background_mobile_img{max-width: 600px;}
+}
+/* 태블릿, 아이패드 */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
+.slick-slide img.slider_img_background_mobile_img {
+    max-width: 750px;
+}
+}
+@media only screen and (max-width:800px){
+.slick-slide img.slider_img_background_mobile_text{width:35% ;}
+.slick-slide img.slider_img_background_mobile_img{width:80%;}
+}
+@media only screen and (max-width:717px){
+.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;}
+.slick-slide img.slider_img_background_mobile_img{width:100%;}
+}
+</style>
+
 </head>
 <body id="page-top" class="index">
-    <jsp:include page="/include/header_2021_re.jsp" flush="false"/>
+    
 
  <div id="main" class="scroll-container">
 		<section class="section1 bg">
           <div class="slider_div">
             <div class="slider single-item">
                   <div class="list_slider">
-                      <p class="title">굽네 불금치킨</p>
-                      <img src="2021renew_img/mainbanner/bg_chicken_1.png" >
-                      <p class="subtitle">황금빛으로 불타는 맵달 장인 굽네의 새로운 무기!</p>
+                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
+                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
+                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">
+                       
                   </div>
                   <div class="list_slider">
                       <p class="title">굽네 치PD </p>

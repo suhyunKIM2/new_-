@@ -48,12 +48,12 @@ section .slider_div{position:absolute;top:50%;left:50%;transform: translate(-50%
 .slick-slide img{margin:auto; width:auto;max-height:450px;    image-rendering: pixelated;}
 .list_slider .title{font-family:'TmoneyRoundWindExtraBold';color:#fff;letter-spacing:-4px;font-size:6em;text-align: center;}
 .list_slider .subtitle{font-family:'Noto Sans KR';color:#fff;letter-spacing:-1px;font-size:1.8em;text-align: center;}
-.section1{background:#98C19F;}
-.section1:before{opacity: 1;}
-.section1.bg{background:#ca291a;opacity: 1; transition: 0.4s all;}
-.section1.bg1{background:#ca291a;opacity: 1;transition: 0.4s all;}
-.section1.bg2{background:#eb7c09; opacity: 1;transition: 0.4s all;}
-.section1.bg3{background:#ffce76; opacity: 1;transition: 0.4s all;}
+.section1{opacity: 0;transition: 0.4s all;}
+.section1:before{opacity: 0;transition: 0.4s all;}
+.section1.bg{background-color:#ca291a; opacity: 1;transition: 0.4s all;}
+.section1.bg1{background-color:#ca291a;opacity: 1;transition: 0.4s all;}
+.section1.bg2{background-color:#eb7c09; opacity: 1;transition: 0.4s all;}
+.section1.bg3{background-color:#ffce76;opacity: 1;transition: 0.4s all;}
 .navbar-fixed-top{padding:0;}
 .navbar-brand {
 padding: 9px 15px;
@@ -156,6 +156,7 @@ box-sizing: border-box;
 .youtube_div{height:auto;overflow: hidden;padding-top:2%;}
 .top_footer_list li.top_footer_list_li .youtube_div span.go_link{float:right;}
 .mobile_sns{display: none !important;}
+#footer p{margin:0;font-size:13px;}
 
 /*서브페이지 css추가*/
 #container #contents{padding:0;}

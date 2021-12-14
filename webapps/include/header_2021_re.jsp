@@ -179,7 +179,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <div class="navbar-header page-scroll">
-               <a class="navbar-brand" href="#page-top"><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
+               <a class="navbar-brand" href="/index_1.jsp"><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li>
