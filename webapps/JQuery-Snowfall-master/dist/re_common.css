@@ -357,7 +357,7 @@ width: 100%;}
     width: 45px !important;
     height: 45px !important;
     bottom: 3px;
-    right: 0;
+    right: 3px;
 }
 .top_footer_list li.top_footer_list_li a.footer_list_link_a{font-size:12px;}
 }
