@@ -23,6 +23,7 @@ a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !importa
 .section3 {
     background-color:  #fffdf9;
     padding:120px 0 8px;
+    overflow:auto;
 }
 .section4 {
     background-color:  #CC938E;
