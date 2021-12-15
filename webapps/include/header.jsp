@@ -141,11 +141,33 @@ $(document).ready(function(){
   $('.menu_wrap li a #hamburger-90').toggleClass("is-active");
   });
 $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
+
+/*메뉴소개 mouseover 추가*/
+    $('.mouseover_div').hide();
+
+    $('.hover_li_mouseover').mouseover(function(){
+    $('.mouseover_div').slideDown(300);
+
+    });
+    $('.mouseover_div , .hover_li_mouseleave').mouseleave(function(){
+    $('.mouseover_div').slideUp(150);
+    });
+    $('.hover_li_mouseleave').mouseout(function(){
+    $('.mouseover_div').slideUp(150);
+    });
 });
 
 
 </script>
-
+<style>
+  .mouseover_div{background:rgba(255, 255, 255, 0.9);width:100%;position:fixed;top:60px;left:0;border-bottom:1px solid #eee;}
+  .mouseover_div ul li{display:inline-block;margin:0 1%;font-size:15px;}
+  .mouseover_div ul li a:hover{color:#aacc03;}
+  .mouseover_div ul{padding:2% 0;}
+  @media only screen and (max-width: 1024px){
+  .mouseover_div{display:none !important;}
+  }
+  </style>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
     <!-- Bootstrap Core CSS -->
@@ -182,25 +204,33 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
                <a class="navbar-brand" href="/index_1.jsp"><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
-                    <li>
+                    <li class="hover_li_mouseleave">
                         <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
-                    <li>
-                        <a href="/menu/new_s_w_f.jsp"><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                    <li class="hover_li_mouseover">
+                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
                     </li>
-                    <li>
+                    <li class="hover_li_mouseleave">
                         <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
                     </li>
-                    <li >
+                    <li class="hover_li_mouseleave">
                         <a href="/event/event_list.jsp"><img src="/2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
                     </li>
                     <li class="mobile">
                         <a href="javascript:loginnet('/member/info_change.aspx');"><img src="/2021renew_img/footer_nav_icon_04.svg"  class="mobile_icon">MY</a>
                     </li>
                 </ul>
-              
-    
-    
+                <div class="mouseover_div">
+                    <ul class="container">
+                        <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+                        <li><a href="/menu/new_s_w_f.jsp">스우파</a></li>
+                        <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
+                    </ul>
+                </div>  
+            
             <!-- /.navbar-collapse -->
             <div class="navbar-right">
                 <ul class="ham_ul">
@@ -361,7 +391,7 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-                                    <!--- 211215 오후에 오픈 <li><a href="/menu/new_bg.jsp">불금치킨</a></li> --->
+                                    <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
                  					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
@@ -374,6 +404,7 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
             <!-- 						<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
                                 </ul>
                             </div>
+                            
                           </li>
                           <li>
                               <a href="#" class="ham_list_a">

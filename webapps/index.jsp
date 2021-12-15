@@ -130,7 +130,7 @@ $(".btn a").click(function(e) {
                     <li class="mobile_img"><img src="/resources/images/main/20211214_micro/img_03.png"></li>
                 </ul>
                 <ul class="btn_container">
-                    <li><a href="https://www.goobne.co.kr/index_1.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
+                    <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
                     <li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/btn_02.png"></a></li>
                     <li><a href="https://www.instagram.com/goobne___official/" target="_blank"><img src="/resources/images/main/20211214_micro/btn_03.png"></a></li>
                 </ul>

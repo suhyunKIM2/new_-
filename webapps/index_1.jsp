@@ -178,7 +178,7 @@ height: -webkit-fill-available;
                     
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"> <img src="2021renew_img/mainbanner/bg_chicken.png" ></p>
+                          <p class="list_img"><a href=""> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
                           <ul>
                               <li>굽네 불금치킨</li>
                               <li>굽네 불금치킨</li>
@@ -188,7 +188,7 @@ height: -webkit-fill-available;
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><img src="2021renew_img/mainbanner/cd_pizza.png" ></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn="><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
                           <ul>
                               <li>굽네 시카고 딥디쉬 피자</li>
                               <li>굽네 시카고 딥디쉬 피자</li>
@@ -198,7 +198,7 @@ height: -webkit-fill-available;
                       </div>
                       <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></a></p>
                           <ul>
                               <li>굽네 에그미니타르트</li>
                               <li>굽네 에그미니타르트</li>
@@ -209,7 +209,7 @@ height: -webkit-fill-available;
                   
                   <div class="list_slider">
                       <div class="list_section_02">
-                         <p class="list_img"> <img src="2021renew_img/mainbanner/gb_chicken.png" ></p>
+                         <p class="list_img"> <a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn="><img src="2021renew_img/mainbanner/gb_chicken.png" ></a></p>
                           <ul>
                               <li>굽네 고추바사삭</li>
                               <li>굽네 고추바사삭</li>
@@ -219,7 +219,7 @@ height: -webkit-fill-available;
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><img src="2021renew_img/mainbanner/scd_pizza.png" ></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=07&productid=31497&classbtn=" ><img src="2021renew_img/mainbanner/scd_pizza.png" ></a></p>
                           <ul>
                               <li>굽네 슈림프 시카고 딥디쉬 피자</li>
                               <li>굽네 슈림프 시카고 딥디쉬 피자</li>
@@ -229,7 +229,7 @@ height: -webkit-fill-available;
                     </div>
                       <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
                           <ul>
                               <li>바게트볼 갈릭크림</li>
                               <li>바게트볼 갈릭크림</li>

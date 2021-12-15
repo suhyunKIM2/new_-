@@ -134,18 +134,40 @@ function userlogout() {
 	var RSAModulus = "<%=RSAModulus%>";
 	var RSAExponent = "<%=RSAExponent%>";
 </script>
-<script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
+
 <script>
 $(document).ready(function(){
-  $(".menu_wrap li a").click(function(){
+  $(".menu_wrap li a.ham_list_a").click(function(){
   $('.menu_wrap li a #hamburger-90').toggleClass("is-active");
   });
-$(".menu_wrap li a").eq(0).trigger("click");
+$(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
+
+/*메뉴소개 mouseover 추가*/
+    $('.mouseover_div').hide();
+
+    $('.hover_li_mouseover').mouseover(function(){
+    $('.mouseover_div').slideDown(300);
+
+    });
+    $('.mouseover_div , .hover_li_mouseleave').mouseleave(function(){
+    $('.mouseover_div').slideUp(150);
+    });
+    $('.hover_li_mouseleave').mouseout(function(){
+    $('.mouseover_div').slideUp(150);
+    });
 });
 
 
 </script>
-
+<style>
+  .mouseover_div{background:rgba(255, 255, 255, 0.9);width:100%;position:fixed;top:60px;left:0;border-bottom:1px solid #eee;}
+  .mouseover_div ul li{display:inline-block;margin:0 1%;font-size:15px;}
+  .mouseover_div ul li a:hover{color:#aacc03;}
+  .mouseover_div ul{padding:2% 0;}
+  @media only screen and (max-width: 1024px){
+  .mouseover_div{display:none !important;}
+  }
+  </style>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
     <!-- Bootstrap Core CSS -->
@@ -182,25 +204,33 @@ $(".menu_wrap li a").eq(0).trigger("click");
                <a class="navbar-brand" href="/index_1.jsp"><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
-                    <li>
+                    <li class="hover_li_mouseleave">
                         <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
-                    <li>
-                        <a href="/menu/new_s_w_f_sub_re2021.jsp"><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                    <li class="hover_li_mouseover">
+                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
                     </li>
-                    <li>
+                    <li class="hover_li_mouseleave">
                         <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
                     </li>
-                    <li >
+                    <li class="hover_li_mouseleave">
                         <a href="/event/event_list.jsp"><img src="/2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
                     </li>
                     <li class="mobile">
                         <a href="javascript:loginnet('/member/info_change.aspx');"><img src="/2021renew_img/footer_nav_icon_04.svg"  class="mobile_icon">MY</a>
                     </li>
                 </ul>
-              
-    
-    
+                <div class="mouseover_div">
+                    <ul class="container">
+                        <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+                        <li><a href="/menu/new_s_w_f.jsp">스우파</a></li>
+                        <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
+                        <li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
+                    </ul>
+                </div>  
+            
             <!-- /.navbar-collapse -->
             <div class="navbar-right">
                 <ul class="ham_ul">
@@ -253,7 +283,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                         
                     <% } else { %>
                     <!--  로그인 후 -->   
-                    <a href="javascript:userlogout();"><img src="2021renew_img/logout.svg" style="height:25px;"></a>
+                    <a href="javascript:userlogout();"><img src="/2021renew_img/logout.svg" style="height:25px;"></a>
                     <% } %>
                     </div>
                     <div class="hamburger_top_bar">
@@ -269,7 +299,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                         <ul class="Notice_div_ham_ul">
                             <li><img src="/2021renew_img/logo_red.svg" style="height:35px;"></li>
                             <li>주문전화 1899-9494</li>
-                            <li><a href=""><img src="/2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
+                            <li><a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
                         </ul>
                     </div>
                     
@@ -346,8 +376,8 @@ $(".menu_wrap li a").eq(0).trigger("click");
                                     <li><a href="/brand/about.jsp">연혁 &amp; 수상</a></li>
                                     <li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
                                     <li><a href="/brand/map.jsp">오시는길</a></li>
-                                    <li><a href="/brand/phil.jsp">경영 철학</a></li>
-                                    <li><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
+                                    <li class="mobile_none_list"><a href="/brand/phil.jsp">경영 철학</a></li>
+                                    <li class="mobile_none_list"><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
                                 </ul>
                             </div>
                           </li>
@@ -361,7 +391,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-                                    <!--- 211215 오후에 오픈 <li><a href="/menu/new_bg.jsp">불금치킨</a></li> --->
+                                    <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
                  					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
@@ -374,6 +404,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
             <!-- 						<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
                                 </ul>
                             </div>
+                            
                           </li>
                           <li>
                               <a href="#" class="ham_list_a">
@@ -497,6 +528,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } %>
                                 </ul>
+
                             </div>
                           </li>
                         <% } %> 
@@ -533,316 +565,6 @@ $(".menu_wrap li a").eq(0).trigger("click");
 
 
 
-<header id="header" style="display:none;">
-	<div class="header_top">
-		<p class="header_call">주문전화<strong>1661-9494</strong></p>
-        <h1 class="logo"><a href="/" >Goobne</a></h1>
-		<!-- 로그인 전 -->
-	<% if (UserIdx.equals("")) { %>
-		<div class="gnb_member">
-			<a href="https://www.goobne.co.kr/member/login.jsp" class="gnb_member_link">로그인</a>
-			<a href="<%=Const.GnOrder %>/login/join1.aspx" target="<%=target%>" class="gnb_member_link">회원가입</a>
-		</div>
-	<% } else { %>
-		<!--  로그인 후 -->
-		<div class="gnb_member gnb_member_login">
-			<div class="gnb_member_nav">
-				<a href="#" class="gnb_member_link">마이페이지</a>
-				<ul>
-					<li><a href="/mypage/my_qna_list.jsp">문의내역</a></li>
-					<li><a href="javascript:loginnet('/member/resign.aspx');">회원탈퇴</a></li>
-					<li><a href="javascript:loginnet('/member/change_pw.aspx');">비밀번호 변경</a></li>
-					<li><a href="javascript:loginnet('/member/info_change.aspx');">회원정보 변경</a></li>
-				</ul>
-			</div>
-		<% if ("22".equals(UserLevel)) { %>
-			<!-- <div class="gnb_member_nav">
-				<a href="#" class="gnb_member_link">직원게시판</a>
-				<ul>
-					<li><a href="/company/notice_list.jsp">공지사항</a></li>
-					<li><a href="/company/opinion_list.jsp">통(通)합시다!</a></li>
-					<li><a href="/company/anonymity_list.jsp">토론마당</a></li>
-					<li><a href="/company/photo_list.jsp">우리가족이야기</a></li>
-					<li><a href="/company/eduinfo_list.jsp">교육정보게시판</a></li>
-					<li><a href="/company/form_list.jsp">자료실</a></li>
-					<li><a href="/company/poll_list.jsp">투표게시판</a></li>
-					<li><a href="/company/divisionform_list.jsp">사업부자료실</a></li>
-					<li><a href="/company/infoshare_list.jsp">업무공유게시판</a></li>
-				</ul>
-			</div> -->
-		<% } %>
-		<% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-			<div class="gnb_member_nav">
- 				<a href="#" class="gnb_member_link">성공 뱅크</a>
-				<ul>
-					<li><a href="/family/successknow_list.jsp">성공노하우</a></li>
-					<li><a href="/family/successstory_list.jsp">성공스토리</a></li>
-				</ul>
-			</div>
-		<% } %>
-		
-		<% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-			<div class="gnb_member_nav">
-				<a href="#" class="gnb_member_link">가족게시판</a>
-				<ul>
-<!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
-<!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
-<!-- 					<li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
-					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
-					<li><a href="/family/suggest_list.jsp">건의사항</a></li>
-					<li><a href="/family/notice_list.jsp">공지사항</a></li>
-					<li><a href="/family/discussion_list.jsp">토론방</a></li>
-					<li><a href="/family/reference_list.jsp">자료실</a></li>
-					<li><a href="/family/cscenter_list.jsp">고객의소리</a></li>
-				</ul>
-			</div>
-		<% } %>
-			<a href="javascript:userlogout();" class="gnb_member_link">로그아웃</a>
-		</div>
-	<% } %>
-		<!-- <a href="<%=Const.GnOrder %>/order/delivery.aspx" target="gnorder" class="btn_order hvr-pop">온라인주문</a> -->
-		<a href="javascript:loginnet('');" class="btn_order">온라인주문</a>
-		<p class="btn_gnb"><a href=""><i></i><span class="blind">MENU</span></a></p>
-	</div>
-	
-	<nav id="gnb">
-		<div class="gnb_wrap gnb_1depth">
-			<h1 class="logo sticky_logo"><a href="/" >Goobne</a></h1>
-			<ul>
-				<li><a href="/brand/brandstory.jsp">브랜드소개</a>
-					<ul>
-<!-- 						<li><a href="/brand/ceo.jsp">회장 인사말</a></li> -->
-						<li><a href="/brand/brandstory.jsp">브랜드스토리</a></li>
-						<li><a href="/brand/about.jsp">연혁 &amp; 수상</a></li>
-						<li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
-						<li><a href="/brand/map.jsp">오시는길</a></li>
- 						<li><a href="/brand/phil.jsp">경영 철학</a></li>
-                        <li><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
-					</ul>
-				</li>
-				<li><a href="/menu/new_s_w_f.jsp">메뉴소개</a>
-					<ul>
-                        <li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
-						<li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
-						<!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
-						<li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
-						<li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
-						<li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
-						<!-- <li><a href="">세트메뉴</a></li>
-						<li><a href="">사이드메뉴</a></li> -->
-						<li><a href="/menu/recipe_list.jsp">레시피소개</a></li>
-<!-- 						<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
-					</ul>
-				</li>
-				<li><a href="/store/search_store.jsp">매장찾기</a>
-					<ul>
-						<li><a href="/store/search_newstore.jsp">월별 신규매장</a></li>
-						<li><a href="/store/search_store.jsp">국내매장</a></li>
-						<li><a href="/global.jsp">해외매장/Global</a></li>
-					</ul>
-				</li>
-				<li><a href="/franchise/franchise.jsp">창업정보</a>
-					<ul>
-						<li><a href="/franchise/franchise.jsp">창업정보</a></li>
-						<li><a href="/franchise/franchise_qna.jsp">창업 FAQ</a></li>
-						<li><a href="/franchise/franchise_seminar.jsp">창업 전화상담</a></li>
-						<li><a href="/franchise/franchise_consulting.jsp">온라인 창업상담</a></li>
-						<li><a href="/franchise/franchise_cost.jsp">창업비용</a></li>
-					</ul>
-				</li>
-				<li><a href="/advertise/press_list.jsp">홍보센터</a>
-					<ul>
-						<li><a href="/advertise/press_list.jsp">언론보도</a></li>
-						<li><a href="/advertise/social.jsp">굽네 소셜미디어</a></li>
-						<li><a href="/advertise/media.jsp">굽네TVCF소개</a></li>
-<!-- 						<li><a href="/advertise/schedule_list.jsp">TVCF광고일정</a></li> -->
-						<li><a href="/advertise/contribution_list.jsp">3生 캠페인 소개</a></li>
-						<li><a href="/advertise/goobcar_list.jsp">굽카 히스토리</a></li>
-					</ul>
-				</li>
-				<li><a href="/event/event_list.jsp">이벤트</a>
-					<ul>
-						<li><a href="/event/event_list.jsp">진행중인 이벤트</a></li>
-					<% //if ("".equals(UserIdx)) { %>
-						<!-- <li><a href="/member/login.jsp">굽카후기 이벤트</a></li> -->
-					<% //} else { %>
-						<li><a href="/event/goobcarepil_list.jsp">굽카후기 이벤트</a></li>
-					<% //} %>
-						<li><a href="/event/win_list.jsp">당첨자 발표</a></li>
-					</ul>
-				</li>
-			<% if ("".equals(UserIdx)) { %>
-				<li><a href="/member/login.jsp">고객지원센터</a>
-					<ul>
-				<% if ("".equals(UserIdx)) { %>	
-						<li><a href="/member/login.jsp">고객의 소리</a></li>
-						<li><a href="/member/login.jsp">고객공모전</a></li>
-						<li><a href="/member/login.jsp">굽카 신청하기</a></li>
-						<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-				<% } else { %>
-						<li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
-						<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-						<li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
-						<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-				<% } %>
-					</ul>
-				</li>
-			<% } else { %>
-				<li><a href="/customer/cscenter_regi.jsp">고객지원센터</a>
-					<ul>
-				<% if ("".equals(UserIdx)) { %>	
-						<li><a href="/member/login.jsp">고객의 소리</a></li>
-						<li><a href="/member/login.jsp">고객공모전</a></li>
-						<li><a href="/member/login.jsp">굽카 신청하기</a></li>
-						<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-				<% } else { %>
-						<li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
-						<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-						<li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
-						<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-				<% } %>
-					</ul>
-				</li>
-			<% } %>
-			</ul>
-		</div>
-		<div class="gnb_bg"></div>
-	</nav>
-	
-	<!-- m Gnb -->
-	<nav id="mGnb">
-		<div class="mGnb_head_wrap">
-			<ul class="mGnb_head mGnb_login">
-			<% if (UserIdx.equals("")) { %>
-				<!-- 로그인 전 -->
-				<li><a href="https://www.goobne.co.kr/member/login.jsp">로그인</a></li>
-				<li><a href="<%=Const.GnOrder %>/login/join1.aspx" target="<%=target%>">회원가입</a></li>
-			<% } else { %>
-				<!-- 로그인 후 -->
-				<li><a href="/mypage/my_qna_list.jsp">마이페이지</a></li>
-				<% if (UserLevel.equals("22")) { %>
-				<li><a href="/family/notice_list.jsp">가족게시판</a></li>
-				<% } %>
-				<li><a href="javascript:userlogout();">로그아웃</a></li>
-			<% } %>
-			</ul>
-		</div>
-		
-    	<ul class="mGnb_wrap">
-    		<% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-			<li>
-    			<p>성공뱅크</p>
-    			<ul>
-					<li><a href="/family/successknow_list.jsp">성공노하우</a></li>
-					<li><a href="/family/successstory_list.jsp">성공스토리</a></li>
-    			</ul>
-    		</li>
-			<% } %>
-			
-    		<li>
-    			<p>브랜드소개</p>
-    			<ul>
-<!--     				<li><a href="/brand/ceo.jsp">CEO 인사말</a></li> -->
-					<li><a href="/brand/brandstory.jsp">브랜드스토리</a></li>
-					<li><a href="/brand/about.jsp">연혁,수상내역</a></li>
-					<li><a href="/brand/map.jsp">오시는길</a></li>
-<!-- 					<li><a href="/brand/philosophy.jsp">경영 철학</a></li>200323 add -->
-                    <li><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
-    			</ul>
-    		</li>
-    		<li>
-    			<p>메뉴소개</p>
-    			<ul>
-					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
-					<li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
-					<!-- <li><a href="/menu/new.jsp">신메뉴</a></li> 211026 주석처리-->
-<!-- 					<li><a href="/menu/menu_list.jsp">메뉴보기</a></li> -->
-					<li><a href="/menu/menu_list.jsp?class=">치킨메뉴</a></li>
-					<li><a href="/menu/menu_list.jsp?class=15">피자메뉴</a></li>
-					<li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
-					<!-- <li><a href="">세트메뉴</a></li>
-					<li><a href="">사이드메뉴</a></li> -->
-					<li><a href="/menu/recipe_list.jsp">레시피소개</a></li>
-<!-- 					<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
-				</ul>
-    		</li>
-    		<li>
-    			<p>매장찾기</p>
-    			<ul>
-					<li><a href="/store/search_newstore.jsp">월별 신규매장</a></li>
-					<li><a href="/store/search_store.jsp">국내매장</a></li>
-					<li><a href="/global.jsp">해외매장</a></li>
-				</ul>
-    		</li>
-    		<% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-			<li>
-				<p>가족게시판</p>
-				<ul>
-<!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
-<!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
-					<!-- <li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
-					<li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
-					<li><a href="/family/suggest_list.jsp">건의사항</a></li>
-					<li><a href="/family/notice_list.jsp">공지사항</a></li>
-					<li><a href="/family/discussion_list.jsp">토론방</a></li>
-					<li><a href="/family/reference_list.jsp">자료실</a></li>
-					<li><a href="/family/cscenter_list.jsp">고객의소리</a></li>
-				</ul>
-			</li>
-			<% } %>
-    		
-    		<li>
-    			<p><a href="/franchise/franchise.jsp">창업정보</a></p>
-    			
-    		</li>
-    		<!--
-    		<li>
-    			<p>홍보센터</p>
-    			<ul>
-					<li><a href="/advertise/press_list.jsp">언론보도</a></li>
-					<li><a href="/advertise/social.jsp">굽네소셜미디어</a></li>
-					<li><a href="/advertise/media.jsp">굽네미디어</a></li>
-					<li><a href="/advertise/contribution_list.jsp">사회공헌</a></li>
-					<li><a href="/advertise/goobcar_list.jsp">굽네소개</a></li>
-				</ul>
-    		</li> -->
-    		<li>
-    			<p>이벤트</p>
-    			<ul>
-					<li><a href="/event/event_list.jsp">진행중인 이벤트</a></li>
-					<li><a href="/event/goobcarepil_list.jsp">굽카후기 이벤트</a></li>
-					<li><a href="/event/win_list.jsp">당첨자 발표</a></li>
-				</ul>
-    		</li>
-    		<li>
-    			<p>고객지원센터</p>
-    			<ul>
-			<% if (UserIdx.equals("")) { %>	
-					<li><a href="/member/login.jsp">고객의 소리</a></li>
-					<li><a href="/member/login.jsp">고객공모전</a></li>
-					<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-			<% } else { %>
-					<li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
-					<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-					<li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
-			<% } %>
-				</ul>
-    		</li>
-    		<li>
-    			<a href="http://www.goobnemall.com/m/view/event/X4N7DFJQ6MH0DVV4/read?evnt_id=SZ1XHK58I&evntType=CMT&evntSt=20&brdId=I93CH23GL&pageNum=1" target="_blank"><img src="/resources/images/main/bn_main_gnmall_M.jpg" width="100%" alt="굽네몰 첫구매 100원, 볼케이노 소스"></a>
-    		</li>
-    		<li class="mGnb_sns_wrap">
-    			<div class="sns_wrap mGnb_sns">
-					<ul class="header_sns">
-						<li class="foot_fb"><a href="https://www.facebook.com/goobne" target="_blank" title="굽네 페이스북 새창열림">facebook</a></li>
-				<li class="foot_blog"><a href="http://blog.naver.com/goobne94" target="_blank" title="굽네 블로그 새창열림">blog</a></li>
-				<li class="foot_insta"><a href="https://www.instagram.com/explore/tags/%EA%B5%BD%EB%84%A4%EC%B9%98%ED%82%A8/" target="_blank" title="굽네 인스타그램 새창열림">instagram</a></li>	
-					</ul>
-				</div>
-    		</li>
-    	</ul>
-    </nav>  
-</header>
 <form name="loginnet" target="<%=formtarget%>" method="post">
 <input type="hidden" name="useridxnet" id="useridxnet" value="<%=UserIdx %>" />
 <input type="hidden" name="useridnet" id="useridnet" value="<%=UserId %>" />
