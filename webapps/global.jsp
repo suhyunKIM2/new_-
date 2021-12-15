@@ -54,8 +54,8 @@ if (stxt == null || "".equals(stxt))
 			<h2 class="cont_tit t_center">해외매장 / Global</h2>
 			<div id="global" class="section">
 				<p>
-					<span>해외 진출 국가<strong> 9개국</strong> 해외매장 <strong>총 32개 </strong>매장을 운영 하고 있습니다.</span>
-                    <span>We are operating<strong> 32 overseas stores</strong> in <strong>9 countries</strong></span>
+					<span>해외 진출 국가<strong> 9개국</strong> 해외매장 <strong>총 33개 </strong>매장을 운영 하고 있습니다.</span>
+                    <span>We are operating<strong> 33 overseas stores</strong> in <strong>9 countries</strong></span>
 				</p>
                 <div class="overseas_guide">
 						<a href="javascript:void(0);" class="active" style="cursor:default;">
@@ -63,7 +63,7 @@ if (stxt == null || "".equals(stxt))
 							<p style="margin-right: 70px;">해외 진출<span style="font-weight:500;font-size:16px;line-height: 1.2;">Countries</span><strong>9</strong></p>
 						</a>
 						<a href="/store/hongkong.jsp">
-							<p>해외매장<span style="font-weight:500;font-size:16px;line-height: 1.2;">Overseas Stores</span><strong>32</strong></p>
+							<p>해외매장<span style="font-weight:500;font-size:16px;line-height: 1.2;">Overseas Stores</span><strong>33</strong></p>
 						</a>
 					</div>
 			</div>

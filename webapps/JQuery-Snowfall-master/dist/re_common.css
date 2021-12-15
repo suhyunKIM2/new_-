@@ -12,6 +12,9 @@ font-style: normal;
 }
 body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:'TmoneyRoundWindRegular',Helvetica,Arial,sans-serif;}
 a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !important;color:#000;}
+body a{color:#000;}
+#container #contents.brand_contents section,#container_global section,#container_list section{padding:0;}
+.form_standard, .wrap_standard{max-width: 100%;}
 .section1 {
     background-color: #ca291a;
     position:relative;
@@ -222,18 +225,18 @@ opacity: 0;
 .list_section_02 ul li:nth-child(3) a{width:40%;display: inline-block;margin:0.5%;border-radius: 20px;padding:2% 0;color:#fff;    font-size: 1.3em;}
 .list_section_02 ul li:nth-child(3) a.more_btn{background:#8f8f8f;}
 .list_section_02 ul li:nth-child(3) a.order_btn{background:#e02828;}
-.list_img{height:350px;position:relative;}
-.list_img img{width:90%;max-height:100%;height:auto;position: absolute;
+.list_slider .list_img{height:350px;position:relative;}
+.list_slider .list_img img{width:90%;max-height:100%;height:auto;position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);}
-.list_img img.d_img{width: 70%;}
+.list_slider .list_img img.d_img{width: 70%;}
 .dots li a:before,.dots li a.active:before{background: rgba(0,0,0,1);}
 .pagingInfo02_1{display:none;}
 @media only screen and  (max-width: 1300px) {
 .list_section_02 ul li:nth-child(1){font-size:18px;}
 .list_section_02 ul li:nth-child(2){font-size:15px;}
-.list_img{height:250px;}
+.list_slider .list_img{height:250px;}
 .title_h2{font-size:2.5em;}
 }
 @media only screen and  (max-width: 799px) {
@@ -250,7 +253,7 @@ opacity: 0;
 .title_h2 {
     font-size: 2em;
 }
-.list_img {
+.list_slider .list_img {
     height: 178px;
 }
 .single-item02 .slick-dots {
@@ -267,13 +270,13 @@ opacity: 0;
 .list_section_02 ul li:nth-child(3) a{font-size:1em;}
 }
 @media only screen and  (max-width: 499px) {
-.list_img{height:200px;}
+.list_slider .list_img{height:200px;}
 .slick-slide img, .player_div{max-height:100%;}
 .single-item02 .slick-slide .list_slider{padding:10px 10px 30px;}
 section .slider_body{margin-top:-4%;}
 }
 @media only screen and  (max-width: 360px) {
-.list_img{height:150px;}
+.list_slider .list_img{height:150px;}
 .title_h2{font-size:1.5em;}
 }
 

@@ -361,6 +361,7 @@ $(".menu_wrap li a").eq(0).trigger("click");
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
+                                    <!--- 211215 오후에 오픈 <li><a href="/menu/new_bg.jsp">불금치킨</a></li> --->
                  					<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
