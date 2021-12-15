@@ -310,6 +310,7 @@ section .slider_body{margin-top:-4%;}
  }
  @media only screen and (max-width: 760px){
 #store_list{display:table-caption;}
+.store_search_table #store_list{display:table-row-group;;}
  }
  @media only screen and (max-width: 700px){
  .top_footer_list li.top_footer_list_li,.top_footer_list li.top_footer_list_li_slick{width:100% !important;}
