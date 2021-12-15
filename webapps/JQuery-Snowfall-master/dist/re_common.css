@@ -89,10 +89,15 @@ padding: 9px 15px;
     transition: opacity 0.4s ease;
     -webkit-transition: opacity 0.4s ease;
 }
-.slider_div .slick-initialized {
+.slider_div .slider.slick-initialized {
     visibility: visible;
     opacity: 1;    
 }
+/*IE11 전용 css 적용 미디어쿼리*/
+@media all and (-ms-high-contrast:none) { *::-ms-backdrop, .slick-slide .container_sns,.slick-slide .slick-cloned .container_sns{opacity: 0;transition: opacity 0.1s ease;}
+*::-ms-backdrop,.slick-slide.slick-active .container_sns,.slick-slide.slick-current .container_sns,.slick-slide.slick-current .container_sns{opacity: 1;transition: opacity 0.1s ease;}
+}
+
 .footer_nav_arrow{position:absolute;bottom:30px;left:50%;transform: translateX(-50%);z-index: 9;}
 .arrow-container {
 position: relative;
@@ -309,7 +314,7 @@ section .slider_body{margin-top:-4%;}
  .mobile_none_list{display:none;}
  }
  @media only screen and (max-width: 760px){
-#store_list{display:table-caption;}
+.store_search_table.map_table #store_list{display:table-caption;}
 .store_search_table #store_list{display:table-row-group;;}
  }
  @media only screen and (max-width: 700px){
