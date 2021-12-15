@@ -346,8 +346,8 @@ $(".menu_wrap li a").eq(0).trigger("click");
                                     <li><a href="/brand/about.jsp">연혁 &amp; 수상</a></li>
                                     <li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
                                     <li><a href="/brand/map.jsp">오시는길</a></li>
-                                    <li><a href="/brand/phil.jsp">경영 철학</a></li>
-                                    <li><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
+                                    <li class="mobile_none_list"><a href="/brand/phil.jsp">경영 철학</a></li>
+                                    <li class="mobile_none_list"><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
                                 </ul>
                             </div>
                           </li>

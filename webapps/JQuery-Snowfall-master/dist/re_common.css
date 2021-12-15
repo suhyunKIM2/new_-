@@ -13,7 +13,7 @@ font-style: normal;
 body,.navbar,h1, h2, h3, h4, h5, h6,header .intro-text .name{    font-family:'TmoneyRoundWindRegular',Helvetica,Arial,sans-serif;}
 a, a:hover, a:focus, a:active, a.active:hover{    text-decoration: none !important;color:#000;}
 body a{color:#000;}
-#container #contents.brand_contents section,#container_global section,#container_list section{padding:0;}
+#container #contents.brand_contents section,#container_global section,#container_list section,#frcs_consulting{padding:0;}
 .form_standard, .wrap_standard{max-width: 100%;}
 .section1 {
     background-color: #ca291a;
@@ -302,13 +302,16 @@ section .slider_body{margin-top:-4%;}
  .youtube_list{position:absolute;    bottom: 30px; left:0;text-align: center;   width: 100%;}
  .container_width{width:100%;}
  }
-
+ @media only screen and (max-width: 768px){
+ .mobile_none_list{display:none;}
+ }
  @media only screen and (max-width: 700px){
  .top_footer_list li.top_footer_list_li,.top_footer_list li.top_footer_list_li_slick{width:100% !important;}
  .top_footer_list li.top_footer_list_li_slick, .top_footer_list li.top_footer_list_li:nth-child(1), .top_footer_list li.top_footer_list_li:nth-child(3), .list_slider_ul_sns li {
 height: 150px;
 min-height: 150px;
 }
+.mobile_none_list{display:none;}
 .top_footer_list li.top_footer_list_li_slick,  .top_footer_list li.top_footer_list_li:nth-child(2), .list_slider_ul_sns li{ height: 400px;
 min-height: 400px;
 }
