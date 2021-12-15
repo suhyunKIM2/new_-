@@ -178,11 +178,11 @@ height: -webkit-fill-available;
                     
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href=""> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
                           <ul>
                               <li>굽네 불금치킨</li>
                               <li>굽네 불금치킨</li>
-                              <li><a href="" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
