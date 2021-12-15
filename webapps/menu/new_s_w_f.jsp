@@ -46,7 +46,7 @@
 <!--- css여기---->
 <style>
 	.youtube_position_div{position:relative;width:100%;}
-    .youtube_position_absolute{position:absolute;left:0;top:0;width:100%;z-index: 9;}
+    .youtube_position_absolute{position:absolute;left:0;top:-1px;width:100%;z-index: 9;}
     .youtube_position_absolute_02{position:relative;height: 433px;
     background: #000;}
     .iframe_youtube{ position: absolute;
@@ -122,6 +122,7 @@
                             <li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/contents/menu/swf/btn_01.png"></a></li>
                             <li><a href="https://baeminkr.onelink.me/XgL8/1a9b704f " target="_blank"><img src="/resources/images/contents/menu/swf/btn_02.png"></a></li>
                             <li><a href="https://hoy.kr/BrEMj" target="_blank"><img src="/resources/images/contents/menu/swf/btn_03.png"></a></li>
+							<li><a href="https://share.coupangeats.com/0BoyWPP5Jkb" target="_blank"><img src="/resources/images/contents/menu/swf/btn_04.png"></a></li>
                         </ul>
                     </div>
                 </div>
