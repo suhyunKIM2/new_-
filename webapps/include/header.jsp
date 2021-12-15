@@ -137,10 +137,10 @@ function userlogout() {
 
 <script>
 $(document).ready(function(){
-  $(".menu_wrap li a").click(function(){
+  $(".menu_wrap li a.ham_list_a").click(function(){
   $('.menu_wrap li a #hamburger-90').toggleClass("is-active");
   });
-$(".menu_wrap li a").eq(0).trigger("click");
+$(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
 });
 
 

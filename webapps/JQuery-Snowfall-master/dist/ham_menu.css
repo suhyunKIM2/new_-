@@ -422,6 +422,7 @@
 }
 
 #hamburger-90:before {
+    opacity: 0;
 	content: "";
 	position: absolute;
 	-webkit-box-sizing: border-box;
