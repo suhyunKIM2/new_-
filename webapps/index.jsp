@@ -11,6 +11,7 @@
 <meta property="og:title" content="굽네치킨" />
 <meta property="og:description" content="오븐 요리 마스터 '굽네' 공식 홈페이지 - 치킨, 피자, 디저트 등 제품 소개, 매장 및 온라인 주문 안내" />
 <meta property="og:type"  content="website" />
+<meta property="og:image" content="https://www.goobne.co.kr/2021renew_img/red_bg_logo.png">
 <link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
 <script type="application/ld+json">
 {

@@ -42,6 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:image" content="https://www.goobne.co.kr/2021renew_img/red_bg_logo.png">
 	<title>굽네치킨</title>
 	
     <link rel="stylesheet" type="text/css" href="/onepage_fullscreen/full-page-scroll.css">
@@ -367,7 +368,7 @@ height: -webkit-fill-available;
                             <img src="/2021renew_img/icon_04.svg" style="height:100px;width:100px;">
                             <div class="bottom_right">
                                 <h4>고객센터</h4>
-                                <span class="call_num">1661-9458</span>
+                                <span class="call_num">1661-9494</span>
                                 <span class="sub_font">AM 12:00 ~ PM 11:00</span>
                                     <a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>
                             </div>
