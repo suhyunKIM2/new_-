@@ -72,51 +72,9 @@ height: -webkit-fill-available;
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
   <jsp:include page="/include/header_dev.jsp" flush="false"/>
   
-<style>
-/*background 메인롤링배너*/
-.section1.bg,.section1.bg1{background:url(/2021renew_img/mainbanner/main_banner_bg_01.png) no-repeat;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
-.slick-slide img.slider_img_background{max-height: 100%;width:70%;max-width: 1200px;}
-.slick-slide img.slider_img_background_mobile{display:none;    max-height: 100% !important;}
-@media only screen(max-width:1024px) and (max-height:812px){
-.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;float: left;}
-.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 545px !important;}
-.section1.bg1,.section1.bg{background-position-y: 67% !important;}
-}
-@media only screen and (max-height:600px){
-.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;float: left;}
-.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 545px !important;}
-.section1.bg1,.section1.bg{background-position-y: 67% !important;}
-}
-@media only screen and (max-height:512px){
-.slick-slide img.slider_img_background_mobile_text {width: 24% !important;float: none;}
-.slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 463px !important;}
-.section1.bg1,.section1.bg{background-position-y: 67% !important;}
-}
-
-
-
-@media only screen and (max-width:1024px){
-.section1.bg,.section1.bg1{background:url(/2021renew_img/mainbanner/m_main_banner_bg_01.png) no-repeat bottom;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
-.slick-slide img.slider_img_background_pc{display:none;}
-.slick-slide img.slider_img_background_mobile{display:block;}
-.slick-slide img.slider_img_background_mobile_text{max-width: 350px;}
-.slick-slide img.slider_img_background_mobile_img{max-width: 600px;}
-}
-/* 태블릿, 아이패드 */
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
-.slick-slide img.slider_img_background_mobile_img {
-    max-width: 750px;
-}
-}
-@media only screen and (max-width:800px){
-.slick-slide img.slider_img_background_mobile_text{width:35% ;}
-.slick-slide img.slider_img_background_mobile_img{width:80%;}
-}
-@media only screen and (max-width:717px){
-.slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;}
-.slick-slide img.slider_img_background_mobile_img{width:100%;}
-}
-</style>
+<!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v2.css' rel='stylesheet' type='text/css'>
+<!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 
 </head>

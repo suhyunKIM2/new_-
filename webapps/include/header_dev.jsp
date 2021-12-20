@@ -191,7 +191,9 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu.css">
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
+<!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v2.css">
+<!---E:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <form id="encModeForm" hidden="true">
 </form>
 
@@ -528,7 +530,6 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } %>
                                 </ul>
-
                             </div>
                           </li>
                         <% } %> 
