@@ -191,7 +191,7 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu.css">
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v2.css">
 <form id="encModeForm" hidden="true">
 </form>
 

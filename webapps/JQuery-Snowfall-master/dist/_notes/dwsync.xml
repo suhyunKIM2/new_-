@@ -16,4 +16,8 @@
 <file name="style.css" server="218.145.161.71" local="132821543400000000" remote="132821543400000000" Dst="0" />
 <file name="re_common.css" server="218.145.161.71" local="132840110824200918" remote="132839786400000000" Dst="0" />
 <file name="re_common.js" server="218.145.161.71" local="132839424388281933" remote="132839100000000000" Dst="0" />
+<file name="re_common_dev.js" server="218.145.161.71" local="132844421632814648" remote="132844097400000000" Dst="0" />
+<file name="re_popup.css" server="218.145.161.71" local="132844498325386738" remote="132844174200000000" Dst="0" />
+<file name="re_popup.js" server="218.145.161.71" local="132844493039473870" remote="132844168800000000" Dst="0" />
+<file name="re_common_v2.css" server="218.145.161.71" local="132844498529060002" remote="132844174200000000" Dst="0" />
 </dwsync>

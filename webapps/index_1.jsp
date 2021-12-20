@@ -51,6 +51,7 @@
     <link href='/JQuery-Snowfall-master/dist/slick.css' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     
+    
 <script>
  $( document ).ready( function() {
 $('.no-js').addClass('visible');
@@ -117,9 +118,26 @@ height: -webkit-fill-available;
 }
 </style>
 
+
 </head>
 <body id="page-top" class="index">
-    
+
+<!---S: 메인팝업--->
+
+<div id="mask_popup"></div>
+<div class="window" id="window">
+    <img src="2021renew_img/popup/popup_20211217.png">
+    <div class="btn_wrap btn_blk">
+        <ul class="popup_btn_ul">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
+        </ul>
+    </div>
+</div>
+       
+   
+<!---E: 메인팝업--->
+
 
  <div id="main" class="scroll-container">
 		<section class="section1 bg">
@@ -361,6 +379,14 @@ height: -webkit-fill-available;
                                           </li>
                                       </ul>
                                   </div>
+                                  <div class="list_slider cover_slider">
+                                      <ul class="list_slider_ul_sns">
+                                         <li style="width:100%;background: none;">
+                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
+                                        </li> 
+                                     </ul>
+                                  </div>
                               </div>
                             </div>
                         </li>
@@ -410,10 +436,11 @@ height: -webkit-fill-available;
 	    
     </div>
     
-    
+    <link href='/JQuery-Snowfall-master/dist/re_popup.css' rel='stylesheet' type='text/css'>
+    <script src="/JQuery-Snowfall-master/dist/re_popup.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_dev.js"></script>
 
 
   
