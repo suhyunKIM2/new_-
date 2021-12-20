@@ -6,15 +6,15 @@
         var maskWidth = $(window).width();  
  
         //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채운다.
-        $("#mask").css({"width":maskWidth,"height":maskHeight});  
+        $("#mask_popup").css({"width":maskWidth,"height":maskHeight});  
  
         //애니메이션 효과 - 일단 0초동안 까맣게 됐다가 60% 불투명도로 간다.
  
-        $("#mask").fadeIn(0);      
-        $("#mask").fadeTo("slow",0.6);    
+        $("#mask_popup").fadeIn(0);      
+        $("#mask_popup").fadeTo("slow",0.6);    
  
         //윈도우 같은 거 띄운다.
-        $(".window").show();
+        $("#window").show();
  
     }
  
@@ -35,8 +35,8 @@
         //검은 막을 눌렀을 때
         $("#mask_popup").click(function () {  
             $(this).hide();  
-             $(".window").addClass('fadeOut');
-            $(".window").css('display','none');  
+             $("#window").addClass('fadeOut');
+            $("#window").css('display','none');  
  
         });      
  
