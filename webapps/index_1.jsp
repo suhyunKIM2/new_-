@@ -102,8 +102,7 @@ height: -webkit-fill-available;
 		<section class="section1 bg">
           <div class="slider_div">
             <div class="slider single-item">
-            <!--- re_common_v2.js : 비디오 추가시 js파일 추가 , id +1 첫번째슬라이드가 비디오일때 js slider autoplay:false 
-                  re_common.js :  첫번째 일반 이미지 슬라이드 일때 ----->
+            <!--- re_common_v2.js : ① 추가시마다 video id ="vid+숫자" 설정/ ②첫번째 일때는 비디오 태그에 autoplay 추가 / ③js파일과 비교필요---->
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
                       <video  id="vid2" width="100%" height="auto" autoplay muted controls>
