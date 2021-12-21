@@ -102,11 +102,12 @@ height: -webkit-fill-available;
 		<section class="section1 bg">
           <div class="slider_div">
             <div class="slider single-item">
-            <!--- re_common_v2.js : 비디오 추가시 js파일 추가 , id +1 첫번째슬라이드가 비디오일때 js slider autoplay:false 
-                  re_common.js :  첫번째 일반 이미지 슬라이드 일때 ----->
 				 <div class="list_slider">
-                     <div class='container container_video' style="margin-top: 4%;">
-                      <video  id="vid2" width="100%" height="auto" autoplay muted controls>
+                     <!--<div class="player_div">
+                      <iframe class="yt-player" src="2021renew_img/mainbanner/211217_bg.mp4" ></iframe>
+                      </div> autoplay loop muted controls-->
+                      <div class='container container_video' style="margin-top: 4%;">
+                      <video  id="vid" width="100%" height="auto" autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>
                     </div>
@@ -122,7 +123,10 @@ height: -webkit-fill-available;
                       <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
                  </div>
                  <div class="list_slider">
-                    <div class='container container_video' style="margin-top: 4%;">
+                     <!--<div class="player_div">
+                      <iframe class="yt-player" src="2021renew_img/mainbanner/cpd.mp4" ></iframe>
+                      </div> autoplay loop muted controls-->
+                      <div class='container container_video' style="margin-top: 4%;">
                       <video  id="vid" width="100%" height="auto"  muted controls>
                         <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
                     </video>
@@ -403,7 +407,7 @@ height: -webkit-fill-available;
     <script src="/JQuery-Snowfall-master/dist/re_popup_v2.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v2.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_dev.js"></script>
 
 
   

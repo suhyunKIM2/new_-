@@ -139,7 +139,7 @@
     
     $('.single-item').slick({
       swipe : true,
-      autoplay:true,
+      autoplay:false,
       autoplaySpeed:4000,	
       /*fade:true,*/
       adaptiveHeight:true,
@@ -171,6 +171,19 @@
       });
 
       $('#vid').on('ended', function() {
+        console.log('Video Complete')
+        $slickElement.slick('slickPlay');
+      });
+      
+      $slickElement.on('afterChange', function(event, slick, currentSlide) {
+        var vid = $(slick.$slides[currentSlide]).find('#vid2');
+        if (vid.length > 0) {
+          $slickElement.slick('slickPause');
+          $(vid).get(0).play();
+        }
+      });
+
+      $('#vid2').on('ended', function() {
         console.log('Video Complete')
         $slickElement.slick('slickPlay');
       });
@@ -251,7 +264,7 @@
       centerPadding: '0',
       dots: true,
       arrows:false,
-      //autoplay : true,			// 자동 스크롤 사용 여부
+      autoplay : true,			// 자동 스크롤 사용 여부
       autoplaySpeed : 3000,
       customPaging : function(slider, i) {
       var thumb = $(slider.$slides[i]).data();

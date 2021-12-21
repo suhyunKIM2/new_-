@@ -71,10 +71,10 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header_dev.jsp" flush="false"/>
+  <jsp:include page="/include/header.jsp" flush="false"/>
   
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v2.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v3.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 
@@ -102,11 +102,18 @@ height: -webkit-fill-available;
 		<section class="section1 bg">
           <div class="slider_div">
             <div class="slider single-item">
+            <!--- 비디오 추가시 js파일 추가 , id +1 첫번째슬라이드가 비디오일때 js slider autoplay:false----->
+				 <div class="list_slider">
+                     <div class='container container_video' style="margin-top: 4%;">
+                      <video  id="vid2" width="100%" height="auto" autoplay muted controls>
+                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                 </div>
                   <div class="list_slider">
                        <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
                        <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
-                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">
-                       
+                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
                   </div>
                   <div class="list_slider">
                       <p class="title">굽네 치PD </p>
@@ -114,10 +121,7 @@ height: -webkit-fill-available;
                       <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
                  </div>
                  <div class="list_slider">
-                     <!--<div class="player_div">
-                      <iframe class="yt-player" src="2021renew_img/mainbanner/cpd.mp4" ></iframe>
-                      </div> autoplay loop muted controls-->
-                      <div class='container container_video' style="margin-top: 4%;">
+                    <div class='container container_video' style="margin-top: 4%;">
                       <video  id="vid" width="100%" height="auto"  muted controls>
                         <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
                     </video>
@@ -142,8 +146,7 @@ height: -webkit-fill-available;
               <ul class="footer_ai_ul">
                   <li><img src="2021renew_img/left_ai.png" ></li>
                   <li><img src="2021renew_img/right_ai.png" ></li>
-                  <li><img src="2021renew_img/bottom.png" ></li>
-                 
+                  <li><img src="2021renew_img/bottom.png" ></li>                 
               </ul>
           </div>
 		</section>
@@ -399,7 +402,7 @@ height: -webkit-fill-available;
     <script src="/JQuery-Snowfall-master/dist/re_popup_v2.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_v2.js"></script>
 
 
   

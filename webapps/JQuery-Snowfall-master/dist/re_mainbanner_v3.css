@@ -1,7 +1,12 @@
 ﻿/*background 메인롤링배너*/
-.section1.bg,.section1.bg1{background:url(/2021renew_img/mainbanner/main_banner_bg_01.png) no-repeat;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
+
 .slick-slide img.slider_img_background{max-height: 100%;width:70%;max-width: 1200px;}
 .slick-slide img.slider_img_background_mobile{display:none;    max-height: 100% !important;}
+/*211221 re_common_v2.css 추가*/
+.section1.bg,.section1.bg1{background-color:#ca291a;opacity: 1;transition: 0.4s all;}
+.section1.bg2{background:url(/2021renew_img/mainbanner/main_banner_bg_01.png) no-repeat;opacity: 1;background-color: #ca291a;transition: 0.4s all;    background-size: cover;}
+.section1.bg3{background-color:#eb7c09; opacity: 1;transition: 0.4s all;}
+.section1.bg4{background-color:#ffce76;opacity: 1;transition: 0.4s all;}
 @media only screen(max-width:1024px) and (max-height:812px){
 .slick-slide img.slider_img_background_mobile_text{width:60% ;margin-top: 60px;float: left;}
 .slick-slide img.slider_img_background_mobile_img{width:100%;    max-width: 545px !important;}
