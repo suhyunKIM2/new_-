@@ -67,6 +67,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
 }
+
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
@@ -394,11 +395,11 @@ height: -webkit-fill-available;
 	    
     </div>
     
-    <link href='/JQuery-Snowfall-master/dist/re_popup.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup.js"></script>
+    <link href='/JQuery-Snowfall-master/dist/re_popup_v2.css' rel='stylesheet' type='text/css'>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v2.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_dev.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common.js"></script>
 
 
   
