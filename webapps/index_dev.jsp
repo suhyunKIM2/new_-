@@ -104,7 +104,7 @@ height: -webkit-fill-available;
             <div class="slider single-item">
             <!--- re_common_v2.js : ① 추가시마다 video id ="vid+숫자" 설정/ ②첫번째 일때는 비디오 태그에 autoplay 추가 / ③js파일과 비교필요---->
 				 <div class="list_slider">
-                     <div class='container container_video' style="margin-top: 4%;">
+                     <div class='container container_video' style="margin-top:4%;">
                       <video id="vid" width="100%" height="auto" autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>

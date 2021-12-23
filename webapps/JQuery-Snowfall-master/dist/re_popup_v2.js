@@ -68,10 +68,20 @@ $( document ).ready(function() {
 });
 
 function setCookie( name, value, expiredays ) { 
-	var todayDate = new Date(); 
+	/*var todayDate = new Date(); 
 	todayDate.setDate( todayDate.getDate() + expiredays );
 	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
 }
+*/
+var todayDate = new Date();   
+    todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);  
+    if ( todayDate > new Date() )  
+    {  
+    expiredays = expiredays - 1;  
+    }  
+    todayDate.setDate( todayDate.getDate() + expiredays );   
+     document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"   
+  }  
 
 function closeWin() { 
 	/*document.getElementById('window').style.display = "none";   
