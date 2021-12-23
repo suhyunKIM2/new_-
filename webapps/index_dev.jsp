@@ -74,7 +74,7 @@ height: -webkit-fill-available;
   <jsp:include page="/include/header.jsp" flush="false"/>
   
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v3.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v4.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 
@@ -104,7 +104,7 @@ height: -webkit-fill-available;
             <div class="slider single-item">
             <!--- re_common_v2.js : ① 추가시마다 video id ="vid+숫자" 설정/ ②첫번째 일때는 비디오 태그에 autoplay 추가 / ③js파일과 비교필요---->
 				 <div class="list_slider">
-                     <div class='container container_video' style="margin-top:4%;">
+                     <div class='container container_video container_video_bg'>
                       <video id="vid" width="100%" height="auto" autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>
@@ -393,7 +393,7 @@ height: -webkit-fill-available;
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v2.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v2.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
