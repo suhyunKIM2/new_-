@@ -156,8 +156,6 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
     $('.mouseover_div').slideUp(150);
     });
 });
-
-
 if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언제부터
             && new Date() < new Date('12/31/2021 23:59:59')) {        // 언제까지 실행하기 
             //alert('test');
@@ -183,7 +181,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
   @media only screen and (max-width: 1024px){
   .mouseover_div{display:none !important;}
   .navbar-brand.navbar_header_2022 img.navbar_header_2022_img{height:42px !important;}
-  .navbar-brand.navbar_header_2022 {margin-left:-3%;    padding: 0px;}
+  .navbar-brand.navbar_header_2022 {margin-left:-3%;}
   }
   </style>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -221,7 +219,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand logo_back " href="/index_1.jsp" ><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
+               <a class="navbar-brand logo_back " href="/index_1.jsp" ><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
                <a class="navbar-brand navbar_header_2022 logo_re" href="/index_1.jsp"><img src="/2021renew_img/logo_220101.svg" style="height:55px;" class="navbar_header_2022_img"></a>
                <ul class="nav navbar-nav">
                    
@@ -325,64 +323,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
                     </div>
                     
                    <ul class="menu_wrap">
-                         <% if ("22".equals(UserLevel)) { %>
-                         <!-- <div class="gnb_member_nav">
-                                    <a href="#" class="gnb_member_link">직원게시판</a>
-                                    <ul>
-                                        <li><a href="/company/notice_list.jsp">공지사항</a></li>
-                                        <li><a href="/company/opinion_list.jsp">통(通)합시다!</a></li>
-                                        <li><a href="/company/anonymity_list.jsp">토론마당</a></li>
-                                        <li><a href="/company/photo_list.jsp">우리가족이야기</a></li>
-                                        <li><a href="/company/eduinfo_list.jsp">교육정보게시판</a></li>
-                                        <li><a href="/company/form_list.jsp">자료실</a></li>
-                                        <li><a href="/company/poll_list.jsp">투표게시판</a></li>
-                                        <li><a href="/company/divisionform_list.jsp">사업부자료실</a></li>
-                                        <li><a href="/company/infoshare_list.jsp">업무공유게시판</a></li>
-                                    </ul>
-                                </div> -->
-                            <% } %>
-                            <% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-                             <li>
-                                  <a href="#" class="ham_list_a">
-                                     <span class="list_name">성공 뱅크</span>
-                                     <div class="hamburger is-active" id="hamburger-90">
-                                        <span class="line"></span>
-                                        <span class="line"></span>
-                                    </div>
-                                  </a>
-                                <div class="list_hidden">
-                                    <ul class="ham_ul_list">
-                                          <li><a href="/family/successknow_list.jsp">성공노하우</a></li>
-                                          <li><a href="/family/successstory_list.jsp">성공스토리</a></li>
-                                    </ul>
-                                </div>
-                              </li>
-                          <% } %>
-                          <% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
-                              <li>
-                                  <a href="#" class="ham_list_a">
-                                     <span class="list_name">가족게시판</span>
-                                     <div class="hamburger" id="hamburger-90">
-                                        <span class="line"></span>
-                                        <span class="line"></span>
-                                    </div>
-                                  </a>
-                                <div class="list_hidden">
-                                    <ul class="ham_ul_list">
-                                          <!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
-                    <!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
-                    <!-- 					<li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
-                                        <li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
-                                        <li><a href="/family/suggest_list.jsp">건의사항</a></li>
-                                        <li><a href="/family/notice_list.jsp">공지사항</a></li>
-                                        <li><a href="/family/discussion_list.jsp">토론방</a></li>
-                                        <li><a href="/family/reference_list.jsp">자료실</a></li>
-                                        <li><a href="/family/cscenter_list.jsp">고객의소리</a></li>
-                                    </ul>
-                                </div>
-                              </li>
-                         <% } %>
-                          <li>
+                        <li>
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 브랜드소개</span>
                                  <div class="hamburger is-active" id="hamburger-90">
@@ -426,7 +367,65 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
                                 </ul>
                             </div>
                             
-                          </li>
+                          </li>   
+                         <% if ("22".equals(UserLevel)) { %>
+                         <!-- <div class="gnb_member_nav">
+                                    <a href="#" class="gnb_member_link">직원게시판</a>
+                                    <ul>
+                                        <li><a href="/company/notice_list.jsp">공지사항</a></li>
+                                        <li><a href="/company/opinion_list.jsp">통(通)합시다!</a></li>
+                                        <li><a href="/company/anonymity_list.jsp">토론마당</a></li>
+                                        <li><a href="/company/photo_list.jsp">우리가족이야기</a></li>
+                                        <li><a href="/company/eduinfo_list.jsp">교육정보게시판</a></li>
+                                        <li><a href="/company/form_list.jsp">자료실</a></li>
+                                        <li><a href="/company/poll_list.jsp">투표게시판</a></li>
+                                        <li><a href="/company/divisionform_list.jsp">사업부자료실</a></li>
+                                        <li><a href="/company/infoshare_list.jsp">업무공유게시판</a></li>
+                                    </ul>
+                                </div> -->
+                            <% } %>
+                            
+                          <% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
+                              <li>
+                                  <a href="#" class="ham_list_a">
+                                     <span class="list_name">가족게시판</span>
+                                     <div class="hamburger" id="hamburger-90">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                  </a>
+                                <div class="list_hidden">
+                                    <ul class="ham_ul_list">
+                                          <!-- 					<li><a href="/family/successstory_list.jsp">성공스토리</a></li> -->
+                    <!-- 					<li><a href="/family/successknow_list.jsp">성공노하우</a></li> -->
+                    <!-- 					<li><a href="javascript:alert('준비중입니다.');">우수사례</a></li> -->
+                                        <li><a href="#" onclick="window.open('http://new.goobne.kr/manual_html/mainManual.html','pop1','width=850,height=750');">매뉴얼</a></li>
+                                        <li><a href="/family/suggest_list.jsp">건의사항</a></li>
+                                        <li><a href="/family/notice_list.jsp">공지사항</a></li>
+                                        <li><a href="/family/discussion_list.jsp">토론방</a></li>
+                                        <li><a href="/family/reference_list.jsp">자료실</a></li>
+                                        <li><a href="/family/cscenter_list.jsp">고객의소리</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                         <% } %>
+                          <% if ("21".equals(UserLevel) || "22".equals(UserLevel)) { %>
+                             <li>
+                                  <a href="#" class="ham_list_a">
+                                     <span class="list_name">성공 뱅크</span>
+                                     <div class="hamburger is-active" id="hamburger-90">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                  </a>
+                                <div class="list_hidden">
+                                    <ul class="ham_ul_list">
+                                          <li><a href="/family/successknow_list.jsp">성공노하우</a></li>
+                                          <li><a href="/family/successstory_list.jsp">성공스토리</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                          <% } %>
                           <li>
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 매장찾기</span>
