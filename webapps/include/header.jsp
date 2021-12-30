@@ -227,7 +227,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
                         <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li class="hover_li_mouseover">
-                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                        <a href="/menu/new_bg.jsp"><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
                     </li>
                     <li class="hover_li_mouseleave">
                         <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
