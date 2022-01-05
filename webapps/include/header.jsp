@@ -156,14 +156,14 @@ $(".menu_wrap li a.ham_list_a").eq(0).trigger("click");
     $('.mouseover_div').slideUp(150);
     });
 });
-if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언제부터
-            && new Date() < new Date('12/31/2021 23:59:59')) {        // 언제까지 실행하기 
+if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언제부터
+            && new Date() < new Date('01/31/2022 23:59:59')) {        // 언제까지 실행하기 
             //alert('test');
             //$('container').addClass('a')
            $(document).ready(function () {
                 $('.logo_back').css('display','block');
             }); 
-        } else if (new Date() >= new Date('01/01/2022 00:00:00')            // *신버전 언제부터
+        } else if (new Date() >= new Date('02/01/2022 00:00:00')            // *신버전 언제부터
             && new Date() < new Date('10/05/2095 08:59:59')) {      // 언제까지 실행하기 
             $(document).ready(function () {
                 $('.logo_re').css('display','block');
@@ -219,8 +219,8 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
             <!-- Brand and toggle get grouped for better mobile display -->
             
             <div class="navbar-header page-scroll">
-               <a class="navbar-brand logo_back " href="/index_1.jsp" ><img src="/2021renew_img/logo_2.svg" style="height:40px;"></a>
-               <a class="navbar-brand navbar_header_2022 logo_re" href="/index_1.jsp"><img src="/2021renew_img/logo_220101.svg" style="height:55px;" class="navbar_header_2022_img"></a>
+               <a class="navbar-brand navbar_header_2022 logo_back" href="/index_1.jsp"><img src="/2021renew_img/logo_220101.svg" style="height:55px;" class="navbar_header_2022_img"></a>
+               <a class="navbar-brand  logo_re" href="/index_1.jsp" ><img src="/2021renew_img/logo_220201.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li class="hover_li_mouseleave">
@@ -344,6 +344,7 @@ if (new Date() >= new Date('09/21/2020 09:00:00')            // *구버전 언�
                             </div>
                           </li>
                           <li>
+
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 메뉴소개</span>
                                  <div class="hamburger" id="hamburger-90">
