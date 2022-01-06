@@ -85,7 +85,7 @@ height: -webkit-fill-available;
 
 <div id="mask_popup"></div>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20211217.png">
+    <a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/popup/popup_20220105.png"></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
@@ -390,7 +390,7 @@ height: -webkit-fill-available;
 	    
     </div>
     
-    <link href='/JQuery-Snowfall-master/dist/re_popup_v2.css' rel='stylesheet' type='text/css'>
+    <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
     <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>

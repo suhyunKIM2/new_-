@@ -85,7 +85,7 @@ height: -webkit-fill-available;
 
 <div id="mask_popup"></div>
 <div class="window" id="window">
-    <a href="/"><img src="2021renew_img/popup/popup_20220105.png"></a>
+    <a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/popup/popup_20220105.png"></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
