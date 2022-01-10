@@ -71,12 +71,11 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header_dev.jsp" flush="false"/>
+  <jsp:include page="/include/header.jsp" flush="false"/>
   
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v4.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-
 
 </head>
 <body id="page-top" class="index">
@@ -102,9 +101,10 @@ height: -webkit-fill-available;
 		<section class="section1 bg">
           <div class="slider_div">
             <div class="slider single-item">
-            <!--- re_common_v2.js : ① 추가시마다 video id ="vid+숫자" 설정/ ②첫번째 일때는 비디오 태그에 autoplay 추가 / ③js파일과 비교필요---->
+            <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
+            <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
 				 <div class="list_slider">
-                     <div class='container container_video container_video_bg'>
+                     <div class='container container_video' style="margin-top: 4%;">
                       <video id="vid" width="100%" height="auto" autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>
@@ -115,11 +115,15 @@ height: -webkit-fill-available;
                        <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
                        <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
                   </div>
-                  <div class="list_slider">
+                  <!--<div class="list_slider">
                       <p class="title">굽네 치PD </p>
                       <img src="2021renew_img/mainbanner/cpd_img_1.png" >
                       <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
-                 </div>
+                 </div>-->
+                 <div class="list_slider">
+                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02 ">
+                                             
+                  </div>
                  <div class="list_slider">
                     <div class='container container_video' style="margin-top: 4%;">
                       <video id="vid" width="100%" height="auto"  muted controls>
@@ -169,11 +173,11 @@ height: -webkit-fill-available;
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn="><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" ></a></p>
                           <ul>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                       </div>
@@ -200,11 +204,11 @@ height: -webkit-fill-available;
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=07&productid=31497&classbtn=" ><img src="2021renew_img/mainbanner/scd_pizza.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" ><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
                           <ul>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=07&productid=31497&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
@@ -384,9 +388,6 @@ height: -webkit-fill-available;
 			</div>
             
 		</section>
-	
-	    
-       
     </div>
     
 	    
