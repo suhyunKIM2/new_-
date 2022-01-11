@@ -317,7 +317,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                     <div class="Notice_div_ham">
                         <ul class="Notice_div_ham_ul">
                             <li><img src="/2021renew_img/logo_red.svg" style="height:35px;"></li>
-                            <li>주문전화 1899-9494</li>
+                            <li><a href="tel:1661-9494">주문전화 1661-9494</a></li>
                             <li><a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg" style="height:35px;">온라인주문</a></li>
                         </ul>
                     </div>
