@@ -43,7 +43,7 @@ if (stxt == null || "".equals(stxt))
 .border-raidus_css span{font-size:80% !important;} 
 .mobile_arrow{display:inline-block !important;width:auto !important;margin:0 !important;line-height: 160px !important;    color: #9f9f9f !important;
     font-size: 18px !important;}
-.overseas_guide>a:first-child .border-raidus_css{border-color:#df1a23 !important;}     
+.overseas_guide>a:first-child .border-raidus_css{border-color:#df1a23;}     
 }
 @media only screen and (max-width: 380px){
 .border-raidus_css {
