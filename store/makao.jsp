@@ -1,4 +1,3 @@
-
 <%@page import="com.cntt.util.CustomUtils"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <% System.out.println(new CustomUtils().getServerPath()); %>
@@ -9,8 +8,6 @@ if (stxt == null || "".equals(stxt))
 	stxt = "";
 }
 %>
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -20,12 +17,9 @@ if (stxt == null || "".equals(stxt))
 <!-- style -->
 <link rel="stylesheet" href="/resources/css/store_new_2.css" media="all" />
 <script src="/resources/js/layerpop.js"></script>
-
 <!-- //style -->
-
 </head>
 <body>
-
 	<!-- skipNavi -->
 	<div id="skipNavi"><a href="#contents">본문 바로가기</a> <a href="#gnb">주메뉴 바로가기</a> <a href="#footer">사이트정보 바로가기</a> </div>
 	<!-- //skipNavi --> 
@@ -78,7 +72,7 @@ if (stxt == null || "".equals(stxt))
 Overseas Business Inquiry</li>
                     <li style="display: block;width:auto;text-align:center;font-size:18px;font-weight:500;color: #0e5fb3;">gnglobal@gngrp.com</li>
                 </ul>
-			    
+			
 			<div id="tab_wrap"><!-- 내용 -->
 				<div class="overseas_tab">
 				<ul>
@@ -91,7 +85,7 @@ Overseas Business Inquiry</li>
                         </div>
                     </li>
 				
-                    <li>
+                    <li  class="active">
                         <a href="makao.jsp" id="makao"><span>마카오<br>Macau</span><img src="/resources/images/contents/store/ico_makao.jpg" alt="makao"></a>
                         <div class="sns_icon_btn">
                             <img src="/resources/images/contents/store/sns_icon_02.png" width="30" style="cursor: pointer;" onClick="window.open('https://www.facebook.com/goobnemacau');">
@@ -99,7 +93,7 @@ Overseas Business Inquiry</li>
                         </div>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a  href="china.jsp" id="china"><span>중국<br>China</span><img src="/resources/images/contents/store/ico_china.jpg" alt="china"></a>
                         <div class="sns_icon_btn">
                             <img src="/resources/images/contents/store/sns_icon_04.png" width="30" style="cursor: pointer;" onClick="javascript:goDetail();">
@@ -168,81 +162,45 @@ Overseas Business Inquiry</li>
 				</div>
 				
 			</div>
-			
-				
+							
 			<!--중국리스트 시작-->	
 				<div id="china_wrap">
 			<div class="overseas_list mt50">
 				<ul>
-					
+					<li>
+							<dl>
+								<dt><img src="/resources/images/contents/store/makao/detail_img1.jpg" alt="타이파점"></dt>
+								<dd>
+									<strong>타이파점</strong>
+									<strong>T. (+853) 2883-5999</strong>
+									<span>Rua De Seng Tou, Supreme Flower City, R/C “J2”, Taipa, Goobne Chicken Macau</span>
+								</dd>
+							</dl>
+						
+					</li>
 						
 					<li>				
 							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img2.jpg" alt="대어만상업광장점"></dt>
+								<dt><img src="/resources/images/contents/store/makao/detail_img2.jpg" alt="쾌자기점"></dt>
 								<dd>
-									<strong>대어만상업광장점</strong>
-									<strong>T. (+86) 0512-5527-0095</strong>
-									<span>江苏省苏州市昆山市杜克大道505号大渔商业广场D09号</span>
+									<strong>쾌자기점</strong>
+									<strong>T. (+853) 2825-2890</strong>
+									<span>AVENIDA MARGINAL DO LAM MAU, S/N LE JADE, RC C E, MACAU</span>
 								</dd>
 							</dl>
 						
-					</li>
-                    <li>
-							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img1.jpg" alt="완상청점"></dt>
-								<dd>
-									<strong>완상청점</strong>
-									<strong>T. (+86) 173-1217-0752</strong>
-									<span>江苏省苏州市吴江区开平路2299号万象汇商城4楼</span>
-								</dd>
-							</dl>
-						
-					</li>
-                    <li>				
-							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img3_2.jpg" alt="지우방점"></dt>
-								<dd>
-									<strong>지우방점</strong>
-<!--									<strong>T. (+86) 152-5204-3376</strong> 20200810 미기재요청 -->
-                                        <strong>T. (+86) 199-8483-9576</strong>     
-									<span>江苏省苏州市昆山市昆北路与萧林中路666号 九方购物中心</span>
-								</dd>
-							</dl>
-						
-					</li>
-                    <li>				
-							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img4.jpg" alt="소주중심점"></dt>
-								<dd>
-									<strong>소주중심점</strong>
-<!--									<strong>T. (+86) 152-5204-3376</strong> 20200810 미기재요청 -->
-                                        <strong>T. (+86) 180-1309-0887</strong>     
-									<span>江苏省苏州市苏州工业园区星港街苏州中心北区 4层</span>
-								</dd>
-							</dl>						
-					</li>
-                    <li>				
-							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img5_2.jpg" alt="대열춘풍리점"></dt>
-								<dd>
-									<strong>대열춘풍리점</strong>
-<!--									<strong>T. (+86) 152-5204-3376</strong> 20200810 미기재요청 -->
-                                        <strong>T. (+86) 189-1493-2023</strong>     
-									<span>苏州市相城区元和街道御窑路1999号大悦春风里购物中心 5层</span>
-								</dd>
-							</dl>						
 					</li>
                     
                     <li>				
 							<dl>
-								<dt><img src="/resources/images/contents/store/china/detail_img6.jpg" alt="광동성 부하리 1호점"></dt>
+								<dt><img src="/resources/images/contents/store/makao/detail_img3.jpg" alt="리스보아점 (3호점)"></dt>
 								<dd>
-									<strong>광동성 부화리 1호점</strong>
-<!--									<strong>T. (+86) 152-5204-3376</strong> 20200810 미기재요청 -->
-                                        <strong>T. (+86) 0756-8598832</strong>     
-									<span>广东省珠海市香洲区九洲大道西 2023 号中海富华里 2栋 103 /104</span>
+									<strong>리스보아점 (3호점)</strong>
+									<strong>T. (+853) 2882-9355</strong>
+									<span>No.F25, East of Lisboa Hotel,2-4 Avenida de Lisboa, Macau</span>
 								</dd>
-							</dl>						
+							</dl>
+						
 					</li>
 				</ul>
 					
@@ -263,6 +221,7 @@ Overseas Business Inquiry</li>
 		</section>
 	</div>
 	<!-- // container -->
+	
 	
 	<!-- Footer -->
 	<jsp:include page="/include/footer.jsp" flush="false"/>
