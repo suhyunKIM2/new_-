@@ -355,7 +355,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-                                    <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+									<li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+                                    <li><a href="/menu/new_g-set.jsp">구울레옹 세트</a></li>
                  					<!--<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>-->
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
