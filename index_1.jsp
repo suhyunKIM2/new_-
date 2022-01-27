@@ -82,7 +82,7 @@ height: -webkit-fill-available;
 
 <!---S: 메인팝업--->
 
-<!--<div id="mask_popup"></div>-->
+<div id="mask_popup" style="background:none;pointer-events: none;"></div>
 <div class="window" id="window">
     <img src="2021renew_img/popup/popup_20220127_13.svg">
     <div class="btn_wrap btn_blk">
@@ -261,7 +261,7 @@ height: -webkit-fill-available;
                                           <li>
                                               <div class="top_sns">
                                                   <a href="https://www.instagram.com/p/CYXidjAFiZR/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -302,7 +302,7 @@ height: -webkit-fill-available;
                                           <li>
                                               <div class="top_sns">
                                                   <a href="https://www.instagram.com/p/CYVp6CMl0v8/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -342,8 +342,8 @@ height: -webkit-fill-available;
                                           </li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
+                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -395,7 +395,7 @@ height: -webkit-fill-available;
                                           <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
+                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
                                                       <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
@@ -484,9 +484,9 @@ height: -webkit-fill-available;
 #window{    max-width: 400px;
     left: 0;
     transform: translate(0,0);
-    top: 0;
+    top: 60px;
     box-shadow: 2px 2px 10px #4b3e3e;
-    border-radius: 20px;}
+    border-radius: 20px;z-index: 99;}
 #window img{image-rendering: pixelated;}
 .popup_btn_ul li{background:#cc3b42;}
 .btn_blk {margin-top:-1px;}
