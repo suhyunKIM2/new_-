@@ -82,7 +82,7 @@ height: -webkit-fill-available;
 
 <!---S: 메인팝업--->
 
-<div id="mask_popup" style="background:none;pointer-events: none;"></div>
+<!--<div id="mask_popup"></div>
 <div class="window" id="window">
     <img src="2021renew_img/popup/popup_20220127_13.svg">
     <div class="btn_wrap btn_blk">
@@ -91,7 +91,7 @@ height: -webkit-fill-available;
             <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
         </ul>
     </div>
-</div>
+</div>-->
        
    
 <!---E: 메인팝업--->
@@ -480,6 +480,7 @@ height: -webkit-fill-available;
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
+<!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
     left: 0;
@@ -491,6 +492,7 @@ height: -webkit-fill-available;
 .popup_btn_ul li{background:#cc3b42;}
 .btn_blk {margin-top:-1px;}
 </style>
+-->
 
   
     <script>
