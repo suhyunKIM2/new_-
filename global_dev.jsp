@@ -66,14 +66,10 @@ if (stxt == null || "".equals(stxt))
 }
 }
 </style>
-
-
-<script src="/js/jquery.rwdImageMaps.min.js"></script>
-  <script>
-  $(function() {
-  $('img[usemap]').rwdImageMaps();
-});
-  </script>
+	<!--- S: 제이쿼리 --->
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/ios-orientationchange-fix.js"></script>
+	<!--- E: 제이쿼리 --->
 </head>
 <body>
 	<!-- skipNavi -->
@@ -116,37 +112,35 @@ if (stxt == null || "".equals(stxt))
 			<div id="section2"><!-- 내용 -->
                 
 				<div class="overseas_wrap active">
-                    <div class="overseas_wrap_img_box pc">
-                    <img src="https://www.goobne.co.kr/resources/images/contents/store/overseas_bg_1.png" usemap="#image-map">
 
-                    <map name="image-map">
-                        <area target="_top" alt="중국" title="중국" href="/store/china.jsp" coords="581,197,638,291" shape="0">
-                        <area target="_top" alt="마카오" title="마카오" href="/store/makao.jsp" coords="644,243,695,332" shape="0">
-                        <area target="_top" alt="홍콩" title="홍콩" href="/store/hongkong.jsp" coords="699,247,767,337" shape="0">
-                        <area target="_top" alt="일본" title="일본" href="/store/japan.jsp" coords="774,152,830,241" shape="0">
-                        <area target="_top" alt="말레이시아" title="말레이시아" href="/store/malaysia.jsp" coords="558,342,629,422" shape="0">
-                        <area target="_top" alt="베트남" title="베트남" href="/store/vietnam.jsp" coords="796,322,859,405" shape="0">
-                        <area target="_top" alt="싱가포르" title="싱가포르" href="/store/singapore.jsp" coords="602,457,670,542" shape="0">
-                        <area target="_top" alt="인도네시아" title="인도네시아" href="/store/indo.jsp" coords="676,515,740,602" shape="0">
-                        <area target="_top" alt="호주" title="호주" href="/store/hoju.jsp" coords="797,560,860,646" shape="0">
-                    </map>
-                     </div>
-                   <div class="overseas_wrap_img_box mobile">
-                    <img src="https://www.goobne.co.kr/resources/images/contents/store/overseas_bg_m.png" usemap="#image-map2">
-
-                        <map name="image-map2">
-                            <area target="_top" alt="중국" title="중국" href="/store/china.jsp" coords="373,123,409,187" shape="">
-                            <area target="_top" alt="마카오" title="마카오" href="/store/makao.jsp" coords="412,144,449,213" shape="0">
-                            <area target="_top" alt="홍콩" title="홍콩" href="/store/hongkong.jsp" coords="419,78,490,140" shape="0">
-                            <area target="_top" alt="일본" title="일본" href="/store/japan.jsp" coords="496,88,533,153" shape="0">
-                            <area target="_top" alt="말레이시아" title="말레이시아" href="/store/malaysia.jsp" coords="352,213,410,274" shape="0">
-                            <area target="_top" alt="베트남" title="베트남" href="/store/vietnam.jsp" coords="508,205,558,261" shape="0">
-                            <area target="_top" alt="싱가포르" title="싱가포르" href="/store/singapore.jsp" coords="332,294,429,333" shape="0">
-                            <area target="_top" alt="인도네시아" title="인도네시아" href="/store/indo.jsp" coords="421,336,480,393" shape="0">
-                            <area target="_top" alt="호주" title="호주" href="/store/hoju.jsp" coords="506,355,557,412" shape="0">
-                        </map>
-                    </div>    
 					
+					<div class="overseas_wrap_img_box pc">
+                    	<img id="map" usemap="#imagemap" src="/resources/images/contents/store/overseas_bg_1.png" width="100%">
+						<map name="imagemap">
+							<area shape="rect" alt="Japan" title="Japan" coords="776,154,827,230" href="https://www.goobne.co.kr/store/japan.jsp" target="_self" />
+							<area shape="rect" alt="China" title="China" coords="584,202,634,276" href="https://www.goobne.co.kr/store/china.jsp" target="_self" />
+							<area shape="rect" alt="Macau" title="Macau" coords="643,253,694,326" href="https://www.goobne.co.kr/store/makao.jsp" target="_self" />
+							<area shape="rect" alt="Hong Kong" title="Hong Kong" coords="703,253,754,327" href="https://www.goobne.co.kr/store/hongkong.jsp" target="_self" />
+							<area shape="rect" alt="Vietnam" title="Vietnam" coords="803,327,853,400" href="https://www.goobne.co.kr/store/vietnam.jsp" target="_self" />
+							<area shape="rect" alt="Malaysia" title="Malaysia" coords="570,348,621,422" href="https://www.goobne.co.kr/store/malaysia.jsp" target="_self" />
+							<area shape="rect" alt="Singapore" title="Singapore" coords="610,461,661,539" href="https://www.goobne.co.kr/store/singapore.jsp" target="_self" />
+							<area shape="rect" alt="Indonesia" title="Indonesia" coords="679,525,730,603" href="https://www.goobne.co.kr/store/indo.jsp" target="_self" />
+							<area shape="rect" alt="Australia" title="Australia" coords="803,561,854,634" href="https://www.goobne.co.kr/store/hoju.jsp" target="_self" />
+						</map>
+                    </div>
+<!--
+					<p class="img_box_icon1"><a href="china.jsp"><img src="/resources/images/contents/store/btn_china_1.png" alt="china"></a></p>
+					<p class="img_box_icon2"><a href="makao.jsp"><img src="/resources/images/contents/store/btn_makao_1.png" alt="makao"></a></p>
+					<p class="img_box_icon3"><a href="hongkong.jsp"><img src="/resources/images/contents/store/btn_hongkong_1.png" alt="hongkong"></a></p>
+					<p class="img_box_icon4"><a href="japan.jsp"><img src="/resources/images/contents/store/btn_japan_1.png" alt="japan"></a></p>
+					<p class="img_box_icon5"><a href="vietnam.jsp"><img src="/resources/images/contents/store/btn_vietnam_1.png" alt="vietnam"></a></p>
+					<p class="img_box_icon6"><a href="malaysia.jsp"><img src="/resources/images/contents/store/btn_malaysia_1.png" alt="malaysia"></a></p>
+					<p class="img_box_icon9"><a href="indo.jsp"><img src="/resources/images/contents/store/btn_indo_1.png" alt="indonesia"></a></p>
+					<p class="img_box_icon7"><a href="singapore.jsp"><img src="/resources/images/contents/store/btn_singapore_1.png" alt="singapore"></a></p>
+					<p class="img_box_icon8"><a href="hoju.jsp"><img src="/resources/images/contents/store/btn_hoju_1.png" alt="hoju"></a></p>
+-->                 <div class="overseas_wrap_img_box mobile">
+                    <img src="/resources/images/contents/store/overseas_bg_m.png" width="100%">    
+					</div>
 				</div>
 			</div>
 		</div>
@@ -167,7 +161,16 @@ if (stxt == null || "".equals(stxt))
 	<jsp:include page="/include/footer.jsp" flush="false"/>
 	<!-- //Footer -->
 	</div>	
-<script src="/resources/js/wscript/store/store.js?v=<%=System.currentTimeMillis() %>"></script>
+	<script src="/resources/js/wscript/store/store.js?v=<%=System.currentTimeMillis() %>"></script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/js/jquery.rwdImageMaps.min.js"></script>
+	<script>		
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+	</script>
+	
 
 
 </body>
