@@ -476,7 +476,7 @@ height: -webkit-fill-available;
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
+    <!--<script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>-->
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
