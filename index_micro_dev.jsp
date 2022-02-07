@@ -34,33 +34,52 @@
     font-weight: normal;
     font-style: normal;
 }
-.section1 {background:url(http://www.goobne.co.kr/resources/images/main/20211214_micro/bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
+.section1 {background:url(http://www.goobne.co.kr/resources/images/main/20220207_micro/PC_bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
 .mobile {display: none;}
 .section1 .logo img {height: 30px;padding: 10px;}   
 .container{position:absolute;left:0;top:0;width:100%;height:100%;}
 .container_position{position:relative;width:100%;height:100%;}
 .container_position li{position:absolute;bottom:0;width: 100%;height: 100%;}
-.container_position li:nth-child(2){bottom:150px;right:4%;width:auto;height:auto;}
+.container_position li:nth-child(2){    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+    margin-left: 5%;
+    margin-top: -5%;}
 .container_position li:nth-child(1) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
 .container_position li:nth-child(2) img{width:auto;height:100%;  object-position: right;float:right;object-fit: cover;}
 .container_position li:nth-child(3) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
-.btn_container{width:auto;position:absolute;right:4%;bottom:50px;}
+.btn_container{    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    margin-left: 5%;}
 .btn_container li{display:inline-block;}
 .btn_container li img{width:100%;}
 .mobile_img{display:none;}
-
+@media only screen and (max-width: 1645px){
+.btn_container{margin-left:0;}
+}
 @media only screen and (max-width: 1490px){
 .container_position li:nth-child(1) img{object-position: left;}
-.container_position li:nth-child(2) img{width:100%;height:auto;}
+.container_position li:nth-child(2) img{width:80%;height:auto;}
 .container_position li:nth-child(2){width:44%;}
 .btn_container li{width:32%;}
 .btn_container{right:0;}
 }
+@media only screen and (max-width: 1280px){
+.container_position li:nth-child(2){margin-left:14%;}
+
+}
 @media only screen and (max-width: 1100px){
 .pc_img{display: none;}
 .mobile_img{display:block;}
-.container_position li {left: 50%;transform: translateX(-50%);text-align: center;position: relative;height: calc(100% - 79px);}
-.container_position li:nth-child(3) img {width:auto;height: auto;position: absolute;left: 50%;transform: translateX(-50%);bottom: 0;}
+.section1 {background:url(http://www.goobne.co.kr/resources/images/main/20220207_micro/PC_bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: right;}
+.container_position li.mobile_img{bottom:114px;margin-left: 0;width:57%;height:auto;left:50%;}
+.container_position li {margin-left: -8%;left: 50%;transform: translateX(-50%);text-align: center;height: calc(100% - 79px);width:auto;}
+.container_position li:nth-child(3) img {width:100%;height: auto;position: absolute;left: 50%;transform: translateX(-50%);bottom: 0;}
 .btn_container { right: auto; bottom: 0;left: 50%;transform: translateX(-50%); height: 79px; width:80%;text-align: center;}
 }
 /* 태블릿, 아이패드 */
@@ -75,6 +94,7 @@
 }
 @media only screen and (max-height:823px){
 .container_position li:nth-child(3) img{width:27% !important;}
+
 }
 
 @media only screen and (min-device-width : 1024px) and (max-device-height : 768px) {
@@ -86,15 +106,23 @@
 }
 @media only screen and (max-width:749px){
 .btn_container {width:100%;}
-.container_position li:nth-child(3) img{width:98% !important;}
+.container_position li:nth-child(3) img{width:80% !important;    height: auto;}
 }
 @media (max-width:736px) and (max-height:512px){
 .container_position li:nth-child(3) img{width:33% !important;}
+
+}
+@media (max-width:1024px) and (max-height:600px){
+.container_position li.mobile_img{left:77%;}
 }
 @media only screen and (max-width:500px){
-
+.container_position li:nth-child(3) img{width:100% !important;}
+.container_position li.mobile_img{width:60%;}
 }
-
+@media only screen and (max-width: 280px){
+.btn_container li {
+    width: 31%;}
+}
 </style>
 </head>
 <script>
@@ -126,9 +154,9 @@ $(".btn a").click(function(e) {
 			</div>
 			<div class="container">
 				<ul class="container_position">
-                    <li class="pc_img"><img src="/resources/images/main/20211214_micro/img_01.png"></li>
-                    <li class="pc_img"><img src="/resources/images/main/20211214_micro/img_02_1.png"></li>
-                    <li class="mobile_img"><img src="/resources/images/main/20211214_micro/img_03.png"></li>
+                    <li class=""><img src="/resources/images/main/20220207_micro/img_01.png"></li>
+                    <li class="pc_img"><img src="/resources/images/main/20220207_micro/img_02.png"></li>
+                    <li class="mobile_img"><img src="/resources/images/main/20220207_micro/img_03.png"></li>
                 </ul>
                 <ul class="btn_container">
                     <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
