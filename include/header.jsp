@@ -213,6 +213,15 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <form id="encModeForm" hidden="true">
 </form>
 
+<style>
+/*S: 20220207 모바일 메뉴 순서 변경 적용*/
+.mobile_nav{display: none !important;}
+@media only screen and (max-width: 1024px){
+.PC_nav{display: none !important;}
+.mobile_nav{display: inline-block !important;}
+}
+/*E: 20220207 모바일 메뉴 순서 변경 적용*/
+</style>
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" id="scroll_nav">
         <div class="container">
@@ -223,14 +232,17 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                <a class="navbar-brand  logo_re" href="/index_1.jsp" ><img src="/2021renew_img/logo_220201.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
-                    <li class="hover_li_mouseleave">
+                    <li class="hover_li_mouseleave PC_nav">
                         <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li class="hover_li_mouseover">
-                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon">메뉴<span class="span_mobile">소개</span></a>
                     </li>
                     <li class="hover_li_mouseleave">
-                        <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
+                        <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon">매장<span class="span_mobile">찾기</span></a>
+                    </li>
+                    <li class="hover_li_mouseleave mobile_nav">
+                        <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li class="hover_li_mouseleave">
                         <a href="/event/event_list.jsp"><img src="/2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
