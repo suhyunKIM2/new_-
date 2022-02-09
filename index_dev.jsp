@@ -78,26 +78,31 @@ height: -webkit-fill-available;
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 <script>
-/*$(document).ready(function(e) {
+$(document).ready(function(e) {
 
-if (new Date() >= new Date('02/07/2022 16:20:00')            // *신버전 언제부터
-            && new Date() < new Date('02/13/2022 23:59:59')) {        // 언제까지 실행하기 
+if (new Date() >= new Date('02/07/2022 09:00:00')            // *신버전 언제부터
+            && new Date() < new Date('02/14/2022 08:59:59')) {        // 언제까지 실행하기 
             //alert('test');
             //$('container').addClass('a')
            $(document).ready(function () {
                 $('.windowfadeIn').css('display','none');
             }); 
-        } else if (new Date() >= new Date('02/14/2022 00:00:00')            // *구버전 언제부터
-            && new Date() < new Date('02/14/2022 19:00:00')) {      // 언제까지 실행하기 
+        } else if (new Date() >= new Date('02/14/2022 09:00:00')            // *구버전 언제부터
+            && new Date() < new Date('02/14/2022 23:59:59')) {      // 언제까지 실행하기 
             $(document).ready(function () {
                 $('.windowfadeIn').css('display','block');
+            }); 
+        } else if (new Date() >= new Date('02/15/2022 00:00:00')            // *구버전 언제부터
+            && new Date() < new Date('02/14/2922 23:59:59')) {      // 언제까지 실행하기 
+            $(document).ready(function () {
+                $('.windowfadeIn').css('display','none');
             }); 
         }
     });
     
  <!--
 //CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/14/2022 07:00 PM', 'newcountdown'); //AM,PM 12시간으로
+CountDownTimer('02/15/2022 00:00 AM', 'newcountdown'); //AM,PM 12시간으로
 
 
 function CountDownTimer(dt, id)
@@ -138,7 +143,7 @@ timer = setInterval(showRemaining, 100);
 
 }
 // Source: stackoverflow
-//-->    */ 
+//-->    
 </script>
 
 </head>

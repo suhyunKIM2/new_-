@@ -6,13 +6,13 @@
 $(document).ready(function() {
 
 if (new Date() >= new Date('02/07/2022 16:20:00')            // *신버전 언제부터
-            && new Date() < new Date('02/09/2022 10:35:00')) {        // 언제까지 실행하기 
+            && new Date() < new Date('02/14/2022 08:59:59')) {        // 언제까지 실행하기 
             //alert('test');
             //$('container').addClass('a')
            $(document).ready(function () {
                 $('.open_div').load("/index_bak_div.jsp");
             }); 
-        } else if (new Date() >= new Date('02/09/2022 10:35:01')            // *구버전 언제부터
+        } else if (new Date() >= new Date('02/14/2022 09:00:00')            // *구버전 언제부터
             && new Date() < new Date('02/14/2922 19:00:00')) {      // 언제까지 실행하기 
             $(document).ready(function () {
                 $('.open_div').load("/index_open_div.jsp");
