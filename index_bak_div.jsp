@@ -7,7 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
-.section1 {background:url(http://www.goobne.co.kr/resources/images/main/20211214_micro/bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
+.section1 {background:url(/resources/images/main/20211214_micro/bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
 .mobile {display: none;}
 .section1 .logo img {height: 30px;padding: 10px;}   
 .container{position:absolute;left:0;top:0;width:100%;height:100%;}
@@ -83,9 +83,7 @@ function lnk1(){
     window.open(link);  
 }
 
-$(".btn a").click(function(e) {
-   e.stopPropagation();
-});
+
 
 </script>
 
@@ -94,7 +92,7 @@ $(".btn a").click(function(e) {
          <a href="https://www.goobne.co.kr/index_1.jsp">
 		<section class="section1" id="section1" style="cursor: pointer;">
 			<div class="logo">
-				<img src="http://www.goobne.co.kr/resources/images/main/211209_micro_bg/BI.png">
+				<img src="/resources/images/main/211209_micro_bg/BI.png">
 			</div>
 			<div class="container">
 				<ul class="container_position">
@@ -146,12 +144,3 @@ $(".btn a").click(function(e) {
         </div>
     </div>
 </div>-->
-<script src="/onepage_fullscreen/full-page-scroll.js"></script>
-	<script type="text/javascript">
-		new fullScroll({
-			displayDots: false,
-			dotsPosition: 'left',
-			animateTime: 0.7,
-			animateFunction: 'ease'
-		});
-	</script>

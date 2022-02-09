@@ -77,91 +77,21 @@ height: -webkit-fill-available;
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<script>
-$(document).ready(function(e) {
-
-if (new Date() >= new Date('02/07/2022 09:00:00')            // *신버전 언제부터
-            && new Date() < new Date('02/14/2022 08:59:59')) {        // 언제까지 실행하기 
-            //alert('test');
-            //$('container').addClass('a')
-           $(document).ready(function () {
-                $('.windowfadeIn').css('display','none');
-            }); 
-        } else if (new Date() >= new Date('02/14/2022 09:00:00')            // *구버전 언제부터
-            && new Date() < new Date('02/14/2022 23:59:59')) {      // 언제까지 실행하기 
-            $(document).ready(function () {
-                $('.windowfadeIn').css('display','block');
-            }); 
-        } else if (new Date() >= new Date('02/15/2022 00:00:00')            // *구버전 언제부터
-            && new Date() < new Date('02/14/2922 23:59:59')) {      // 언제까지 실행하기 
-            $(document).ready(function () {
-                $('.windowfadeIn').css('display','none');
-            }); 
-        }
-    });
-    
- <!--
-//CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/15/2022 00:00 AM', 'newcountdown'); //AM,PM 12시간으로
-
-
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-$('.window').css('display','block');
-clearInterval(timer);
-document.getElementById(id).innerHTML = '';
- if (end == Date(dt)) {
-// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('#window').css('display','none').css('pointer-events','none');
-}
-return ;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor(distance/ _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
-document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
-document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 100);
-
-}
-// Source: stackoverflow
-//-->    
-</script>
-
 </head>
 <body id="page-top" class="index">
 
 <!---S: 메인팝업--->
 
-<div id="mask_popup" style="background:transparent;pointer-events: none;"></div>
-<span id="newcountdown"></span>
+<!--<div id="mask_popup"></div>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20220208_3.svg">
+    <img src="2021renew_img/popup/popup_20220127_13.svg">
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
             <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
         </ul>
     </div>
-</div>
+</div>-->
        
    
 <!---E: 메인팝업--->
@@ -546,11 +476,11 @@ timer = setInterval(showRemaining, 100);
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
+    <!--<script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script> 20220203 내림-->
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
-
+<!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
     left: 0;
@@ -562,7 +492,7 @@ timer = setInterval(showRemaining, 100);
 .popup_btn_ul li{background:#cc3b42;}
 .btn_blk {margin-top:-1px;}
 </style>
-
+-->
 
   
     <script>
