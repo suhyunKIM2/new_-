@@ -149,7 +149,7 @@ timer = setInterval(showRemaining, 100);
 <div id="mask_popup" style="background:transparent;pointer-events: none;"></div>
 <span id="newcountdown"></span>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20220207.svg">
+    <img src="2021renew_img/popup/popup_20220208_3.svg">
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
