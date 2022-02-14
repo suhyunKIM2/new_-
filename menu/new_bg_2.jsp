@@ -45,6 +45,7 @@
 
 <!--- css여기---->
 <style>
+    #container #contents{background: #000;border: 1px solid #eee;}
 	.bg_color {background-color: #fafafa;}
 	.img_size {margin: 0 auto; padding-bottom: 20%; max-width: 710px; width: 80%;}
     .footer_app{margin-top:-4%;position: relative;padding:0 0 5%;}
@@ -52,22 +53,18 @@
     .footer_app h3{width:45%;margin:2% auto 0;}
     .footer_app .app_list{width:100%;text-align: center;margin-top:7%;}
     .footer_app .app_list li{display:inline-block;width:auto;margin: 0 1%;}
-    .border_box_cont{border:1px solid #eee;margin-top: -12px;}
+    .border_box_cont{border:1px solid #eee;margin-top: -1px;display: contents;}
     .text_img_box{width:100%;text-align:center;}
-    .text_img_box img{width:32%;}
+    .text_img_box img{width:99.8%;}
     @media all and (max-width:742px) {
     #wrap{min-width: 280px;}
     .footer_app .app_list li:nth-child(1),.footer_app .app_list li:nth-child(2){margin-bottom:4%;}
     .footer_app .app_list li{width:23%;margin:0;}
-    .text_img_box img{width:42%;}
     }
 	@media all and (max-width:500px) {
 		.img_size {width: 92%;}
         .footer_app .app_list li{width:33%;}
-        .footer_app h3{width:65%;}
-        .text_img_box img {
-    width: 52%;
-}
+        .footer_app h3{width:65%;}}
 	}
 </style>
 
@@ -93,14 +90,14 @@
 	<div id="container" >
 		<section id="contents" >
 			<h2 class="cont_tit t_center" style="font-size:0;">불금치킨</h2>
-            <div class="text_img_box"><img src="/resources/images/contents/menu/bg/text_2_1.svg"></div>
+            <div class="text_img_box"><img src="/resources/images/contents/menu/bg/text_2_6.svg"></div>
             <div class="border_box_cont">
             
             <video  id="vid" width="100%" height="auto"  autoplay muted controls loop>
                 <source src="/2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
             </video>
 			
-            <div class="wrap_standard new_menu_wrap" style="margin-top: -10px;">
+            <div class="wrap_standard new_menu_wrap" style="margin-top: -10px;background:#fff;margin-bottom:0;padding-bottom:5.7142em;">
 				<!--- S: 본문내용--->
 				<div class="bg_color">
 					<img src="/resources/images/contents/menu/bg/211215_bg_01.jpg">
