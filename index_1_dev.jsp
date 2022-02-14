@@ -77,79 +77,14 @@ height: -webkit-fill-available;
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<script>
-$(document).ready(function(e) {
-
-if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('02/14/2022 23:59:59')) {        
-            //alert('test');
-            //$('container').addClass('a')
-           $(document).ready(function () {
-                $('.windowfadeIn').css('display','block');
-            }); 
-        } else if (new Date() >= new Date('02/15/2022 00:00:00')      
-            && new Date() < new Date('02/14/2922 23:59:59')) {    
-            $(document).ready(function () {
-                $('.windowfadeIn').css('display','none');
-            }); 
-        } 
-    });
-    
- <!--
-//CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/14/2922 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
-
-
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-$('.window').css('display','block');
-clearInterval(timer);
-document.getElementById(id).innerHTML = '';
- if (end == Date(dt)) {
-// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('#window').css('display','none').css('pointer-events','none');
-}
-return ;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor(distance/ _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
-document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
-document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 100);
-
-}
-// Source: stackoverflow
-//-->    
-</script>
-
 </head>
 <body id="page-top" class="index">
 
 <!---S: 메인팝업--->
 
-<div id="mask_popup" style="background:transparent;pointer-events: none;"></div>
-<span id="newcountdown"></span>
+<div id="mask_popup"></div>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20220208_3.svg">
+    <a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/popup/popup_20220105.png"></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
@@ -326,7 +261,7 @@ timer = setInterval(showRemaining, 100);
                                           <li>
                                               <div class="top_sns">
                                                   <a href="https://www.instagram.com/p/CYXidjAFiZR/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -367,7 +302,7 @@ timer = setInterval(showRemaining, 100);
                                           <li>
                                               <div class="top_sns">
                                                   <a href="https://www.instagram.com/p/CYVp6CMl0v8/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -407,8 +342,8 @@ timer = setInterval(showRemaining, 100);
                                           </li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
+                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne___official</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
                                               </div>
@@ -460,7 +395,7 @@ timer = setInterval(showRemaining, 100);
                                           <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
                                           <li>
                                               <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
+                                                  <a href="https://www.instagram.com/goobne___official/" target="_blank">
                                                       <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
                                                       <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
                                                   </a>
@@ -545,18 +480,6 @@ timer = setInterval(showRemaining, 100);
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
-
-<style>
-#window{    max-width: 400px;
-    left: 0;
-    transform: translate(0,0);
-    top: 60px;
-    box-shadow: 2px 2px 10px #4b3e3e;
-    border-radius: 20px;z-index: 99;}
-#window img{image-rendering: pixelated;}
-.popup_btn_ul li{background:#cc3b42;}
-.btn_blk {margin-top:-1px;}
-</style>
 
 
   
