@@ -97,7 +97,7 @@ if (new Date() >= new Date('02/09/2022 09:00:00')
     
  <!--
 //CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/14/2922 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
+CountDownTimer('02/14/2022 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
 
 
 function CountDownTimer(dt, id)
@@ -556,6 +556,9 @@ timer = setInterval(showRemaining, 100);
 #window img{image-rendering: pixelated;}
 .popup_btn_ul li{background:#cc3b42;}
 .btn_blk {margin-top:-1px;}
+@media only screen and (max-width: 749px){
+#window{ left:50%;transform: translate(-50%,-50%);top:50%;}
+}
 </style>
 
 
