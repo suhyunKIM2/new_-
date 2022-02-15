@@ -71,7 +71,7 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header.jsp" flush="false"/>
+  <jsp:include page="/include/header_dev.jsp" flush="false"/>
   
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
@@ -84,7 +84,7 @@ height: -webkit-fill-available;
 
 <div id="mask_popup"></div>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20220215.png">
+    <a href="/menu/new_bg.jsp" target="_top"><img src="2021renew_img/popup/popup_20220215.png"></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
@@ -479,7 +479,7 @@ height: -webkit-fill-available;
     <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>
 <!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;

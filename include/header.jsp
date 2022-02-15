@@ -204,11 +204,11 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 
 <!-- Syntax Highlight -->
 <link rel="stylesheet" href="/scrollreveal/css/markdown-highligth.css">
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu_v2.css">
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
 <!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v2.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v3.css">
 <!---E:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <form id="encModeForm" hidden="true">
 </form>
@@ -303,8 +303,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                         djdjdj
                     </div>    -->
                 
-                <div class="menu_bg"></div>
-                <div class="sidebar_menu">
+                <div class="menu_bg" style="z-index: 9;"></div>
+                <div class="sidebar_menu" style="will-change:top;    z-index: 99;">
                     <div class="navbar-nav_user_log">
                         <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
@@ -528,6 +528,47 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                             </div>
                           </li>
                           <% if ("".equals(UserIdx)) { %>
+                             <li>
+                                 <a href="/member/login.jsp" >
+                                 <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
+                                     <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line line_02"></span>
+                                        <span class="line line_02"></span>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="/customer/cscenter_notice.jsp">
+                                 <span class="list_name" style="font-weight: 500;">공지사항</span>
+                                 <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line line_02"></span>
+                                        <span class="line line_02"></span>
+                                    </div>
+                                 </a>
+                            </li>
+                          <% } else { %>
+                             <li>
+                                 <a href="/member/login.jsp" >
+                                 <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
+                                     <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="/customer/cscenter_notice.jsp">
+                                 <span class="list_name" style="font-weight: 500;">공지사항</span>
+                                 <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                 </a>
+                            </li>
+                          <% } %>
+                          
+                          <!---
+                          <% if ("".equals(UserIdx)) { %>
                           <li>
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 고객지원센터</span>
@@ -541,12 +582,12 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 <% if ("".equals(UserIdx)) { %>	
                                     <li><a href="/member/login.jsp">고객의 소리</a></li>
                                     <!--<li><a href="/member/login.jsp">고객공모전</a></li>
-                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>-->
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                                  <% } else { %>
                                     <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
                                     <!--<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>-->
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                                 <% } %>
                                 </ul>
@@ -567,19 +608,19 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                     <li><a href="/customer/cscenter_regi.jsp">고객지원센터</a></li>
                                     <li><a href="/member/login.jsp">고객의 소리</a></li>
                                     <!--<li><a href="/member/login.jsp">고객공모전</a></li>
-                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>-->
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } else { %>
                                     <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
                                     <!--<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>-->
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } %>
                                 </ul>
                             </div>
                           </li>
                         <% } %> 
-                        
+                        ----->
                         <% if (UserIdx.equals("")) { %>
                         <% } else { %>
                         <li>

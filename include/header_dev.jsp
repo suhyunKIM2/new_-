@@ -204,7 +204,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 
 <!-- Syntax Highlight -->
 <link rel="stylesheet" href="/scrollreveal/css/markdown-highligth.css">
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_menu_v2.css">
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
 <!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
@@ -213,6 +213,15 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <form id="encModeForm" hidden="true">
 </form>
 
+<style>
+/*S: 20220207 모바일 메뉴 순서 변경 적용*/
+.mobile_nav{display: none !important;}
+@media only screen and (max-width: 1024px){
+.PC_nav{display: none !important;}
+.mobile_nav{display: inline-block !important;}
+}
+/*E: 20220207 모바일 메뉴 순서 변경 적용*/
+</style>
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" id="scroll_nav">
         <div class="container">
@@ -223,14 +232,17 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                <a class="navbar-brand  logo_re" href="/index_1.jsp" ><img src="/2021renew_img/logo_220201.svg" style="height:40px;"></a>
                <ul class="nav navbar-nav">
                    
-                    <li class="hover_li_mouseleave">
+                    <li class="hover_li_mouseleave PC_nav">
                         <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li class="hover_li_mouseover">
-                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon"><span class="span_mobile">메뉴</span>소개</a>
+                        <a href="/menu/menu_list.jsp?class="><img src="/2021renew_img/footer_nav_icon_02.svg"   class="mobile_icon">메뉴<span class="span_mobile">소개</span></a>
                     </li>
                     <li class="hover_li_mouseleave">
-                        <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon"><span class="span_mobile">매장</span>찾기</a>
+                        <a href="/store/search_store.jsp"><img src="/2021renew_img/footer_nav_icon_01.svg"   class="mobile_icon">매장<span class="span_mobile">찾기</span></a>
+                    </li>
+                    <li class="hover_li_mouseleave mobile_nav">
+                        <a href="javascript:loginnet('');"><img src="/2021renew_img/icon_01.svg"    class="PCmobile_icon"><span class="span_mobile">온라인</span>주문</a>
                     </li>
                     <li class="hover_li_mouseleave">
                         <a href="/event/event_list.jsp"><img src="/2021renew_img/footer_nav_icon_03.svg"   class="mobile_icon">이벤트</a>
@@ -241,7 +253,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                 </ul>
                 <div class="mouseover_div">
                     <ul class="container">
-						<li><a href="/menu/new_g-set.jsp">구울레옹 세트</a></li>
+						<li><a href="/menu/new_g-set.jsp">구울레옹세트</a></li>
                         <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
                         <!--<li><a href="/menu/new_s_w_f.jsp">스우파</a></li>-->
                         <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
@@ -291,8 +303,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                         djdjdj
                     </div>    -->
                 
-                <div class="menu_bg"></div>
-                <div class="sidebar_menu">
+                <div class="menu_bg" style="will-change:top;"></div>
+                <div class="sidebar_menu" style="will-change:top;">
                     <div class="navbar-nav_user_log">
                         <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
@@ -338,7 +350,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                     <li><a href="/brand/brandstory.jsp">브랜드스토리</a></li>
                                     <li><a href="/brand/about.jsp">연혁 &amp; 수상</a></li>
                                     <li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
-                                    <li><a href="/brand/map.jsp">오시는길</a></li>
+                                    <!--<li><a href="/brand/map.jsp">오시는길</a></li>-->
                                     <li class="mobile_none_list"><a href="/brand/phil.jsp">경영 철학</a></li>
                                     <li class="mobile_none_list"><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
                                 </ul>
@@ -355,7 +367,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-                                    <li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+									<li><a href="/menu/new_bg.jsp">불금치킨</a></li>
+                                    <li><a href="/menu/new_g-set.jsp">구울레옹 세트</a></li>
                  					<!--<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>-->
                                     <li><a href="/menu/new_c_p_d.jsp">치PD</a></li>
                                     <!--<li><a href="/menu/new.jsp">신메뉴</a></li>-->
@@ -364,7 +377,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                     <li><a href="/menu/menu_list.jsp?class=40">사이드메뉴</a></li>
                                     <!-- <li><a href="">세트메뉴</a></li>
                                     <li><a href="">사이드메뉴</a></li> -->
-                                    <li><a href="/menu/recipe_list.jsp">레시피소개</a></li>
+                                    <!--<li><a href="/menu/recipe_list.jsp">레시피소개</a></li>-->
             <!-- 						<li><a href="/menu/wing.jsp">고추바사삭 윙 소개</a></li> -->
                                 </ul>
                             </div>
@@ -430,7 +443,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                           <% } %>
                           <li>
                               <a href="#" class="ham_list_a">
-                                 <span class="list_name"> 매장찾기</span>
+                                 <span class="list_name"> 국내매장찾기</span>
                                  <div class="hamburger" id="hamburger-90">
                                     <span class="line"></span>
                                     <span class="line"></span>
@@ -440,6 +453,19 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 <ul class="ham_ul_list">
                                     <li><a href="/store/search_newstore.jsp">월별 신규매장</a></li>
                                     <li><a href="/store/search_store.jsp">국내매장</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                          <li>
+                              <a href="#" class="ham_list_a">
+                                 <span class="list_name"> 해외매장찾기</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
                                     <li><a href="/global.jsp">해외매장/Global</a></li>
                                 </ul>
                             </div>
@@ -462,7 +488,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 </ul>
                             </div>
                           </li>
-                          <li>
+                          <!--<li>
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 홍보센터</span>
                                  <div class="hamburger" id="hamburger-90">
@@ -475,12 +501,12 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                     <li><a href="/advertise/press_list.jsp">언론보도</a></li>
                                     <li><a href="/advertise/social.jsp">굽네 소셜미디어</a></li>
                                     <li><a href="/advertise/media.jsp">굽네TVCF소개</a></li>
-            <!-- 						<li><a href="/advertise/schedule_list.jsp">TVCF광고일정</a></li> -->
+             						<li><a href="/advertise/schedule_list.jsp">TVCF광고일정</a></li> 
                                     <li><a href="/advertise/contribution_list.jsp">3生 캠페인 소개</a></li>
                                     <li><a href="/advertise/goobcar_list.jsp">굽카 히스토리</a></li>
                                 </ul>
                             </div>
-                          </li>
+                          </li>-->
                           <li>
                               <a href="#" class="ham_list_a">
                                  <span class="list_name"> 이벤트</span>
@@ -495,12 +521,53 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 <% //if ("".equals(UserIdx)) { %>
                                     <!-- <li><a href="/member/login.jsp">굽카후기 이벤트</a></li> -->
                                 <% //} else { %>
-                                    <li><a href="/event/goobcarepil_list.jsp">굽카후기 이벤트</a></li>
+                                    <!--<li><a href="/event/goobcarepil_list.jsp">굽카후기 이벤트</a></li>-->
                                 <% //} %>
-                                    <li><a href="/event/win_list.jsp">당첨자 발표</a></li>
+                                    <!--<li><a href="/event/win_list.jsp">당첨자 발표</a></li>-->
                                 </ul>
                             </div>
                           </li>
+                          <% if ("".equals(UserIdx)) { %>
+                             <li>
+                                 <a href="/member/login.jsp" >
+                                 <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
+                                     <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line line_02"></span>
+                                        <span class="line line_02"></span>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="/customer/cscenter_notice.jsp">
+                                 <span class="list_name" style="font-weight: 500;">공지사항</span>
+                                 <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line line_02"></span>
+                                        <span class="line line_02"></span>
+                                    </div>
+                                 </a>
+                            </li>
+                          <% } else { %>
+                             <li>
+                                 <a href="/member/login.jsp" >
+                                 <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
+                                     <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="/customer/cscenter_notice.jsp">
+                                 <span class="list_name" style="font-weight: 500;">공지사항</span>
+                                 <div class="hamburger_02" id="hamburger-91">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                 </a>
+                            </li>
+                          <% } %>
+                          
+                          <!---
                           <% if ("".equals(UserIdx)) { %>
                           <li>
                               <a href="#" class="ham_list_a">
@@ -514,13 +581,13 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 <ul class="ham_ul_list">
                                 <% if ("".equals(UserIdx)) { %>	
                                     <li><a href="/member/login.jsp">고객의 소리</a></li>
-                                    <li><a href="/member/login.jsp">고객공모전</a></li>
-                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>
+                                    <!--<li><a href="/member/login.jsp">고객공모전</a></li>
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                                  <% } else { %>
                                     <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
-                                    <li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
+                                    <!--<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                                 <% } %>
                                 </ul>
@@ -540,20 +607,20 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 <% if ("".equals(UserIdx)) { %>	
                                     <li><a href="/customer/cscenter_regi.jsp">고객지원센터</a></li>
                                     <li><a href="/member/login.jsp">고객의 소리</a></li>
-                                    <li><a href="/member/login.jsp">고객공모전</a></li>
-                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>
+                                    <!--<li><a href="/member/login.jsp">고객공모전</a></li>
+                                    <li><a href="/member/login.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } else { %>
                                     <li><a href="/customer/cscenter_regi.jsp">고객의 소리</a></li>
-                                    <li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
-                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>
+                                    <!--<li><a href="/customer/cscenter_contest.jsp">고객공모전</a></li>
+                                    <li><a href="/customer/cscenter_goobcar_write.jsp">굽카 신청하기</a></li>--
                                     <li><a href="/customer/cscenter_notice.jsp">공지사항</a></li>
                             <% } %>
                                 </ul>
                             </div>
                           </li>
                         <% } %> 
-                        
+                        ----->
                         <% if (UserIdx.equals("")) { %>
                         <% } else { %>
                         <li>
