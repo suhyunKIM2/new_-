@@ -99,17 +99,17 @@ if (stxt == null || "".equals(stxt))
 			<h2 class="cont_tit t_center">해외매장 / Global</h2>
 			<div id="global" class="section">
 				<p>
-					<span>해외 진출 국가<strong> 9개국</strong> 해외매장 <strong>총 37개 </strong>매장을 운영 하고 있습니다.</span>
-                    <span>We are operating<strong> 37 overseas stores</strong> in <strong>9 countries</strong></span>
+					<span>해외 진출 국가<strong> 10개국</strong> 해외매장 <strong>총 40개 </strong>매장을 운영 하고 있습니다.</span>
+                    <span>We are operating<strong> 40 overseas stores</strong> in <strong>10 countries</strong></span>
 				</p>
                 <div class="overseas_guide">
 						<a href="javascript:void(0);" class="active" style="cursor:default;">
 							
-							<p style="margin-right: 70px;" class="border-raidus_css">해외 진출<span style="font-weight:500;font-size:16px;line-height: 1.2;">Countries</span><strong>9</strong></p>
+							<p style="margin-right: 70px;" class="border-raidus_css">해외 진출<span style="font-weight:500;font-size:16px;line-height: 1.2;">Countries</span><strong>10</strong></p>
 						</a>
                         <a class="mobile_arrow">→</a>
 						<a href="/store/hongkong.jsp">
-							<p class="border-raidus_css">해외매장<span style="font-weight:500;font-size:16px;line-height: 1.2;">Overseas Stores</span><strong>37</strong></p>
+							<p class="border-raidus_css">해외매장<span style="font-weight:500;font-size:16px;line-height: 1.2;">Overseas Stores</span><strong>40</strong></p>
 						</a>
 					</div>
 			</div>
