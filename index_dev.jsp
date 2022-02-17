@@ -63,6 +63,18 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
+.section1.bg,.section1.bg1{background-color: #ffecec !important;/*background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;*/background-size:cover !important;}
+.section1.bg4 {background-color: #ffeac3 !important;}
+ .flower_div_top{position:absolute;top:0px;right:-14px;width:300px;}
+  .flower_div_top_left{position: absolute;
+    top: 2px;
+    left: 13px;
+    width: 300px;
+    transform: rotate(198deg);}
+.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
+.section1.bg2 .container_star{opacity: 0;}
+.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
+.section1.bg3 .container_star{opacity: 0;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
@@ -71,85 +83,20 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header.jsp" flush="false"/>
+  <jsp:include page="/include/header_dev.jsp" flush="false"/>
   
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-
-<script>
-$(document).ready(function(e) {
-
-if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('02/14/2022 23:59:59')) {        
-            //alert('test');
-            //$('container').addClass('a')
-           $(document).ready(function () {
-                $('.windowfadeIn').css('display','block');
-            }); 
-        } else if (new Date() >= new Date('02/15/2022 00:00:00')      
-            && new Date() < new Date('02/14/2922 23:59:59')) {    
-            $(document).ready(function () {
-                $('.windowfadeIn').css('display','none');
-            }); 
-        } 
-    });
-    
- <!--
-//CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/14/2922 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
-
-
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-$('.window').css('display','block');
-clearInterval(timer);
-document.getElementById(id).innerHTML = '';
- if (end == Date(dt)) {
-// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('#window').css('display','none').css('pointer-events','none');
-}
-return ;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor(distance/ _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
-document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
-document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 100);
-
-}
-// Source: stackoverflow
-//-->    
-</script>
 
 </head>
 <body id="page-top" class="index">
 
 <!---S: 메인팝업--->
 
-<div id="mask_popup" style="background:transparent;pointer-events: none;"></div>
-<span id="newcountdown"></span>
+<div id="mask_popup"></div>
 <div class="window" id="window">
-    <img src="2021renew_img/popup/popup_20220208_3.svg">
+    <a href="/menu/new_bg.jsp" target="_top"><img src="2021renew_img/popup/popup_20220215.png"></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
@@ -164,13 +111,15 @@ timer = setInterval(showRemaining, 100);
 
  <div id="main" class="scroll-container">
 		<section class="section1 bg">
+            <div class="flower_div_top_left"><img src="/2021renew_img/flower_icon_r.png"></div>
+            <div class="flower_div_top"><img src="/2021renew_img/flower_icon_r.png"></div>
           <div class="slider_div">
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto" autoplay muted controls>
+                      <video id="vid" width="100%" height="auto"  autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>
                     </div>
@@ -200,7 +149,7 @@ timer = setInterval(showRemaining, 100);
              <span class="pagingInfo"></span>
             </div>  
           <!---S: 눈효과---->
-          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_star.html" flush="true"/>
+          <jsp:include page="/JQuery-Snowfall-master/examples/indexpure_flower.html" flush="true"/>
           <!---E: 눈효과---->
           <div class="footer_bg"></div>
           <div class="bg_sub"></div>
@@ -544,8 +493,8 @@ timer = setInterval(showRemaining, 100);
     <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v3.js"></script>
-
+  <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>
+<!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
     left: 0;
@@ -557,7 +506,7 @@ timer = setInterval(showRemaining, 100);
 .popup_btn_ul li{background:#cc3b42;}
 .btn_blk {margin-top:-1px;}
 </style>
-
+-->
 
   
     <script>

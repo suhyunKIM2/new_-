@@ -208,7 +208,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
 <!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v2.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v3.css">
 <!---E:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <form id="encModeForm" hidden="true">
 </form>
@@ -216,6 +216,16 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <style>
 /*S: 20220207 모바일 메뉴 순서 변경 적용*/
 .mobile_nav{display: none !important;}
+
+.navbar-default {
+    background-color: rgb(255,255,255,0.0);
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.hamburger .line{background-color:#000;}
+
+
 @media only screen and (max-width: 1024px){
 .PC_nav{display: none !important;}
 .mobile_nav{display: inline-block !important;}
@@ -227,9 +237,9 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             
-            <div class="navbar-header page-scroll">
-               <a class="navbar-brand navbar_header_2022 logo_back" href="/index_1.jsp"><img src="/2021renew_img/logo_220101.svg" style="height:55px;" class="navbar_header_2022_img"></a>
-               <a class="navbar-brand  logo_re" href="/index_1.jsp" ><img src="/2021renew_img/logo_220201.svg" style="height:40px;"></a>
+            <div class="navbar-header page-scroll" style="background:rgba(255,255,255,0.7);border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;padding: 0 20px;">
+               <a class="navbar-brand navbar_header_2022 logo_back" href="/index_1.jsp"><img src="/2021renew_img/red_logo.svg" style="height:55px;" class="navbar_header_2022_img"></a>
+               <a class="navbar-brand  logo_re" href="/index_1.jsp" style="line-height: 30px;padding: 9px 15px;"><img src="/2021renew_img/red_logo.svg" style="height:25px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li class="hover_li_mouseleave PC_nav">
@@ -268,7 +278,12 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                 <ul class="ham_ul">
                     <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
-                    <li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="/2021renew_img/login.svg" style="width:52px;height:18px;"></a></li>
+                    <!--<li><a href="https://www.goobne.co.kr/member/login.jsp"><img src="/2021renew_img/login.svg" style="width:52px;height:18px;"></a></li>-->
+                    <li>
+                        <a href="https://www.goobne.co.kr/member/login.jsp">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.33 27.03" style="width:50px;height:50px;float: left;"><defs><style>.cls-01{fill:#000;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="_迹_1" data-name="卵迹_1"><polygon class="cls-01" points="63.6 18.86 62.69 17.95 67.12 13.52 62.69 9.08 63.6 8.17 68.94 13.52 63.6 18.86"/><rect class="cls-01" x="51.3" y="12.87" width="16.73" height="1.29"/><path class="cls-01" d="M64.81,27a13.54,13.54,0,0,1-13-10L53,16.73a12.23,12.23,0,1,0,0-6.43L51.77,10A13.52,13.52,0,1,1,64.81,27Z"/><path class="cls-01" d="M0,7.36H1.6V20.14H7.84V21.5H0Z"/><path class="cls-01" d="M7.53,14.37c0-4.5,2.47-7.26,6-7.26s6,2.76,6,7.26-2.47,7.38-6,7.38S7.53,18.89,7.53,14.37Zm10.31,0c0-3.61-1.72-5.85-4.34-5.85s-4.33,2.24-4.33,5.85,1.72,6,4.33,6S17.84,18,17.84,14.37Z"/><path class="cls-01" d="M20.31,14.43c0-4.54,2.68-7.32,6.41-7.32a5.46,5.46,0,0,1,4,1.72l-.89,1a4,4,0,0,0-3.11-1.35c-2.93,0-4.81,2.24-4.81,5.87s1.74,5.95,4.81,5.95a4,4,0,0,0,2.68-.89V15.59H26.37V14.26h4.56v5.86a5.94,5.94,0,0,1-4.32,1.63C22.9,21.75,20.31,19,20.31,14.43Z"/><path class="cls-01" d="M32.9,7.36h1.6V21.5H32.9Z"/><path class="cls-01" d="M37,7.36h1.64L44,16.51l1.53,2.9h.09c-.09-1.41-.21-2.95-.21-4.4V7.36h1.53V21.5H45.26L40,12.34,38.4,9.45h-.1c.08,1.41.2,2.84.2,4.3V21.5H37Z"/></g></g></svg>
+                        </a>
+                    </li>
                     <li>
                        <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
@@ -279,7 +294,12 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                     </li>
                     <% } else { %>
                     <!--  로그인 후 -->
-                    <li><a href="javascript:userlogout();"><img src="/2021renew_img/logout.svg" style="height:18px;"></a></li>
+                    <!--<li><a href="javascript:userlogout();"><img src="/2021renew_img/logout.svg" style="height:18px;"></a></li>-->
+                    <li>
+                        <a href="javascript:userlogout();">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.89 27.03" style="width:60px;height:60px;float: left;"><defs><style>.cls-01{fill:#000;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="_迹_1" data-name="卵迹_1"><polygon class="cls-01" points="14.73 18.86 15.64 17.95 11.21 13.52 15.64 9.08 14.73 8.17 9.39 13.52 14.73 18.86"/><rect class="cls-01" x="10.3" y="12.87" width="16.73" height="1.29"/><path class="cls-01" d="M13.51,27a13.54,13.54,0,0,0,13.05-10l-1.24-.34a12.23,12.23,0,1,1,0-6.43L26.56,10A13.52,13.52,0,1,0,13.51,27Z"/><path class="cls-01" d="M31.94,6.08h1.6V18.86h6.24v1.35H31.94Z"/><path class="cls-01" d="M39.47,13.08c0-4.49,2.47-7.26,6-7.26s6,2.77,6,7.26-2.47,7.38-6,7.38S39.47,17.6,39.47,13.08Zm10.31,0c0-3.61-1.72-5.85-4.35-5.85s-4.32,2.24-4.32,5.85,1.72,6,4.32,6S49.78,16.71,49.78,13.08Z"/><path class="cls-01" d="M52.25,13.14c0-4.53,2.68-7.32,6.41-7.32a5.44,5.44,0,0,1,4,1.72l-.89,1a4,4,0,0,0-3.1-1.36c-2.94,0-4.81,2.24-4.81,5.87s1.74,6,4.81,6a4,4,0,0,0,2.68-.89V14.3H58.31V13h4.56v5.87a6,6,0,0,1-4.33,1.62C54.84,20.46,52.25,17.72,52.25,13.14Z"/><path class="cls-01" d="M64,13.08c0-4.49,2.47-7.26,6-7.26s6,2.77,6,7.26-2.48,7.38-6,7.38S64,17.6,64,13.08Zm10.31,0c0-3.61-1.72-5.85-4.35-5.85s-4.32,2.24-4.32,5.85,1.71,6,4.32,6S74.32,16.71,74.32,13.08Z"/><path class="cls-01" d="M77.56,14.47V6.08h1.6v8.41c0,3.48,1.51,4.56,3.4,4.56S86,18,86,14.49V6.08h1.52v8.39c0,4.5-2.22,6-5,6S77.56,19,77.56,14.47Z"/><path class="cls-01" d="M93,7.43H88.64V6.08H98.89V7.43H94.57V20.21H93Z"/></g></g></svg>
+                        </a>
+                    </li>
                     <li>
                        <div class="hamburger" id="hamburger-11">
                             <span class="line"></span>
@@ -303,8 +323,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                         djdjdj
                     </div>    -->
                 
-                <div class="menu_bg" style="will-change:top;"></div>
-                <div class="sidebar_menu" style="will-change:top;">
+                <div class="menu_bg" style="z-index: 9;"></div>
+                <div class="sidebar_menu" style="will-change:top;    z-index: 99;">
                     <div class="navbar-nav_user_log">
                         <!---로그인전---->
                     <% if (UserIdx.equals("")) { %>
