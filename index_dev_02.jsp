@@ -63,8 +63,8 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_12_1.png) !important;background-size:cover !important;}
-.section1.bg4 {/*background-color: #ffeac3 !important;*/background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;}
+.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}
+.section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
@@ -84,7 +84,26 @@ height: -webkit-fill-available;
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
   <jsp:include page="/include/header_dev.jsp" flush="false"/>
-  
+  <style>
+  @media only screen and (max-width:500px){
+.flower_div_top{width:230px;}
+  .flower_div_top_left{width:230px;}
+}
+@media only screen and (max-width:414px){
+.flower_div_top{width:220px;}
+  .flower_div_top_left{width:220px;}
+  .navbar-default .navbar-brand img{width:100px !important;}
+  .container>.navbar-header{padding:0 3% 0 0 !important; }
+}
+@media only screen and (max-width:360px){
+.flower_div_top{width:200px;}
+  .flower_div_top_left{width:200px;}
+}
+@media only screen and (max-width:320px){
+.flower_div_top{width:180px;}
+  .flower_div_top_left{width:180px;}
+}
+</style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
