@@ -92,7 +92,7 @@ height: -webkit-fill-available;
 @media only screen and (max-width:414px){
 .flower_div_top{width:220px;}
   .flower_div_top_left{width:220px;}
-  .navbar-default .navbar-brand img{width:100px !important;}
+  .navbar-default .navbar-brand img{width:115px !important;}
   .container>.navbar-header{padding:0 3% 0 0 !important; }
 }
 @media only screen and (max-width:360px){
