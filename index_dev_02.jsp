@@ -107,7 +107,7 @@ height: -webkit-fill-available;
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
+
 <script>
 $(document).ready(function(e) {
 
@@ -179,7 +179,7 @@ timer = setInterval(showRemaining, 100);
 <!---S: 메인팝업--->
 
 <div id="mask_popup"></div>
-<span id="newcountdown"></span>
+<span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
     <a href="/menu/new_bg.jsp" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220215.png"></a>
      <a href="" target="_top" class="new"><img src="2021renew_img/popup/popup_20220224.jpg" ></a>
