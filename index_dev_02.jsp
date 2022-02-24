@@ -107,19 +107,90 @@ height: -webkit-fill-available;
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
+<script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(e) {
 
+if (new Date() >= new Date('02/09/2022 09:00:00')            
+            && new Date() < new Date('03/07/2022 07:59:59')) {        
+            //alert('test');
+            //$('container').addClass('a')
+           $(document).ready(function () {
+                $('.ori').css('display','block');
+                $('.new').css('display','none');
+            }); 
+        } else if (new Date() >= new Date('03/07/2022 08:00:00')      
+            && new Date() < new Date('02/14/2922 23:59:59')) {    
+            $(document).ready(function () {
+                $('.ori').css('display','none');
+                $('.new').css('display','block');
+            }); 
+        } 
+    });
+    
+ <!--
+//CountDownTimer('01/01/2017', 'countdown'); 
+CountDownTimer('03/07/2022 07:59 AM', 'newcountdown'); //AM,PM 12시간으로
+
+
+function CountDownTimer(dt, id)
+{
+var end = new Date(dt);
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+var now = new Date();
+var distance = end - now;
+if (distance < 0) {
+$('.ori').css('display','block');
+clearInterval(timer);
+document.getElementById(id).innerHTML = '';
+ if (end == Date(dt)) {
+// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
+ $('.ori').css('display','none').css('pointer-events','none');
+}
+return ;
+}
+var days = Math.floor(distance / _day);
+var hours = Math.floor(distance/ _hour);
+var minutes = Math.floor((distance % _hour) / _minute);
+var seconds = Math.floor((distance % _minute) / _second);
+
+document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
+document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
+document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
+document.getElementById(id).innerHTML += seconds + '초';
+}
+
+timer = setInterval(showRemaining, 100);
+
+}
+// Source: stackoverflow
+//-->    
+</script>
 </head>
 <body id="page-top" class="index">
 
 <!---S: 메인팝업--->
 
 <div id="mask_popup"></div>
+<span id="newcountdown"></span>
 <div class="window" id="window">
-    <a href="/menu/new_bg.jsp" target="_top"><img src="2021renew_img/popup/popup_20220215.png"></a>
+    <a href="/menu/new_bg.jsp" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220215.png"></a>
+     <a href="" target="_top" class="new"><img src="2021renew_img/popup/popup_20220224.jpg" ></a>
     <div class="btn_wrap btn_blk">
-        <ul class="popup_btn_ul">
+        <ul class="popup_btn_ul ori">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
             <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
+        </ul>
+        <ul class="popup_btn_ul new">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#26468d;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#26468d;">닫기</li>
         </ul>
     </div>
 </div>
