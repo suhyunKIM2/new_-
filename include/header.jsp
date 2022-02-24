@@ -527,6 +527,26 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 </ul>
                             </div>
                           </li>
+                           <% if (UserIdx.equals("")) { %>
+                        <% } else { %>
+                        <li>
+                              <a href="#" class="ham_list_a">
+                                 <span class="list_name">My Page</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                   <li><a href="/mypage/my_qna_list.jsp">문의내역</a></li>
+                                    <li><a href="javascript:loginnet('/member/resign.aspx');">회원탈퇴</a></li>
+                                    <li><a href="javascript:loginnet('/member/change_pw.aspx');">비밀번호 변경</a></li>
+                                    <li><a href="javascript:loginnet('/member/info_change.aspx');">회원정보 변경</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                        <% } %>
                           <% if ("".equals(UserIdx)) { %>
                              <li>
                                  <a href="/member/login.jsp" >
@@ -621,26 +641,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                           </li>
                         <% } %> 
                         ----->
-                        <% if (UserIdx.equals("")) { %>
-                        <% } else { %>
-                        <li>
-                              <a href="#" class="ham_list_a">
-                                 <span class="list_name">My Page</span>
-                                 <div class="hamburger" id="hamburger-90">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </div>
-                              </a>
-                              <div class="list_hidden">
-                                <ul class="ham_ul_list">
-                                   <li><a href="/mypage/my_qna_list.jsp">문의내역</a></li>
-                                    <li><a href="javascript:loginnet('/member/resign.aspx');">회원탈퇴</a></li>
-                                    <li><a href="javascript:loginnet('/member/change_pw.aspx');">비밀번호 변경</a></li>
-                                    <li><a href="javascript:loginnet('/member/info_change.aspx');">회원정보 변경</a></li>
-                                </ul>
-                            </div>
-                          </li>
-                        <% } %>
+                       
                      </ul>
                      <div class="ham_footer">COPYRIGHT. 2009-2016 GOOBNE.CO.ALL RIGHT RESERVED</div>
                 </div>

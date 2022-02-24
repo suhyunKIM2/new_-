@@ -208,7 +208,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
 <!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v3.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v4.css">
 <!---E:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <form id="encModeForm" hidden="true">
 </form>
@@ -239,7 +239,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
             
             <div class="navbar-header page-scroll" style="background:rgba(255,255,255,0.7);border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;padding: 0 20px;">
                <a class="navbar-brand navbar_header_2022 logo_back" href="/index_1.jsp"><img src="/2021renew_img/red_logo.svg" style="height:55px;" class="navbar_header_2022_img"></a>
-               <a class="navbar-brand  logo_re" href="/index_1.jsp" style="line-height: 30px;padding: 9px 15px;"><img src="/2021renew_img/red_logo.svg" style="height:25px;"></a>
+               <a class="navbar-brand  logo_re" href="/index_1.jsp" style="line-height: 30px;padding: 3px 15px;"><img src="/2021renew_img/220302_logo_spring.svg" style="height:39px;"></a>
                <ul class="nav navbar-nav">
                    
                     <li class="hover_li_mouseleave PC_nav">
@@ -547,6 +547,26 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                 </ul>
                             </div>
                           </li>
+                           <% if (UserIdx.equals("")) { %>
+                        <% } else { %>
+                        <li>
+                              <a href="#" class="ham_list_a">
+                                 <span class="list_name">My Page</span>
+                                 <div class="hamburger" id="hamburger-90">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                              </a>
+                              <div class="list_hidden">
+                                <ul class="ham_ul_list">
+                                   <li><a href="/mypage/my_qna_list.jsp">문의내역</a></li>
+                                    <li><a href="javascript:loginnet('/member/resign.aspx');">회원탈퇴</a></li>
+                                    <li><a href="javascript:loginnet('/member/change_pw.aspx');">비밀번호 변경</a></li>
+                                    <li><a href="javascript:loginnet('/member/info_change.aspx');">회원정보 변경</a></li>
+                                </ul>
+                            </div>
+                          </li>
+                        <% } %>
                           <% if ("".equals(UserIdx)) { %>
                              <li>
                                  <a href="/member/login.jsp" >
@@ -641,26 +661,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                           </li>
                         <% } %> 
                         ----->
-                        <% if (UserIdx.equals("")) { %>
-                        <% } else { %>
-                        <li>
-                              <a href="#" class="ham_list_a">
-                                 <span class="list_name">My Page</span>
-                                 <div class="hamburger" id="hamburger-90">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </div>
-                              </a>
-                              <div class="list_hidden">
-                                <ul class="ham_ul_list">
-                                   <li><a href="/mypage/my_qna_list.jsp">문의내역</a></li>
-                                    <li><a href="javascript:loginnet('/member/resign.aspx');">회원탈퇴</a></li>
-                                    <li><a href="javascript:loginnet('/member/change_pw.aspx');">비밀번호 변경</a></li>
-                                    <li><a href="javascript:loginnet('/member/info_change.aspx');">회원정보 변경</a></li>
-                                </ul>
-                            </div>
-                          </li>
-                        <% } %>
+                      
                      </ul>
                      <div class="ham_footer">COPYRIGHT. 2009-2016 GOOBNE.CO.ALL RIGHT RESERVED</div>
                 </div>
