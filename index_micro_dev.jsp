@@ -61,6 +61,43 @@
 .btn_container li img{width:100%;}
 .mobile_img{display:none;}
 body, html,.scroll-container section{min-height: 800px;overflow-y:auto;overflow-x: hidden;}
+
+/*S: T-Day 말풍선 추가*/
+.wrap {text-align: center; width:110px;}
+.chatbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}
+  .balloon {  
+ position:absolute; 
+ width:auto; 
+ height:auto;
+ padding:23px;
+  background:#3617ce; 
+  border-radius: 20px;
+  top:-100px;
+      left: 50%;
+    transform: translate(-50%, 0%);
+}
+.balloon:after { 
+border-top: 10px solid #3617ce;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}      
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+-webkit-@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+/*E: T-Day 말풍선 추가*/
+
+
 @media only screen and (max-width: 1722px){
 .container_position li:nth-child(2){left:auto;transform: translate(0,-50%);right: 13%;}
 }
@@ -105,7 +142,9 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
 }
 @media only screen and (max-width: 1100px){
 .container_position li:nth-child(3) img {
-    width: 55% !important;}
+    width: 55% !important;bottom:25px;}
+.balloon{padding:15px;top:-75px;}
+.wrap{width:80px;}
 }
 @media only screen and (min-device-width: 1280px) and (max-device-height: 800px){
 .container_position li:nth-child(3) img {width: 43% !important;}
@@ -174,7 +213,88 @@ function lnk1(){
 
 </script>
 
+<script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(e) {
+
+if (new Date() >= new Date('02/09/2022 09:00:00')            
+            && new Date() < new Date('02/14/2022 23:59:59')) {        
+            //alert('test');
+            //$('container').addClass('a')
+           $(document).ready(function () {
+                $('.windowfadeIn').css('display','block');
+            }); 
+        } else if (new Date() >= new Date('02/15/2022 00:00:00')      
+            && new Date() < new Date('02/14/2922 23:59:59')) {    
+            $(document).ready(function () {
+                $('.windowfadeIn').css('display','none');
+            }); 
+        } 
+    });
+    
+ <!--
+//CountDownTimer('01/01/2017', 'countdown'); 
+CountDownTimer('02/14/2022 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
+
+
+function CountDownTimer(dt, id)
+{
+var end = new Date(dt);
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+var now = new Date();
+var distance = end - now;
+if (distance < 0) {
+$('.window').css('display','block');
+clearInterval(timer);
+document.getElementById(id).innerHTML = '';
+ if (end == Date(dt)) {
+// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
+ $('#window').css('display','none').css('pointer-events','none');
+}
+return ;
+}
+var days = Math.floor(distance / _day);
+var hours = Math.floor(distance/ _hour);
+var minutes = Math.floor((distance % _hour) / _minute);
+var seconds = Math.floor((distance % _minute) / _second);
+
+document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
+document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
+document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
+document.getElementById(id).innerHTML += seconds + '초';
+}
+
+timer = setInterval(showRemaining, 100);
+
+}
+// Source: stackoverflow
+//-->    
+</script>
+
 <body id="page-top" class="index darkBg">
+<!---S: 메인팝업--->
+
+<div id="mask_popup" style="background:transparent;pointer-events: none;"></div>
+<span id="newcountdown"></span>
+<div class="window" id="window">
+    <img src="2021renew_img/popup/popup_20220208_3.svg">
+    <div class="btn_wrap btn_blk">
+        <ul class="popup_btn_ul">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
+        </ul>
+    </div>
+</div>
+       
+   
+<!---E: 메인팝업--->
 	 <div id="main" class="scroll-container">
          <a href="https://www.goobne.co.kr/index_1.jsp">
 		<section class="section1" id="section1" style="cursor: pointer;">
@@ -190,16 +310,39 @@ function lnk1(){
                 </ul>
                 <ul class="btn_container">
                     <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
-                    <li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/btn_02.png"></a></li>
-                    <li><a href="https://www.instagram.com/goobne___official/" target="_blank"><img src="/resources/images/main/20211214_micro/btn_03.png"></a></li>
+                    <li style="position:relative;">
+                    <div class="balloon chatbox">
+                    <div class="wrap"><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/t_day_btn_4.svg"></a></div>
+                    </div>
+                    <a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">
+                        <img src="/resources/images/main/20211214_micro/btn_02.png">
+                    </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/the___goobster/" target="_blank"><img src="/resources/images/main/20211214_micro/btn_03_2.png"></a></li>
                 </ul>
 			</div>
 		</section>
         </a>
 	</div>
 
-
-</body>
+<link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
+<style>
+#window{    max-width: 400px;
+left: 0;
+transform: translate(0,0);
+top: auto;
+bottom: 144px;
+box-shadow: 2px 2px 10px #4b3e3e;
+border-radius: 20px;z-index: 99;}
+#window img{image-rendering: pixelated;}
+.popup_btn_ul li{background:#cc3b42;width:48%;}
+.btn_blk {margin-top:-1px;    background: #cc3b42;}
+#newcountdown{display: none;}
+@media only screen and (max-width: 749px){
+#window{ left:50%;transform: translate(-50%,-50%);bottom:auto;top:50%;}
+}
+</style>
 
 <script src="/onepage_fullscreen/full-page-scroll.js"></script>
 	<script type="text/javascript">
@@ -210,3 +353,9 @@ function lnk1(){
 			animateFunction: 'ease'
 		});
 	</script>
+    
+
+</body>
+
+
+    
