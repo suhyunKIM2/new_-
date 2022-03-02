@@ -75,6 +75,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 .section1.bg2 .container_star{opacity: 0;}
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
 .section1.bg3 .container_star{opacity: 0;}
+.new{display:none;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
@@ -83,7 +84,7 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header_dev.jsp" flush="false"/>
+  <jsp:include page="/include/header.jsp" flush="false"/>
   <style>
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
@@ -182,7 +183,7 @@ timer = setInterval(showRemaining, 100);
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
     <a href="/menu/new_bg.jsp" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220215.png"></a>
-     <a href="" target="_top" class="new"><img src="2021renew_img/popup/popup_20220224.jpg" ></a>
+     <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" target="_top" class="new"><img src="2021renew_img/popup/popup_20220224.jpg" ></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>

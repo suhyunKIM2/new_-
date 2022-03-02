@@ -129,7 +129,7 @@ timer = setInterval(showRemaining, 100);
 							<a href="javascript:void(0);" class="ori">
 								<img src="/resources/images/contents/login/img_login_ad.jpg" alt="최우수 상금 100만원의 주인공은 누구? 굽네 볼케이노 치밥 도시락 비주얼 콘테스트" />
 							</a>
-                            <a href="" class="new">
+                            <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank">
 								<img src="/resources/images/contents/login/img_login_ad_220224.jpg" alt="듀먼광고" />
 							</a>
 							<div class="login_form_input">
