@@ -132,7 +132,7 @@
 				<div class="bg_color">
 					<img src="/resources/images/contents/menu/bp_set/220228_bpset_01.jpg">
 					<img src="/resources/images/contents/menu/bp_set/220228_bpset_02_2.jpg">
-					<a class="bpset_btn_order" href="#" style="display: none;"><img src="/resources/images/contents/menu/bp_set/220228_bpset_btn.png"></a>
+					<a class="bpset_btn_order" href="/menu/menu_view.jsp?classid=20&cateid=26&productid=31880&classbtn="><img src="/resources/images/contents/menu/bp_set/220228_bpset_btn.png"></a>
 				</div>
                 
 				<!--- S: footer 배달앱---->
