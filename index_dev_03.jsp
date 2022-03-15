@@ -191,73 +191,52 @@ section .slider_div {
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<script>
-$(document).ready(function(e) {
+  <script>
+  // 이벤트종료시점 기록
+  var countDownDate = new Date("March 20, 2022 23:59:59").getTime();
+  
+  var x = setInterval(function() {
+  
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+      
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('03/07/2022 07:59:59')) {        
-            //alert('test');
-            //$('container').addClass('a')
-           $(document).ready(function () {
-                $('.ori').css('display','block');
-                $('.new').css('display','none');
-            }); 
-        } else if (new Date() >= new Date('03/07/2022 08:00:00')      
-            && new Date() < new Date('02/14/2922 23:59:59')) {    
-            $(document).ready(function () {
-                $('.ori').css('display','none');
-                $('.new').css('display','block');
-            }); 
-        } 
-    });
+    if ( hours < 10 ){hours = "0" + hours; } 
+    else if ( hours > 9 ){ hours = hours; } 
+
+    if ( minutes < 10 ){minutes = "0" + minutes; } 
+    else if ( minutes > 9 ){ minutes = minutes; } 
+
+    if ( seconds < 10 ){seconds = "0" + seconds; } 
+    else if ( seconds > 9 ){ seconds = seconds; }  
     
- <!--
-//CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('03/07/2022 07:59 AM', 'newcountdown'); //AM,PM 12시간으로
 
 
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
 
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-$('.ori').css('display','block');
-$('.new').css('display','none');
-clearInterval(timer);
-document.getElementById(id).innerHTML = '';
- if (end == Date(dt)) {
-// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('.ori').css('display','none').css('pointer-events','none');
- $('.new').css('display','block');
-}
-return ;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor(distance/ _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
-document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
-document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 100);
-
-}
-// Source: stackoverflow
-//-->    
-</script>
+// 타임이벤트 진행 타이머    
+    document.getElementById("newcountdown").innerHTML = days + " : " + hours + " : "
+    + minutes + " : " + seconds;
+    document.getElementById("ori").style.visibility="visible";
+    document.getElementById("new").className =" display_none";
+// 이벤트 마감시 보여질 문구    
+    if (distance < 0) {
+      clearInterval(x);
+      //document.getElementById("timesale").innerHTML = "<div class='endtxt'>이벤트가 마감되었습니다.</div>";
+      document.getElementById("ori").className =" display_none";
+      document.getElementById("new").style.visibility="visible";
+      document.getElementById("new").classList.remove("display_none");
+      document.getElementById("todayPopChk").style.backgroundColor="#0f616a";
+      document.getElementById("closePopChk").style.backgroundColor="#0f616a";
+    }
+  }, 1000);
+  </script>
+  <style>
+      .display_none{display:none;}
+  </style>
 </head>
 <body id="page-top" class="index">
 
@@ -266,18 +245,21 @@ timer = setInterval(showRemaining, 100);
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
-    <div class="slider single-item04">
-    <div class="list_slider">
-        <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_4.svg"></a>
+    <div class="slider single-item04" id="ori" style="visibility:hidden;">
+        <div class="list_slider">
+            <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_4.svg"></a>
+        </div>
+        <div class="list_slider">
+            <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+        </div>
     </div>
-    <div class="list_slider">
+    <div id="new" style="visibility:hidden;">
         <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
-    </div>
     </div>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
-            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
         </ul>
     </div>
 </div>

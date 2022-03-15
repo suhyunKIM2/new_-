@@ -193,7 +193,7 @@ section .slider_div {
 
   <script>
   // 이벤트종료시점 기록
-  var countDownDate = new Date("March 16, 2022 08:36:00").getTime();
+  var countDownDate = new Date("March 20, 2022 23:59:59").getTime();
   
   var x = setInterval(function() {
   
@@ -221,14 +221,16 @@ section .slider_div {
     document.getElementById("newcountdown").innerHTML = days + " : " + hours + " : "
     + minutes + " : " + seconds;
     document.getElementById("ori").style.visibility="visible";
-    document.getElementById("new").className +=" display_none";
+    document.getElementById("new").className =" display_none";
 // 이벤트 마감시 보여질 문구    
     if (distance < 0) {
       clearInterval(x);
       //document.getElementById("timesale").innerHTML = "<div class='endtxt'>이벤트가 마감되었습니다.</div>";
-      document.getElementById("ori").className +=" display_none";
+      document.getElementById("ori").className =" display_none";
       document.getElementById("new").style.visibility="visible";
       document.getElementById("new").classList.remove("display_none");
+      document.getElementById("todayPopChk").style.backgroundColor="#0f616a";
+      document.getElementById("closePopChk").style.backgroundColor="#0f616a";
     }
   }, 1000);
   </script>
@@ -257,7 +259,7 @@ section .slider_div {
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
-            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
         </ul>
     </div>
 </div>
