@@ -214,28 +214,28 @@ function lnk1(){
 </script>
 
 <script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
-<!--<script>
+<script>
 $(document).ready(function(e) {
 
 if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('03/04/2022 11:59:59')) {        
+            && new Date() < new Date('03/04/2022 23:59:59')) {        
             //alert('test');
             //$('container').addClass('a')
            $(document).ready(function () {
-                $('.balloon').css('display','block');
+                $('#balloon').css('display','block');
             }); 
-        } else if (new Date() >= new Date('03/04/2022 12:00:00')      
+        } else if (new Date() >= new Date('03/05/2022 24:00:00')      
             && new Date() < new Date('02/14/2922 23:59:59')) {    
             $(document).ready(function () {
                 /* $('.windowfadeIn').css('display','none'); */
-                 $('.balloon').css('display','none');
+                 $('#balloon').css('display','none');
             }); 
         } 
     });
     
  
 //CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('03/04/2022 12:00 PM', 'newcountdown'); //AM,PM 12시간으로
+CountDownTimer('03/05/2022 00:00 AM', 'newcountdown'); //AM,PM 12시간으로
 
 
 function CountDownTimer(dt, id)
@@ -252,12 +252,12 @@ function showRemaining() {
 var now = new Date();
 var distance = end - now;
 if (distance < 0) {
-$('.balloon').css('display','block');
+$('#balloon').css('display','block');
 clearInterval(timer);
 document.getElementById(id).innerHTML = '';
  if (end == Date(dt)) {
 // document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('.balloon').css('display','none').css('pointer-events','none');
+ $('#balloon').css('display','none').css('pointer-events','none');
 }
 return ;
 }
@@ -276,8 +276,8 @@ timer = setInterval(showRemaining, 100);
 
 }
 // Source: stackoverflow
-//--   
-</script>-->
+//-->    
+</script>
 
 <body id="page-top" class="index darkBg">
 <!---S: 메인팝업--->
@@ -285,7 +285,7 @@ timer = setInterval(showRemaining, 100);
 <!-- <div style="display: none;"> -->
   <div style="display:none ;"> <!--티데이 주문 폭주 팝업--->
 	<div id="mask_popup" style="background:transpatent;"></div>
-	<span id="newcountdown"></span>
+	
 	<div class="window" id="window">
 		<img src="2021renew_img/popup/popup_20220228_2.svg">
 		<div class="btn_wrap btn_blk">
@@ -314,7 +314,8 @@ timer = setInterval(showRemaining, 100);
                 <ul class="btn_container">
                     <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
                     <li style="position:relative;">
-                    <div class="balloon chatbox" style="display: none;"><!--티데이 애니메이션 효과--->
+                    <span id="newcountdown"></span>
+                    <div class="balloon chatbox"  id="balloon"><!--티데이 애니메이션 효과--->
                     <div class="wrap"><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/t_day_btn_4.svg"></a></div>
                     </div>
                     <a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">

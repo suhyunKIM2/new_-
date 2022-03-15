@@ -109,7 +109,7 @@ height: -webkit-fill-available;
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<script>
+<!--<script>
 $(document).ready(function(e) {
 
 if (new Date() >= new Date('02/09/2022 09:00:00')            
@@ -148,7 +148,8 @@ function showRemaining() {
 var now = new Date();
 var distance = end - now;
 if (distance < 0) {
-$('.ori').css('display','block');
+$('.ori').css('display','none');
+$('.new').css('display','block');	
 clearInterval(timer);
 document.getElementById(id).innerHTML = '';
  if (end == Date(dt)) {
@@ -172,8 +173,8 @@ timer = setInterval(showRemaining, 100);
 
 }
 // Source: stackoverflow
-//-->    
-</script>
+//--    
+</script>-->
 </head>
 <body id="page-top" class="index">
 
@@ -182,16 +183,16 @@ timer = setInterval(showRemaining, 100);
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
-    <a href="/menu/new_bg.jsp" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220215.png"></a>
-     <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman.jpg" ></a>
+    <a  target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_1.svg"></a>
+     <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
-            <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
         </ul>
         <ul class="popup_btn_ul new">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#26468d;">오늘하루 보지 않기</li>
-            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#26468d;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#0f616a;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#0f616a;">닫기</li>
         </ul>
     </div>
 </div>

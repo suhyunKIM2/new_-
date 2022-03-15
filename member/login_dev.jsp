@@ -26,7 +26,7 @@
 <!-- Header doc -->
 <jsp:include page="/include/header_doc.jsp" flush="false"/> 
 <!-- //Header doc -->   
-<!--<script>
+<script>
 $(document).ready(function(e) {
 
 if (new Date() >= new Date('02/09/2022 09:00:00')            
@@ -65,7 +65,8 @@ function showRemaining() {
 var now = new Date();
 var distance = end - now;
 if (distance < 0) {
-$('.ori').css('display','none');
+$('.ori').css('display','block');
+$('.new').css('display','none');
 clearInterval(timer);
 document.getElementById(id).innerHTML = '';
  if (end == Date(dt)) {
@@ -89,8 +90,8 @@ timer = setInterval(showRemaining, 100);
 
 }
 // Source: stackoverflow
-//--    
-</script>-->
+//-->    
+</script>
 <style>
 .new{display:none;}
 </style>
@@ -129,8 +130,8 @@ timer = setInterval(showRemaining, 100);
 						<!-- <p class="login_for_order">온라인주문 및 스마트콘 주문은 <strong>PM 12:00 - PM 23:00</strong> 입니다.</p> -->
 						<div class="login_form_contents">
                             <span id="newcountdown" style="font-size:0;display:none;"></span>
-							<a href="javascript:void(0);" class="ori">
-								<img src="/resources/images/contents/login/img_login_ad.jpg" alt="최우수 상금 100만원의 주인공은 누구? 굽네 볼케이노 치밥 도시락 비주얼 콘테스트" />
+							<a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="ori">
+								<img src="/resources/images/contents/login/220302_loginpopup_dhuman_2.jpg" alt="듀먼광고" style="    border: 1px solid #eee;"/>
 							</a>
                             <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank">
 								<img src="/resources/images/contents/login/220302_loginpopup_dhuman_2.jpg" alt="듀먼광고" style="    border: 1px solid #eee;"/>

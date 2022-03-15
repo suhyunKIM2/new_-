@@ -571,7 +571,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                         <% } %>
                           <% if ("".equals(UserIdx)) { %>
                              <li>
-                                 <a href="/member/login.jsp" >
+                                 <a href="/customer/cscenter_regi.jsp" >
                                  <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
                                      <div class="hamburger_02" id="hamburger-91">
                                         <span class="line line_02"></span>
@@ -590,7 +590,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                             </li>
                           <% } else { %>
                              <li>
-                                 <a href="/member/login.jsp" >
+                                 <a href="/customer/cscenter_regi.jsp" >
                                  <span class="list_name" style="font-weight: 500;"> 고객의 소리</span>
                                      <div class="hamburger_02" id="hamburger-91">
                                         <span class="line"></span>

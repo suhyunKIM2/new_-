@@ -248,7 +248,7 @@
     
     /*----section3_slick-------*/
    
-    $('.single-item03').slick({
+    $('.single-item04').slick({
       swipe : true,
       autoplay:false,
       autoplaySpeed:500,	

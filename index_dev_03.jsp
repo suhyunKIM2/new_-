@@ -63,7 +63,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_4.png) !important;background-size:cover !important;}
+.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}
 .section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
@@ -71,10 +71,14 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
+.section1.bg2{background-color:#afd1ea;}    
 .section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
 .section1.bg2 .container_star{opacity: 0;}
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
 .section1.bg3 .container_star{opacity: 0;}
+
+#window .single-item04 img{max-height: 100%;    display: inline-block;}
+#window .single-item04 .slick-dots{bottom:0;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
@@ -83,27 +87,215 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header_dev.jsp" flush="false"/>
-  
+  <jsp:include page="/include/header.jsp" flush="false"/>
+  <style>
+  @media (max-height: 864px){
+section .slider_div {
+    margin-top: 4%;}
+}
+  @media only screen and (max-width:500px){
+.flower_div_top{width:230px;}
+  .flower_div_top_left{width:230px;}
+}
+@media only screen and (max-width:414px){
+.flower_div_top{width:220px;}
+  .flower_div_top_left{width:220px;}
+  .navbar-default .navbar-brand img{width:115px !important;}
+  .container>.navbar-header{padding:0 3% 0 0 !important; }
+}
+@media only screen and (max-width:360px){
+.flower_div_top{width:200px;}
+  .flower_div_top_left{width:200px;}
+}
+@media only screen and (max-width:320px){
+.flower_div_top{width:180px;}
+  .flower_div_top_left{width:180px;}
+}
+.slider_img_background_bpset_title {width: 25% !important;}
+.slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
+.slider_img_background_bpset_menu {width: 47% !important;}
+ @media only screen and (max-width:1420px){
+  .slider_img_background_bpset_menu {
+    width: 63% !important;
+} 
+.slider_img_background_bpset_title {
+    width: 31% !important;
+}
+.section1.bg2 {
+    background: url(/2021renew_img/mainbanner/bpset_mainbanner_background_m.jpg) no-repeat !important;background-size: cover !important;
+    background-position: top !important;
+}
+   }
+@media only screen and (max-width:1024px){
+.slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
+.slider_img_background_bpset_menu {width: 72% !important;}
+}
+@media only screen and (max-width:768px){
+.slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 45% !important;}
+.slider_img_background_bpset_menu {width: 88% !important;margin-top: 1% !important;}
+section .slider_div {
+    margin-top: 8%;}
+
+}	
+@media only screen and (max-width:500px){
+.slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
+.slider_img_background_bpset_menu {width: 96% !important;margin-top: 1% !important;}
+}	
+/* 태블릿, 아이패드 */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
+.slider_img_background_bpset_menu {width: 80% !important;}
+.slider_img_background_bpset_btn {
+    width: 47% !important;
+}
+.slider_img_background_bpset_title {
+    width: 50% !important;}
+
+}
+/* 아이패드 프로 */
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+.slider_img_background_bpset_menu {width: 88% !important;}
+.slider_img_background_bpset_btn {
+    width: 34% !important;
+}
+.slider_img_background_bpset_title {
+    width: 54% !important;margin-top:0 !important;}
+
+}
+@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 55% !important;
+}
+}
+@media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 55% !important;
+}
+}
+</style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
+<script>
+$(document).ready(function(e) {
+
+if (new Date() >= new Date('02/09/2022 09:00:00')            
+            && new Date() < new Date('03/07/2022 07:59:59')) {        
+            //alert('test');
+            //$('container').addClass('a')
+           $(document).ready(function () {
+                $('.ori').css('display','block');
+                $('.new').css('display','none');
+            }); 
+        } else if (new Date() >= new Date('03/07/2022 08:00:00')      
+            && new Date() < new Date('02/14/2922 23:59:59')) {    
+            $(document).ready(function () {
+                $('.ori').css('display','none');
+                $('.new').css('display','block');
+            }); 
+        } 
+    });
+    
+ <!--
+//CountDownTimer('01/01/2017', 'countdown'); 
+CountDownTimer('03/07/2022 07:59 AM', 'newcountdown'); //AM,PM 12시간으로
+
+
+function CountDownTimer(dt, id)
+{
+var end = new Date(dt);
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+var now = new Date();
+var distance = end - now;
+if (distance < 0) {
+$('.ori').css('display','block');
+$('.new').css('display','none');
+clearInterval(timer);
+document.getElementById(id).innerHTML = '';
+ if (end == Date(dt)) {
+// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
+ $('.ori').css('display','none').css('pointer-events','none');
+ $('.new').css('display','block');
+}
+return ;
+}
+var days = Math.floor(distance / _day);
+var hours = Math.floor(distance/ _hour);
+var minutes = Math.floor((distance % _hour) / _minute);
+var seconds = Math.floor((distance % _minute) / _second);
+
+document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
+document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
+document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
+document.getElementById(id).innerHTML += seconds + '초';
+}
+
+timer = setInterval(showRemaining, 100);
+
+}
+// Source: stackoverflow
+//-->    
+</script>
 </head>
 <body id="page-top" class="index">
 
 <!---S: 메인팝업--->
 
 <div id="mask_popup"></div>
+<span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
-    <a href="/menu/new_bg.jsp" target="_top"><img src="2021renew_img/popup/popup_20220215.png"></a>
+    <div class="slider single-item04">
+    <div class="list_slider">
+        <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_4.svg"></a>
+    </div>
+    <div class="list_slider">
+        <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+    </div>
+    </div>
     <div class="btn_wrap btn_blk">
-        <ul class="popup_btn_ul">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();">오늘하루 보지 않기</li>
-            <li class="main_pop_close close" onClick="javascript:closeWin();">닫기</li>
+        <ul class="popup_btn_ul ori">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
         </ul>
     </div>
 </div>
+
+<!--<div class="window" id="window">
+    <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_1.svg"></a>
+     <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+    <div class="btn_wrap btn_blk">
+        <ul class="popup_btn_ul ori">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
+        </ul>
+        <ul class="popup_btn_ul new">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#0f616a;">오늘하루 보지 않기</li>
+            <li class="main_pop_close close" onClick="javascript:closeWin();" style="background:#0f616a;">닫기</li>
+        </ul>
+    </div>
+</div>-->
        
    
 <!---E: 메인팝업--->
@@ -125,9 +317,9 @@ height: -webkit-fill-available;
                     </div>
                  </div>
                   <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
-                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
-                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
+                       <a href=""><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
                   </div>
                   <!--<div class="list_slider">
                       <p class="title">굽네 치PD </p>
@@ -490,7 +682,7 @@ height: -webkit-fill-available;
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v3.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v4.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>
