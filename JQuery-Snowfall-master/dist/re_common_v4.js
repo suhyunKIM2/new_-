@@ -248,7 +248,7 @@
     
     /*----section3_slick-------*/
    
-    $('.single-item04').slick({
+    $('.single-item03').slick({
       swipe : true,
       autoplay:false,
       autoplaySpeed:500,	
@@ -269,6 +269,26 @@
     });
 
  /*----//------*/    
-    
+ 
+ /*레이어팝업 슬라이드*/
+     $('.single-item04').slick({
+      swipe : true,
+      autoplay:false,
+      autoplaySpeed:500,	
+      /*fade:true,*/
+      cssEase:"ease",
+      easing:"ease",
+      centerMode: true,
+      centerPadding: '0',
+      dots: true,
+      arrows:false,
+      autoplay : true,			// 자동 스크롤 사용 여부
+      autoplaySpeed : 3000,
+      customPaging : function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      // return '<a>'+(i+1)+'</a>';
+      return '<a>&bull;</a>';
+    },
+    });
 
 

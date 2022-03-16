@@ -586,10 +586,10 @@ height: -webkit-fill-available;
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v5.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v6.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_v5.js"></script>
 <!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
