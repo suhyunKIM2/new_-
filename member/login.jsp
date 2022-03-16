@@ -26,74 +26,8 @@
 <!-- Header doc -->
 <jsp:include page="/include/header_doc.jsp" flush="false"/> 
 <!-- //Header doc -->   
-<!--<script>
-$(document).ready(function(e) {
-
-if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('03/07/2022 07:59:59')) {        
-            //alert('test');
-            //$('container').addClass('a')
-           $(document).ready(function () {
-                $('.ori').css('display','block');
-                $('.new').css('display','none');
-            }); 
-        } else if (new Date() >= new Date('03/07/2022 08:00:00')      
-            && new Date() < new Date('02/14/2922 23:59:59')) {    
-            $(document).ready(function () {
-                $('.ori').css('display','none');
-                $('.new').css('display','block');
-            }); 
-        } 
-    });
-    
- <!--
-//CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('03/07/2022 07:59 AM', 'newcountdown'); //AM,PM 12시간으로
 
 
-function CountDownTimer(dt, id)
-{
-var end = new Date(dt);
-
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
-
-function showRemaining() {
-var now = new Date();
-var distance = end - now;
-if (distance < 0) {
-$('.ori').css('display','none');
-clearInterval(timer);
-document.getElementById(id).innerHTML = '';
- if (end == Date(dt)) {
-// document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('.ori').css('display','none').css('pointer-events','none');
-}
-return ;
-}
-var days = Math.floor(distance / _day);
-var hours = Math.floor(distance/ _hour);
-var minutes = Math.floor((distance % _hour) / _minute);
-var seconds = Math.floor((distance % _minute) / _second);
-
-document.getElementById(id).innerHTML ='<b>'+days+'일'+'</b>';
-document.getElementById(id).innerHTML +='<b>'+ hours + '시간 '+'</b>';
-document.getElementById(id).innerHTML += '<b>'+minutes + '분'+'</b>';
-document.getElementById(id).innerHTML += seconds + '초';
-}
-
-timer = setInterval(showRemaining, 100);
-
-}
-// Source: stackoverflow
-//--    
-</script>-->
-<style>
-.new{display:none;}
-</style>
 </head>
 <body>
 	<!-- skipNavi -->
@@ -129,10 +63,10 @@ timer = setInterval(showRemaining, 100);
 						<!-- <p class="login_for_order">온라인주문 및 스마트콘 주문은 <strong>PM 12:00 - PM 23:00</strong> 입니다.</p> -->
 						<div class="login_form_contents">
                             <span id="newcountdown" style="font-size:0;display:none;"></span>
-							<a href="javascript:void(0);" class="ori">
+							<a href="javascript:void(0);" class="ori" style="display:none;">
 								<img src="/resources/images/contents/login/img_login_ad.jpg" alt="최우수 상금 100만원의 주인공은 누구? 굽네 볼케이노 치밥 도시락 비주얼 콘테스트" />
 							</a>
-                            <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" class="new" target="_blank">
+                            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905" class="new">
 								<img src="/resources/images/contents/login/220302_loginpopup_dhuman_2.jpg" alt="듀먼광고" style="    border: 1px solid #eee;"/>
 							</a>
 							<div class="login_form_input">
