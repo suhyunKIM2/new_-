@@ -71,6 +71,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
+.section1.bg2{background-color:#afd1ea;}    
 .section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
 .section1.bg2 .container_star{opacity: 0;}
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
@@ -78,7 +79,6 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
-
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
@@ -89,6 +89,10 @@ height: -webkit-fill-available;
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
   <jsp:include page="/include/header.jsp" flush="false"/>
   <style>
+  @media (max-height: 864px){
+section .slider_div {
+    margin-top: 4%;}
+}
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
   .flower_div_top_left{width:230px;}
@@ -107,9 +111,84 @@ height: -webkit-fill-available;
 .flower_div_top{width:180px;}
   .flower_div_top_left{width:180px;}
 }
+.slider_img_background_bpset_title {width: 25% !important;}
+.slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
+.slider_img_background_bpset_menu {width: 47% !important;}
+ @media only screen and (max-width:1420px){
+  .slider_img_background_bpset_menu {
+    width: 63% !important;
+} 
+.slider_img_background_bpset_title {
+    width: 31% !important;
+}
+.section1.bg2 {
+    background: url(/2021renew_img/mainbanner/bpset_mainbanner_background_m.jpg) no-repeat !important;background-size: cover !important;
+    background-position: top !important;
+}
+   }
+@media only screen and (max-width:1024px){
+.slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
+.slider_img_background_bpset_menu {width: 72% !important;}
+}
+@media only screen and (max-width:768px){
+.slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 45% !important;}
+.slider_img_background_bpset_menu {width: 88% !important;margin-top: 1% !important;}
+section .slider_div {
+    margin-top: 8%;}
+
+}	
+@media only screen and (max-width:500px){
+.slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
+.slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
+.slider_img_background_bpset_menu {width: 96% !important;margin-top: 1% !important;}
+}	
+/* 태블릿, 아이패드 */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
+.slider_img_background_bpset_menu {width: 80% !important;}
+.slider_img_background_bpset_btn {
+    width: 47% !important;
+}
+.slider_img_background_bpset_title {
+    width: 50% !important;}
+
+}
+/* 아이패드 프로 */
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+.slider_img_background_bpset_menu {width: 88% !important;}
+.slider_img_background_bpset_btn {
+    width: 34% !important;
+}
+.slider_img_background_bpset_title {
+    width: 54% !important;margin-top:0 !important;}
+
+}
+@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 55% !important;
+}
+}
+@media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 55% !important;
+}
+}
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v5.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 <script>
@@ -221,9 +300,9 @@ height: -webkit-fill-available;
                     </div>
                  </div>
                   <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
-                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
-                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
+                       <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
                   </div>
                   <!--<div class="list_slider">
                       <p class="title">굽네 치PD </p>
