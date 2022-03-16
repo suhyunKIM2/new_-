@@ -169,7 +169,7 @@ height: -webkit-fill-available;
 <div class="window" id="window">
     <div class="slider single-item04" id="ori" style="visibility:hidden;">
         <div class="list_slider">
-            <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_4.svg"></a>
+            <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220316.svg"></a>
         </div>
         <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
@@ -586,7 +586,7 @@ height: -webkit-fill-available;
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v4.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v5.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>

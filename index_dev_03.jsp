@@ -348,28 +348,17 @@ section .slider_div {
             <h2 class="title_h2">오늘의 치PD</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
-                    
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/todayschiPD_bpset.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 불금치킨</li>
-                              <li>굽네 불금치킨</li>
-                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>사내맞선 세트</li>
+                              <li>굽네 불금치킨 + 굽네 바비큐 시카고 딥디쉬피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
-                      <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" ></a></p>
-                          <ul>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
-                          </ul>
-                      </div>
-                      </div>
-                      <div class="list_slider">
                       <div class="list_section_02">
                           <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></a></p>
                           <ul>
@@ -379,7 +368,16 @@ section .slider_div {
                           </ul>
                       </div>
                   </div>
-                  
+				  <div class="list_slider">
+                      <div class="list_section_02">
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
+                          <ul>
+                              <li>바게트볼 갈릭크림</li>
+                              <li>바게트볼 갈릭크림</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                          </ul>
+                      </div>
+                  </div>
                   <div class="list_slider">
                       <div class="list_section_02">
                          <p class="list_img"> <a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn="><img src="2021renew_img/mainbanner/gb_chicken.png" ></a></p>
@@ -410,7 +408,6 @@ section .slider_div {
                           </ul>
                       </div>
                   </div>
-                 
              </div>
               <span class="pagingInfo02"></span>
               <span class="pagingInfo02_1"></span>
@@ -440,8 +437,21 @@ section .slider_div {
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
                               <div class="slider single-item03">
-								    <div class="list_slider">
+								  
+								  <div class="list_slider cover_slider">
                                       <ul class="list_slider_ul_sns">
+                                         <li style="width:100%;background: none;">
+                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
+                                        </li> 
+                                     </ul>
+                                  </div>
+								  
+								  
+								  
+								  
+								    <div class="list_slider">
+                                      <ul class="list_slider_ul_sns">										  
                                           <li>
                                               <img src="/2021renew_img/footer_list_img/sns_img05_2_PC.jpg" class="pc_sns">
                                               <img src="/2021renew_img/footer_list_img/sns_img05_MO.jpg" class="mobile_sns">
@@ -641,9 +651,9 @@ section .slider_div {
                             <span class="go_link"><a href="https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg" target="_blank">바로가기 ></a></span>
                             </div>
                             <ul class="youtube_list">
-                                <li style="background:url('/2021renew_img/youtube/youimg01.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=l1ohWUHTI9c')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg02.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=C4j05la6lsM')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg03.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Iwm0NTxcdg0')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_1_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=ID3IjxVvOT0')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_2_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=h0Gm4o_gaJM')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_3_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Iwm0NTxcdg0')"><img src="/2021renew_img/youtube.png"></li>
                             </ul>
                         </li>
                     </ul>
@@ -664,7 +674,7 @@ section .slider_div {
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v4.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v5.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
   <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>

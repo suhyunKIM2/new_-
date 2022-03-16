@@ -101,7 +101,7 @@ function todaycloseWin() {
     document.getElementById('window').style.display = "none";    
     document.getElementById('mask_popup').style.display = "none";
 }
- $( document ).ready( function() {
+
  $('.single-item04').slick({
       swipe : true,
       autoplay:false,
@@ -121,4 +121,3 @@ function todaycloseWin() {
       return '<a>&bull;</a>';
     },
     });
-       });
