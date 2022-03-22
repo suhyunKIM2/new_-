@@ -178,6 +178,9 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
   .mouseover_div ul{padding:2% 0;}
   .navbar-brand.navbar_header_2022{padding:3px 0px;}
   .logo_re,.logo_back{display: none;}
+  @media only screen and (max-width: 1250px){
+#wrap {
+    min-width: 280px;}}
   @media only screen and (max-width: 1024px){
   .mouseover_div{display:none !important;}
   .navbar-brand.navbar_header_2022 img.navbar_header_2022_img{height:42px !important;}
@@ -208,7 +211,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
 <script src="/JQuery-Snowfall-master/dist/ham_motion.js"></script>
 <link rel="stylesheet" href="/JQuery-Snowfall-master/dist/ham_style.css">
 <!---S:수정&추가시 파일명 버전 올리고 css파일 수정----->
-<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v4.css">
+<link rel="stylesheet" href="/JQuery-Snowfall-master/dist/re_common_v5.css">
 <!---E:수정&추가시 파일명 버전 올리고 css파일 수정----->
 <form id="encModeForm" hidden="true">
 </form>

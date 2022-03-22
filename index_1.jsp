@@ -63,7 +63,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}
+.section1.bg,.section1.bg1{/*background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;*/}
 .section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
@@ -71,11 +71,11 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg2{background-color:#afd1ea;}    
-.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
-.section1.bg2 .container_star{opacity: 0;}
+.section1.bg2{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}    
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
 .section1.bg3 .container_star{opacity: 0;}
+.section1.bg4 .flower_div_top_left,.section1.bg4 .flower_div_top{opacity: 0;}    
+.section1.bg4 .container_star{opacity: 0;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
@@ -121,9 +121,6 @@ section .slider_div {
 .slider_img_background_bpset_title {
     width: 31% !important;
 }
-.section1.bg2 {
-    background: url(/2021renew_img/mainbanner/bpset_mainbanner_background_m.jpg) no-repeat !important;background-size: cover !important;
-    background-position: top !important;
 }
    }
 @media only screen and (max-width:1024px){
@@ -188,7 +185,7 @@ section .slider_div {
 }
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v7.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 <script>
@@ -292,31 +289,35 @@ section .slider_div {
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
-				 <div class="list_slider">
-                     <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto"  autoplay muted controls>
-                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
-                    </video>
-                    </div>
-                 </div>
-                  <div class="list_slider">
+				  <div class="list_slider">
                        <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
                        <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
                        <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
                   </div>
+				 <div class="list_slider">
+                     <div class='container container_video' style="margin-top: 4%;">
+                      <video id="vid" width="100%" height="auto" muted controls>
+                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                 </div>
                   <!--<div class="list_slider">
                       <p class="title">굽네 치PD </p>
                       <img src="2021renew_img/mainbanner/cpd_img_1.png" >
                       <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
                  </div>-->
+				 <div class="list_slider">
+                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
+                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
+                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
+                 </div>
                  <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02 ">
-                                             
+                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02">
                   </div>
                  <div class="list_slider">
                     <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto"  muted controls>
-                        <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
+                      <video id="vid" width="100%" height="auto" muted controls>
+                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
@@ -344,43 +345,40 @@ section .slider_div {
           </div>
 		</section>
 		<section class="section2" >
-            
-			<div class="slider_body">
+            <div class="slider_body">
             <h2 class="title_h2">오늘의 치PD</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
-                    
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp"><img src="2021renew_img/mainbanner/todayschiPD_bpset_4.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 불금치킨</li>
-                              <li>굽네 불금치킨</li>
-                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>사내맞선 세트</li>
+                              <li>굽네 불금치킨 + 굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn="><img src="2021renew_img/mainbanner/cd_pizza.png"  class="d_img"></a></p>
                           <ul>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
-                      </div>
-                      <div class="list_slider">
+                  </div>
+				  <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img"></a></p>
                           <ul>
-                              <li>굽네 에그미니타르트</li>
-                              <li>굽네 에그미니타르트</li>
+                              <li>굽네 에그미니 타르트</li>
+                              <li>굽네 에그미니 타르트</li>
                               <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
-                  
                   <div class="list_slider">
                       <div class="list_section_02">
                          <p class="list_img"> <a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn="><img src="2021renew_img/mainbanner/gb_chicken.png" ></a></p>
@@ -393,11 +391,11 @@ section .slider_div {
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" ><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" ><img src="2021renew_img/mainbanner/scd_pizza.png" ></a></p>
                           <ul>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
+                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
@@ -411,7 +409,6 @@ section .slider_div {
                           </ul>
                       </div>
                   </div>
-                 
              </div>
               <span class="pagingInfo02"></span>
               <span class="pagingInfo02_1"></span>
@@ -440,190 +437,64 @@ section .slider_div {
                         </li>
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
-                              <div class="slider single-item03">
-								    <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img05_2_PC.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img05_MO.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CYXidjAFiZR/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                요즘은 뭐하고 논다고?
-												요즘은 어디가 핫하다고?
-												⠀
-												제2의 에디터G가 되어 핫플을 소개해줄
-												굽스터즈를 1기를 모집합니다 👏👏👏
-												⠀
-												#에디터G랑_놀러가요 #굽스터즈
-												#굽스터즈_할_사람 #핫플_소개해주세요
-												#굽스터즈_기대_댓글_달면_불금치킨이_찾아갈지도..?
-												⠀
-												⭐지원자격: 먹고, 마시고, 즐길 준비 된 사람 모두😎
-												⭐모집기간: 2022.01.06(목) ~ 2022.01.12(수)
-												⭐모집인원 : 2명
-												⭐모집발표: 2022.01.13(목) *개별 DM발송 예정
-												⭐활동혜택: 소정의 활동비 지급 + 굽네 기프티콘 5종
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 1월 6일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-								   <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img04_PC.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img04_MO.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CYVp6CMl0v8/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                굽퀴즈~?
-⠀
-												Q. 구울레옹의 최애 피자는?
-												A. 바비큐 시카고 딥디쉬 피자 🍕
-												⠀
-												피자에 치즈 올리고🧀
-												바비큐 고기도 올리고🍗
-												피날레로 치즈케이크무스까지! 🧀
-												⠀
-												By. 에디터G
-												⠀
-												#피자가_먹고_싶으면
-												#소리_지르지_말고_댓글입력해👏
-												#치즈덕후_모여라 #고기도_한입_가득
-												#불금엔_역시_구울레옹세트 #오늘부터_만나볼수_있다구
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 1월 6일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-                                  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img01.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img01_m.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                 [구울레옹 전투 준비 태세 Ep.1]
-⠀
-                                                    하나, 둘, 하나, 둘 ...
-                                                    ⠀
-                                                    한참을 양 손에 닭다리를 하나씩 들고 체력 단련을 하다,
-                                                    문득 지나간 날들이 떠올랐다.
-                                                    ⠀
-                                                    나 구울레옹이 승리를 거머쥐었던 여러 날들.
-                                                    항상 뜨겁게 살고, 싸워왔던 여러 날들
-                                                    ⠀
-                                                    굽민들은 나를 향해 여러 칭송을 보냈고,
-                                                    나는 이에 보답해야한다.
-                                                    그 보답 역시 전투로!
-                                                    ⠀
-                                                    12월 15일,튀길레옹과의 전투!
-                                                    나는 우리 굽민들을 위해 또 한번의 승리 할 것이다!
-                                                    ⠀
-                                                    기다려라 튀길레옹!
-                                                    나의 병사들과 기름 튀기는 너의 영토를
-                                                    확실하게 구워주지.
-                                                    ⠀
-                                                    곧 다가올 전투를 위하여
-                                                    나는 오늘도 체력 단련과 보충을 위해
-                                                    구운치킨을 저녁으로.. 음, 뭐 먹지..
-                                                    ⠀
-                                                    다음화에 계속 ...
-                                                    ⠀
-                                                    #굽네_새모델_맞추면_고추바사삭
-                                                    #구울레옹_1편_감상댓글_남겨도_고추바사삭
-                                                    #따우스레스자우르스_크리스마스_케이크는_덤
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2021년 12월 10일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-                                  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                 THE 굽스터, 오픈 하자마자
-                                                    100만 팔로워를 달성했다고? 😙
-                                                    ⠀
-                                                    우리 굽스터들의
-                                                    핫하고 힙한 소식만 전하는 GOOBNEWS
-                                                    ⠀
-                                                    다음 소식 기대되는 사람 냅다 손들어 🙋
-                                                    혹시, 에디터G에게 더 핫한 소식 전해준다면
-                                                    기프티콘이 있을지도..?
-                                                    ⠀
-                                                    #100만_팔로워_가보자고
-                                                    #굽스터_평생_함께해
-                                                    #솔로부대_기죽지마라
-                                                    #깜짝_놀랄_소식은_뭘까?
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2021년 12월 10일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                  </div>
-                                  <div class="list_slider cover_slider">
+                              <div class="slider single-item03">								  
+								<div class="list_slider cover_slider1">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_title_220317_2.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_title_220317_2.png" class="cover_img mobile_sns">
                                         </li> 
                                      </ul>
                                   </div>
+								  <div class="list_slider">
+                                      <ul class="list_slider_ul_sns">
+                                          <li>
+                                              <img src="/2021renew_img/footer_list_img/sns_start_pc_220316.jpg" class="pc_sns">
+                                              <img src="/2021renew_img/footer_list_img/sns_start_mo_220316.jpg" class="mobile_sns" style="object-position: center;">
+                                          </li>
+                                          <li>
+                                              <div class="top_sns">
+                                                  <a href="https://www.instagram.com/p/CajcFSNPJ_W/" target="_blank">
+                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
+                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
+                                                  </a>
+                                              </div>
+                                              <div class="container_sns">
+												따뜻하고 포근한 3월 시작 💪
+												⠀
+												화사한 햇살과 함께
+												개강도 개학도.. 시작? 🏃 🏃
+												⠀
+												이제 시작하는 끝 없는 과제와
+												시련에.. 힘들고 지칠 때
+												에디터G한테 기대🎵												⠀
+												⠀
+												⠀
+												#우왕_봄이다 #이번_겨울_너무_추웠어
+												#3월은_대학생이_제일세다며?
+												#그_이유는_개강해서 #깔깔유머
+												#부장님_유머코드_공부중
+                                              </div>
+                                              <div class="bottom_sns">
+                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
+                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
+                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
+                                                <div class="sns_date">
+                                                    2022년 3월 1일
+                                                </div>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                   </div>
+								  <!--- 220324 오픈
+								  	 <div class="list_slider cover_slider2">
+                                      <ul class="list_slider_ul_sns">
+                                         <li style="width:100%;background: none;">
+                                             <img src="2021renew_img/footer_list_img/sns_goodad_pc_title_6.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/sns_goodad_mo_title.png" class="cover_img mobile_sns">
+                                        </li> 
+                                     </ul>
+                                  </div> --->
                               </div>
                             </div>
                         </li>
@@ -642,9 +513,9 @@ section .slider_div {
                             <span class="go_link"><a href="https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg" target="_blank">바로가기 ></a></span>
                             </div>
                             <ul class="youtube_list">
-                                <li style="background:url('/2021renew_img/youtube/youimg01.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=l1ohWUHTI9c')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg02.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=C4j05la6lsM')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg03.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Iwm0NTxcdg0')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_1_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=ID3IjxVvOT0')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_2_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=h0Gm4o_gaJM')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/youimg_3_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Bn1YnqW3uXY')"><img src="/2021renew_img/youtube.png"></li>
                             </ul>
                         </li>
                     </ul>

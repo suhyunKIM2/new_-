@@ -224,7 +224,7 @@ if (new Date() >= new Date('02/09/2022 09:00:00')
            $(document).ready(function () {
                 $('#balloon').css('display','block');
             }); 
-        } else if (new Date() >= new Date('03/05/2022 24:00:00')      
+        } else if (new Date() >= new Date('03/05/2022 00:00:00')      
             && new Date() < new Date('02/14/2922 23:59:59')) {    
             $(document).ready(function () {
                 /* $('.windowfadeIn').css('display','none'); */
@@ -233,7 +233,7 @@ if (new Date() >= new Date('02/09/2022 09:00:00')
         } 
     });
     
- 
+ <!-- 
 //CountDownTimer('01/01/2017', 'countdown'); 
 CountDownTimer('03/05/2022 00:00 AM', 'newcountdown'); //AM,PM 12시간으로
 
@@ -252,7 +252,7 @@ function showRemaining() {
 var now = new Date();
 var distance = end - now;
 if (distance < 0) {
-$('#balloon').css('display','block');
+$('#balloon').css('display','none');
 clearInterval(timer);
 document.getElementById(id).innerHTML = '';
  if (end == Date(dt)) {
@@ -312,17 +312,17 @@ timer = setInterval(showRemaining, 100);
                     <li class="pc_img img_04_li"><img src="/resources/images/main/20220207_micro/img_04.png"></li>
                 </ul>
                 <ul class="btn_container">
-                    <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
+                    <li><a href="https://www.goobne.co.kr/index_1.jsp"><img src="/resources/images/main/20211214_micro/btn_01_1.png"></a></li>
                     <li style="position:relative;">
                     <span id="newcountdown"></span>
-                    <div class="balloon chatbox"  id="balloon"><!--티데이 애니메이션 효과--->
+                    <div class="balloon chatbox"  id="balloon" style="display:none;"><!--티데이 애니메이션 효과--->
                     <div class="wrap"><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/t_day_btn_4.svg"></a></div>
                     </div>
                     <a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">
                         <img src="/resources/images/main/20211214_micro/btn_02.png">
                     </a>
                     </li>
-                    <li><a href="https://www.instagram.com/the___goobster/" target="_blank"><img src="/resources/images/main/20211214_micro/btn_03_2.png"></a></li>
+                    <li><a href="/menu/new_bp-set.jsp"><img src="/resources/images/main/20211214_micro/btn_03_3.png"></a></li>
                 </ul>
 			</div>
 		</section>

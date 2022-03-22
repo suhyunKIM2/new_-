@@ -63,7 +63,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{background:none!important;background-color: #afd1ea !important;background-size:cover !important;}
+.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}
 .section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
@@ -71,30 +71,17 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg2{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1;transition: 0.4s all;}    
+.section1.bg2{background-color:#afd1ea;}    
+.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
+.section1.bg2 .container_star{opacity: 0;}
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
 .section1.bg3 .container_star{opacity: 0;}
-.section1.bg4 .flower_div_top_left,.section1.bg4 .flower_div_top{opacity: 0;}    
-.section1.bg4 .container_star{opacity: 0;}
-
-.slider_img_background_bpset_menu{position:relative;margin: auto;}
-.slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
-.btn_text{position:absolute;top:23%;right:-4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
-.btn_text img{image-rendering: auto !important;width:100% !important;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
-}
-@keyframes motion {
-	0% {margin-top: 0px;}
-	100% {margin-top: 10px;}
-}
--webkit-@keyframes motion {
-	0% {margin-top: 0px;}
-	100% {margin-top: 10px;}
 }
 
 </style>
@@ -105,14 +92,6 @@ height: -webkit-fill-available;
   @media (max-height: 864px){
 section .slider_div {
     margin-top: 4%;}
-.slick-slide .slider_img_background_bpset_menu_img {
-    max-height: 100% !important;
-}  
-
-.slick-slide .slider_img_background_bpset_menu_img {
-    width: 80% !important;
-}
-.slick-slide img.slider_img_background_02{width:75% !important;}
 }
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
@@ -134,14 +113,17 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {width: 25% !important;}
 .slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
-.slider_img_background_bpset_menu {width: 50% !important;}
+.slider_img_background_bpset_menu {width: 47% !important;}
  @media only screen and (max-width:1420px){
   .slider_img_background_bpset_menu {
-    width: 85% !important;    margin-top: 4%;
+    width: 63% !important;
 } 
 .slider_img_background_bpset_title {
     width: 31% !important;
 }
+.section1.bg2 {
+    background: url(/2021renew_img/mainbanner/bpset_mainbanner_background_m.jpg) no-repeat !important;background-size: cover !important;
+    background-position: top !important;
 }
    }
 @media only screen and (max-width:1024px){
@@ -152,31 +134,20 @@ section .slider_div {
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 45% !important;}
-.slider_img_background_bpset_menu {width: 93% !important;}
-.slick-slide .slider_img_background_bpset_menu_img {
-    width: 100% !important;
-}
-.btn_text{right:0;top:26%;}
-.flower_div_top,.flower_div_top_left{width:186px;}
+.slider_img_background_bpset_menu {width: 88% !important;margin-top: 1% !important;}
+section .slider_div {
+    margin-top: 8%;}
+
 }	
 @media only screen and (max-width:500px){
 .slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
-.slider_img_background_bpset_menu {width: 105% !important;margin-top: 7% !important;}
-.slick-slide img.slider_img_background_02{width:100% !important;}
-.btn_text {
-    right: 12%;
-    top: 64%;}
-
+.slider_img_background_bpset_menu {width: 96% !important;margin-top: 1% !important;}
 }	
-
 /* 태블릿, 아이패드 */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
-.slider_img_background_bpset_menu {width: 95% !important;}
-.flower_div_top,.flower_div_top_left {
-    width: 319px;
-}
+.slider_img_background_bpset_menu {width: 80% !important;}
 .slider_img_background_bpset_btn {
     width: 47% !important;
 }
@@ -187,12 +158,7 @@ section .slider_div {
 /* 아이패드 프로 */
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
-.btn_text{right:0;}
-.slider_img_background_bpset_menu {width: 95% !important;}
-.flower_div_top,.flower_div_top_left {
-    width: 445px;
-}
-
+.slider_img_background_bpset_menu {width: 88% !important;}
 .slider_img_background_bpset_btn {
     width: 34% !important;
 }
@@ -222,10 +188,10 @@ section .slider_div {
 }
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v8.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<script>
+  <script>
   // 이벤트종료시점 기록
   var countDownDate = new Date("March 20, 2022 23:59:59").getTime();
   
@@ -270,7 +236,6 @@ section .slider_div {
   </script>
   <style>
       .display_none{display:none;}
-      
   </style>
 </head>
 <body id="page-top" class="index">
@@ -285,11 +250,11 @@ section .slider_div {
             <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220316.svg"></a>
         </div>
         <div class="list_slider">
-            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+            <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
         </div>
     </div>
     <div id="new" style="visibility:hidden;">
-        <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+        <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
     </div>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
@@ -326,38 +291,31 @@ section .slider_div {
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
-				  <div class="list_slider">
-                      
-                       <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
-                       <div class="slider_img_background_bpset_menu">
-                           <img src="2021renew_img/mainbanner/bpset_mainbanner_menu_1.png" class="slider_img_background_bpset_menu_img">
-                           <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
-                       </div>
-                  </div>
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto" muted controls>
+                      <video id="vid" width="100%" height="auto"  autoplay muted controls>
                         <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
+                  <div class="list_slider">
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
+                       <a href=""><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
+                  </div>
                   <!--<div class="list_slider">
                       <p class="title">굽네 치PD </p>
                       <img src="2021renew_img/mainbanner/cpd_img_1.png" >
                       <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
                  </div>-->
-				 <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
-                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
-                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
-                 </div>
                  <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02">
+                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02 ">
+                                             
                   </div>
                  <div class="list_slider">
                     <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto" muted controls>
-                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
+                      <video id="vid" width="100%" height="auto"  muted controls>
+                        <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
@@ -385,37 +343,38 @@ section .slider_div {
           </div>
 		</section>
 		<section class="section2" >
-            <div class="slider_body">
+            
+			<div class="slider_body">
             <h2 class="title_h2">오늘의 치PD</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp"><img src="2021renew_img/mainbanner/todayschiPD_bpset_4.png" class="d_img" style="image-rendering: auto;"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/todayschiPD_bpset.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
                               <li>사내맞선 세트</li>
                               <li>굽네 불금치킨 + 굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn="><img src="2021renew_img/mainbanner/cd_pizza.png"  class="d_img"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></a></p>
                           <ul>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 에그미니타르트</li>
+                              <li>굽네 에그미니타르트</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
 				  <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
                           <ul>
-                              <li>굽네 에그미니 타르트</li>
-                              <li>굽네 에그미니 타르트</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>바게트볼 갈릭크림</li>
+                              <li>바게트볼 갈릭크림</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -431,11 +390,11 @@ section .slider_div {
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" ><img src="2021renew_img/mainbanner/scd_pizza.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" ><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
                           <ul>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li>굽네 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
@@ -478,15 +437,17 @@ section .slider_div {
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
                               <div class="slider single-item03">								  
-								<div class="list_slider cover_slider1">
+								  <div class="list_slider cover_slider1">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_title_220317_2.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_title_220317_2.png" class="cover_img mobile_sns">
+											 <!---
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_220316_2.jpg" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_220316_2.jpg" class="cover_img mobile_sns">
+											--->
                                         </li> 
                                      </ul>
-                                  </div>
-								  <div class="list_slider">
+                                  </div>								  
+								    <div class="list_slider">
                                       <ul class="list_slider_ul_sns">
                                           <li>
                                               <img src="/2021renew_img/footer_list_img/sns_start_pc_220316.jpg" class="pc_sns">
@@ -526,15 +487,15 @@ section .slider_div {
                                           </li>
                                       </ul>
                                    </div>
-								  <!--- 220324 오픈
 								  	 <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_goodad_pc_title_6.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/sns_goodad_mo_title.png" class="cover_img mobile_sns">
+											 <!---
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_220316_2.jpg" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_220316_2.jpg" class="cover_img mobile_sns"> --->
                                         </li> 
                                      </ul>
-                                  </div> --->
+                                  </div>
                               </div>
                             </div>
                         </li>
