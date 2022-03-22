@@ -79,7 +79,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 
 .slider_img_background_bpset_menu{position:relative;margin: auto;}
 .slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
-.btn_text{position:absolute;top:23%;right:-4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
+.btn_text{position:absolute;top:23%;right:4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
 .btn_text img{image-rendering: auto !important;width:100% !important;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
@@ -134,20 +134,19 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {width: 25% !important;}
 .slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
-.slider_img_background_bpset_menu {width: 50% !important;}
+.slider_img_background_bpset_menu {width: 70% !important;}
  @media only screen and (max-width:1420px){
   .slider_img_background_bpset_menu {
-    width: 85% !important;    margin-top: 4%;
+    width: 75% !important;    margin-top: 4%;
 } 
 .slider_img_background_bpset_title {
     width: 31% !important;
-}
 }
    }
 @media only screen and (max-width:1024px){
 .slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
-.slider_img_background_bpset_menu {width: 72% !important;}
+.slider_img_background_bpset_menu {width: 80% !important;}
 }
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
@@ -207,7 +206,7 @@ section .slider_div {
     width: 23% !important;
 }  
 .slider_img_background_bpset_menu {
-    width: 55% !important;
+    width: 75% !important;
 }
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
@@ -217,7 +216,10 @@ section .slider_div {
     width: 23% !important;
 }  
 .slider_img_background_bpset_menu {
-    width: 55% !important;
+    width: 60% !important;
+}
+.slick-slide img.slider_img_background_02 {
+    width: 61% !important;
 }
 }
 </style>
