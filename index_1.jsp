@@ -63,7 +63,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{/*background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;*/}
+.section1.bg,.section1.bg1{background:none!important;background-color: #afd1ea !important;background-size:cover !important;}
 .section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
@@ -71,17 +71,30 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg2{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}    
+.section1.bg2{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1;transition: 0.4s all;}    
 .section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
 .section1.bg3 .container_star{opacity: 0;}
 .section1.bg4 .flower_div_top_left,.section1.bg4 .flower_div_top{opacity: 0;}    
 .section1.bg4 .container_star{opacity: 0;}
+
+.slider_img_background_bpset_menu{position:relative;margin: auto;}
+.slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
+.btn_text{position:absolute;top:23%;right:4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
+.btn_text img{image-rendering: auto !important;width:100% !important;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
+}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+-webkit-@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
 }
 
 </style>
@@ -92,6 +105,14 @@ height: -webkit-fill-available;
   @media (max-height: 864px){
 section .slider_div {
     margin-top: 4%;}
+.slick-slide .slider_img_background_bpset_menu_img {
+    max-height: 100% !important;
+}  
+
+.slick-slide .slider_img_background_bpset_menu_img {
+    width: 80% !important;
+}
+.slick-slide img.slider_img_background_02{width:75% !important;}
 }
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
@@ -113,38 +134,48 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {width: 25% !important;}
 .slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
-.slider_img_background_bpset_menu {width: 47% !important;}
+.slider_img_background_bpset_menu {width: 70% !important;}
  @media only screen and (max-width:1420px){
   .slider_img_background_bpset_menu {
-    width: 63% !important;
+    width: 75% !important;    margin-top: 4%;
 } 
 .slider_img_background_bpset_title {
     width: 31% !important;
-}
 }
    }
 @media only screen and (max-width:1024px){
 .slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
-.slider_img_background_bpset_menu {width: 72% !important;}
+.slider_img_background_bpset_menu {width: 80% !important;}
 }
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 45% !important;}
-.slider_img_background_bpset_menu {width: 88% !important;margin-top: 1% !important;}
-section .slider_div {
-    margin-top: 8%;}
-
+.slider_img_background_bpset_menu {width: 93% !important;}
+.slick-slide .slider_img_background_bpset_menu_img {
+    width: 100% !important;
+}
+.btn_text{right:0;top:26%;}
+.flower_div_top,.flower_div_top_left{width:186px;}
 }	
 @media only screen and (max-width:500px){
 .slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
-.slider_img_background_bpset_menu {width: 96% !important;margin-top: 1% !important;}
+.slider_img_background_bpset_menu {width: 105% !important;margin-top: 7% !important;}
+.slick-slide img.slider_img_background_02{width:100% !important;}
+.btn_text {
+    right: 12%;
+    top: 64%;}
+
 }	
+
 /* 태블릿, 아이패드 */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
-.slider_img_background_bpset_menu {width: 80% !important;}
+.slider_img_background_bpset_menu {width: 95% !important;}
+.flower_div_top,.flower_div_top_left {
+    width: 319px;
+}
 .slider_img_background_bpset_btn {
     width: 47% !important;
 }
@@ -155,7 +186,12 @@ section .slider_div {
 /* 아이패드 프로 */
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
-.slider_img_background_bpset_menu {width: 88% !important;}
+.btn_text{right:0;}
+.slider_img_background_bpset_menu {width: 95% !important;}
+.flower_div_top,.flower_div_top_left {
+    width: 445px;
+}
+
 .slider_img_background_bpset_btn {
     width: 34% !important;
 }
@@ -170,7 +206,7 @@ section .slider_div {
     width: 23% !important;
 }  
 .slider_img_background_bpset_menu {
-    width: 55% !important;
+    width: 75% !important;
 }
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
@@ -180,12 +216,15 @@ section .slider_div {
     width: 23% !important;
 }  
 .slider_img_background_bpset_menu {
-    width: 55% !important;
+    width: 60% !important;
+}
+.slick-slide img.slider_img_background_02 {
+    width: 61% !important;
 }
 }
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v7.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v8.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
 <script>
@@ -290,9 +329,12 @@ section .slider_div {
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
 				  <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
-                       <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
-                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
+                      
+                       <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
+                       <div class="slider_img_background_bpset_menu">
+                           <img src="2021renew_img/mainbanner/bpset_mainbanner_menu_1.png" class="slider_img_background_bpset_menu_img">
+                           <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
+                       </div>
                   </div>
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
