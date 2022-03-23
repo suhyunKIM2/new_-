@@ -68,7 +68,7 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
-    left: -17px;
+    left: -33px;
     width: 300px;
     transform: rotate(238deg);}
 .section1.bg4{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
@@ -208,6 +208,7 @@ section .slider_div {
 }
 .btn_text{right:0;top:26%;}
 .flower_div_top,.flower_div_top_left{width:186px;}
+.flower_div_top_left{left:-17px;}
 .slick-slide .slider_img_background_img_m{width:80% !important;}
 .slider_img_background_bpset_menu_2 {
     width: 40% !important;
