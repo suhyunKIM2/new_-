@@ -126,15 +126,15 @@ section .slider_div {
 .slick-slide .slider_img_background_bpset_menu_img {
     width: 80% !important;
 }
-.slick-slide img.slider_img_background_02{width:75% !important;}
-.slick-slide img.slider_img_background{margin-top: 90px;}
+/*.slick-slide img.slider_img_background_02{width:75% !important;}
+.slick-slide img.slider_img_background{margin-top: 90px;}*/
 .section1.bg3 {
     background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat center !important;}
-.slick-slide .slider_img_background.slider_img_background_img_m {
+/*.slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 157px !important;
 }
 .slick-slide img.slider_img_background_02 {
-    padding-top: 97px !important;}
+    padding-top: 97px !important;}*/
 }
 @media (max-height: 512px){
 .slick-slide .slider_img_background_img_m{max-height: 100% !important;}
@@ -255,6 +255,9 @@ section .slider_div {
 .slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 99px !important;
 }
+.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
+.section1.bg3 .container_star{opacity: 0;}
+.slick-slide img.slider_img_background_02{margin-top: 43px !important;}
 }	
 
 @media only screen and (max-width:375px){
@@ -264,13 +267,15 @@ section .slider_div {
 }
 @media only screen and (max-width:320px){
 .slick-slide .slider_img_background.slider_img_background_img_m {
-    margin-top: 70px !important;
+    margin-top: 47px !important;
 }
 }
   @media only screen and (max-width:280px){
  .slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 150px !important;
 } 
+.slick-slide img.slider_img_background_02 {
+    padding-top: 25% !important;}
   }
 /* 태블릿, 아이패드 */
 
@@ -459,7 +464,7 @@ section .slider_div {
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
                       <video id="vid" width="100%" height="auto" muted controls>
-                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
+                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
