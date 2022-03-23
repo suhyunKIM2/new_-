@@ -71,16 +71,30 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     left: -17px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg2{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1;transition: 0.4s all;}    
-.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
-.section1.bg3 .container_star{opacity: 0;}
-.section1.bg4 .flower_div_top_left,.section1.bg4 .flower_div_top{opacity: 0;}    
-.section1.bg4 .container_star{opacity: 0;}
+.section1.bg4{background-color: #ffecec !important;background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1;transition: 0.4s all;}    
+.section1.bg2 {
+    background: url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom;
+    opacity: 1;
+    background-color: #eb7c09;
+    transition: 0.4s all;
+    background-size: cover;
+}
+.section1.bg3 {
+    background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat bottom !important;
+    background-size: cover;
+}
+
+.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
+.section1.bg2 .container_star{opacity: 0;}
 
 .slider_img_background_bpset_menu{position:relative;margin: auto;}
 .slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
 .btn_text{position:absolute;top:23%;right:4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
 .btn_text img{image-rendering: auto !important;width:100% !important;}
+
+.slider_img_background_img_m{display: none !important;}
+.slick-slide .slider_img_background_img{width:60% !important;    min-width: 1100px;}
+.slider_img_background_bpset_menu_2{width:16% !important;max-height: 100% !important;image-rendering: auto !important;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
@@ -112,8 +126,29 @@ section .slider_div {
 .slick-slide .slider_img_background_bpset_menu_img {
     width: 80% !important;
 }
-.slick-slide img.slider_img_background_02{width:75% !important;}
+/*.slick-slide img.slider_img_background_02{width:75% !important;}
+.slick-slide img.slider_img_background{margin-top: 90px;}*/
+.section1.bg3 {
+    background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat center !important;}
+/*.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 157px !important;
 }
+.slick-slide img.slider_img_background_02 {
+    padding-top: 97px !important;}*/
+}
+@media (max-height: 512px){
+.slick-slide .slider_img_background_img_m{max-height: 100% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 18% !important;
+}
+
+}
+
+  @media only screen and (max-width:512px){
+  .slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 90px !important;
+}
+  }
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
   .flower_div_top_left{width:230px;}
@@ -123,10 +158,14 @@ section .slider_div {
   .flower_div_top_left{width:220px;}
   .navbar-default .navbar-brand img{width:115px !important;}
   .container>.navbar-header{padding:0 3% 0 0 !important; }
+  .slick-slide .slider_img_background_img_m {
+    width: 95% !important;max-height: 100% !important; 
+}
 }
 @media only screen and (max-width:360px){
 .flower_div_top{width:200px;}
   .flower_div_top_left{width:200px;}
+   .slick-slide .slider_img_background_img_m{margin-top:10px !important;}
 }
 @media only screen and (max-width:320px){
 .flower_div_top{width:180px;}
@@ -143,10 +182,22 @@ section .slider_div {
     width: 31% !important;
 }
    }
+@media only screen and (max-width:1200px){
+.slick-slide .slider_img_background_img {
+    width: 90% !important;
+    min-width: auto;
+}
+}
+
 @media only screen and (max-width:1024px){
 .slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
 .slider_img_background_bpset_menu {width: 80% !important;}
+
+.slick-slide .slider_img_background_img_m{display: block !important;    max-width: 500px !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 30% !important;}
+.slick-slide .slider_img_background_img{display: none !important;}
 }
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
@@ -157,7 +208,38 @@ section .slider_div {
 }
 .btn_text{right:0;top:26%;}
 .flower_div_top,.flower_div_top_left{width:186px;}
-}	
+.slick-slide .slider_img_background_img_m{width:80% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 40% !important;
+}
+}
+  @media only screen and (max-width:717px){
+  .slick-slide .slider_img_background_img_m{width: 44% !important;}
+  .slider_img_background_bpset_menu_2 {
+    width: 18% !important;
+}
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 25px !important;
+}
+.slick-slide img.slider_img_background_02 {
+    width: 54% !important;    margin-top: 0 !important;
+}
+  }
+ @media only screen and (max-width:512px){
+ .slick-slide img.slider_img_background_02 {
+    width: 70% !important;    margin-top: 0 !important;
+}
+.slick-slide .slider_img_background_img_m {
+    width: 70% !important;
+}
+.slider_img_background_bpset_menu_2 {
+    width: 35% !important;
+}
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 70px !important;
+}
+ }  
+
 @media only screen and (max-width:500px){
 .slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
@@ -166,9 +248,35 @@ section .slider_div {
 .btn_text {
     right: 12%;
     top: 64%;}
-
+.slick-slide .slider_img_background_img_m{width:90% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 50% !important;
+}    
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 99px !important;
+}
+.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
+.section1.bg3 .container_star{opacity: 0;}
+.slick-slide img.slider_img_background_02{margin-top: 43px !important;}
 }	
 
+@media only screen and (max-width:375px){
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 125px !important;
+}
+}
+@media only screen and (max-width:320px){
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 47px !important;
+}
+}
+  @media only screen and (max-width:280px){
+ .slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 150px !important;
+} 
+.slick-slide img.slider_img_background_02 {
+    padding-top: 25% !important;}
+  }
 /* 태블릿, 아이패드 */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
@@ -197,6 +305,7 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {
     width: 54% !important;margin-top:0 !important;}
+.slick-slide .slider_img_background_img_m{max-width: 100% !important; width:70% !important;}    
 
 }
 @media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
@@ -208,6 +317,8 @@ section .slider_div {
 .slider_img_background_bpset_menu {
     width: 75% !important;
 }
+.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
+.slick-slide img.slider_img_background_img{    max-width: 1000px !important;min-width: 850px;}
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
 .slider_img_background_bpset_title {
@@ -221,6 +332,12 @@ section .slider_div {
 .slick-slide img.slider_img_background_02 {
     width: 61% !important;
 }
+.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
+.slick-slide .slider_img_background.slider_img_background_img_m{    margin-top: 20px !important;max-width: 337px !important;    max-height: 100% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 15% !important;
+}
+
 }
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
@@ -336,33 +453,30 @@ section .slider_div {
                            <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
                        </div>
                   </div>
-				 <div class="list_slider">
-                     <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto" muted controls>
-                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
-                    </video>
-                    </div>
-                 </div>
-                  <!--<div class="list_slider">
-                      <p class="title">굽네 치PD </p>
-                      <img src="2021renew_img/mainbanner/cpd_img_1.png" >
-                      <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
-                 </div>-->
-				 <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_04.png" class="slider_img_background slider_img_background_pc">
-                       <img src="2021renew_img/mainbanner/main_banner_img_06.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_text">
-                       <img src="2021renew_img/mainbanner/main_banner_img_05.png" class="slider_img_background slider_img_background_mobile slider_img_background_mobile_img">                       
-                 </div>
-                 <div class="list_slider">
+                  <div class="list_slider">
                        <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02">
                   </div>
-                 <div class="list_slider">
-                    <div class='container container_video' style="margin-top: 4%;">
+                  <div class="list_slider">
+                       <img src="2021renew_img/mainbanner/dhuman_mainbanner_pc.png" class="slider_img_background slider_img_background_img" style="image-rendering:auto;">
+                       <img src="2021renew_img/mainbanner/dhuman_mainbanner_m.png" class="slider_img_background slider_img_background_img_m" style="image-rendering:auto;">
+                       <div class="" onClick="window.open('https://order.goobne.co.kr:8481/login/login.aspx');"><img src="2021renew_img/mainbanner/dhuman_mainbanner_btn.png" class="slider_img_background_bpset_menu_2"></div>
+                  </div>
+				 <div class="list_slider">
+                     <div class='container container_video' style="margin-top: 4%;">
                       <video id="vid" width="100%" height="auto" muted controls>
                         <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
                     </video>
                     </div>
                  </div>
+                
+                 
+                 <!--<div class="list_slider">
+                    <div class='container container_video' style="margin-top: 4%;">
+                      <video id="vid" width="100%" height="auto" muted controls>
+                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                 </div>-->
              </div>
              <span class="pagingInfo"></span>
             </div>  
