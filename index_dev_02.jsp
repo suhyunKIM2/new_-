@@ -120,11 +120,13 @@ height: -webkit-fill-available;
 	0% {margin-top: 0px;}
 	100% {margin-top: 10px;}
 }
-
+.new_page style{display:none;}
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
   <jsp:include page="/include/header.jsp" flush="false"/>
+  
+
   <style>
   @media (max-height: 864px){
 section .slider_div {
