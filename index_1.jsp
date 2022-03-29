@@ -643,7 +643,6 @@ section .slider_div {
                                           </li>
                                       </ul>
                                    </div>
-								  <!--- 220324 오픈
 								  	 <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
@@ -651,7 +650,7 @@ section .slider_div {
                                              <img src="2021renew_img/footer_list_img/sns_goodad_mo_title.png" class="cover_img mobile_sns">
                                         </li> 
                                      </ul>
-                                  </div> --->
+                                  </div>
                               </div>
                             </div>
                         </li>

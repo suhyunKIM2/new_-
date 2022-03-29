@@ -64,28 +64,35 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 .visible{opacity:1;visibility: visible;
     }*/
    
-.section1.bg,.section1.bg1{background-size:cover !important;;background:none !important;background-color: #afd1ea  !important;opacity: 1 !important;transition: 0.4s all !important}
+.section1.bg,.section1.bg1{background:#000 url(/2021renew_img/mainbanner/20220329_pc_bg.png)center bottom  !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
     left: -33px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg4{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
-.section1.bg2 {
+.section1.bg5{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
+.section1.bg3 {
     background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
-        background-color: #4b7709  !important;
+        background-color: #afd1ea  !important;
 }
-.section1.bg3 {
+.section1.bg4 {
     background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat bottom !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
 }
-
-.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;transition: 0.4s all;}    
-.section1.bg2 .container_star{opacity: 0;transition: 0.4s all;}
+.section1.bg2 {
+    background-color: #afd1ea !important;
+    opacity: 1;
+    transition: 0.4s all;
+}
+.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;transition: 0.4s all;}   
+.section1.bg1 .flower_div_top_left,.section1.bg1 .flower_div_top,.section1.bg .flower_div_top_left,.section1.bg .flower_div_top{opacity: 0;transition: 0.4s all;}
+.section1.bg3 .container_star{opacity: 0;transition: 0.4s all;}
+.section1.bg1 .container_star{opacity: 0;transition: 0.4s all;}
+.section1.bg .container_star{opacity: 0;transition: 0.4s all;}
 
 .slider_img_background_bpset_menu{position:relative;margin: auto;}
 .slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
@@ -95,6 +102,9 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 .slider_img_background_img_m{display: none !important;}
 .slick-slide .slider_img_background_img{width:60% !important;    min-width: 1100px;}
 .slider_img_background_bpset_menu_2{width:16% !important;max-height: 100% !important;image-rendering: auto !important;}
+
+.btn_text_02{right: auto;left:3%;width:38%;top:45%;}
+.slick-slide .slider_img_background_bpset_menu_img_mo{display:none;}
 
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
@@ -198,6 +208,24 @@ section .slider_div {
 .slider_img_background_bpset_menu_2 {
     width: 30% !important;}
 .slick-slide .slider_img_background_img{display: none !important;}
+
+}
+@media only screen and (max-width:1000px){
+.section1.bg, .section1.bg1 {
+    background: #000 url(/2021renew_img/mainbanner/20220329_m_bg.png)center bottom !important;
+    background-size: cover !important;
+    opacity: 1 !important;
+    transition: 0.4s all !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_mo{display:block;padding-bottom: 5%;}
+.slick-slide .slider_img_background_bpset_menu_img_pc{display:none;}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+}
 }
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
@@ -212,6 +240,14 @@ section .slider_div {
 .slick-slide .slider_img_background_img_m{width:80% !important;}
 .slider_img_background_bpset_menu_2 {
     width: 40% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_mo{width:90% !important;padding-bottom: 7%;padding-top: 7%;}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 60%;
+    top: 74%;
+    transform: translateX(-50%);
 }
 }
   @media only screen and (max-width:717px){
@@ -245,6 +281,7 @@ section .slider_div {
 .slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
 .slider_img_background_bpset_menu {width: 105% !important;margin-top: 7% !important;}
+.slider_img_background_bpset_menu_02{width:100% !important;}
 .slick-slide img.slider_img_background_02{width:100% !important;}
 .btn_text {
     right: 12%;
@@ -290,7 +327,7 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {
     width: 50% !important;}
-
+.slick-slide .slider_img_background_bpset_menu_img_mo{padding-top:0;}
 }
 /* 아이패드 프로 */
 
@@ -309,17 +346,54 @@ section .slider_div {
 .slick-slide .slider_img_background_img_m{max-width: 100% !important; width:70% !important;}    
 
 }
-@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
-.slider_img_background_bpset_title {
-    width: 32% !important;}
-.slider_img_background_bpset_btn {
-    width: 23% !important;
-}  
-.slider_img_background_bpset_menu {
-    width: 75% !important;
+
+
+@media only screen and (min-device-width : 512px) and (max-device-height : 717px) {
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 54%;
+    top: 74%;
+    transform: translateX(-50%);
 }
-.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
-.slick-slide img.slider_img_background_img{    max-width: 1000px !important;min-width: 850px;}
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 80% !important;
+    padding-bottom: 4%;
+}
+}
+@media only screen and (min-device-width : 540px) and (max-device-height : 720px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 90% !important;
+    padding-bottom: 7%;
+    padding-top: 16%;
+}
+}
+@media only screen and (min-device-width : 717px) and (max-device-height : 512px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 55% !important;
+    padding-bottom: 7%;
+}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 32%;
+    top: 74%;
+    transform: translateX(-50%);
+}
+}
+@media only screen and (min-device-width : 720px) and (max-device-height : 540px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 57% !important;
+    padding-bottom: 7%;
+    padding-top: 0%;
+}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 32%;
+    top: 74%;
+    transform: translateX(-50%);
+}
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
 .slider_img_background_bpset_title {
@@ -338,7 +412,37 @@ section .slider_div {
 .slider_img_background_bpset_menu_2 {
     width: 15% !important;
 }
-
+.btn_text.btn_text_02{
+    right: auto;
+    left: 3%;
+    width: 38%;
+    top: 45%;
+    transform: translateX(0);
+}
+.slick-slide .slider_img_background_bpset_menu_img_02 {
+    width: 100% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_pc {
+    width: 100% !important;
+}
+}
+@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 75% !important;
+}
+.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
+.slick-slide img.slider_img_background_img{    max-width: 1000px !important;min-width: 850px;}
+.slick-slide .slider_img_background_bpset_menu_img_02 {
+    width: 100% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_pc {
+    width: 100% !important;
+}
 }
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
@@ -446,6 +550,15 @@ section .slider_div {
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
+                 <div class="list_slider">
+                      
+                       <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
+                       <div class="slider_img_background_bpset_menu slider_img_background_bpset_menu_02">
+                           <img src="2021renew_img/mainbanner/20220329_pc_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_pc">
+                           <img src="2021renew_img/mainbanner/20220329_m_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_mo">
+                           <div class="btn_text btn_text_02" onClick="location.href='/event/event_view_curry.jsp'"><img src="2021renew_img/mainbanner/20220329_pc_btn.png" class="slider_img_background_bpset_menu_1"></div>
+                       </div>
+                  </div>
 				  <div class="list_slider">
                       
                        <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
@@ -643,7 +756,6 @@ section .slider_div {
                                           </li>
                                       </ul>
                                    </div>
-								  <!--- 220324 오픈
 								  	 <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
@@ -651,7 +763,7 @@ section .slider_div {
                                              <img src="2021renew_img/footer_list_img/sns_goodad_mo_title.png" class="cover_img mobile_sns">
                                         </li> 
                                      </ul>
-                                  </div> --->
+                                  </div>
                               </div>
                             </div>
                         </li>
