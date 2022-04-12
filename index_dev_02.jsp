@@ -64,35 +64,29 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 .visible{opacity:1;visibility: visible;
     }*/
    
-.section1.bg,.section1.bg1{background:#000 url(/2021renew_img/mainbanner/20220329_pc_bg.png)center bottom  !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}
+/*.section1.bg,.section1.bg1{background:#000 url(/2021renew_img/mainbanner/20220329_pc_bg.png)center bottom  !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}*/
+.section1.bg,.section1.bg1{background: #afd1ea !important;opacity: 1;transition: 0.4s all;}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
     left: -33px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg5{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
-.section1.bg3 {
-    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom;
+.section1.bg4{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
+.section1.bg2 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
         background-color: #afd1ea  !important;
 }
-.section1.bg4 {
+.section1.bg3 {
     background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat bottom !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
 }
-.section1.bg2 {
-    background-color: #afd1ea !important;
-    opacity: 1;
-    transition: 0.4s all;
-}
-.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;transition: 0.4s all;}   
-.section1.bg1 .flower_div_top_left,.section1.bg1 .flower_div_top,.section1.bg .flower_div_top_left,.section1.bg .flower_div_top{opacity: 0;transition: 0.4s all;}
-.section1.bg3 .container_star{opacity: 0;transition: 0.4s all;}
-.section1.bg1 .container_star{opacity: 0;transition: 0.4s all;}
-.section1.bg .container_star{opacity: 0;transition: 0.4s all;}
+
+.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;transition: 0.4s all;}   
+.section1.bg2 .container_star{opacity: 0;transition: 0.4s all;}
 
 .slider_img_background_bpset_menu{position:relative;margin: auto;}
 .slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
@@ -147,6 +141,12 @@ section .slider_div {
 }
 .slick-slide img.slider_img_background_02 {
     padding-top: 97px !important;}*/
+.section1.bg2 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover;
+        background-color: #afd1ea  !important;
+}
 }
 @media (max-height: 512px){
 .slick-slide .slider_img_background_img_m{max-height: 100% !important;}
@@ -159,6 +159,12 @@ section .slider_div {
   @media only screen and (max-width:512px){
   .slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 90px !important;
+}
+	  .section1.bg2 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover;
+        background-color: #afd1ea  !important;
 }
   }
   @media only screen and (max-width:500px){
@@ -213,12 +219,7 @@ section .slider_div {
 
 }
 @media only screen and (max-width:1000px){
-.section1.bg, .section1.bg1 {
-    background: #000 url(/2021renew_img/mainbanner/20220329_m_bg.png)center bottom !important;
-    background-size: cover !important;
-    opacity: 1 !important;
-    transition: 0.4s all !important;
-}
+
 .slick-slide .slider_img_background_bpset_menu_img_mo{display:block;padding-bottom: 5%;}
 .slick-slide .slider_img_background_bpset_menu_img_pc{display:none;}
 .btn_text.btn_text_02 {
@@ -253,7 +254,7 @@ section .slider_div {
 }
 }
   @media only screen and (max-width:717px){
-  .slick-slide .slider_img_background_img_m{width: 44% !important;}
+  .slick-slide .slider_img_background_img_m{width: 60% !important;}
   .slider_img_background_bpset_menu_2 {
     width: 18% !important;
 }
@@ -261,8 +262,11 @@ section .slider_div {
     margin-top: 25px !important;
 }
 .slick-slide img.slider_img_background_02 {
-    width: 54% !important;    margin-top: 0 !important;
+    width: 80% !important;    margin-top: 0 !important;
 }
+  }
+  @media only screen and (max-width:512px){ 
+  .list_slider_ul_sns li:nth-child(1){height: auto;min-height: 100%;}
   }
  @media only screen and (max-width:512px){
  .slick-slide img.slider_img_background_02 {
@@ -506,21 +510,21 @@ section .slider_div {
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
-    <div class="slider single-item04" id="ori" style="visibility:hidden;">
-        <div class="list_slider">
-            <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220316.svg"></a>
-        </div>
+    <div class="slider single-item04" >
+        <!--<div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view_curry.jsp" ><img src="2021renew_img/popup/220401_event_preorder_popup.jpg"></a>
+        </div>-->
         <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
         </div>
     </div>
-    <div id="new" style="visibility:hidden;">
+    <!--<div id="new" style="visibility:hidden;">
         <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
-    </div>
+    </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
-            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#147883;">오늘하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#147883;">닫기</li>
         </ul>
     </div>
 </div>
@@ -552,15 +556,15 @@ section .slider_div {
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
-                 <div class="list_slider">
+                 <!--<div class="list_slider">
                       
-                       <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
+                       <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
                        <div class="slider_img_background_bpset_menu slider_img_background_bpset_menu_02">
                            <img src="2021renew_img/mainbanner/20220329_pc_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_pc">
                            <img src="2021renew_img/mainbanner/20220329_m_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_mo">
                            <div class="btn_text btn_text_02" onClick="location.href='/event/event_view_curry.jsp'"><img src="2021renew_img/mainbanner/20220329_pc_btn.png" class="slider_img_background_bpset_menu_1"></div>
                        </div>
-                  </div>
+                  </div>-->
 				  <div class="list_slider">
                       
                        <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
@@ -618,7 +622,7 @@ section .slider_div {
 		</section>
 		<section class="section2" >
             <div class="slider_body">
-            <h2 class="title_h2">오늘의 치PD</h2>
+            <h2 class="title_h2">이달의 추천 메뉴</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
                   <div class="list_slider">
@@ -709,55 +713,15 @@ section .slider_div {
                         </li>
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
-                              <div class="slider single-item03">								  
-								<div class="list_slider cover_slider1">
+                              <div class="slider single-item03">
+                              <div class="list_slider cover_slider">
                                       <ul class="list_slider_ul_sns">
-                                         <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_title_220317_2.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_title_220317_2.png" class="cover_img mobile_sns">
+                                         <li style="width:100%;background:url('2021renew_img/footer_list_img/sns_img_bg_03.png');background-size: cover;">
+                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
                                         </li> 
                                      </ul>
                                   </div>
-								  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_start_pc_220316.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_start_mo_220316.jpg" class="mobile_sns" style="object-position: center;">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CajcFSNPJ_W/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-												따뜻하고 포근한 3월 시작 💪
-												⠀
-												화사한 햇살과 함께
-												개강도 개학도.. 시작? 🏃 🏃
-												⠀
-												이제 시작하는 끝 없는 과제와
-												시련에.. 힘들고 지칠 때
-												에디터G한테 기대🎵												⠀
-												⠀
-												⠀
-												#우왕_봄이다 #이번_겨울_너무_추웠어
-												#3월은_대학생이_제일세다며?
-												#그_이유는_개강해서 #깔깔유머
-												#부장님_유머코드_공부중
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 3월 1일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
 								  	 <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">

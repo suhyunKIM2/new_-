@@ -25,6 +25,24 @@
  ]
 }
 </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3005723823073377');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3005723823073377&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <!-- 네이버 봇 정보 -->
 <style>
 * {padding:0;margin:0;list-style: none;text-decoration: none;}<br>
@@ -34,33 +52,29 @@
     font-weight: normal;
     font-style: normal;
 }
-.section1 {background:url(/resources/images/main/20220207_micro/PC_bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
+.section1 {background:url(/resources/images/main/20220413_micro/bg.jpg);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
 .mobile {display: none;}
 .section1 .logo img {height: 30px;padding: 10px;}   
 .container{position:absolute;left:0;top:0;width:100%;height:100%;}
 .container_position{position:relative;width:100%;height:100%;}
-.container_position li{position:absolute;bottom:0;width: 100%;height: 100%;    margin-left: -100px;}
-.container_position li:nth-child(2){    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%,-50%);
-    margin-left:100px;
-    margin-top: -6%;}
+.container_position li{position:absolute;bottom:0;width: 100%;height: 100%;}
 .container_position li:nth-child(1) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
 .container_position li:nth-child(2) img{width:100%;height:auto;  object-position: right;float:right;object-fit: cover;}
 .container_position li:nth-child(3) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
-.container_position li.img_04_li{width:53%;right:-4%;bottom:50px;height:auto;}
+.container_position li.img_04_li{width: 41%;
+    right: 5%;
+    bottom: 22%;
+    height: auto;}
 .container_position li.img_04_li img{width:100%;}
-.btn_container{    width: auto;
+.btn_container{      width: auto;
     position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translateX(-50%);}
+    right: 4%;
+    bottom: 82px;}
 .btn_container li{display:inline-block;}
 .btn_container li img{width:100%;}
 .mobile_img{display:none;}
 body, html,.scroll-container section{min-height: 800px;overflow-y:auto;overflow-x: hidden;}
+.mobile_img_01{display: none;}
 
 /*S: T-Day 말풍선 추가*/
 .wrap {text-align: center; width:110px;}
@@ -98,46 +112,47 @@ border-top: 10px solid #3617ce;
 /*E: T-Day 말풍선 추가*/
 
 
-@media only screen and (max-width: 1722px){
-.container_position li:nth-child(2){left:auto;transform: translate(0,-50%);right: 13%;}
-}
 @media only screen and (max-width: 1645px){
 .btn_container{margin-left:0;}
 }
+@media only screen and (max-width: 1590px){
+.container_position li:nth-child(1) img{height:92%;}
+}
+
 @media only screen and (max-width: 1490px){
 .container_position li:nth-child(1) img{object-position: left;}
 .container_position li:nth-child(2){width:44%;}
 .btn_container li{width:32%;}
 .btn_container{right:0;}
+
+}
+@media only screen and (max-width: 1408px){
+.container_position li:nth-child(1) img {
+    height: 85%;
+}
 }
 @media only screen and (max-width: 1280px){
 .container_position li:nth-child(2){    right: 2%;}
-.container_position li.img_04_li{width:68%;}
 
 }
 @media only screen and (max-width: 1100px){
 .pc_img{display: none;}
 .mobile_img{display:block;}
-.section1 {background:url(/resources/images/main/20220207_micro/PC_bg.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: right;}
+.section1 {background:url(/resources/images/main/20220413_micro/bg.jpg);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: right;}
 .container_position li.mobile_img{bottom:114px;margin-left: 0;width:70%;height:auto;left:50%;}
-.container_position li {margin-left: -8%;left: 50%;transform: translateX(-50%);text-align: center;height: calc(100% - 79px);width:auto;}
+.container_position li {    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: auto;
+    width: 94%;
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);}
 .container_position li:nth-child(3) img {width:100%;height: auto;position: absolute;left: 50%;transform: translateX(-50%);bottom: 0;}
-.btn_container { right: auto; bottom: 0;left: 50%;transform: translateX(-50%); height: 79px; width:80%;text-align: center;}
+.container_position li:nth-child(1) img{    height: auto;width: 100%;}
+.btn_container { right: auto; bottom: 0;left: 50%;transform: translateX(-50%); width:80%;text-align: center;}
 body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
 
-}
-/* 태블릿, 아이패드 */
-@media only screen and (min-device-width : 768px) and (max-device-height : 1023px) {
-.container_position li:nth-child(3) img{width:80% !important;}
-}
-
-@media only screen and (min-device-width : 1024px) and (max-device-height : 1366px){
-.container_position li:nth-child(3) img {
-    width: 80% !important;
-}
-}
-@media only screen and (max-height:823px){
-.container_position li:nth-child(3) img{width:27% !important;}
 
 }
 @media only screen and (max-width: 1100px){
@@ -145,7 +160,36 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
     width: 55% !important;bottom:25px;}
 .balloon{padding:15px;top:-75px;}
 .wrap{width:80px;}
+.container_position li:nth-child(2) {
+    right: 2%;
+    bottom: auto;
+    top: 14%;
+    width: 57%;
 }
+}
+@media only screen and (max-width: 970px){
+.btn_container{bottom:7%;width:100%;}
+.container_position li:nth-child(2){width:88% !important;}
+}
+/* 태블릿, 아이패드 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+.container_position li:nth-child(3) img{width:80% !important;}
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px){
+.container_position li:nth-child(3) img {
+    width: 80% !important;
+}
+.container_position li{width:100%;}
+.container_position li:nth-child(2){width:90%;}
+.btn_container{width:90%;bottom:7%;}
+}
+@media only screen and (max-height:823px){
+.container_position li:nth-child(3) img{width:27% !important;}
+.btn_container{bottom:7%;    width: 57%;}
+
+}
+
 @media only screen and (min-device-width: 1280px) and (max-device-height: 800px){
 .container_position li:nth-child(3) img {width: 43% !important;}
 .container_position li.img_04_li {width: 56%;right: 0;}
@@ -155,26 +199,12 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 600px){
-.container_position li {
-    margin-left: 0;
-    left: 0;
-    transform: translateX(-0%);
-    text-align: center;
-    height: 100%;
-    width: auto;
-}
-.container_position li.img_04_li {
+ .container_position li {
     width: 52%;
-    display: block;
-    right: 0;
-    left: auto;
 }
-.container_position li.mobile_img {
-    right: 0;
-    bottom: 55%;left:auto !important;    width: 60%;}
-.container_position li:nth-child(3) img {
-    width: 70% !important;
-}    
+.container_position li:nth-child(2) {
+    width: 46%;
+}
 }
 @media only screen and (max-width:749px){
 .btn_container {width:100%;}
@@ -184,10 +214,50 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
 .container_position li:nth-child(3) img{width:33% !important;}
 
 }
-
+@media only screen and (max-width:700px){
+.mobile_img_01{display: block;}
+.pc_img_01{display: none;}
+.container_position li {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: auto;
+    width: 94%;
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container_position li:nth-child(3) img {
+    width: 100% !important;
+    height: auto;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-0%,-50%);
+    left: 0;
+}
+.container_position li:nth-child(2){top: 13%;}
+.btn_container{bottom:2%;}
+}
 @media only screen and (max-width:500px){
 .container_position li:nth-child(3) img{width:100% !important;}
 .container_position li.mobile_img{width:80%;}
+.container_position li.mobile_img_01{height: calc(100% - 250px);width:100%;}
+.container_position li.mobile_img_01 img{ height:auto;width:100% !important;}
+.container_position li:nth-child(2) {
+    top: 19%;
+}
+.btn_container {
+    bottom: 15%;
+}
+}
+@media only screen and (max-width:375px){
+.container_position li.mobile_img_01 img{height:80%;}
+.container_position li:nth-child(2) {
+    top: 19%;
+}
+.btn_container {
+    bottom: 15%;
+}
 }
 @media only screen and (max-width: 280px){
 .btn_container li {
@@ -214,27 +284,28 @@ function lnk1(){
 </script>
 
 <script src="/resources/js/lib/jquery-1.12.4.min.js"></script>
-<!--<script>
+<script>
 $(document).ready(function(e) {
 
 if (new Date() >= new Date('02/09/2022 09:00:00')            
-            && new Date() < new Date('02/14/2022 23:59:59')) {        
+            && new Date() < new Date('03/04/2022 23:59:59')) {        
             //alert('test');
             //$('container').addClass('a')
            $(document).ready(function () {
-                $('.windowfadeIn').css('display','block');
+                $('#balloon').css('display','block');
             }); 
-        } else if (new Date() >= new Date('02/15/2022 00:00:00')      
+        } else if (new Date() >= new Date('03/05/2022 00:00:00')      
             && new Date() < new Date('02/14/2922 23:59:59')) {    
             $(document).ready(function () {
                 /* $('.windowfadeIn').css('display','none'); */
+                 $('#balloon').css('display','none');
             }); 
         } 
     });
     
- <!--
+ <!-- 
 //CountDownTimer('01/01/2017', 'countdown'); 
-CountDownTimer('02/14/2022 11:59 PM', 'newcountdown'); //AM,PM 12시간으로
+CountDownTimer('03/05/2022 00:00 AM', 'newcountdown'); //AM,PM 12시간으로
 
 
 function CountDownTimer(dt, id)
@@ -251,12 +322,12 @@ function showRemaining() {
 var now = new Date();
 var distance = end - now;
 if (distance < 0) {
-$('.window').css('display','block');
+$('#balloon').css('display','none');
 clearInterval(timer);
 document.getElementById(id).innerHTML = '';
  if (end == Date(dt)) {
 // document.getElementById(id).innerHTML = '<div class="mask_out_text">타임세일이 종료 되었습니다.</div>'
- $('#window').css('display','none').css('pointer-events','none');
+ $('#balloon').css('display','none').css('pointer-events','none');
 }
 return ;
 }
@@ -275,15 +346,16 @@ timer = setInterval(showRemaining, 100);
 
 }
 // Source: stackoverflow
-//--    
-</script>-->
+//-->    
+</script>
 
 <body id="page-top" class="index darkBg">
 <!---S: 메인팝업--->
 	
-<div style="display: block;">
+<!-- <div style="display: none;"> -->
+  <div style="display:none ;"> <!--티데이 주문 폭주 팝업--->
 	<div id="mask_popup" style="background:transpatent;"></div>
-	<span id="newcountdown"></span>
+	
 	<div class="window" id="window">
 		<img src="2021renew_img/popup/popup_20220228_2.svg">
 		<div class="btn_wrap btn_blk">
@@ -304,22 +376,19 @@ timer = setInterval(showRemaining, 100);
 			</div>
 			<div class="container">
 				<ul class="container_position">
-                    <li class=""><img src="/resources/images/main/20220207_micro/img_01.png"></li>
-                    <li class="pc_img"><img src="/resources/images/main/20220207_micro/img_05_2.png"></li>
-                    <li class="mobile_img"><img src="/resources/images/main/20220207_micro/img_05_2.png"></li>
-                    <li class="pc_img img_04_li"><img src="/resources/images/main/20220207_micro/img_04.png"></li>
+                    <li class="pc_img_01"><img src="/resources/images/main/20220413_micro/img_02.png"></li>
+                    <li class="img_04_li"><img src="/resources/images/main/20220413_micro/img_01.png"></li>
+                    <li class="mobile_img_01"><img src="/resources/images/main/20220413_micro/m_img_02_1.png"></li>
                 </ul>
                 <ul class="btn_container">
-                    <li><a href="https://www.goobne.co.kr/menu/new_bg.jsp"><img src="/resources/images/main/20211214_micro/btn_01.png"></a></li>
+                    <li><a href="https://www.goobne.co.kr/index_1.jsp"><img src="/resources/images/main/20220413_micro/btn_01.png"></a></li>
                     <li style="position:relative;">
-                    <div class="balloon chatbox">
-                    <div class="wrap"><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20211214_micro/t_day_btn_4.svg"></a></div>
-                    </div>
+                    <span id="newcountdown"></span>
                     <a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">
-                        <img src="/resources/images/main/20211214_micro/btn_02.png">
+                        <img src="/resources/images/main/20220413_micro/btn_02.png">
                     </a>
                     </li>
-                    <li><a href="https://www.instagram.com/the___goobster/" target="_blank"><img src="/resources/images/main/20211214_micro/btn_03_2.png"></a></li>
+                    <li><a href="/menu/new_bp-set.jsp"><img src="/resources/images/main/20220413_micro/btn_03.png"></a></li>
                 </ul>
 			</div>
 		</section>

@@ -71,10 +71,14 @@
     .footer_app h3{width:45%;margin:2% auto 0;}
     .footer_app .app_list{width:100%;text-align: center;margin-top:7%;}
     .footer_app .app_list li{display:inline-block;width:auto;margin: 0 1%;}
-    .border_box_cont{border-left:1px solid #eee;border-right:1px solid #eee;}
+    .border_box_cont{border-left:1px solid #eee;border-right:1px solid #eee;border-top: 1px solid #eee;}
 	/*.bpset_btn_order{display: inline-block;width:33.7%;position: absolute;top: 91.4%;left: 33.65%;}*/
     .btn_ul{position:absolute;bottom:123px;text-align: center;}
     .btn_ul li{display: inline-block;width:37%;}
+    
+    /*한개짜리 버튼 추가*/
+    .new_menu_wrap .btn_back{width:100%; background:#f1efe8;text-align: center;padding:10% 0;}
+    .new_menu_wrap .btn_back img{width:50%;cursor: pointer;}
 	@media all and (max-width:1250px) {
 	.bpset_btn_order{top: 91.6%;}
 	}
@@ -101,7 +105,8 @@
 		.img_size {width: 92%;}
         .footer_app .app_list li{width:33%;}
         .footer_app h3{width:65%;}
-		.bpset_btn_order{top: 91%;}		
+		.bpset_btn_order{top: 91%;}	
+        .new_menu_wrap .btn_back img{width:65%;}
 	}
 	@media all and (max-width:320px) {
 	.bpset_btn_order{top: 90.6%;}
@@ -129,9 +134,7 @@ src="https://www.facebook.com/tr?id=3005723823073377&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 </head>
-<script type="text/javascript">
-	function 
-</script>
+
 <body>
 	<!-- skipNavi -->
 	<div id="skipNavi"><a href="#contents">본문 바로가기</a> <a href="#gnb">주메뉴 바로가기</a> <a href="#footer">사이트정보 바로가기</a> </div>
@@ -152,17 +155,15 @@ src="https://www.facebook.com/tr?id=3005723823073377&ev=PageView&noscript=1"
 	<!-- container -->
 	<div id="container" >
 		<section id="contents" >
-			<h2 class="cont_tit t_center">사내맞선 세트</h2>
+			<h2 class="cont_tit t_center">오븐바사삭& 치즈바사삭 & 찍먹커리 </h2>
             <div class="border_box_cont">
-			<div class="wrap_standard new_menu_wrap" style="margin-top: -10px;">
+			<div class="wrap_standard new_menu_wrap">
 				<!--- S: 본문내용--->
 				<div class="bg_color">
-					<img src="/resources/images/contents/menu/bp_set/220228_bpset_01.jpg">
-					<img src="/resources/images/contents/menu/bp_set/220228_bpset_02_2.jpg">
-                    <ul class="btn_ul">
-					    <li><a class="bpset_btn_order" href="/menu/menu_view.jsp?classid=20&cateid=26&productid=31880&classbtn=" onclick="fbq('track', 'Purchase', {value: '0.0', currency:‘KRW'});"><img src="/resources/images/contents/menu/bp_set/220228_bpset_btn.png"></a></li>
-                        <li><a class="bpset_btn_order" href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="/resources/images/contents/menu/bp_set/220316_bpset_btn.png"></a></li>
-                    </ul>
+					<img src="/resources/images/contents/menu/oven/img_1.jpg">
+					<div class="btn_back">
+                        <img src="/resources/images/contents/menu/oven/btn.png" onClick="window.open('https://order.goobne.co.kr:8481/order/delivery.aspx');">
+                    </div>
 				</div>
                 
 				<!--- S: footer 배달앱---->
