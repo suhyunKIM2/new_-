@@ -247,7 +247,7 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
     top: 19%;
 }
 .btn_container {
-    bottom: 15%;
+    bottom: 10%;
 }
 }
 @media only screen and (max-width:375px){
@@ -259,9 +259,15 @@ body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
     bottom: 15%;
 }
 }
+@media only screen and (max-width:320px){
+.container_position li.mobile_img_01 img {
+    height: 100%;
+}
+}
 @media only screen and (max-width: 280px){
 .btn_container li {
     width: 31%;}
+.container_position li.mobile_img_01 img{height:80%;}    
 }
 </style>
 </head>
@@ -381,14 +387,14 @@ timer = setInterval(showRemaining, 100);
                     <li class="mobile_img_01"><img src="/resources/images/main/20220413_micro/m_img_02_1.png"></li>
                 </ul>
                 <ul class="btn_container">
-                    <li><a href="https://www.goobne.co.kr/index_1.jsp"><img src="/resources/images/main/20220413_micro/btn_01.png"></a></li>
+                    <li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20220413_micro/btn_01.png"></a></li>
                     <li style="position:relative;">
                     <span id="newcountdown"></span>
-                    <a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank">
+                    <a href="https://www.goobne.co.kr/index_1.jsp">
                         <img src="/resources/images/main/20220413_micro/btn_02.png">
                     </a>
                     </li>
-                    <li><a href="/menu/new_bp-set.jsp"><img src="/resources/images/main/20220413_micro/btn_03.png"></a></li>
+                    <li><a href="/menu/new_oven.jsp"><img src="/resources/images/main/20220413_micro/btn_03.png"></a></li>
                 </ul>
 			</div>
 		</section>
