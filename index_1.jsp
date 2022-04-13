@@ -65,28 +65,28 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
     }*/
    
 /*.section1.bg,.section1.bg1{background:#000 url(/2021renew_img/mainbanner/20220329_pc_bg.png)center bottom  !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}*/
-.section1.bg,.section1.bg1{background: #afd1ea !important;opacity: 1;transition: 0.4s all;}
+.section1.bg2{background: #afd1ea !important;opacity: 1;transition: 0.4s all;}
  .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
     left: -33px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg4{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
-.section1.bg2 {
+.section1.bg5{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
+.section1.bg3 {
     background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
         background-color: #afd1ea  !important;
 }
-.section1.bg3 {
+.section1.bg4 {
     background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat bottom !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
 }
 
-.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;transition: 0.4s all;}   
-.section1.bg2 .container_star{opacity: 0;transition: 0.4s all;}
+.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;transition: 0.4s all;}   
+.section1.bg3 .container_star{opacity: 0;transition: 0.4s all;}
 
 .slider_img_background_bpset_menu{position:relative;margin: auto;}
 .slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
@@ -100,6 +100,60 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 .btn_text_02{right: auto;left:3%;width:38%;top:45%;}
 .slick-slide .slider_img_background_bpset_menu_img_mo{display:none;}
 
+	
+	
+	
+	
+/* S: 220415 오븐/치즈바사삭+찍먹커리 */
+.section1.bg,.section1.bg1 {background: url('2021renew_img/mainbanner/mainbanner_bss_background_pc.jpg') no-repeat center !important;background-size:cover !important;}
+.mainbanner_bss_background {position:relative;width:100% !important;max-height: 100%;}
+.mainbanner_bss_img_pc {width:53% !important;max-height: none !important;image-rendering: auto !important;}
+#mainbanner_bss_img_mo {display: none !important;}	
+.mainbanner_bss_btn_pc {position: absolute;top: 81%;right: 25%;max-width: 344px;width: 19%;}
+.mainbanner_bss_btn_mo img {display: none;}
+@media only screen and (max-width:1420px){
+	.mainbanner_bss_img_pc {width:65% !important;margin-top: 2.5% !important;}
+	}
+@media only screen and (max-width:1024px){
+	.mainbanner_bss_img_pc {width:80% !important;margin-top: 5% !important;max-height: 100% !important;}
+	}
+@media only screen and (max-height:601px){
+	.mainbanner_bss_img_pc {width:45% !important;margin-top: 0 !important;}
+	}
+@media only screen and (max-width: 512px){
+	.section1.bg,.section1.bg1 {
+    background:#fcd051 url(/2021renew_img/mainbanner/mainbanner_bss_background_mo.jpg) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover;
+    background-color: #fcd051  !important;
+	}
+	.mainbanner_bss_img_pc {display: none !important;}
+	#mainbanner_bss_img_mo {display: block !important; margin-top: 3% !important; max-width: 77% !important; max-height: 100% !important;}
+	.mainbanner_bss_btn_pc {display: none;}
+    .mainbanner_bss_btn_mo img {display: block; margin-top: 3% !important; padding-left: 5.7% !important; width: 60% !important;}	
+	}
+@media only screen and (max-width: 415px){
+	#mainbanner_bss_img_mo {margin-top: 29% !important;}
+	}
+@media only screen and (max-width: 376px){
+	#mainbanner_bss_img_mo {margin-top: 33.5% !important;}
+	}	
+@media only screen and (max-width: 361px){
+	#mainbanner_bss_img_mo {margin-top: 40% !important;}
+	}	
+@media only screen and (max-width: 322px){
+	#mainbanner_bss_img_mo {margin-top: 17% !important; max-width: 70% !important; max-height: 100% !important;}
+	}
+@media only screen and (max-width: 281px){
+	#mainbanner_bss_img_mo {margin-top: 50% !important; max-width: 85% !important; max-height: 100% !important;}
+	}	
+/* E: 220415 오븐/치즈바사삭+찍먹커리 */
+	
+	
+	
+	
+	
+	
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
 /* iOS only */ 
@@ -134,14 +188,14 @@ section .slider_div {
 }
 /*.slick-slide img.slider_img_background_02{width:75% !important;}
 .slick-slide img.slider_img_background{margin-top: 90px;}*/
-.section1.bg3 {
+.section1.bg4 {
     background: url(/2021renew_img/mainbanner/dhuman_mainbanner_pc_bg.png) no-repeat center !important;}
 /*.slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 157px !important;
 }
 .slick-slide img.slider_img_background_02 {
     padding-top: 97px !important;}*/
-.section1.bg2 {
+.section1.bg3 {
     background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
@@ -160,7 +214,7 @@ section .slider_div {
   .slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 90px !important;
 }
-	  .section1.bg2 {
+	  .section1.bg3 {
     background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
     opacity: 1 !important;transition: 0.4s all !important;
     background-size: cover;
@@ -265,6 +319,9 @@ section .slider_div {
     width: 80% !important;    margin-top: 0 !important;
 }
   }
+  @media only screen and (max-width:512px){ 
+  .list_slider_ul_sns li:nth-child(1){height: auto;min-height: 100%;}
+  }
  @media only screen and (max-width:512px){
  .slick-slide img.slider_img_background_02 {
     width: 70% !important;    margin-top: 0 !important;
@@ -296,8 +353,8 @@ section .slider_div {
 .slick-slide .slider_img_background.slider_img_background_img_m {
     margin-top: 99px !important;
 }
-.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
-.section1.bg3 .container_star{opacity: 0;}
+.section1.bg4 .flower_div_top_left,.section1.bg4 .flower_div_top{opacity: 100;}    
+.section1.bg4 .container_star{opacity: 100;}
 .slick-slide img.slider_img_background_02{margin-top: 43px !important;}
 }	
 
@@ -362,6 +419,10 @@ section .slider_div {
 .slick-slide .slider_img_background_bpset_menu_img_mo {
     width: 80% !important;
     padding-bottom: 4%;
+}
+#mainbanner_bss_img_mo {
+    margin-top: 24% !important;
+    max-width: 62% !important;
 }
 }
 @media only screen and (min-device-width : 540px) and (max-device-height : 720px) {
@@ -563,12 +624,22 @@ section .slider_div {
                        </div>
                   </div>-->
 				  <div class="list_slider">
+					  <div class="mainbanner_bss_background">
+						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_pc.png" class="mainbanner_bss_img_pc">
+  						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_mo_3.png" id="mainbanner_bss_img_mo">
+						   <div class="mainbanner_bss_btn_pc">
+							   <a href="https://www.goobne.co.kr/menu/new_oven.jsp"><img src="2021renew_img/mainbanner/mainbanner_bss_btn_pc.png"></a>
+						   </div>
+   						   <a class="mainbanner_bss_btn_mo" href="https://www.goobne.co.kr/menu/new_oven.jsp"><img src="2021renew_img/mainbanner/mainbanner_bss_btn_pc.png"></a>
+					  </div>
+                  </div>
+				  <div class="list_slider">
                       
                        <!--<a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>-->
-                       <div class="slider_img_background_bpset_menu">
-                           <img src="2021renew_img/mainbanner/bpset_mainbanner_menu_1.png" class="slider_img_background_bpset_menu_img">
-                           <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
-                       </div>
+                  <div class="slider_img_background_bpset_menu">
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu_1.png" class="slider_img_background_bpset_menu_img">
+                       <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
+                  </div>
                   </div>
                   <div class="list_slider">
                        <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02">
@@ -619,66 +690,66 @@ section .slider_div {
 		</section>
 		<section class="section2" >
             <div class="slider_body">
-            <h2 class="title_h2">오늘의 치PD</h2>
+            <h2 class="title_h2">이달의 추천 메뉴</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp"><img src="2021renew_img/mainbanner/todayschiPD_bpset_4.png" class="d_img" style="image-rendering: auto;"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn="><img src="2021renew_img/mainbanner/oven_chicken_2.png"></a></p>
                           <ul>
-                              <li>사내맞선 세트</li>
-                              <li>굽네 불금치킨 + 굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li><a href="https://www.goobne.co.kr/menu/new_bp-set.jsp" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 오븐 바사삭</li>
+                              <li>굽네 오븐 바사삭</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn="><img src="2021renew_img/mainbanner/cd_pizza.png"  class="d_img"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn="><img src="2021renew_img/mainbanner/cb_chicken_2.png"></a></p>
                           <ul>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 치즈 바사삭</li>
+                              <li>굽네 치즈 바사삭</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
 				  <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn="><img src="2021renew_img/mainbanner/sauce_curry.png"></a></p>
                           <ul>
-                              <li>굽네 에그미니 타르트</li>
-                              <li>굽네 에그미니 타르트</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 찍먹 커리</li>
+                              <li>치킨 마크니 + 티카 마살라</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                          </ul>
+                      </div>
+                  </div>
+				  <div class="list_slider">
+                      <div class="list_section_02">
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
+                          <ul>
+                              <li>굽네 불금치킨</li>
+                              <li>굽네 불금치킨</li>
+                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                         <p class="list_img"> <a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn="><img src="2021renew_img/mainbanner/gb_chicken.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 고추바사삭</li>
-                              <li>굽네 고추바사삭</li>
-                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="list_slider">
-                      <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" ><img src="2021renew_img/mainbanner/scd_pizza.png" ></a></p>
-                          <ul>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li>굽네 슈림프 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=966de7ca19016063e32e62d13f999f86e8140e2a6543a0ee220e5f71ba531b6b2aa28f0dbc24179424cca1149a0b7fe9b91c99ddcb5dae3c45a6637c2df4b7b38948d84ac86ed00822fc79778f68787d0ad992e7187aeb933d745d0a7c4d32fa5af50d575e878e98cfb3b0a64e6e59abd2ced283711fa72cfe3ffb30b0cc36ca&cateid=a4e94b07f2e6e13d2a938433c3da19d42ff46d32eacecb7fb68e67322450f9cb4e880ffd6899dae1e163e8726b731d0d70c63bc26df74451f6989144e92d01a700d8490810e1a8c0860d272d8fbdd28a2144cfc304a770756b0b84d2347f5e84d912e2eda4a7f1df0f5f00530292b7697ed0baae889df7639a082c7eecc6c8c4&productid=&classbtn=15" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
                       <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>바게트볼 갈릭크림</li>
-                              <li>바게트볼 갈릭크림</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 에그미니 타르트</li>
+                              <li>굽네 에그미니 타르트</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -710,55 +781,15 @@ section .slider_div {
                         </li>
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
-                              <div class="slider single-item03">								  
-								<div class="list_slider cover_slider1">
+                              <div class="slider single-item03">
+                              <div class="list_slider cover_slider">
                                       <ul class="list_slider_ul_sns">
-                                         <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_pc_title_220317_2.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/sns_bpset_mo_title_220317_2.png" class="cover_img mobile_sns">
+                                         <li style="width:100%;background:url('2021renew_img/footer_list_img/sns_img_bg_03.png');background-size: cover;">
+                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
+                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
                                         </li> 
                                      </ul>
                                   </div>
-								  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_start_pc_220316.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_start_mo_220316.jpg" class="mobile_sns" style="object-position: center;">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CajcFSNPJ_W/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-												따뜻하고 포근한 3월 시작 💪
-												⠀
-												화사한 햇살과 함께
-												개강도 개학도.. 시작? 🏃 🏃
-												⠀
-												이제 시작하는 끝 없는 과제와
-												시련에.. 힘들고 지칠 때
-												에디터G한테 기대🎵												⠀
-												⠀
-												⠀
-												#우왕_봄이다 #이번_겨울_너무_추웠어
-												#3월은_대학생이_제일세다며?
-												#그_이유는_개강해서 #깔깔유머
-												#부장님_유머코드_공부중
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 3월 1일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
 								  	 <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
                                          <li style="width:100%;background: none;">
@@ -776,7 +807,7 @@ section .slider_div {
                                 <h4>고객센터</h4>
                                 <span class="call_num">1661-9494</span>
                                 <span class="sub_font">AM 12:00 ~ PM 11:00</span>
-                                    <a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>
+                                    <!--<a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>-->
                             </div>
                         </li>
                         <li class="top_footer_list_li">

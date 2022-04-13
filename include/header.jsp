@@ -266,7 +266,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                 </ul>
                 <div class="mouseover_div">
                     <ul class="container">
-						<li><a href="/menu/new_bp-set.jsp">사내맞선세트</a></li>
+						<!--<li><a href="/menu/new_bp-set.jsp">사내맞선세트</a></li>-->
+                        <li><a href="/menu/new_oven.jsp">오븐바사삭</a></li>
 						<li><a href="/menu/new_g-set.jsp">구울레옹세트</a></li>
 						<li><a href="/menu/new_bg.jsp">불금치킨</a></li>
                         <!--<li><a href="/menu/new_s_w_f.jsp">스우파</a></li>-->
@@ -376,7 +377,7 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                                     <li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li>
                                     <!--<li><a href="/brand/map.jsp">오시는길</a></li>-->
                                     <li class="mobile_none_list"><a href="/brand/phil.jsp">경영 철학</a></li>
-                                    <li class="mobile_none_list"><a href="/brand/ceo_.jsp">CEO 인삿말</a></li>
+                                    <li class="mobile_none_list"><a href="/brand/ceo_.jsp">CEO 인사말</a></li>
                                 </ul>
                             </div>
                           </li>
@@ -391,7 +392,8 @@ if (new Date() >= new Date('01/01/2022 00:00:00')            // *구버전 언�
                               </a>
                               <div class="list_hidden">
                                 <ul class="ham_ul_list">
-									<li><a href="/menu/new_bp-set.jsp">사내맞선세트</a></li>
+									<!--<li><a href="/menu/new_bp-set.jsp">사내맞선세트</a></li>-->
+                                    <li><a href="/menu/new_oven.jsp">오븐바사삭</a></li>
                                     <li><a href="/menu/new_g-set.jsp">구울레옹 세트</a></li>
 									<li><a href="/menu/new_bg.jsp">불금치킨</a></li>
                  					<!--<li><a href="/menu/new_s_w_f.jsp">스.우.파 세트</a></li>-->

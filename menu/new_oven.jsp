@@ -160,9 +160,9 @@ src="https://www.facebook.com/tr?id=3005723823073377&ev=PageView&noscript=1"
 			<div class="wrap_standard new_menu_wrap">
 				<!--- S: 본문내용--->
 				<div class="bg_color">
-					<img src="/resources/images/contents/menu/oven/img_1.jpg">
+					<img src="/resources/images/contents/menu/oven/img_2_1.jpg">
 					<div class="btn_back">
-                        <img src="/resources/images/contents/menu/oven/btn.png" onClick="window.open('https://order.goobne.co.kr:8481/order/delivery.aspx');">
+                        <img src="/resources/images/contents/menu/oven/btn_1.png" onClick="window.open('https://order.goobne.co.kr:8481/order/delivery.aspx');">
                     </div>
 				</div>
                 
