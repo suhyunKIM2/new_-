@@ -172,7 +172,7 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header.jsp" flush="false"/>
+  <jsp:include page="/include/header_dev.jsp" flush="false"/>
   
 
   <style>
@@ -572,6 +572,10 @@ section .slider_div {
         <!--<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view_curry.jsp" ><img src="2021renew_img/popup/220401_event_preorder_popup.jpg"></a>
         </div>-->
+		<!--- 220418 오픈 예정 / 팝업 버튼 배경색 #ad350d 으로 수정--->
+		<div class="list_slider">
+            <a href="https://hoy.kr/BrEMj"><img src="2021renew_img/popup/220415_popup_bss.jpg"></a>
+        </div>
         <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
         </div>
@@ -581,8 +585,8 @@ section .slider_div {
     </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#147883;">오늘하루 보지 않기</li>
-            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#147883;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#ad350d;">오늘 하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#ad350d;">닫기</li>
         </ul>
     </div>
 </div>
@@ -625,8 +629,8 @@ section .slider_div {
                   </div>-->
 				  <div class="list_slider">
 					  <div class="mainbanner_bss_background">
-						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_pc.png" class="mainbanner_bss_img_pc">
-  						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_mo_3.png" id="mainbanner_bss_img_mo">
+						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_pc_2.png" class="mainbanner_bss_img_pc">
+  						   <img src="2021renew_img/mainbanner/mainbanner_bss_img_mo_5.png" id="mainbanner_bss_img_mo" style="image-rendering:auto;">
 						   <div class="mainbanner_bss_btn_pc">
 							   <a href="https://www.goobne.co.kr/menu/new_oven.jsp"><img src="2021renew_img/mainbanner/mainbanner_bss_btn_pc.png"></a>
 						   </div>
@@ -697,8 +701,8 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn="><img src="2021renew_img/mainbanner/oven_chicken_2.png"></a></p>
                           <ul>
-                              <li>굽네 오븐 바사삭</li>
-                              <li>굽네 오븐 바사삭</li>
+                              <li>오븐 바사삭</li>
+                              <li>오븐 바사삭</li>
                               <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
@@ -707,8 +711,8 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn="><img src="2021renew_img/mainbanner/cb_chicken_2.png"></a></p>
                           <ul>
-                              <li>굽네 치즈 바사삭</li>
-                              <li>굽네 치즈 바사삭</li>
+                              <li>치즈 바사삭</li>
+                              <li>치즈 바사삭</li>
                               <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
@@ -718,8 +722,8 @@ section .slider_div {
                           <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn="><img src="2021renew_img/mainbanner/sauce_curry.png"></a></p>
                           <ul>
                               <li>굽네 찍먹 커리</li>
-                              <li>치킨 마크니 + 티카 마살라</li>
-                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li style="opacity: 1;">치킨 마크니 / 티카 마살라</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=40&cateid=01&productid=31891&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -727,8 +731,8 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
                           <ul>
-                              <li>굽네 불금치킨</li>
-                              <li>굽네 불금치킨</li>
+                              <li>불금치킨</li>
+                              <li>불금치킨</li>
                               <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
@@ -737,8 +741,8 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
-                              <li>굽네 바비큐 시카고 딥디쉬 피자</li>
+                              <li>바비큐 시카고 딥디쉬 피자</li>
+                              <li>바비큐 시카고 딥디쉬 피자</li>
                               <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
@@ -747,8 +751,8 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 에그미니 타르트</li>
-                              <li>굽네 에그미니 타르트</li>
+                              <li>에그미니 타르트</li>
+                              <li>에그미니 타르트</li>
                               <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
