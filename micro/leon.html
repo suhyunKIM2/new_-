@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>goobne</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<script src="./js/jquery.js" ></script>
+<script src="./js/jquery-ui.min.js" ></script>
+<script src="./js/common.js" ></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+
+	<script>
+
+		$(document).ready(function() {
+			$(".over").hover(
+				function() {
+					$(this).attr("src", $(this).attr("src").replace(".png", "_on.png")); 
+		    }, function(){ 
+		        $(this).attr("src", $(this).attr("src").replace("_on.png", ".png")); 
+		    }); 
+		});
+
+		function openModal() {
+		  document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+		  document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="header" class="cf">
+		<div class="nav">
+			<ul id="navL">
+				<li class="blk"><a href="leon.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu04.png"></a></li>
+				<li><a href="oven.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu1.png"></a></li>
+				<li class="blk"></li>
+				<li><a href="pepper.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu2.png"></a></li>
+				<li><a href="cheese.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu3.png"></a></li>
+			</ul>
+			<ul id="navR">
+				<li><a href="leon.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu04.png"></a></li>
+			</ul>
+		</div>
+		<button><a href="http://www.goobne.co.kr"><img class="logo over" src="https://www.goobne.co.kr/2206_micro_img/GN_logo.png"><img class="logoB" src="https://www.goobne.co.kr/2206_micro_img/GN_logo_mo.png"></a></button>
+		<a href="index.html"><img id="B_logo" src="https://www.goobne.co.kr/2206_micro_img/basak_logo.png"></a>
+	</div>
+	<div id="leon">
+		<div id="container">
+			<section id="top"><img src="https://www.goobne.co.kr/2206_micro_img/leon_top.jpg" style="width: 100%;"></section>
+			<section id="poster">
+				<ul class="poster">
+					<li><img src="https://www.goobne.co.kr/2206_micro_img/poster01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></li>
+					<li><img src="https://www.goobne.co.kr/2206_micro_img/poster02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></li>
+					<li><img src="https://www.goobne.co.kr/2206_micro_img/poster03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></li>
+				</ul>
+
+				<div id="myModal" class="modal">
+				  <span class="close cursor" onclick="closeModal()">&times;</span>
+				  <div class="modal-content">
+
+				    <div class="mySlides">
+				      <div class="numbertext">1 / 3</div>
+				      <img src="https://www.goobne.co.kr/2206_micro_img/poster01.jpg" style="width:100%">
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">2 / 3</div>
+				      <img src="https://www.goobne.co.kr/2206_micro_img/poster02.jpg" style="width:100%">
+				    </div>
+
+				    <div class="mySlides">
+				      <div class="numbertext">3 / 3</div>
+				      <img src="https://www.goobne.co.kr/2206_micro_img/poster03.jpg" style="width:100%">
+				    </div>
+
+				    <div class="caption-container">
+				      <p id="caption"></p>
+				    </div>
+				  </div>
+				</div>
+			</section>
+
+		    <div class="home-demo">
+		      <div class="row" style="width: 100%; max-width: 1920px;">
+		        <div class="columns">
+		          <div class="owl-carousel">
+		            <div class="item">
+		            	<a href="https://youtu.be/ID3IjxVvOT0">
+			              <video muted autoplay loop style="width: 100%;">
+			              	<source src="https://www.goobne.co.kr/2206_micro_img/video/Dgital_60.mp4" type="video/mp4">
+			              </video>
+			            </a>
+		            </div>
+		            <div class="item">
+		            	<a href="https://youtu.be/fxplBGTKIMw">
+			              <video muted autoplay loop style="width: 100%;">
+			              	<source src="https://www.goobne.co.kr/2206_micro_img/video/FIre_15B.mp4" type="video/mp4">
+			              </video>
+			            </a>
+		            </div>
+		            <div class="item">
+		            	<a href="https://youtu.be/Bn1YnqW3uXY">
+		            		<video muted autoplay loop style="width: 100%;">
+		            			<source src="https://www.goobne.co.kr/2206_micro_img/video/0127.mp4" type="video/mp4">
+		            		</video>
+		            	</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+
+			<section id="insta">
+				<div><a href="https://www.instagram.com/the___goobster/" style="display: block; text-align: center;"><img class="more" src="https://www.goobne.co.kr/2206_micro_img/insta_more.png"></a></div>
+				<ul>
+					<li><a href="https://www.instagram.com/p/CXR54i2ocdb/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_01.jpg"></a></li>
+					<li><a href="https://www.instagram.com/tv/CXfEDR4JeO-/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_02.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CXfxbSbFmfA/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_03.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CXh1mm8l1Nx/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_04.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CZgrA85v4d8/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_05.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CZ0m5upFas5/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_06.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CaRhg38sMbC/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_07.jpg"></a></li>
+					<li><a href="https://www.instagram.com/p/CaT_SwLgWOp/"><img src="https://www.goobne.co.kr/2206_micro_img/insta_08.jpg"></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+
+    <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                items: 1,
+                merge: true,
+                loop: true,
+                margin: 12,
+                video: true,
+                lazyLoad: true,
+                center: true,
+                nav: true,
+                navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+                responsive: {
+                  480: {
+                    items: 1.2
+                  },
+                  600: {
+                    items: 1.2
+                  }
+                }
+              })
+            })
+
+    	$('.loop').owlCarousel({
+		    center: true,
+		    items:2,
+		    loop:true,
+		    margin:10,
+		    responsive:{
+		        600:{
+		            items:2
+		        }
+		    }
+		});
+    </script>
+    <script src="../assets/vendors/highlight.js"></script>
+    <script src="../assets/js/app.js"></script>
+
+</body>
+</html>

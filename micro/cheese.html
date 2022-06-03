@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>goobne</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<script src="js/jquery.js" ></script>
+<script src="js/jquery-ui.min.js" ></script>
+<script src="js/common.js" ></script>
+
+</head>
+
+<body>
+	<div id="header" class="cf">
+		<div class="nav">
+			<ul id="navL">
+				<li class="blk"><a href="/micro/leon.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu04.png"></a></li>
+				<li><a href="/micro/oven.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu1.png"></a></li>
+				<li class="blk"></li>
+				<li><a href="/micro/pepper.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu2.png"></a></li>
+				<li><a href="/micro/cheese.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu3.png"></a></li>
+			</ul>
+			<ul id="navR">
+				<li><a href="/micro/leon.html"><img class="over" src="https://www.goobne.co.kr/2206_micro_img/menu04.png"></a></li>
+			</ul>
+		</div>
+		<button><a href="http://www.goobne.co.kr"><img class="logo over" src="https://www.goobne.co.kr/2206_micro_img/GN_logo.png"><img class="logoB" src="https://www.goobne.co.kr/2206_micro_img/GN_logo_mo.png"></a></button>
+		<a href="/index_micro_dev_220603.jsp"><img id="B_logo" src="https://www.goobne.co.kr/2206_micro_img/basak_logo.png"></a>
+	</div>
+	<div id="container">
+		<div id="S_main">
+			<img class="main" src="https://www.goobne.co.kr/2206_micro_img/bara_main.png">
+			<img class="ttl" src="https://www.goobne.co.kr/2206_micro_img/bara_ttl.png">
+		</div>
+		<div id="S_sub">
+			<img class="subR" src="https://www.goobne.co.kr/2206_micro_img/bara_sub_img.png">
+			<img class="subL" src="https://www.goobne.co.kr/2206_micro_img/bara_sub_txt.png">
+		</div>
+		<div id="S_fr">
+			<div class="fr_bg" style="background: #fcce00;"></div>
+			<img class="ttl" src="https://www.goobne.co.kr/2206_micro_img/bara_f.png">
+		</div>
+		<div id="S_com">
+			<img src="https://www.goobne.co.kr/2206_micro_img/sub_common.png">
+			<img src="https://www.goobne.co.kr/2206_micro_img/cha_map.png">
+			<img id="myImg" src="https://www.goobne.co.kr/2206_micro_img/cha_map_btn.png">
+		</div>
+	</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01" src="https://www.goobne.co.kr/2206_micro_img/cha_map_detail.jpg">
+	  <div id="caption"></div>
+	</div>
+	
+<script>
+
+$(document).ready(function() {
+
+	$(".over").hover(
+		function() {
+			$(this).attr("src", $(this).attr("src").replace(".png", "_on.png")); 
+    }, function(){ 
+        $(this).attr("src", $(this).attr("src").replace("_on.png", ".png")); 
+    }); 
+});
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+</body>
+
+
+</html>

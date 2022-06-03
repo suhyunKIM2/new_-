@@ -63,36 +63,348 @@ body{ -ms-overflow-style: none;} ::-webkit-scrollbar { display: none; } /*특정
 /*.no-js{opacity: 0;visibility: hidden;}
 .visible{opacity:1;visibility: visible;
     }*/
-.section1.bg,.section1.bg1{/*background-color: #ffecec !important;*/background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;}
-.section1.bg4 {background-color: #ffeac3 !important;/*background:#ffedec url(/2021renew_img/spring_bg_13_1.png) !important;background-size:cover !important;*/}
- .flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
+   
+/*.section1.bg,.section1.bg1{background:#000 url(/2021renew_img/mainbanner/20220329_pc_bg.png)center bottom  !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}*/
+.flower_div_top{position:absolute;top:-5px;right:-23px;width:300px;}
   .flower_div_top_left{position: absolute;
     top: -15px;
-    left: -17px;
+    left: -33px;
     width: 300px;
     transform: rotate(238deg);}
-.section1.bg2{background-color:#afd1ea;}    
-.section1.bg2 .flower_div_top_left,.section1.bg2 .flower_div_top{opacity: 0;}    
-.section1.bg2 .container_star{opacity: 0;}
-.section1.bg3 .flower_div_top_left,.section1.bg3 .flower_div_top{opacity: 0;}    
-.section1.bg3 .container_star{opacity: 0;}
+.section1.bg,.section1.bg1{background:#7c5538 url(/resources/images/main/220527_micro_ovbss/bg_pc.jpg)!important;background-size:cover !important;;transition: 0.4s all !important;}  
+.section1.bg2{background:#7c5538 url(/2021renew_img/mainbanner/220503_columbasak/main_bg_columbasak.jpg)!important;background-size:cover !important;;transition: 0.4s all !important;}  
+.section1.bg5{background:#ffedec url(/2021renew_img/spring_bg_3.jpg) !important;background-size:cover !important;opacity: 1 !important;transition: 0.4s all !important;}    
+.section1.bg5 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat bottom !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover !important;
+        background-color: #afd1ea  !important;
+}
+.section1.bg5 {
+    background: url(/2021renew_img/mainbanner/220419_dhuman/bg_pc.jpg) no-repeat bottom !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover !important;
+}
+.section1.bg6 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover !important;
+    background-color: #afd1ea  !important;
+}
 
+
+.section1.bg5 .flower_div_top_left,.section1.bg5 .flower_div_top{opacity: 0;transition: 0.4s all;}
+.section1.bg5 .container_star{opacity: 0;transition: 0.4s all;}
+.container_star{opacity: 0;transition: 0.4s all;}
+
+.slider_img_background_bpset_menu{position:relative;margin: auto;}
+.slider_img_background_bpset_menu_img{width:100%;max-height: 100% !important;}
+.btn_text{position:absolute;top:23%;right:4%;width:22%;animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;cursor: pointer;}
+.btn_text img{image-rendering: auto !important;width:100% !important;}
+
+.slider_img_background_img_m{display: none !important;}
+.slick-slide .slider_img_background_img{width:60% !important;    min-width: 1100px;}
+.slider_img_background_bpset_menu_2{width:16% !important;max-height: 100% !important;image-rendering: auto !important;}
+
+.btn_text_02{right: auto;left:3%;width:38%;top:45%;}
+.slick-slide .slider_img_background_bpset_menu_img_mo{display:none;}
+	/* S: 콜럼바삭 logo */
+	.list_slider .main_columbasak_img {width:60%;image-rendering: auto;}
+	@media only screen and (max-width:1280px){
+		.list_slider .main_columbasak_img {width:83%;}
+	}
+	@media only screen and (max-width:1024px){
+		.list_slider .main_columbasak_img {width:95%;}
+	}
+	/* E: 콜럼바삭 logo */
+
+/* S: 메인: 220506 공룡 콜라보 */
+	/*.section1.bg3 {background: url('/2021renew_img/mainbanner/220506_dino/220504_mainbanner_collabo-dino_bg_pc.jpg') no-repeat center !important;background-size:cover !important;}*/
+	.main_dino_bg {margin:0 auto;}
+	.main_dino_bg .main_dino_img_pc {width: 100%;}
+	.main_dino_bg .main_dino_img_pc img {width: 47%;max-height: 100%;height:auto;image-rendering: auto;}
+	.main_dino_bg .main_dino_img_mo {display: none;}
+@media only screen and (max-width:1280px){
+	.main_dino_bg .main_dino_img_pc img {width: 65%;}
+	}
+@media only screen and (max-width:1024px){
+	.main_dino_bg .main_dino_img_pc img {width: 77%;}
+	}
+@media only screen and (max-width:800px){
+	/*.section1.bg3 {background: url('/2021renew_img/mainbanner/220506_dino/220504_mainbanner_collabo-dino_bg_mo.jpg') no-repeat center !important;background-size:cover !important;}*/
+	.main_dino_bg .main_dino_img_pc {display: none;}
+	.main_dino_bg .main_dino_img_mo {display: block;width: 100%;}
+	.main_dino_bg .main_dino_img_mo img {width:50%;max-height: 100%;height:auto;image-rendering: auto;}
+	}
+	/* S: 타블렛 */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px){
+	.main_dino_bg .main_dino_img_pc img {width: 73%;}	
+	}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	.main_dino_bg .main_dino_img_pc {margin-top: 5%;}
+	.main_dino_bg .main_dino_img_pc img {width: 67%;}
+	.main_dino_bg .main_dino_img_mo img {width: 65%;}
+	}
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px){
+	.main_dino_bg .main_dino_img_pc {margin-top: 3%;}
+	.main_dino_bg .main_dino_img_pc img {width: 60%;}
+	}
+@media only screen and (min-device-width : 600px) and (max-device-width : 1280px){
+	.main_dino_bg .main_dino_img_pc img {width: 53%;max-height: 100%!important;height:auto;}
+	}
+@media only screen and (min-device-width : 540px) and (max-device-width : 720px){
+	.main_dino_bg .main_dino_img_mo img {width: 40%;max-height: 100%!important;height:auto;}
+	}
+	/* E: 타블렛 */
+@media only screen and (max-width:480px){
+	.main_dino_bg .main_dino_img_mo img {width: 90%;}
+	}
+@media only screen and (max-width:414px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 23%;}
+	}
+@media only screen and (max-width:412px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 15%;}
+	}
+@media only screen and (max-width:411px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 23%;}
+	}
+@media only screen and (max-width:375px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 33%;}
+	}
+@media only screen and (max-width:360px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 37%;}
+	}
+@media only screen and (max-width:320px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 17%;}
+	.main_dino_bg .main_dino_img_mo img {max-height: 100%!important;height:auto;}
+	}
+@media only screen and (max-width:280px){
+	.main_dino_bg .main_dino_img_mo {margin-top: 55%;}
+	}
+/* E: 메인: 220506 공룡 콜라보 */
+	
+/* S: 메인: 220510 불금치킨 이벤트 */
+	.section1.bg3 {background: url('/2021renew_img/mainbanner/220510_event_bgchicken/bg_pc.jpg') no-repeat center !important;background-size:cover !important;}
+	.main_event_bgchicken_img_pc {margin-top: 1.5%;display: inline-block;width:100%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {max-width:1000px;width:75%;max-height: 100% !important; image-rendering:auto;}
+	.main_event_bgchicken_img_mo {display: none;}
+@media only screen and (max-width:1280px){
+	.main_event_bgchicken_img_pc {margin-top: 5%;}
+	}
+@media only screen and (max-width:800px){
+	.main_event_bgchicken_img_pc {margin-top: 17%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {width:90%;}
+	.section1.bg3 {background: url('/2021renew_img/mainbanner/220510_event_bgchicken/bg_mo.jpg') no-repeat center !important;background-size:cover !important;}
+	}
+/* S: 타블렛 */
+/* iPad Pro */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px){
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {max-width: 1100px!important;width:90%;}
+	}
+/* iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {width:75%;}
+	}
+/* Nest Hub Max */
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px){
+	.main_event_bgchicken_img_pc {margin-top: 6%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {max-width: 800px;}
+	}
+/* Nest Hub but iPad Pro vertical*/
+@media only screen and (min-device-width : 600px) and (max-device-width : 1280px){
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {width: 85%;}
+	}
+/* Surface Duo */	
+@media only screen and (min-device-width : 540px) and (max-device-width : 720px){
+	.main_event_bgchicken_img_pc {margin-top: 0%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_pc img {width:70%;}	
+	}	
+	/* E: 타블렛 */
+@media only screen and (max-width:500px){
+	.main_event_bgchicken_img_pc {display: none;}
+	.main_event_bgchicken_img_mo {display: inline-block;width:100%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:80%;max-height: 100% !important;image-rendering:auto;}
+	}
+@media only screen and (max-width:414px){
+	.main_event_bgchicken_img_mo {margin-top: 23%;}
+	}
+@media only screen and (max-width:412px){
+	.main_event_bgchicken_img_mo {margin-top: 4%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:90%;}
+	}
+@media only screen and (max-width:411px){
+	.main_event_bgchicken_img_mo {margin-top: 23%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:77%;}
+	}
+@media only screen and (max-width:375px){
+	.main_event_bgchicken_img_mo {margin-top: 33%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:80%;}
+	}
+@media only screen and (max-width:360px){
+	.main_event_bgchicken_img_mo {margin-top: 33%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:70%;}
+	}
+@media only screen and (max-width:320px){
+	.main_event_bgchicken_img_mo {margin-top: 3%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:70%;}
+	}
+@media only screen and (max-width:280px){
+	.main_event_bgchicken_img_mo {margin-top: 45%;}
+	.main_event_bgchicken_bg .main_event_bgchicken_img_mo img {width:87%;}
+	}*/
+/* S: 메인: 220510 불금치킨 이벤트 */
+	
+/* S: 220415 오븐/치즈바사삭+찍먹커리 */
+.section1.bg5 {background: url('/2021renew_img/mainbanner/220509_ovbss/bg_pc.jpg') no-repeat center !important;background-size:cover !important;}
+.mainbanner_bss_background {position:relative;width:100% !important;max-height: 100%;}
+.mainbanner_bss_img_pc {width:53% !important;max-height: none !important;image-rendering: auto !important;}
+#mainbanner_bss_img_mo {display: none !important;}	
+.mainbanner_bss_btn_pc {position: absolute;top: 81%;right: 25%;max-width: 344px;width: 19%;}
+.mainbanner_bss_btn_mo {display: none;}
+@media only screen and (max-width:1420px){
+	.mainbanner_bss_img_pc {width:65% !important;margin-top: 2.5% !important;}
+	}
+@media only screen and (max-width:1024px){
+	.mainbanner_bss_img_pc {width:80% !important;margin-top: 5% !important;max-height: 100% !important;}
+	}
+@media only screen and (max-height:601px){
+	.section1.bg5 {background: url('/2021renew_img/mainbanner/220509_ovbss/bg_mo.jpg') no-repeat center !important;background-size:cover !important;}
+	.mainbanner_bss_img_pc {width:45% !important;margin-top: 0 !important;}
+	}
+@media only screen and (max-width: 512px){
+	.section1.bg5 {
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-color: #fcd051  !important;
+	}
+	.mainbanner_bss_img_pc {display: none !important;}
+	#mainbanner_bss_img_mo {display: block !important; margin-top: 3% !important; max-width: 77% !important; max-height: 100% !important;}
+	.mainbanner_bss_btn_pc {display: none;}
+    .mainbanner_bss_btn_mo {display: block; margin-top: 3% !important; margin-left: auto;margin-right: auto; padding-left: 5.7% !important; width: 60% !important;}	
+	}
+@media only screen and (max-width: 415px){
+	#mainbanner_bss_img_mo {margin-top: 29% !important;}
+	}
+@media only screen and (max-width: 376px){
+	#mainbanner_bss_img_mo {margin-top: 33.5% !important;}
+	}	
+@media only screen and (max-width: 361px){
+	#mainbanner_bss_img_mo {margin-top: 40% !important;}
+	}	
+@media only screen and (max-width: 322px){
+	#mainbanner_bss_img_mo {margin-top: 17% !important; max-width: 70% !important; max-height: 100% !important;}
+	}
+@media only screen and (max-width: 281px){
+	#mainbanner_bss_img_mo {margin-top: 50% !important; max-width: 85% !important; max-height: 100% !important;}
+	}	
+/* E: 220415 오븐/치즈바사삭+찍먹커리 */
+	
+/* S: 220420 듀먼 */
+	.list_slider .mainbanner_dhuman_bg {position: relative}
+	.list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_pc {width: 30% !important;min-width: 650px;}
+	.mainbanner_dhuman_btn {position: absolute;top: 82%;left: 41%;width: 18%;cursor: pointer;}
+@media only screen and (max-width: 1600px){
+	.mainbanner_dhuman_btn {top: 83%;left: 37.5%;width: 25%;}	
+	}
+@media only screen and (max-width: 1024px){
+	.list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {max-width: 50% !important; min-width: 490px;}
+	.mainbanner_dhuman_btn {top: 81%;left: 32%;width: 36%;}
+	}
+@media only screen and (max-width: 720px){
+	.list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {min-width: 450px;}
+	.mainbanner_dhuman_btn {top: 83%;left: 27.3%;width: 45%;}
+	}
+@media only screen and (max-width: 512px){
+    .section1.bg5 {background: url(/2021renew_img/mainbanner/220419_dhuman/bg_mo.jpg) no-repeat bottom !important;
+    background-size: cover;}
+	.list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {min-width: 400px;}
+	.mainbanner_dhuman_btn {left: 19.5%;width: 60%;}
+	}
+@media only screen and (max-width: 500px){
+	.slider .list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {margin-top: 0px !important;}
+	}
+@media only screen and (max-width: 414px){
+	.slider .list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {margin-top: 95px !important;min-width: 360px;width:40% !important;}
+	}
+@media only screen and (max-width: 360px){
+	.slider .list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {margin-top: 130px !important;min-width: 290px;width:30% !important;}
+	}
+@media only screen and (max-width: 320px){
+	.slider .list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {margin-top: 40px !important;min-width: 250px;}
+	.mainbanner_dhuman_btn {left: 15%;width: 70%;}
+	}
+@media only screen and (max-width: 280px){
+	.slider .list_slider .mainbanner_dhuman_bg .mainbanner_dhuman_title_mo {margin-top: 120px !important;}}
+	
+/* E: 220419 듀먼 */
+	
+	
 #window .single-item04 img{max-height: 100%;    display: inline-block;}
 #window .single-item04 .slick-dots{bottom:0;}
 /* iOS only */ 
 @supports (-webkit-touch-callout: none) { 
 height: -webkit-fill-available; 
 }
-
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+-webkit-@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+.new_page style{display:none;}
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header.jsp" flush="false"/>
+  <jsp:include page="/include/header_dev.jsp" flush="false"/>
+  
+
   <style>
   @media (max-height: 864px){
 section .slider_div {
     margin-top: 4%;}
+.slick-slide .slider_img_background_bpset_menu_img {
+    max-height: 100% !important;
+}  
+
+.slick-slide .slider_img_background_bpset_menu_img {
+    width: 80% !important;
 }
+/*.slick-slide img.slider_img_background_02{width:75% !important;}
+.slick-slide img.slider_img_background{margin-top: 90px;}*/
+.section1.bg5 {
+    background: url(/2021renew_img/mainbanner/220419_dhuman/bg_mo.jpg) no-repeat center cover !important;}
+/*.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 157px !important;
+}
+.slick-slide img.slider_img_background_02 {
+    padding-top: 97px !important;}*/
+.section1.bg6 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover !important;
+    background-color: #afd1ea  !important;
+}
+}
+@media (max-height: 512px){
+.slick-slide .slider_img_background_img_m{max-height: 100% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 18% !important;
+}
+
+}
+
+  @media only screen and (max-width:512px){
+  .slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 90px !important;
+}
+	  .section1.bg6 {
+    background:#afd1ea url(/2021renew_img/mainbanner/main_banner_bg_02.png) no-repeat center !important;
+    opacity: 1 !important;transition: 0.4s all !important;
+    background-size: cover !important;
+	background-color: #afd1ea  !important;
+}
+  }
   @media only screen and (max-width:500px){
 .flower_div_top{width:230px;}
   .flower_div_top_left{width:230px;}
@@ -100,12 +412,15 @@ section .slider_div {
 @media only screen and (max-width:414px){
 .flower_div_top{width:220px;}
   .flower_div_top_left{width:220px;}
-  .navbar-default .navbar-brand img{width:115px !important;}
   .container>.navbar-header{padding:0 3% 0 0 !important; }
+  .slick-slide .slider_img_background_img_m {
+    width: 95% !important;max-height: 100% !important; 
+}
 }
 @media only screen and (max-width:360px){
 .flower_div_top{width:200px;}
   .flower_div_top_left{width:200px;}
+   .slick-slide .slider_img_background_img_m{margin-top:10px !important;}
 }
 @media only screen and (max-width:320px){
 .flower_div_top{width:180px;}
@@ -113,67 +428,220 @@ section .slider_div {
 }
 .slider_img_background_bpset_title {width: 25% !important;}
 .slider_img_background_bpset_btn {margin-top: 0.9% !important;width: 17% !important;image-rendering: auto !important;}
-.slider_img_background_bpset_menu {width: 47% !important;}
+.slider_img_background_bpset_menu {width: 70% !important;}
  @media only screen and (max-width:1420px){
   .slider_img_background_bpset_menu {
-    width: 63% !important;
+    width: 75% !important;    margin-top: 4%;
+
+
 } 
 .slider_img_background_bpset_title {
     width: 31% !important;
 }
-.section1.bg2 {
-    background: url(/2021renew_img/mainbanner/bpset_mainbanner_background_m.jpg) no-repeat !important;background-size: cover !important;
-    background-position: top !important;
-}
    }
+@media only screen and (max-width:1200px){
+.slick-slide .slider_img_background_img {
+    width: 90% !important;
+    min-width: auto;
+}
+}
+
 @media only screen and (max-width:1024px){
 .slider_img_background_bpset_title {width: 41% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 1.1% !important;width: 26% !important;}
-.slider_img_background_bpset_menu {width: 72% !important;}
+.slider_img_background_bpset_menu {width: 80% !important;}
+
+.slick-slide .slider_img_background_img_m{display: block !important;    max-width: 500px !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 30% !important;}
+.slick-slide .slider_img_background_img{display: none !important;}
+
+}
+@media only screen and (max-width:1000px){
+
+.slick-slide .slider_img_background_bpset_menu_img_mo{display:block;padding-bottom: 5%;}
+.slick-slide .slider_img_background_bpset_menu_img_pc{display:none;}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+}
 }
 @media only screen and (max-width:768px){
 .slider_img_background_bpset_title {width: 45% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 45% !important;}
-.slider_img_background_bpset_menu {width: 88% !important;margin-top: 1% !important;}
-section .slider_div {
-    margin-top: 8%;}
+.slider_img_background_bpset_menu {width: 93% !important;}
+.slick-slide .slider_img_background_bpset_menu_img {
+    width: 100% !important;
+}
+.btn_text{right:0;top:26%;}
+.flower_div_top,.flower_div_top_left{width:186px;}
+.flower_div_top_left{left:-17px;}
+.slick-slide .slider_img_background_img_m{width:80% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 40% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_mo{width:90% !important;padding-bottom: 7%;padding-top: 7%;}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 60%;
+    top: 74%;
+    transform: translateX(-50%);
+}
+}
+  @media only screen and (max-width:717px){
+  .slick-slide .slider_img_background_img_m{width: 60% !important;}
+  .slider_img_background_bpset_menu_2 {
+    width: 18% !important;
+}
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 25px !important;
+}
+.slick-slide img.slider_img_background_02 {
+    width: 40% !important; margin-top: 0 !important;
+}
+  }
+  @media only screen and (max-width:512px){ 
+  .list_slider_ul_sns li:nth-child(1){height: auto;min-height: 100%;}
+  }
+ @media only screen and (max-width:512px){
+ .slick-slide img.slider_img_background_02 {
+    width: 70% !important;    margin-top: 0 !important;
+}
+.slick-slide .slider_img_background_img_m {
+    width: 70% !important;
+}
+.slider_img_background_bpset_menu_2 {
+    width: 35% !important;
+}
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 70px !important;
+}
+ }  
 
-}	
 @media only screen and (max-width:500px){
 .slider_img_background_bpset_title {width: 65% !important;margin-top: 6.5% !important;}
 .slider_img_background_bpset_btn {margin-top: 2.5% !important;width: 55% !important;}
-.slider_img_background_bpset_menu {width: 96% !important;margin-top: 1% !important;}
+.slider_img_background_bpset_menu {width: 105% !important;margin-top: 7% !important;}
+.slider_img_background_bpset_menu_02{width:100% !important;}
+.slick-slide img.slider_img_background_02{width:100% !important;}
+.btn_text {
+    right: 12%;
+    top: 64%;}
+.slick-slide .slider_img_background_img_m{width:90% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 50% !important;
+}    
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 99px !important;
+}
+.section1.bg5 .flower_div_top_left,.section1.bg5 .flower_div_top{opacity: 100;} */ 
+.section1.bg5 .container_star{opacity: 100;}
+.slick-slide img.slider_img_background_02{margin-top: 43px !important;}
 }	
+
+@media only screen and (max-width:375px){
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 125px !important;
+}
+}
+@media only screen and (max-width:320px){
+.slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 47px !important;
+}
+}
+  @media only screen and (max-width:280px){
+ .slick-slide .slider_img_background.slider_img_background_img_m {
+    margin-top: 150px !important;
+} 
+.slick-slide img.slider_img_background_02 {
+    padding-top: 25% !important;}
+  }
 /* 태블릿, 아이패드 */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
-.slider_img_background_bpset_menu {width: 80% !important;}
+.slider_img_background_bpset_menu {width: 95% !important;}
+.flower_div_top,.flower_div_top_left {
+    width: 319px;
+}
 .slider_img_background_bpset_btn {
     width: 47% !important;
 }
 .slider_img_background_bpset_title {
     width: 50% !important;}
-
+.slick-slide .slider_img_background_bpset_menu_img_mo{padding-top:0;}
 }
 /* 아이패드 프로 */
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
-.slider_img_background_bpset_menu {width: 88% !important;}
+.btn_text{right:0;}
+.slider_img_background_bpset_menu {width: 95% !important;}
+.flower_div_top,.flower_div_top_left {
+    width: 445px;
+}
+
 .slider_img_background_bpset_btn {
     width: 34% !important;
 }
 .slider_img_background_bpset_title {
     width: 54% !important;margin-top:0 !important;}
+.slick-slide .slider_img_background_img_m{max-width: 100% !important; width:70% !important;}    
 
 }
-@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
-.slider_img_background_bpset_title {
-    width: 32% !important;}
-.slider_img_background_bpset_btn {
-    width: 23% !important;
-}  
-.slider_img_background_bpset_menu {
+
+
+@media only screen and (min-device-width : 512px) and (max-device-height : 717px) {
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 54%;
+    top: 74%;
+    transform: translateX(-50%);
+}
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 80% !important;
+    padding-bottom: 4%;
+}
+#mainbanner_bss_img_mo {
+    margin-top: 24% !important;
+    max-width: 62% !important;
+}
+}
+@media only screen and (min-device-width : 540px) and (max-device-height : 720px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 90% !important;
+    padding-bottom: 7%;
+    padding-top: 16%;
+}
+}
+@media only screen and (min-device-width : 717px) and (max-device-height : 512px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
     width: 55% !important;
+    padding-bottom: 7%;
+}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 32%;
+    top: 74%;
+    transform: translateX(-50%);
+}
+}
+@media only screen and (min-device-width : 720px) and (max-device-height : 540px) {
+.slick-slide .slider_img_background_bpset_menu_img_mo {
+    width: 57% !important;
+    padding-bottom: 7%;
+    padding-top: 0%;
+}
+.btn_text.btn_text_02 {
+    right: auto;
+    left: 50%;
+    width: 32%;
+    top: 74%;
+    transform: translateX(-50%);
 }
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 600px) {
@@ -183,15 +651,152 @@ section .slider_div {
     width: 23% !important;
 }  
 .slider_img_background_bpset_menu {
-    width: 55% !important;
+    width: 60% !important;
+}
+.slick-slide img.slider_img_background_02 {
+    width: 61% !important;
+}
+.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
+.slick-slide .slider_img_background.slider_img_background_img_m{    margin-top: 20px !important;max-width: 337px !important;    max-height: 100% !important;}
+.slider_img_background_bpset_menu_2 {
+    width: 15% !important;
+}
+.btn_text.btn_text_02{
+    right: auto;
+    left: 3%;
+    width: 38%;
+    top: 45%;
+    transform: translateX(0);
+}
+.slick-slide .slider_img_background_bpset_menu_img_02 {
+    width: 100% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_pc {
+    width: 100% !important;
 }
 }
+@media only screen and (min-device-width : 1280px) and (max-device-height : 800px) {
+.slider_img_background_bpset_title {
+    width: 32% !important;}
+.slider_img_background_bpset_btn {
+    width: 23% !important;
+}  
+.slider_img_background_bpset_menu {
+    width: 75% !important;
+}
+.slick-slide img.slider_img_background_02{padding-top:0 !important;width:55% !important;}
+.slick-slide img.slider_img_background_img{    max-width: 1000px !important;min-width: 850px;}
+.slick-slide .slider_img_background_bpset_menu_img_02 {
+    width: 100% !important;
+}
+.slick-slide .slider_img_background_bpset_menu_img_pc {
+    width: 100% !important;
+}
+}
+/* 220517 S: 바비큐피자 */
+  .banner-bbqpizza {width: 40%!important;}
+@media only screen and (max-width:1280px){
+    .banner-bbqpizza {width: 60%!important;}
+  }
+@media only screen and (max-width:800px){
+    .slick-slide img.slider_img_background_02.banner-bbqpizza {width: 80%!important;}
+
+  }
+/* 220517 E: 바비큐피자 */	  
+	  
+	  
+/* 220419 S: 더 알고 싶은 굽네: 대통령상, 좋은광고상 */
+.sns_line_pc {margin-top:-3% !important;}
+.sns_image_pc {top:5%;left:14.5%;}
+@media only screen and (max-width:1250px){
+	.sns_line_pc {width: 100% !important;margin-top: -10% !important;}
+	.sns_image_pc {top:16%;left:18.5%;}}
+@media only screen and (max-width:1024px){
+	.sns_line_pc {margin-top: -19% !important;}
+	.sns_image_pc {width:45%;top:36%;left:27.3%;}}
+@media only screen and (max-width:768px){
+	.sns_line_pc {margin-top: -7% !important;}
+	.sns_image_pc {width:60%;top:17%;left:20%;}}
+@media only screen and (max-width:700px){
+	.sns_line_pc {margin-top: -7% !important;}
+	.sns_image_pc {width:60%;top:17%;left:20%;}}
+@media only screen and (max-width:640px){
+	.list_slider_ul_sns li:nth-child(1){
+		background-image: url('2021renew_img/footer_list_img/220419/sns_pre-award_background_mo.jpg') !important;
+		height:100%;}
+	.cover_slider3 li:nth-child(1){
+		background-image: url('2021renew_img/footer_list_img/220419/sns_good-ad_background_mo.jpg') !important;
+	}
+	.list_slider_ul_sns li:nth-child(1),.cover_slider3 li:nth-child(1){
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+	.sns_img_mo{height: 93% !important;}}
+@media only screen and (max-width:414px){
+	.sns_img_mo{height: 73% !important;margin-top: 20% !important;}}
+@media only screen and (max-width:375px){
+	.sns_img_mo{height: 65% !important;margin-top: 25% !important;}}
+@media only screen and (max-width:320px){
+	.sns_img_mo{height: 57% !important;margin-top: 35% !important;}}
+@media only screen and (max-width:280px){
+	.sns_img_mo{height: 50% !important;margin-top: 45% !important;}}
+/* 220419 E: 더 알고 싶은 굽네: 대통령상, 좋은광고상 */
+	  
+/* 220517 S: 더 알고 싶은 굽네: 브랜드 평판 */
+.sns_line_pc {margin-top:-3% !important;}
+.reputation_title_pc {top:5%;left:5%;}
+@media only screen and (max-width:1250px){
+	.sns_line_pc {width: 100% !important;margin-top: -10% !important;}
+	.reputation_title_pc {top:16%;left:8.5%;}}
+@media only screen and (max-width:1024px){
+	.sns_line_pc {margin-top: -19% !important;}
+	.reputation_title_pc {width: 55%;top: 38%;left: 23.5%;}}
+@media only screen and (max-width:768px){
+	.sns_line_pc {margin-top: -7% !important;}
+	.reputation_title_pc {width: 77%;top: 17%;left: 13%;}}
+@media only screen and (max-width:700px){
+	.sns_line_pc {margin-top: -7% !important;}
+	.reputation_title_pc {width: 77%;top: 17%;left: 13%;}}
+@media only screen and (max-width:640px){
+	.cover_slider1 li:nth-child(1){background-image: url('/2021renew_img/footer_list_img/220517_reputation/bg_mo.jpg') !important;height:100%;}
+@media only screen and (max-width:414px){
+	.sns_img_mo{height: 73% ;margin-top: 20% !important;}}
+@media only screen and (max-width:375px){
+	.sns_img_mo{height: 65% ;margin-top: 25% !important;}}
+@media only screen and (max-width:320px){
+	.sns_img_mo{height: 57%;margin-top: 35% !important;}}
+@media only screen and (max-width:280px){
+	.sns_img_mo{height: 50%;margin-top: 45% !important;}}  
+/* 220517 E: 더 알고 싶은 굽네: 브랜드 평판 */
+	
+/* 220419 S: 더 알고 싶은 굽네: 어나더사이드 오픈 */
+@media only screen and (max-width:1024px){
+	.sns_as_img_pc {width: 37% !important;}
+	  }
+@media only screen and (max-width:800px){
+	.sns_as_img_pc {width: 49% !important;}
+	  }
+@media only screen and (max-width:640px){
+	.cover_slider4 li:nth-child(1) {background-image:url('2021renew_img/footer_list_img/220425_sns/bg_mo.jpg')!important;}
+	.sns_as_img_mo {width: 75% !important;margin-top: 10% !important;}
+	  }
+@media only screen and (max-width:540px){
+	.sns_as_img_mo {margin-top: 19% !important;}
+	  }
+@media only screen and (max-width:414px){
+	.sns_as_img_mo {margin-top: 35% !important;}
+	  }
+@media only screen and (max-width:280px){
+	.sns_as_img_mo {margin-top: 60% !important;}
+	  }	  
+/* 220419 E: 더 알고 싶은 굽네: 어나더사이드 오픈 */
+	  
 </style>
 <!---S:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
-<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v6.css' rel='stylesheet' type='text/css'>
+<link href='/JQuery-Snowfall-master/dist/re_mainbanner_v8.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-  <script>
+<!--<script>
   // 이벤트종료시점 기록
   var countDownDate = new Date("March 20, 2022 23:59:59").getTime();
   
@@ -233,9 +838,67 @@ section .slider_div {
       document.getElementById("closePopChk").style.backgroundColor="#0f616a";
     }
   }, 1000);
-  </script>
+  </script>-->
   <style>
       .display_none{display:none;}
+/*유니버스 바사삭 추가부분 */      
+.btn_position{position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+    /* margin-left: 297px; */
+    width: 75%;
+    cursor: pointer;
+    max-width: 1000px;
+    /* text-align: right;*/}
+.btn_position img{image-rendering: auto;
+    width: 24%;
+    float: right;margin-right:73px;}
+/*S: 버튼 모션 추가*/
+.chatbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}   
+@keyframes motion {
+0% {margin-top: 0px;}
+100% {margin-top: 10px;}
+}
+-webkit-@keyframes motion {
+0% {margin-top: 0px;}
+100% {margin-top: 10px;}
+}
+/*E:버튼 모션 추가*/
+@media only screen and (max-width: 800px){
+.btn_position{top:49%;}
+.btn_position img{margin-right:39px;}
+}
+@media only screen and (max-width: 500px){
+.btn_position img {
+    margin-right:-40px;width:45%;    margin-top: -115px;
+}
+.btn_position {
+    top: 50%;width: 80%;
+}
+}
+@media only screen and (max-width: 414px){
+.btn_position img{margin-top:0;margin-right:-25px;}
+}
+@media only screen and (max-width: 412px){
+.btn_position img{margin-top: -102px;}
+}
+@media only screen and (max-width: 411px){
+.btn_position img{margin-top:0;}
+}
+@media only screen and (max-width: 375px){
+.btn_position {
+    top: 54%;}
+    }
+@media only screen and (max-width: 320px){
+.btn_position {
+    top: 42%;
+}} 
+@media only screen and (max-width: 280px){
+.btn_position {
+    top: 54%;
+}} 
+
   </style>
 </head>
 <body id="page-top" class="index">
@@ -245,20 +908,38 @@ section .slider_div {
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <div class="window" id="window">
-    <div class="slider single-item04" id="ori" style="visibility:hidden;">
-        <div class="list_slider">
-            <a target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_4.svg"></a>
+    <div class="slider single-item04" >
+        <!--<div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view_curry.jsp" ><img src="2021renew_img/popup/220401_event_preorder_popup.jpg"></a>
+        </div>-->
+		<!-- 요기요 이벤트 팝업 제거, 어광일과장 220425 긴급 요청 -->
+		<!--div class="list_slider">
+            <a href="https://hoy.kr/BrEMj"><img src="2021renew_img/popup/220415_popup_bss.jpg"></a>
+        </div-->
+		<!-- 요기요 이벤트 팝업 제거, 어광일과장 220425 긴급 요청 -->
+		<!-- 220520 팝업: 공룡 콜라보 내림
+		<div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="2021renew_img/popup/220504_popup_dino.jpg" ></a>
+        </div> -->
+        <!-- 220603 오픈: 안내팝업--> <div class="list_slider">
+            <a href="/event/event_view.jsp?dt=60994"><img src="2021renew_img/popup/popup_20220603_3.svg" style="image-rendering:auto;"></a>
+        </div> 
+		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220527_popup_tday.jpg" style="image-rendering:auto;"></a>
+        </div> 
+		<!-- 20220603 오픈 불금치킨--><div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="2021renew_img/popup/220531_popup_bgchicken.jpg" style="image-rendering:auto;"></a>
         </div>
         <div class="list_slider">
-            <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220502_popup_dhuman.jpg" ></a>
         </div>
     </div>
-    <div id="new" style="visibility:hidden;">
-        <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris"  target="_blank"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
-    </div>
+    <!--<div id="new" style="visibility:hidden;">
+        <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+    </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘하루 보지 않기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#cc3b42;">오늘 하루 보지 않기</li>
             <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#cc3b42;">닫기</li>
         </ul>
     </div>
@@ -285,40 +966,94 @@ section .slider_div {
 
  <div id="main" class="scroll-container">
 		<section class="section1 bg">
+			<!--- 220421 벚꽃 제거 
             <div class="flower_div_top_left"><img src="/2021renew_img/flower_icon_r_1.png"></div>
-            <div class="flower_div_top"><img src="/2021renew_img/flower_icon_r_1.png"></div>
+            <div class="flower_div_top"><img src="/2021renew_img/flower_icon_r_1.png"></div> --->
           <div class="slider_div">
             <div class="slider single-item">
             <!--- 동영상이 첫번째 슬라이드 일때 적용 사항 : ① 첫번째 비디오 태그에 autoplay 추가, 첫번째 외 N번째는 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: false로 설정---->
             <!--- 동영상이 두번째부터~(즉, 첫번째 외 슬라이드 일때) 혹은 첫번째 슬라이드가 이미지 일 때 적용 사항 :  ① 비디오 태그에 autoplay삭제 / ② re_common_(버전 업 최상위 ex:re_common_v3.js) js파일 autoplay: true로 설정---->
+                 <!--<div class="list_slider">
+                       <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
+                       <div class="slider_img_background_bpset_menu slider_img_background_bpset_menu_02">
+                           <img src="2021renew_img/mainbanner/20220329_pc_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_pc">
+                           <img src="2021renew_img/mainbanner/20220329_m_img_1.png" class="slider_img_background_bpset_menu_img slider_img_background_bpset_menu_img_mo">
+                           <div class="btn_text btn_text_02" onClick="location.href='/event/event_view_curry.jsp'"><img src="2021renew_img/mainbanner/20220329_pc_btn.png" class="slider_img_background_bpset_menu_1"></div>
+						</div>
+                  </div>-->
+                <div class="list_slider">
+					  <div class="main_event_bgchicken_bg" style="position: relative;">
+                          <div class="main_event_bgchicken_img_pc"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_pc_1.png"></a></div>
+  						  <div class="main_event_bgchicken_img_mo"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_mo_1.png"></a></div>
+                          <div class="btn_position chatbox"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_btn.png"></a></div>
+					  </div>
+                  </div>  
+				<div class="list_slider">
+					 <img src="/2021renew_img/mainbanner/220503_columbasak/main_img_columbasak.png" class="main_columbasak_img">
+                     <div class='container container_video' style="margin-top: 1.5%;">
+						<video id="vid" width="100%" height="auto" controls autoplay muted>
+                           <source src="/2021renew_img/mainbanner/220503_columbasak/main_video_columbasak_2.mp4" type="video/mp4">
+                        </video>
+                     </div>
+				  </div>
+				  <div class="list_slider">
+					  <div class="main_event_bgchicken_bg">
+						  <div class="main_event_bgchicken_img_pc"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_pc_2.png"></a></div>
+  						  <div class="main_event_bgchicken_img_mo"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_mo_2.png"></a></div>
+					  </div>
+                  </div>
+				  <!-- 220520 롤링배너: 공룡 콜라보 내림
+				  <div class="list_slider">
+					  <div class="main_dino_bg">
+						  <div class="main_dino_img_pc"><a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="/2021renew_img/mainbanner/220506_dino/220504_mainbanner_collabo-dino_img_pc_2.png"></a></div>
+  						  <div class="main_dino_img_mo"><a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="/2021renew_img/mainbanner/220506_dino/220504_mainbanner_collabo-dino_img_mo_2.png"></a></div>
+					  </div>
+                  </div> -->
+				  <div class="list_slider">
+					  <div class="mainbanner_bss_background">
+						   <img src="2021renew_img/mainbanner/220509_ovbss/img_pc_2.png" class="mainbanner_bss_img_pc">
+  						   <img src="2021renew_img/mainbanner/220509_ovbss/img_mo.png" id="mainbanner_bss_img_mo" style="image-rendering:auto;">
+						   <div class="mainbanner_bss_btn_pc">
+							   <a href="https://www.goobne.co.kr/menu/new_ovenbasasak.jsp"><img src="2021renew_img/mainbanner/mainbanner_bss_btn_pc.png"></a>
+						   </div>
+   						   <div class="mainbanner_bss_btn_mo">
+							   <a href="https://www.goobne.co.kr/menu/new_ovenbasasak.jsp"><img src="2021renew_img/mainbanner/mainbanner_bss_btn_pc.png"></a>
+						   </div>
+					  </div>
+                  </div>
+				  <div class="list_slider">
+					  <div class="mainbanner_dhuman_bg">
+						  <img src="2021renew_img/mainbanner/220419_dhuman/title_pc_4.png" class="slider_img_background slider_img_background_img mainbanner_dhuman_title_pc" style="image-rendering:auto;">
+						  <img src="2021renew_img/mainbanner/220419_dhuman/title_mo_2.png" class="slider_img_background slider_img_background_img_m mainbanner_dhuman_title_mo">
+						  <div class="mainbanner_dhuman_btn" onClick="window.open('https://order.goobne.co.kr:8481/login/login.aspx');"><img src="2021renew_img/mainbanner/220419_dhuman/btn_pc.png"></div>
+					  </div>
+                  </div>
+				<!-- 220427 사내맞선세트 내림
+				  <div class="list_slider">                      
+                       <a href="https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_blank"><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
+                  <div class="slider_img_background_bpset_menu">
+                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu_1.png" class="slider_img_background_bpset_menu_img">
+                       <div class="btn_text" onClick="window.open('https://simte.xyz/%EC%82%AC%EB%82%B4%EC%97%B0%EC%95%A0%EC%9C%A0%ED%98%95%ED%85%8C%EC%8A%A4%ED%8A%B8');"><img src="2021renew_img/mainbanner/bpset_mainbanner_menu_2.png" class="slider_img_background_bpset_menu_1"></div>
+                  </div> 
+                  </div> -->
+                 <div class="list_slider">
+                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02 banner-bbqpizza">
+                 </div>
+				 <!--- 220421 구울레옹 세트 동영상 내림
 				 <div class="list_slider">
                      <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto"  autoplay muted controls>
-                        <source src="2021renew_img/mainbanner/211217_bg.mp4" type="video/mp4">
+                      <video id="vid" width="100%" height="auto" muted controls>
+                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
                     </video>
                     </div>
-                 </div>
-                  <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/bpset_mainbanner_title_3.png" class="slider_img_background_bpset_title">
-                       <a href=""><img src="2021renew_img/mainbanner/bpset_mainbanner_btn.png" class="slider_img_background_bpset_btn"></a>
-                       <img src="2021renew_img/mainbanner/bpset_mainbanner_menu.png" class="slider_img_background_bpset_menu">                       
-                  </div>
-                  <!--<div class="list_slider">
-                      <p class="title">굽네 치PD </p>
-                      <img src="2021renew_img/mainbanner/cpd_img_1.png" >
-                      <p class="subtitle">오븐 마스터 굽네의 출구 없는 삼대장</p>
-                 </div>-->
-                 <div class="list_slider">
-                       <img src="2021renew_img/mainbanner/main_banner_img_07_1.png" class="slider_img_background slider_img_background_02 ">
-                                             
-                  </div>
-                 <div class="list_slider">
+                 </div> --->
+                 <!--<div class="list_slider">
                     <div class='container container_video' style="margin-top: 4%;">
-                      <video id="vid" width="100%" height="auto"  muted controls>
-                        <source src="2021renew_img/mainbanner/cpd.mp4" type="video/mp4">
+                      <video id="vid" width="100%" height="auto" muted controls>
+                        <source src="2021renew_img/mainbanner/gouleon-set.mp4" type="video/mp4">
                     </video>
                     </div>
-                 </div>
+                 </div>-->
              </div>
              <span class="pagingInfo"></span>
             </div>  
@@ -343,68 +1078,67 @@ section .slider_div {
           </div>
 		</section>
 		<section class="section2" >
-            
-			<div class="slider_body">
-            <h2 class="title_h2">오늘의 치PD</h2>
+            <div class="slider_body">
+            <h2 class="title_h2">이달의 추천 메뉴</h2>
                 <div class="container_width" >
                 <div class="slider single-item02">
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/todayschiPD_bpset.png" class="d_img" style="image-rendering: auto;"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn="><img src="2021renew_img/mainbanner/oven_chicken_2.png"></a></p>
                           <ul>
-                              <li>사내맞선 세트</li>
-                              <li>굽네 불금치킨 + 굽네 바비큐 시카고 딥디쉬피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>오븐 바사삭</li>
+                              <li>오븐 바사삭</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=14&productid=31885&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png"  class="d_img"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn="><img src="2021renew_img/mainbanner/cb_chicken_2.png"></a></p>
                           <ul>
-                              <li>굽네 에그미니타르트</li>
-                              <li>굽네 에그미니타르트</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>치즈 바사삭</li>
+                              <li>치즈 바사삭</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=100&productid=31888&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
 				  <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
+                          <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn="><img src="2021renew_img/mainbanner/sauce_curry.png"></a></p>
                           <ul>
-                              <li>바게트볼 갈릭크림</li>
-                              <li>바게트볼 갈릭크림</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>굽네 찍먹 커리</li>
+                              <li style="opacity: 1;">치킨 마크니 / 티카 마살라</li>
+                              <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=40&cateid=01&productid=31891&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                          </ul>
+                      </div>
+                  </div>
+				  <div class="list_slider">
+                      <div class="list_section_02">
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn="> <img src="2021renew_img/mainbanner/bg_chicken.png" ></a></p>
+                          <ul>
+                              <li>불금치킨</li>
+                              <li>불금치킨</li>
+                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=27&productid=31759&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
                   <div class="list_slider">
                       <div class="list_section_02">
-                         <p class="list_img"> <a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn="><img src="2021renew_img/mainbanner/gb_chicken.png" ></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn="><img src="2021renew_img/mainbanner/pizza_bbqchicago_2.png" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>굽네 고추바사삭</li>
-                              <li>굽네 고추바사삭</li>
-                              <li><a href="/menu/menu_view.jsp?classid=10&cateid=02&productid=30890&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="list_slider">
-                      <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" ><img src="2021renew_img/mainbanner/cd_pizza.png" ></a></p>
-                          <ul>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li>굽네 시카고 딥디쉬 피자</li>
-                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=04&productid=31247&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>바비큐 시카고 딥디쉬 피자</li>
+                              <li>바비큐 시카고 딥디쉬 피자</li>
+                              <li><a href="/menu/menu_view.jsp?classid=15&cateid=09&productid=31777&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                     </div>
                       <div class="list_slider">
                       <div class="list_section_02">
-                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn="><img src="2021renew_img/mainbanner/bb_dessert.png" class="d_img"></a></p>
+                          <p class="list_img"><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn="><img src="2021renew_img/mainbanner/emt_dessert.png" class="d_img" style="image-rendering: auto;"></a></p>
                           <ul>
-                              <li>바게트볼 갈릭크림</li>
-                              <li>바게트볼 갈릭크림</li>
-                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31386&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
+                              <li>에그미니 타르트</li>
+                              <li>에그미니 타르트</li>
+                              <li><a href="/menu/menu_view.jsp?classid=40&cateid=01&productid=31595&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>
                       </div>
                   </div>
@@ -437,199 +1171,52 @@ section .slider_div {
                         <li class="top_footer_list_li_slick">
                             <div class="slider_div">
                               <div class="slider single-item03">
-								  
-								  <div class="list_slider cover_slider">
+                              <div class="list_slider cover_slider1">
                                       <ul class="list_slider_ul_sns">
-                                         <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
+                                         <li style="width:100%;background:url('/2021renew_img/footer_list_img/220517_reputation/bg_pc.jpg');background-size: cover;" class="sns_back_2">
+											 <div style="position: relative;">
+												 <img src="/2021renew_img/footer_list_img/220517_reputation/line_pc.png" class="cover_img pc_sns sns_line_pc">
+											 	 <div style="position: absolute;" class="sns_image_pc reputation_title_pc">
+													 <img src="/2021renew_img/footer_list_img/220517_reputation/title_pc.png" class="cover_img pc_sns">
+												 </div>
+											 </div>
+                                             <img src="/2021renew_img/footer_list_img/220517_reputation/title_mo_4.png" class="cover_img mobile_sns sns_img_mo reputation_title_mo">
                                         </li> 
                                      </ul>
                                   </div>
-								  
-								  
-								  
-								  
-								    <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">										  
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img05_2_PC.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img05_MO.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CYXidjAFiZR/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                요즘은 뭐하고 논다고?
-												요즘은 어디가 핫하다고?
-												⠀
-												제2의 에디터G가 되어 핫플을 소개해줄
-												굽스터즈를 1기를 모집합니다 👏👏👏
-												⠀
-												#에디터G랑_놀러가요 #굽스터즈
-												#굽스터즈_할_사람 #핫플_소개해주세요
-												#굽스터즈_기대_댓글_달면_불금치킨이_찾아갈지도..?
-												⠀
-												⭐지원자격: 먹고, 마시고, 즐길 준비 된 사람 모두😎
-												⭐모집기간: 2022.01.06(목) ~ 2022.01.12(수)
-												⭐모집인원 : 2명
-												⭐모집발표: 2022.01.13(목) *개별 DM발송 예정
-												⭐활동혜택: 소정의 활동비 지급 + 굽네 기프티콘 5종
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 1월 6일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-								   <div class="list_slider">
+								  <div class="list_slider cover_slider2">
                                       <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img04_PC.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img04_MO.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/p/CYVp6CMl0v8/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                굽퀴즈~?
-⠀
-												Q. 구울레옹의 최애 피자는?
-												A. 바비큐 시카고 딥디쉬 피자 🍕
-												⠀
-												피자에 치즈 올리고🧀
-												바비큐 고기도 올리고🍗
-												피날레로 치즈케이크무스까지! 🧀
-												⠀
-												By. 에디터G
-												⠀
-												#피자가_먹고_싶으면
-												#소리_지르지_말고_댓글입력해👏
-												#치즈덕후_모여라 #고기도_한입_가득
-												#불금엔_역시_구울레옹세트 #오늘부터_만나볼수_있다구
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2022년 1월 6일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-                                  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li>
-                                              <img src="/2021renew_img/footer_list_img/sns_img01.jpg" class="pc_sns">
-                                              <img src="/2021renew_img/footer_list_img/sns_img01_m.jpg" class="mobile_sns">
-                                          </li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">the___goobster</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                 [구울레옹 전투 준비 태세 Ep.1]
-⠀
-                                                    하나, 둘, 하나, 둘 ...
-                                                    ⠀
-                                                    한참을 양 손에 닭다리를 하나씩 들고 체력 단련을 하다,
-                                                    문득 지나간 날들이 떠올랐다.
-                                                    ⠀
-                                                    나 구울레옹이 승리를 거머쥐었던 여러 날들.
-                                                    항상 뜨겁게 살고, 싸워왔던 여러 날들
-                                                    ⠀
-                                                    굽민들은 나를 향해 여러 칭송을 보냈고,
-                                                    나는 이에 보답해야한다.
-                                                    그 보답 역시 전투로!
-                                                    ⠀
-                                                    12월 15일,튀길레옹과의 전투!
-                                                    나는 우리 굽민들을 위해 또 한번의 승리 할 것이다!
-                                                    ⠀
-                                                    기다려라 튀길레옹!
-                                                    나의 병사들과 기름 튀기는 너의 영토를
-                                                    확실하게 구워주지.
-                                                    ⠀
-                                                    곧 다가올 전투를 위하여
-                                                    나는 오늘도 체력 단련과 보충을 위해
-                                                    구운치킨을 저녁으로.. 음, 뭐 먹지..
-                                                    ⠀
-                                                    다음화에 계속 ...
-                                                    ⠀
-                                                    #굽네_새모델_맞추면_고추바사삭
-                                                    #구울레옹_1편_감상댓글_남겨도_고추바사삭
-                                                    #따우스레스자우르스_크리스마스_케이크는_덤
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2021년 12월 10일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                   </div>
-                                  <div class="list_slider">
-                                      <ul class="list_slider_ul_sns">
-                                          <li><img src="/2021renew_img/footer_list_img/sns_img02.jpg"></li>
-                                          <li>
-                                              <div class="top_sns">
-                                                  <a href="https://www.instagram.com/the___goobster/" target="_blank">
-                                                      <span class="top_sns_left"><img src="/2021renew_img/icon_05_1.svg">goobne</span>
-                                                      <span class="top_sns_right"><img src="/resources/images/contents/advertise/icon_social_insta.jpg"></span>
-                                                  </a>
-                                              </div>
-                                              <div class="container_sns">
-                                                 THE 굽스터, 오픈 하자마자
-                                                    100만 팔로워를 달성했다고? 😙
-                                                    ⠀
-                                                    우리 굽스터들의
-                                                    핫하고 힙한 소식만 전하는 GOOBNEWS
-                                                    ⠀
-                                                    다음 소식 기대되는 사람 냅다 손들어 🙋
-                                                    혹시, 에디터G에게 더 핫한 소식 전해준다면
-                                                    기프티콘이 있을지도..?
-                                                    ⠀
-                                                    #100만_팔로워_가보자고
-                                                    #굽스터_평생_함께해
-                                                    #솔로부대_기죽지마라
-                                                    #깜짝_놀랄_소식은_뭘까?
-                                              </div>
-                                              <div class="bottom_sns">
-                                                  <span><div class="QBdPU rrUvL"><span class=""><svg aria-label="좋아요" class="_8-yf5 " color="#262626" fill="#999" height="20" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></span></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="댓글 달기" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg></div>
-                                                <div class="QBdPU rrUvL"><svg aria-label="게시물 공유" class="_8-yf5 " color="#262626" fill="#999" height="24" role="img" viewBox="0 0 48 48" width="20"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></div></span>	
-                                                <div class="sns_date">
-                                                    2021년 12월 10일
-                                                </div>
-                                              </div>
-                                          </li>
-                                      </ul>
+                                         <li style="width:100%;background:url('2021renew_img/footer_list_img/220419/sns_pre-award_background_pc.jpg');background-size: cover;">
+                                             <div style="position: relative;">
+												 <img src="2021renew_img/footer_list_img/220419/sns_line_pc.png" class="cover_img pc_sns sns_line_pc">
+											 	 <div style="position: absolute;" class="sns_image_pc">
+													 <img src="2021renew_img/footer_list_img/220419/sns_pre-award_pc.png" class="cover_img pc_sns">
+												 </div>
+											 </div>
+                                             <img src="2021renew_img/footer_list_img/220419/sns_pre-award_mo_2.png" class="cover_img mobile_sns sns_img_mo">
+                                        </li> 
+                                     </ul>
                                   </div>
-                                  <div class="list_slider cover_slider">
+								  	 <div class="list_slider cover_slider3">
                                       <ul class="list_slider_ul_sns">
-                                         <li style="width:100%;background: none;">
-                                             <img src="2021renew_img/footer_list_img/sns_img_text_03.png" class="cover_img pc_sns">
-                                             <img src="2021renew_img/footer_list_img/m_sns_img_text_03.png" class="cover_img mobile_sns">
+                                         <li style="width:100%;background:url('2021renew_img/footer_list_img/220419/sns_good-ad_background_pc.jpg');background-size: cover;" class="sns_back_2">
+											 <div style="position: relative;">
+												 <img src="2021renew_img/footer_list_img/220419/sns_line_pc.png" class="cover_img pc_sns sns_line_pc">
+											 	 <div style="position: absolute;" class="sns_image_pc">
+													 <img src="2021renew_img/footer_list_img/220419/sns_good-ad_pc.png" class="cover_img pc_sns">
+												 </div>
+											 </div>
+                                             <img src="2021renew_img/footer_list_img/220419/sns_good-ad_mo_2.png" class="cover_img mobile_sns sns_img_mo">
+                                        </li> 
+                                     </ul>
+                                  </div>
+								   <div class="list_slider cover_slider4">
+                                      <ul class="list_slider_ul_sns">
+                                         <li style="width:100%;background:url('2021renew_img/footer_list_img/220425_sns/bg_pc_2.jpg');background-size: cover;">
+											 <div>
+												 <a href="https://www.instagram.com/anotherside_coffee/"><img src="2021renew_img/footer_list_img/220425_sns/img_pc.png" class="cover_img pc_sns sns_as_img_pc"></a>
+											     <a href="https://www.instagram.com/anotherside_coffee/"><img src="2021renew_img/footer_list_img/220425_sns/img_pc.png" class="cover_img mobile_sns sns_as_img_mo"></a>
+											 </div>
                                         </li> 
                                      </ul>
                                   </div>
@@ -642,7 +1229,7 @@ section .slider_div {
                                 <h4>고객센터</h4>
                                 <span class="call_num">1661-9494</span>
                                 <span class="sub_font">AM 12:00 ~ PM 11:00</span>
-                                    <a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>
+                                    <!--<a href="/customer/cscenter_regi.jsp" class="footer_list_link_a">바로가기 ></a>-->
                             </div>
                         </li>
                         <li class="top_footer_list_li">
@@ -651,9 +1238,9 @@ section .slider_div {
                             <span class="go_link"><a href="https://www.youtube.com/channel/UCwx2AFi2Zg8_SYzjaJ7Hfmg" target="_blank">바로가기 ></a></span>
                             </div>
                             <ul class="youtube_list">
-                                <li style="background:url('/2021renew_img/youtube/youimg_1_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=ID3IjxVvOT0')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg_2_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=h0Gm4o_gaJM')"><img src="/2021renew_img/youtube.png"></li>
-                                <li style="background:url('/2021renew_img/youtube/youimg_3_220316.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=Iwm0NTxcdg0')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/220503_gntv_thum_columbasak.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=c99aYibEys4')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/220421_gn-tv_02.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=-MydkYkc0cw')"><img src="/2021renew_img/youtube.png"></li>
+                                <li style="background:url('/2021renew_img/youtube/220421_gn-tv_03.jpg')center;background-size:100%;" onClick="window.open('https://www.youtube.com/watch?v=KGpThF04pNQ&t=30s')"><img src="/2021renew_img/youtube.png"></li>
                             </ul>
                         </li>
                     </ul>
@@ -674,10 +1261,10 @@ section .slider_div {
     </div>
     
     <link href='/JQuery-Snowfall-master/dist/re_popup_v3.css' rel='stylesheet' type='text/css'>
-    <script src="/JQuery-Snowfall-master/dist/re_popup_v5.js"></script>
+    <script src="/JQuery-Snowfall-master/dist/re_popup_v6.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v4.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_v5.js"></script>
 <!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
@@ -706,3 +1293,4 @@ section .slider_div {
 </body>
 </html>
 
+>

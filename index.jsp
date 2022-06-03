@@ -52,24 +52,22 @@ src="https://www.facebook.com/tr?id=3005723823073377&ev=PageView&noscript=1"
     font-weight: normal;
     font-style: normal;
 }
-.section1 {background:url(/resources/images/main/20220413_micro/bg_1.png);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
-.mobile {display: none;}
-.section1 .logo img {height: 30px;padding: 10px;}   
-.container{position:absolute;left:0;top:0;width:100%;height:100%;overflow: hidden;}
+.section1 {background:url(/resources/images/main/220527_micro_ovbss/bg_pc.jpg);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: center;}
+.mobile {display: none;}  
+.container{position:absolute;left:0;top:0;width:100%;height:100%;overflow: hidden;text-align:center;margin:0 auto;}
 .container_position{position:relative;width:100%;height:100%;}
 .container_position li{position:absolute;bottom:0;width: 100%;height: 100%;}
-.container_position li:nth-child(1) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
-.container_position li:nth-child(2) img{width:100%;height:auto;  object-position: right;float:right;object-fit: cover;}
-.container_position li:nth-child(3) img{width:auto;height:100%;  object-position: center;object-fit: cover;}
-.container_position li.img_04_li{width: 60%;
-    right: 5%;
-    bottom: 15%;
-    height: auto;}
+.container_position .bi_goobne {width:5.5%;position: fixed;top:2%;right:2%;}
+.container_position .bi_goobne img {width:100%;}
+.container_position .pc_img {bottom:auto;height: auto;top:50%;transform: translateY(-50%);margin-top: -2%;}
+.container_position .mobile_img {bottom:auto;height: auto;top:50%;transform: translateY(-50%);margin-top: -2%;}	
+.container_position li:nth-child(1) img{width:65%;object-position: center;object-fit: cover;}
+/*
+.container_position li:nth-child(2) img{width:100%;height:auto;object-position:center;object-fit: cover;}
+.container_position li:nth-child(3) img{width:auto;height:100%;object-position: center;object-fit: cover;}*/
+.container_position li.img_04_li{top:18%}
 .container_position li.img_04_li img{width:100%;}
-.btn_container{      width: auto;
-    position: absolute;
-    right: 15%;
-    bottom: 20px;}
+.btn_container{width: auto;position: absolute;right: auto; bottom: 3.5%;left: 50%;transform: translateX(-50%); width:80%;text-align: center;}
 .btn_container li{display:inline-block;}
 .btn_container li img{width:100%;}
 .mobile_img{display:none;}
@@ -96,6 +94,7 @@ border-top: 10px solid #3617ce;
     border-right: 10px solid transparent;
     border-bottom: 0px solid transparent;
 
+
     content: "";
     position: absolute;
     bottom: -10px;
@@ -114,170 +113,134 @@ border-top: 10px solid #3617ce;
 
 
 @media only screen and (max-width: 1645px){
+.container_position li:nth-child(1) img{width:75%;}
 .btn_container{margin-left:0;}
 }
-@media only screen and (max-width: 1590px){
-
-}
-
 @media only screen and (max-width: 1490px){
-.container_position li:nth-child(1) img{object-position: left;}
-.container_position li.img_04_li {
-    width: 65%;
-    right: 0;
-    bottom: 19%;
-    height: auto;
-}
-.btn_container li{width:32%;}
+.container_position li.img_04_li {width: 65%;right: 0;bottom: 19%;height: auto;}
+.btn_container li{width:25%;}
 .btn_container{right:0;}
-
-}
-@media only screen and (max-width: 1408px){
-
-}
-@media only screen and (max-width: 1280px){
-.container_position li:nth-child(2){    right: 2%;}
-
+.container_position .pc_img {top:48%;}
+.container_position li:nth-child(1) img{width:83%;}
 }
 @media only screen and (max-width: 1100px){
+.container_position .bi_goobne {width:11%;}
 .pc_img{display: none;}
-.mobile_img{display:block;}
-.section1 {background:url(/resources/images/main/20220413_micro/bg.jpg);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: right;}
-.container_position li.mobile_img{bottom:114px;margin-left: 0;width:70%;height:auto;left:50%;}
-.container_position li {    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    height: auto;
-    width: 94%;
-    bottom: auto;
-    top: 50%;
-    transform: translate(-50%, -50%);}
-.container_position li:nth-child(3) img {width:100%;height: auto;position: absolute;left: 50%;transform: translateX(-50%);bottom: 0;}
-.container_position li:nth-child(1) img{    height: auto;width: 100%;}
-.btn_container { right: auto; bottom: 0;left: 50%;transform: translateX(-50%); width:80%;text-align: center;}
-body, html,.scroll-container section{min-height: 100%;overflow: hidden;}
-
-
-}
-@media only screen and (max-width: 1100px){
-.container_position li:nth-child(3) img {
-    width: 55% !important;bottom:25px;}
-.balloon{padding:15px;top:-75px;}
-.wrap{width:80px;}
-.container_position li:nth-child(2) {
-    right: 2%;
-    bottom: auto;
-    top: 45%;
-    width: 90%;
-}
-.pc_img_01{display: none;}
-.container_position li.img_04_li img.pc_img_01{width:100%;display: block;}
+.mobile_img{display:block;top:2%}
+.mobile_img img{width: 53%!important;}
 }
 @media only screen and (max-width: 970px){
-.btn_container{bottom:7%;width:100%;}
-.container_position li:nth-child(2){width:88% !important;}
+.mobile_img{top:5%;}
+.mobile_img img{width: 57%!important;}
+.btn_container{bottom:5%;width:100%;}
 }
 /* 태블릿, 아이패드 */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-.container_position li:nth-child(3) img{width:80% !important;}
-}
-
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px){
-.container_position li:nth-child(3) img {
-    width: 80% !important;
+.pc_img {top:44%!important;}
+.mobile_img {top:14%;}
+.mobile_img img {width:93%;}
+.btn_container {bottom:19%;width:110%;}
 }
-.container_position li{width:100%;}
-.container_position li:nth-child(2){width:90%;}
-.btn_container{width:90%;bottom:7%;}
-.container_position li:nth-child(1) img{display: none;}
-}
-@media only screen and (max-height:823px){
-.container_position li:nth-child(3) img{width:27% !important;}
-.btn_container{bottom:7%;    width: 57%;}
-
-}
-
 @media only screen and (min-device-width: 1280px) and (max-device-height: 800px){
-.container_position li:nth-child(3) img {width: 43% !important;}
-.container_position li.img_04_li {width: 56%;right: 0;}
-.container_position li:nth-child(1) img{display: block;}
+.pc_img {top:7%!important;}
+.pc_img img {width:77%!important;}
+.btn_container {bottom: 3%!important;}
 }
 @media only screen and (min-device-width : 1024px) and (max-device-height : 768px) {
-.container_position li:nth-child(3) img{width:50% !important;}
+.pc_img {display: block!important; top:13%;}
+.mobile_img {display: none!important;top:5%!important;}
+.mobile_img img{width: 80%!important;}
+.btn_container{bottom:10%;width:110%;}
 }
-
-@media only screen and (min-device-width: 1024px) and (max-device-height: 600px){
- .container_position li {
-    width: 52%;
+@media only screen and (max-width:830px){
+.mobile_img{top:8%;}
+.mobile_img img{width: 63%!important;}
+.btn_container{bottom:8%;}
 }
-.container_position li:nth-child(2) {
-    width: 67%;
-}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px){
+.pc_img {top:47%!important;}	
+.mobile_img{top:10%;}
+.mobile_img img{width: 70%!important;}
+.btn_container{bottom:10%;width:120%;}
 }
 @media only screen and (max-width:749px){
-.btn_container {width:100%;}
-.container_position li:nth-child(3) img{width:80% !important;    height: auto;}
+.mobile_img{top:10%;}
+.mobile_img img{width: 65%!important;}
+.btn_container{bottom:10%;}
 }
-@media (max-width:736px) and (max-height:512px){
-.container_position li:nth-child(3) img{width:33% !important;}
-
+@media only screen and (min-device-width: 512px) and (max-device-height: 717px){
+.container .container_position .mobile_img{top:41%!important;}
+.container .container_position .mobile_img img{width: 75%!important;}
+.container .btn_container{bottom:21%;width:120%;}
+}
+@media only screen and (min-device-width: 717px) and (max-device-height: 717px){
+.container .container_position .mobile_img{top:30%!important;}
+.container .container_position .mobile_img img{width: 42%!important;}
+.container .btn_container{bottom:39%!important;}
+}	
+@media only screen and (min-device-width: 1024px) and (max-device-height: 600px){
+.pc_img {top:35%!important;}
+.pc_img img {width:55%!important;}
+.container .container_position .mobile_img{top:2%!important;}
+.container_position .mobile_img img{width: 47.5%!important;}
+.container .btn_container{bottom:29%!important;width:95%;}
 }
 @media only screen and (max-width:700px){
-.mobile_img_01{display: block;}
-.container_position li.img_04_li img.pc_img_01{display: none;}
-.pc_img_01{display: none;}
-.container_position li {
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    height: auto;
-    width: 94%;
-    bottom: auto;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.section1 {background:url(/resources/images/main/220527_micro_ovbss/bg_mo.jpg);position:relative; background-size: cover; background-repeat: no-repeat; cursor: pointer;position:relative;background-position: right;}
+.mobile_img{top:11%;}
+.mobile_img img{width: 70%!important;}
+.btn_container{bottom:11%;}
 }
-.container_position li:nth-child(3) img {
-    width: 100% !important;
-    height: auto;
-    top: 50%;
-    bottom: auto;
-    transform: translate(-0%,-50%);
-    left: 0;
+@media only screen and (max-width:620px){
+.container_position .bi_goobne {width:17%;}
+.mobile_img{top:15%;}
+.btn_container{bottom:15%;width:115%;}
 }
-.container_position li:nth-child(2){top: 13%;}
-.btn_container{bottom:2%;}
+@media only screen and (min-device-width: 540px) and (max-device-height: 720px){
+.mobile_img{top:40%!important;}
+.container .container_position .mobile_img img{width: 75%;}
+.btn_container{bottom:21%!important;width:115%;}
+}
+@media only screen and (min-device-width: 720px) and (max-device-height: 720px){
+.container .container_position .mobile_img{top:33%!important;}
+.container .container_position .mobile_img img{width: 75%;}
+.container .btn_container{bottom:35%!important;width:115%;}
 }
 @media only screen and (max-width:500px){
-.container_position li:nth-child(3) img{width:100% !important;}
-.container_position li.mobile_img{width:80%;}
-.container_position li.mobile_img_01{height: calc(100% - 250px);width:100%;}
-.container_position li.mobile_img_01 img{ height:auto;width:100% !important;}
-.container_position li:nth-child(2) {
-    top: 19%;
+.container_position .bi_goobne {width:19%;}
+.mobile_img{top:21.5%;}
+.mobile_img img{width: 93%!important;}
+.btn_container{bottom:13%;width:120%;}
 }
-.btn_container {
-    bottom: 10%;
+@media only screen and (max-width:414px){
+.mobile_img{top:43%!important;}
+.mobile_img img{width: 93%!important;}
+.btn_container{bottom:20%!important;}
 }
-
+@media only screen and (max-width:412px){
+.mobile_img{top:47%!important;}
+.btn_container{bottom:20%!important;}
+}
+@media only screen and (max-width:411px){
+.mobile_img{top:45%!important;}
+.btn_container{bottom:19%!important;}
 }
 @media only screen and (max-width:375px){
-.container_position li.mobile_img_01 img{height:80%;}
-.container_position li:nth-child(2) {
-    top: 19%;
+.mobile_img{top:39%!important;}
+.btn_container{bottom:27%!important;}
 }
-.btn_container {
-    bottom: 15%;
-}
+@media only screen and (max-width:360px){
+.mobile_img{top:39%!important;}
+.btn_container{bottom:29%!important;}
 }
 @media only screen and (max-width:320px){
-.container_position li.mobile_img_01 img {
-    height: 100%;
-}
+.mobile_img{top:33%!important;}
+.btn_container{bottom:37%!important;}
 }
 @media only screen and (max-width: 280px){
-.btn_container li {
-    width: 31%;}
-.container_position li.mobile_img_01 img{height:80%;}    
+.container_position .mobile_img{top:37%!important;}
+.btn_container{bottom:37%!important;width: 120%;}  
+}
 }
 </style>
 </head>
@@ -387,28 +350,20 @@ timer = setInterval(showRemaining, 100);
 	 <div id="main" class="scroll-container">
          <a href="https://www.goobne.co.kr/index_1.jsp">
 		<section class="section1" id="section1" style="cursor: pointer;">
-			<div class="logo">
-				<img src="/resources/images/main/20220413_micro/logo_red.png">
-			</div>
 			<div class="container">
 				<ul class="container_position">
-                    <li class="pc_img_01"><img src="/resources/images/main/20220413_micro/img_01_1.png"></li>
-                    <li class="img_04_li">
-                        <img src="/resources/images/main/20220413_micro/img_02_1.png" class="pc_img_01">
-                        <img src="/resources/images/main/20220413_micro/img_01.png" class="mobile_img_01">
-                    </li>
-                    <li class="mobile_img_01"><img src="/resources/images/main/20220413_micro/m_img_02_1.png"></li>
+					<li class="pc_img"><img src="/resources/images/main/220527_micro_ovbss/img_pc.png"></li>
+                    <li class="mobile_img"><img src="/resources/images/main/220527_micro_ovbss/img_mo_2.png"></li>
+					<li class="bi_goobne"><img src="/resources/images/main/220527_micro_ovbss/bi_goobne.png"></li>
                 </ul>
-                <ul class="btn_container">
-                    <li style="position:relative;">
-                    <span id="newcountdown"></span>
-                    <a href="https://www.goobne.co.kr/index_1.jsp">
-                        <img src="/resources/images/main/20220413_micro/btn_02.png">
-                    </a>
-                    </li>
-                    <li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/20220413_micro/btn_01.png"></a></li>
-                    <li><a href="/menu/new_oven.jsp"><img src="/resources/images/main/20220413_micro/btn_03.png"></a></li>
-                </ul>
+				<ul class="btn_container">
+					<li><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/btn_menu.jpg"></a></li>
+					<li><a href="https://order.goobne.co.kr:8481/login/login.aspx" target="_blank"><img src="/resources/images/main/220429_micro/btn_order.jpg"></a></li>
+					<li style="position:relative;">
+					<span id="newcountdown"></span>
+					<a href="https://www.goobne.co.kr/index_1.jsp"><img src="/resources/images/main/220429_micro/btn_homepage.jpg"></a>
+					</li>
+				</ul>
 			</div>
 		</section>
         </a>

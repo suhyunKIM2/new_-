@@ -356,7 +356,7 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header.jsp" flush="false"/>
+  <jsp:include page="/include/header_dev.jsp" flush="false"/>
   
 
   <style>
@@ -412,7 +412,6 @@ section .slider_div {
 @media only screen and (max-width:414px){
 .flower_div_top{width:220px;}
   .flower_div_top_left{width:220px;}
-  .navbar-default .navbar-brand img{width:115px !important;}
   .container>.navbar-header{padding:0 3% 0 0 !important; }
   .slick-slide .slider_img_background_img_m {
     width: 95% !important;max-height: 100% !important; 
@@ -922,8 +921,11 @@ section .slider_div {
 		<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="2021renew_img/popup/220504_popup_dino.jpg" ></a>
         </div> -->
-		<div class="list_slider">
-            <a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="2021renew_img/popup/220510_popup_bgchicken.jpg" style="image-rendering:auto;"></a>
+		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220527_popup_tday.jpg" style="image-rendering:auto;"></a>
+        </div> 
+		<!-- 20220603 오픈 불금치킨--><div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="2021renew_img/popup/220531_popup_bgchicken.jpg" style="image-rendering:auto;"></a>
         </div>
         <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220502_popup_dhuman.jpg" ></a>
@@ -934,8 +936,8 @@ section .slider_div {
     </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#36176e;">오늘 하루 보지 않기</li>
-            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#36176e;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#3b247e;">오늘 하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#3b247e;">닫기</li>
         </ul>
     </div>
 </div>
@@ -978,9 +980,9 @@ section .slider_div {
                   </div>-->
                 <div class="list_slider">
 					  <div class="main_event_bgchicken_bg" style="position: relative;">
-                          <div class="main_event_bgchicken_img_pc"><a href="/event/event_view.jsp?dt=62524"><img src="/resources/images/main/220527_micro_ovbss/img_pc_1.png"></a></div>
-  						  <div class="main_event_bgchicken_img_mo"><a href="/event/event_view.jsp?dt=62524"><img src="/resources/images/main/220527_micro_ovbss/img_mo_1.png"></a></div>
-                          <div class="btn_position chatbox"><a href="/event/event_view.jsp?dt=62524"><img src="/resources/images/main/220527_micro_ovbss/img_btn.png"></a></div>
+                          <div class="main_event_bgchicken_img_pc"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_pc_1.png"></a></div>
+  						  <div class="main_event_bgchicken_img_mo"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_mo_1.png"></a></div>
+                          <div class="btn_position chatbox"><a href="http://www.xn--9i1b89owjy5lfa431as3k.com/" target="_blank"><img src="/resources/images/main/220527_micro_ovbss/img_btn.png"></a></div>
 					  </div>
                   </div>  
 				<div class="list_slider">
@@ -993,8 +995,8 @@ section .slider_div {
 				  </div>
 				  <div class="list_slider">
 					  <div class="main_event_bgchicken_bg">
-						  <div class="main_event_bgchicken_img_pc"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_pc.png"></a></div>
-  						  <div class="main_event_bgchicken_img_mo"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_mo.png"></a></div>
+						  <div class="main_event_bgchicken_img_pc"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_pc_2.png"></a></div>
+  						  <div class="main_event_bgchicken_img_mo"><a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="/2021renew_img/mainbanner/220510_event_bgchicken/img_mo_2.png"></a></div>
 					  </div>
                   </div>
 				  <!-- 220520 롤링배너: 공룡 콜라보 내림
@@ -1259,7 +1261,7 @@ section .slider_div {
     <script src="/JQuery-Snowfall-master/dist/re_popup_v6.js"></script>
 	<script src="/onepage_fullscreen/full-page-scroll.js"></script>
     <script src="/JQuery-Snowfall-master/dist/slick.js"></script>
-  <script src="/JQuery-Snowfall-master/dist/re_common_v6.js"></script>
+  <script src="/JQuery-Snowfall-master/dist/re_common_v5.js"></script>
 <!-- 순살공급중지팝업 왼쪽 정렬 스타일 추가 부분 20220203 내림
 <style>
 #window{    max-width: 400px;
