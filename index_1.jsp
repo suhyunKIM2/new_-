@@ -356,7 +356,7 @@ height: -webkit-fill-available;
 </style>
     
   <jsp:include page="/include/header_doc.jsp" flush="false"/>  
-  <jsp:include page="/include/header_dev.jsp" flush="false"/>
+  <jsp:include page="/include/header.jsp" flush="false"/>
   
 
   <style>
@@ -796,49 +796,7 @@ section .slider_div {
 <link href='/JQuery-Snowfall-master/dist/re_mainbanner_v8.css' rel='stylesheet' type='text/css'>
 <!---E:메인배너 수정시 파일명 버전 올리고 css파일 수정----->
 
-<!--<script>
-  // 이벤트종료시점 기록
-  var countDownDate = new Date("March 20, 2022 23:59:59").getTime();
-  
-  var x = setInterval(function() {
-  
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-      
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if ( hours < 10 ){hours = "0" + hours; } 
-    else if ( hours > 9 ){ hours = hours; } 
-
-    if ( minutes < 10 ){minutes = "0" + minutes; } 
-    else if ( minutes > 9 ){ minutes = minutes; } 
-
-    if ( seconds < 10 ){seconds = "0" + seconds; } 
-    else if ( seconds > 9 ){ seconds = seconds; }  
-    
-
-
-
-// 타임이벤트 진행 타이머    
-    document.getElementById("newcountdown").innerHTML = days + " : " + hours + " : "
-    + minutes + " : " + seconds;
-    document.getElementById("ori").style.visibility="visible";
-    document.getElementById("new").className =" display_none";
-// 이벤트 마감시 보여질 문구    
-    if (distance < 0) {
-      clearInterval(x);
-      //document.getElementById("timesale").innerHTML = "<div class='endtxt'>이벤트가 마감되었습니다.</div>";
-      document.getElementById("ori").className =" display_none";
-      document.getElementById("new").style.visibility="visible";
-      document.getElementById("new").classList.remove("display_none");
-      document.getElementById("todayPopChk").style.backgroundColor="#0f616a";
-      document.getElementById("closePopChk").style.backgroundColor="#0f616a";
-    }
-  }, 1000);
-  </script>-->
   <style>
       .display_none{display:none;}
 /*유니버스 바사삭 추가부분 */      
@@ -856,6 +814,8 @@ section .slider_div {
     float: right;margin-right:73px;}
 /*S: 버튼 모션 추가*/
 .chatbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}   
+
+#ori,#new{visibility: hidden;}
 @keyframes motion {
 0% {margin-top: 0px;}
 100% {margin-top: 10px;}
@@ -900,6 +860,55 @@ section .slider_div {
 }} 
 
   </style>
+  
+  <script>
+$(document).ready(function(){
+
+  // 이벤트종료시점 기록
+  var countDownDate = new Date("06/10/2022 23:59:59").getTime();
+  
+  var x = setInterval(function() {
+  
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+      
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if ( hours < 10 ){hours = "0" + hours; } 
+    else if ( hours > 9 ){ hours = hours; } 
+
+    if ( minutes < 10 ){minutes = "0" + minutes; } 
+    else if ( minutes > 9 ){ minutes = minutes; } 
+
+    if ( seconds < 10 ){seconds = "0" + seconds; } 
+    else if ( seconds > 9 ){ seconds = seconds; }  
+    
+
+
+
+// 타임이벤트 진행 타이머    
+    document.getElementById("newcountdown").innerHTML = days + " : " + hours + " : "
+    + minutes + " : " + seconds;
+    document.getElementById("ori").style.display="block";
+    document.getElementById("ori").style.visibility="visible";
+    document.getElementById("new").style.display="none";
+    document.getElementById("new").style.visibility="hidden";
+    //document.getElementById("new").className =" display_none";
+// 이벤트 마감시 보여질 문구    
+    if (distance < 0) {
+      clearInterval(x);
+      //document.getElementById("timesale").innerHTML = "<div class='endtxt'>이벤트가 마감되었습니다.</div>";
+      document.getElementById("ori").style.display="none";
+      document.getElementById("ori").style.visibility="hidden";
+    document.getElementById("new").style.display="block";
+    document.getElementById("new").style.visibility="visible";
+    }
+  }, 0);
+ });
+  </script>
 </head>
 <body id="page-top" class="index">
 
@@ -907,8 +916,9 @@ section .slider_div {
 
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
+<div id="ori">
 <div class="window" id="window">
-    <div class="slider single-item04" >
+    <div class="slider single-item04">
         <!--<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view_curry.jsp" ><img src="2021renew_img/popup/220401_event_preorder_popup.jpg"></a>
         </div>-->
@@ -922,9 +932,9 @@ section .slider_div {
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="2021renew_img/popup/220504_popup_dino.jpg" ></a>
         </div> -->
 		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
-            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220527_popup_tday.jpg" style="image-rendering:auto;"></a>
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220607_popup_tday.jpg" style="image-rendering:auto;"></a>
         </div> 
-		<!-- 20220603 오픈 불금치킨--><div class="list_slider">
+		<!--20220610 오픈 불금치킨----><div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="2021renew_img/popup/220531_popup_bgchicken.jpg" style="image-rendering:auto;"></a>
         </div>
         <div class="list_slider">
@@ -940,6 +950,28 @@ section .slider_div {
             <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#3b247e;">닫기</li>
         </ul>
     </div>
+</div>
+</div>
+<div id="new">
+<div class="window" id="window">
+    <div class="slider single-item04">
+		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220607_popup_tday.jpg" style="image-rendering:auto;"></a>
+        </div> 
+        <div class="list_slider">
+            <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220502_popup_dhuman.jpg" ></a>
+        </div>
+    </div>
+    <!--<div id="new" style="visibility:hidden;">
+        <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
+    </div>-->
+    <div class="btn_wrap btn_blk">
+        <ul class="popup_btn_ul ori">
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#3b247e;">오늘 하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#3b247e;">닫기</li>
+        </ul>
+    </div>
+</div>
 </div>
 
 <!--<div class="window" id="window">
@@ -1103,7 +1135,7 @@ section .slider_div {
                       <div class="list_section_02">
                           <p class="list_img"><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=10&cateid=01&productid=31891&classbtn="><img src="2021renew_img/mainbanner/sauce_curry.png"></a></p>
                           <ul>
-                              <li>굽네 찍먹 커리</li>
+                              <li>찍먹 커리</li>
                               <li style="opacity: 1;">치킨 마크니 / 티카 마살라</li>
                               <li><a href="https://www.goobne.co.kr/menu/menu_view.jsp?classid=40&cateid=01&productid=31891&classbtn=" class="more_btn">상세보기</a><a href="javascript:loginnet('');" class="order_btn">주문하기</a></li>
                           </ul>

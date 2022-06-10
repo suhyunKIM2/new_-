@@ -71,8 +71,9 @@
 								<img src="https://www.goobne.co.kr//resources/images/contents/event/220510_bgchicken/img_2_4.jpg" style="margin: 0 auto;width:100%;display:block;">
 								<ul style="margin: 0 auto;padding: 2em 0;width: 100%;text-align: center;background-color: #381770;list-style: none;">
 									<li>
-										<!-- 구매하기 1. onclick부분 링크 및 하단 스크립트 date링크 동일화-->
+										<!-- 구매하기 -->
 										<a href="javascript:saveMem();" onClick="window.open('https://goobneevent.multicon.co.kr');" style="cursor: pointer;"><img src="https://www.goobne.co.kr/resources/images/contents/event/220510_bgchicken/btn_on_2.png" id="onImg" style="width:55%;"></a>
+                                        
 									</li>
 									<li>
 										<!-- 회원가입후혜택받기 -->
@@ -123,7 +124,7 @@ $(document).ready(function(){
 	nowMins = pluszero(nowMins);
 
 	var nowtime = nowMonth + nowDay + nowHour + nowMins; // 월+일+시+분
-	if ('06101100'  > nowtime){ //다음 이벤트날로 지정 (이벤트 시작 시간보다 이전일경우) 
+	if ('06070800'  > nowtime){ //다음 이벤트날로 지정 (이벤트 시작 시간보다 이전일경우) 
 		$("#onImg").hide();
 		$("#offImg").hide();
 		$("#commingImg").show();
