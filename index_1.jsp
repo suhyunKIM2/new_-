@@ -865,7 +865,7 @@ section .slider_div {
 $(document).ready(function(){
 
   // 이벤트종료시점 기록
-  var countDownDate = new Date("06/10/2022 23:59:59").getTime();
+  var countDownDate = new Date("06/10/2022 23:59:59").getTime();//팝업 노출 시간 설정
   
   var x = setInterval(function() {
   
@@ -916,6 +916,7 @@ $(document).ready(function(){
 
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
+<!----S: 설정 시간 이전 바뀐 팝업 리스트---->
 <div id="ori">
 <div class="window" id="window">
     <div class="slider single-item04">
@@ -952,6 +953,9 @@ $(document).ready(function(){
     </div>
 </div>
 </div>
+<!----E: 설정 시간 이전 바뀐 팝업 리스트---->
+
+<!----S: 설정 시간 이후 바뀐 팝업 리스트---->
 <div id="new">
 <div class="window" id="window">
     <div class="slider single-item04">
@@ -962,9 +966,6 @@ $(document).ready(function(){
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220502_popup_dhuman.jpg" ></a>
         </div>
     </div>
-    <!--<div id="new" style="visibility:hidden;">
-        <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220302_popup_dhuman_2.jpg" ></a>
-    </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
             <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#3b247e;">오늘 하루 보지 않기</li>
@@ -973,6 +974,8 @@ $(document).ready(function(){
     </div>
 </div>
 </div>
+<!----E: 설정 시간 이후 바뀐 팝업 리스트---->
+
 
 <!--<div class="window" id="window">
     <a href="https://m.dhuman.co.kr/event/free_event.php?sno=18#enp_mbris" target="_top" class="ori"><img src="2021renew_img/popup/popup_20220315_1.svg"></a>
