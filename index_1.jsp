@@ -917,8 +917,8 @@ $(document).ready(function(){
 <div id="mask_popup"></div>
 <span id="newcountdown" style="font-size:0;display:none;"></span>
 <!----S: 설정 시간 이전 바뀐 팝업 리스트---->
-<div id="ori">
 <div class="window" id="window">
+<div id="ori">
     <div class="slider single-item04">
         <!--<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view_curry.jsp" ><img src="2021renew_img/popup/220401_event_preorder_popup.jpg"></a>
@@ -932,9 +932,9 @@ $(document).ready(function(){
 		<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62326&page=1"><img src="2021renew_img/popup/220504_popup_dino.jpg" ></a>
         </div> -->
-		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
+		<!-- 220603 오픈: Tday 이벤트<div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220607_popup_tday.jpg" style="image-rendering:auto;"></a>
-        </div> 
+        </div> -->
 		<!--20220610 오픈 불금치킨----><div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view_bg.jsp"><img src="2021renew_img/popup/220531_popup_bgchicken.jpg" style="image-rendering:auto;"></a>
         </div>
@@ -947,29 +947,28 @@ $(document).ready(function(){
     </div>-->
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#3b247e;">오늘 하루 보지 않기</li>
-            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#3b247e;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#103035;">오늘 하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#103035;">닫기</li>
         </ul>
     </div>
-</div>
+
 </div>
 <!----E: 설정 시간 이전 바뀐 팝업 리스트---->
 
 <!----S: 설정 시간 이후 바뀐 팝업 리스트---->
 <div id="new">
-<div class="window" id="window">
     <div class="slider single-item04">
-		<!-- 220603 오픈: Tday 이벤트--> <div class="list_slider">
+		<!-- 220603 오픈: Tday 이벤트 <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=62562"><img src="2021renew_img/popup/220607_popup_tday.jpg" style="image-rendering:auto;"></a>
-        </div> 
+        </div> -->
         <div class="list_slider">
             <a href="https://www.goobne.co.kr/event/event_view.jsp?dt=60905"><img src="2021renew_img/popup/220502_popup_dhuman.jpg" ></a>
         </div>
     </div>
     <div class="btn_wrap btn_blk">
         <ul class="popup_btn_ul ori">
-            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#3b247e;">오늘 하루 보지 않기</li>
-            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#3b247e;">닫기</li>
+            <li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#103035;">오늘 하루 보지 않기</li>
+            <li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#103035;">닫기</li>
         </ul>
     </div>
 </div>
